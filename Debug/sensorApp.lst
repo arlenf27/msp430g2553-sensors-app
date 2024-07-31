@@ -1,11 +1,11 @@
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-       3            ;* Date/Time created: Mon Jul 29 12:35:17 2024                                *
+       3            ;* Date/Time created: Mon Jul 29 18:04:10 2024                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
        6            
@@ -58,7 +58,7 @@ sensorApp.asm                                                        PAGE    1
       52                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
       53            
       54            $C$DW$5 .dwtag  DW_TAG_variable
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    2
@@ -118,7 +118,7 @@ sensorApp.asm                                                        PAGE    2
      107                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$20)
      108                    .dwattr $C$DW$10, DW_AT_declaration
      109                    .dwattr $C$DW$10, DW_AT_external
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    3
@@ -169,7 +169,7 @@ sensorApp.asm                                                        PAGE    3
      153            
      154                    .dwendtag $C$DW$14
      155            
-     156            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIc
+     156            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TId
      157 000000               .sect   ".text:main"
      158                    .clink
      159                    .global main
@@ -178,7 +178,7 @@ sensorApp.asm                                                        PAGE    3
      162                    .dwattr $C$DW$16, DW_AT_name("main")
      163                    .dwattr $C$DW$16, DW_AT_low_pc(main)
      164                    .dwattr $C$DW$16, DW_AT_high_pc(0x00)
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    4
@@ -238,7 +238,7 @@ sensorApp.asm                                                        PAGE    4
      204 000028 D0F2          OR.B      #128,&UCA0CTL1+0      ; [] |67| 
          00002a 0080 
          00002c 0000!
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    5
@@ -298,7 +298,7 @@ sensorApp.asm                                                        PAGE    5
      251            ;* FUNCTION NAME: Timer_A                                                    *
      252            ;*                                                                           *
      253            ;*   Regs Modified     : SP,SR                                               *
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    6
@@ -358,7 +358,7 @@ sensorApp.asm                                                        PAGE    6
      301                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000010
      302                    .battr "TI", Tag_File, 1, Tag_LEA_INFO(1)
      303                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    7
@@ -418,7 +418,7 @@ sensorApp.asm                                                        PAGE    7
      356            
      357            $C$DW$T$21      .dwtag  DW_TAG_volatile_type
      358                    .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$11)
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    8
@@ -478,7 +478,7 @@ sensorApp.asm                                                        PAGE    8
      411                    .dwcfi  same_value, 8
      412                    .dwcfi  same_value, 9
      413                    .dwcfi  same_value, 10
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    9
@@ -538,7 +538,7 @@ sensorApp.asm                                                        PAGE    9
      466                    .dwattr $C$DW$31, DW_AT_location[DW_OP_reg11]
      467            
      468            $C$DW$32        .dwtag  DW_TAG_TI_assign_register
-MSP430 Assembler Unix v21.6.1 Mon Jul 29 12:35:17 2024
+MSP430 Assembler Unix v21.6.1 Mon Jul 29 18:04:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   10

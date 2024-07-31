@@ -43,9 +43,9 @@
  */
 void main(void)
 {
-	WDTCTL = WDTPW | WDTHOLD;		// Stop watchdog timer
+	WDTCTL = WDTPW | WDTHOLD;       // Stop watchdog timer
 
-	P1DIR |= BIT0;					// Configure P1.0 as output
+	P1DIR |= BIT0;                  // Configure P1.0 as output
 
 	CCTL0 = CCIE;                   // Timer interrupt enabled
 	CCR0 = 50000;                   // Compare value = 50000 clock cycles
@@ -56,9 +56,9 @@ void main(void)
 	 *
 	 * 10b (SMCLK's frequency is ~ 1 MHz in LPM0) +
 	 * 10b (Continuous mode - timer counts up to 0xFFFF) +
-     * 10b Input Divider of 4
-     *
-     * 50000 clock cycles * 1/(~1000000/4) seconds should equate to around 0.2 seconds between interrupts.
+	 * 10b Input Divider of 4
+	 *
+	 * 50000 clock cycles * 1/(~1000000/4) seconds should equate to around 0.2 seconds between interrupts.
 	 */
 	TACTL = TASSEL_2 + MC_2 + ID_2;
 
