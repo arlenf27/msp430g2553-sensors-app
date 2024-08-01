@@ -31,6 +31,8 @@
  * --/COPYRIGHT--*/
 //*****************************************************************************
 
+// TODO: Rename file and note modifications!
+
 #include "fr2111_swi2c_master.h"
 
 /* Static Functions */
@@ -48,11 +50,8 @@ void SWI2C_initI2C(void)
     SWI2C_SCL_HIGH;
     SWI2C_SDA_HIGH;
 
-    PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
-                                            // to activate previously configured port settings
-
     /* Timer is initialized to run off SMCLK(8MHz) with frequency 200KHz */
-    TB0CCR0 = SWI2C_TIMER_PERIOD;
+    TA1CCR0 = SWI2C_TIMER_PERIOD;
 }
 
 bool SWI2C_performI2CTransaction(SWI2C_I2CTransaction *i2cTransaction)
@@ -100,7 +99,7 @@ static bool SWI2C_writeData(uint8_t addr, uint8_t *outputArray,
     uint16_t ii = 0;
 
     /* Starting the timer */
-    TB0CTL = TBSSEL_2 + MC_1 + TBCLR;
+    TA1CTL = TASSEL_2 + MC_1 + TACLR;
 
     /* Sending the START */
     SWI2C_SDA_LOW;
@@ -230,7 +229,7 @@ I2CWriteTransactionCleanUp:
     }
     
     /* Stop the timer */
-    TB0CTL = MC_0;
+    TA1CTL = MC_0;
     
     /* If all bytes were sent, return true- otherwise false. */
     if(ii == size)
@@ -246,7 +245,7 @@ static bool SWI2C_readData(uint8_t addr, uint8_t *inputArray,
     uint16_t ii = 0;
 
     /* Starting the timer */
-    TB0CTL = TBSSEL_2 + MC_1 + TBCLR;
+    TA1CTL = TASSEL_2 + MC_1 + TACLR;
 
     /* Sending the START */
     SWI2C_SDA_LOW;
@@ -363,7 +362,7 @@ I2CReadTransactionCleanUp:
     TIMER_ITERATION();
 
     /* Stop the timer */
-    TB0CTL = MC_0;
+    TA1CTL = MC_0;
 
     /* If all bytes were read, return true- otherwise false. */
     if(ii == size)

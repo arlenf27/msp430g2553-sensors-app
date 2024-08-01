@@ -1,0 +1,2880 @@
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
+       3            ;* Date/Time created: Thu Aug  1 01:12:12 2024                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../fr2111_swi2c_master.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 G3 C/C++ Codegen Unix v21.6.1.LTS Copyright (c) 20
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MS
+      12            $C$DW$1 .dwtag  DW_TAG_variable
+      13                    .dwattr $C$DW$1, DW_AT_name("P1IN")
+      14                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("P1IN")
+      15                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$39)
+      16                    .dwattr $C$DW$1, DW_AT_declaration
+      17                    .dwattr $C$DW$1, DW_AT_external
+      18                    .dwattr $C$DW$1, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      19                    .dwattr $C$DW$1, DW_AT_decl_line(0x1ce)
+      20                    .dwattr $C$DW$1, DW_AT_decl_column(0x01)
+      21            
+      22            $C$DW$2 .dwtag  DW_TAG_variable
+      23                    .dwattr $C$DW$2, DW_AT_name("P1OUT")
+      24                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("P1OUT")
+      25                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$39)
+      26                    .dwattr $C$DW$2, DW_AT_declaration
+      27                    .dwattr $C$DW$2, DW_AT_external
+      28                    .dwattr $C$DW$2, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      29                    .dwattr $C$DW$2, DW_AT_decl_line(0x1cf)
+      30                    .dwattr $C$DW$2, DW_AT_decl_column(0x01)
+      31            
+      32            $C$DW$3 .dwtag  DW_TAG_variable
+      33                    .dwattr $C$DW$3, DW_AT_name("P1DIR")
+      34                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("P1DIR")
+      35                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$39)
+      36                    .dwattr $C$DW$3, DW_AT_declaration
+      37                    .dwattr $C$DW$3, DW_AT_external
+      38                    .dwattr $C$DW$3, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      39                    .dwattr $C$DW$3, DW_AT_decl_line(0x1d0)
+      40                    .dwattr $C$DW$3, DW_AT_decl_column(0x01)
+      41            
+      42            $C$DW$4 .dwtag  DW_TAG_variable
+      43                    .dwattr $C$DW$4, DW_AT_name("TA1CTL")
+      44                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("TA1CTL")
+      45                    .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$72)
+      46                    .dwattr $C$DW$4, DW_AT_declaration
+      47                    .dwattr $C$DW$4, DW_AT_external
+      48                    .dwattr $C$DW$4, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      49                    .dwattr $C$DW$4, DW_AT_decl_line(0x268)
+      50                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
+      51            
+      52            $C$DW$5 .dwtag  DW_TAG_variable
+      53                    .dwattr $C$DW$5, DW_AT_name("TA1CCTL0")
+      54                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("TA1CCTL0")
+      55                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$72)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    2
+
+      56                    .dwattr $C$DW$5, DW_AT_declaration
+      57                    .dwattr $C$DW$5, DW_AT_external
+      58                    .dwattr $C$DW$5, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      59                    .dwattr $C$DW$5, DW_AT_decl_line(0x269)
+      60                    .dwattr $C$DW$5, DW_AT_decl_column(0x01)
+      61            
+      62            $C$DW$6 .dwtag  DW_TAG_variable
+      63                    .dwattr $C$DW$6, DW_AT_name("TA1CCR0")
+      64                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("TA1CCR0")
+      65                    .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$72)
+      66                    .dwattr $C$DW$6, DW_AT_declaration
+      67                    .dwattr $C$DW$6, DW_AT_external
+      68                    .dwattr $C$DW$6, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      69                    .dwattr $C$DW$6, DW_AT_decl_line(0x26d)
+      70                    .dwattr $C$DW$6, DW_AT_decl_column(0x01)
+      71            
+      72            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIi
+      73 000000               .sect   ".text:SWI2C_writeData"
+      74                    .clink
+      75            
+      76            $C$DW$7 .dwtag  DW_TAG_subprogram
+      77                    .dwattr $C$DW$7, DW_AT_name("SWI2C_writeData")
+      78                    .dwattr $C$DW$7, DW_AT_low_pc(SWI2C_writeData)
+      79                    .dwattr $C$DW$7, DW_AT_high_pc(0x00)
+      80                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("SWI2C_writeData")
+      81                    .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$28)
+      82                    .dwattr $C$DW$7, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
+      83                    .dwattr $C$DW$7, DW_AT_TI_begin_line(0x5f)
+      84                    .dwattr $C$DW$7, DW_AT_TI_begin_column(0x0d)
+      85                    .dwattr $C$DW$7, DW_AT_decl_file("../fr2111_swi2c_master.c")
+      86                    .dwattr $C$DW$7, DW_AT_decl_line(0x5f)
+      87                    .dwattr $C$DW$7, DW_AT_decl_column(0x0d)
+      88                    .dwattr $C$DW$7, DW_AT_TI_max_frame_size(0x04)
+      89                    .dwpsn  file "../fr2111_swi2c_master.c",line 97,column 1,is_stmt,address SWI2C_writeData,isa 0
+      90            
+      91                    .dwfde $C$DW$CIE, SWI2C_writeData
+      92            $C$DW$8 .dwtag  DW_TAG_formal_parameter
+      93                    .dwattr $C$DW$8, DW_AT_name("addr")
+      94                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("addr")
+      95                    .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$23)
+      96                    .dwattr $C$DW$8, DW_AT_location[DW_OP_reg12]
+      97            
+      98            $C$DW$9 .dwtag  DW_TAG_formal_parameter
+      99                    .dwattr $C$DW$9, DW_AT_name("outputArray")
+     100                    .dwattr $C$DW$9, DW_AT_TI_symbol_name("outputArray")
+     101                    .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$27)
+     102                    .dwattr $C$DW$9, DW_AT_location[DW_OP_reg13]
+     103            
+     104            $C$DW$10        .dwtag  DW_TAG_formal_parameter
+     105                    .dwattr $C$DW$10, DW_AT_name("size")
+     106                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("size")
+     107                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$26)
+     108                    .dwattr $C$DW$10, DW_AT_location[DW_OP_reg14]
+     109            
+     110            $C$DW$11        .dwtag  DW_TAG_formal_parameter
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    3
+
+     111                    .dwattr $C$DW$11, DW_AT_name("sendStop")
+     112                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("sendStop")
+     113                    .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$28)
+     114                    .dwattr $C$DW$11, DW_AT_location[DW_OP_reg15]
+     115            
+     116            
+     117            ;*****************************************************************************
+     118            ;* FUNCTION NAME: SWI2C_writeData                                            *
+     119            ;*                                                                           *
+     120            ;*   Regs Modified     : SP,SR,r10,r11,r12                                   *
+     121            ;*   Regs Used         : SP,SR,r10,r11,r12,r13,r14,r15                       *
+     122            ;*   Local Frame Size  : 0 Args + 0 Auto + 2 Save = 2 byte                   *
+     123            ;*****************************************************************************
+     124 000000       SWI2C_writeData:
+     125            ;* --------------------------------------------------------------------------*
+     126                    .dwcfi  cfa_offset, 2
+     127                    .dwcfi  save_reg_to_mem, 16, -2
+     128 000000 120A          PUSH.W    r10                   ; [] 
+     129                    .dwcfi  cfa_offset, 4
+     130                    .dwcfi  save_reg_to_mem, 10, -4
+     131            ;* r12   assigned to addr
+     132            $C$DW$12        .dwtag  DW_TAG_variable
+     133                    .dwattr $C$DW$12, DW_AT_name("addr")
+     134                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("addr")
+     135                    .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$23)
+     136                    .dwattr $C$DW$12, DW_AT_location[DW_OP_reg12]
+     137            
+     138            ;* r13   assigned to outputArray
+     139            $C$DW$13        .dwtag  DW_TAG_variable
+     140                    .dwattr $C$DW$13, DW_AT_name("outputArray")
+     141                    .dwattr $C$DW$13, DW_AT_TI_symbol_name("outputArray")
+     142                    .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$27)
+     143                    .dwattr $C$DW$13, DW_AT_location[DW_OP_reg13]
+     144            
+     145            ;* r14   assigned to size
+     146            $C$DW$14        .dwtag  DW_TAG_variable
+     147                    .dwattr $C$DW$14, DW_AT_name("size")
+     148                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("size")
+     149                    .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$26)
+     150                    .dwattr $C$DW$14, DW_AT_location[DW_OP_reg14]
+     151            
+     152            ;* r15   assigned to sendStop
+     153            $C$DW$15        .dwtag  DW_TAG_variable
+     154                    .dwattr $C$DW$15, DW_AT_name("sendStop")
+     155                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("sendStop")
+     156                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$28)
+     157                    .dwattr $C$DW$15, DW_AT_location[DW_OP_reg15]
+     158            
+     159            ;* r10   assigned to bits
+     160            $C$DW$16        .dwtag  DW_TAG_variable
+     161                    .dwattr $C$DW$16, DW_AT_name("bits")
+     162                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("bits")
+     163                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$77)
+     164                    .dwattr $C$DW$16, DW_AT_location[DW_OP_reg10]
+     165            
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    4
+
+     166            ;* r12   assigned to temp
+     167            $C$DW$17        .dwtag  DW_TAG_variable
+     168                    .dwattr $C$DW$17, DW_AT_name("temp")
+     169                    .dwattr $C$DW$17, DW_AT_TI_symbol_name("temp")
+     170                    .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$77)
+     171                    .dwattr $C$DW$17, DW_AT_location[DW_OP_reg12]
+     172            
+     173            ;* r11   assigned to ii
+     174            $C$DW$18        .dwtag  DW_TAG_variable
+     175                    .dwattr $C$DW$18, DW_AT_name("ii")
+     176                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("ii")
+     177                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$83)
+     178                    .dwattr $C$DW$18, DW_AT_location[DW_OP_reg11]
+     179            
+     180                    .dwpsn  file "../fr2111_swi2c_master.c",line 99,column 17,is_stmt,isa 0
+     181 000002 430B          MOV.W     #0,r11                ; [] |99| 
+     182                    .dwpsn  file "../fr2111_swi2c_master.c",line 102,column 5,is_stmt,isa 0
+     183 000004 40B2          MOV.W     #532,&TA1CTL+0        ; [] |102| 
+         000006 0214 
+         000008 0000!
+     184                    .dwpsn  file "../fr2111_swi2c_master.c",line 105,column 5,is_stmt,isa 0
+     185 00000a D2E2          OR.B      #4,&P1DIR+0           ; [] |105| 
+         00000c 0000!
+     186                    .dwpsn  file "../fr2111_swi2c_master.c",line 106,column 5,is_stmt,isa 0
+     187 00000e 4303          NOP       ; [] |106| 
+     188                    .dwpsn  file "../fr2111_swi2c_master.c",line 107,column 5,is_stmt,isa 0
+     189 000010 D3E2          OR.B      #2,&P1DIR+0           ; [] |107| 
+         000012 0000!
+     190                    .dwpsn  file "../fr2111_swi2c_master.c",line 108,column 5,is_stmt,isa 0
+     191 000014 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |108| 
+         000016 0000!
+     192            ;* --------------------------------------------------------------------------*
+     193            ;*   BEGIN LOOP $C$L1
+     194            ;*
+     195            ;*   Loop source line                : 108
+     196            ;*   Loop closing brace source line  : 108
+     197            ;*   Known Minimum Trip Count        : 1
+     198            ;*   Known Maximum Trip Count        : 4294967295
+     199            ;*   Known Max Trip Count Factor     : 1
+     200            ;* --------------------------------------------------------------------------*
+     201 000018       $C$L1:    
+     202 000018 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |108| 
+         00001a 0000!
+     203 00001c 27FD          JEQ       $C$L1                 ; [] |108| 
+     204                                                      ; [] |108| 
+     205            ;* --------------------------------------------------------------------------*
+     206                    .dwpsn  file "../fr2111_swi2c_master.c",line 111,column 5,is_stmt,isa 0
+     207 00001e 4C4C          MOV.B     r12,r12               ; [] |111| 
+     208 000020 5C0C          RLA.W     r12                   ; [] |111| 
+     209                    .dwpsn  file "../fr2111_swi2c_master.c",line 112,column 5,is_stmt,isa 0
+     210 000022 423A          MOV.W     #8,r10                ; [] |112| 
+     211            ;* --------------------------------------------------------------------------*
+     212            ;*   BEGIN LOOP $C$L2
+     213            ;*
+     214            ;*   Loop source line                : 115
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    5
+
+     215            ;*   Loop closing brace source line  : 139
+     216            ;*   Known Minimum Trip Count        : 1
+     217            ;*   Known Maximum Trip Count        : 4294967295
+     218            ;*   Known Max Trip Count Factor     : 1
+     219            ;* --------------------------------------------------------------------------*
+     220 000024       $C$L2:    
+     221                    .dwpsn  file "../fr2111_swi2c_master.c",line 118,column 9,is_stmt,isa 0
+     222 000024 B03C          BIT.W     #128,r12              ; [] |118| 
+         000026 0080 
+     223 000028 2003          JNE       $C$L3                 ; [] |118| 
+     224                                                      ; [] |118| 
+     225            ;* --------------------------------------------------------------------------*
+     226                    .dwpsn  file "../fr2111_swi2c_master.c",line 124,column 13,is_stmt,isa 0
+     227 00002a D2E2          OR.B      #4,&P1DIR+0           ; [] |124| 
+         00002c 0000!
+     228 00002e 3C02          JMP       $C$L4                 ; [] |124| 
+     229                                                      ; [] |124| 
+     230            ;* --------------------------------------------------------------------------*
+     231 000030       $C$L3:    
+     232                    .dwpsn  file "../fr2111_swi2c_master.c",line 120,column 13,is_stmt,isa 0
+     233 000030 C2E2          BIC.B     #4,&P1DIR+0           ; [] |120| 
+         000032 0000!
+     234            ;* --------------------------------------------------------------------------*
+     235 000034       $C$L4:    
+     236                    .dwpsn  file "../fr2111_swi2c_master.c",line 128,column 9,is_stmt,isa 0
+     237 000034 C3E2          BIC.B     #2,&P1DIR+0           ; [] |128| 
+         000036 0000!
+     238                    .dwpsn  file "../fr2111_swi2c_master.c",line 129,column 9,is_stmt,isa 0
+     239 000038 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |129| 
+         00003a 0000!
+     240            ;* --------------------------------------------------------------------------*
+     241            ;*   BEGIN LOOP $C$L5
+     242            ;*
+     243            ;*   Loop source line                : 129
+     244            ;*   Loop closing brace source line  : 129
+     245            ;*   Known Minimum Trip Count        : 1
+     246            ;*   Known Maximum Trip Count        : 4294967295
+     247            ;*   Known Max Trip Count Factor     : 1
+     248            ;* --------------------------------------------------------------------------*
+     249 00003c       $C$L5:    
+     250 00003c B392          BIT.W     #1,&TA1CCTL0+0        ; [] |129| 
+         00003e 0000!
+     251 000040 27FD          JEQ       $C$L5                 ; [] |129| 
+     252                                                      ; [] |129| 
+     253            ;* --------------------------------------------------------------------------*
+     254                    .dwpsn  file "../fr2111_swi2c_master.c",line 132,column 9,is_stmt,isa 0
+     255 000042 5C0C          RLA.W     r12                   ; [] |132| 
+     256                    .dwpsn  file "../fr2111_swi2c_master.c",line 133,column 9,is_stmt,isa 0
+     257 000044 831A          SUB.W     #1,r10                ; [] |133| 
+     258                    .dwpsn  file "../fr2111_swi2c_master.c",line 135,column 9,is_stmt,isa 0
+     259 000046 D3E2          OR.B      #2,&P1DIR+0           ; [] |135| 
+         000048 0000!
+     260                    .dwpsn  file "../fr2111_swi2c_master.c",line 136,column 9,is_stmt,isa 0
+     261 00004a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |136| 
+         00004c 0000!
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    6
+
+     262            ;* --------------------------------------------------------------------------*
+     263            ;*   BEGIN LOOP $C$L6
+     264            ;*
+     265            ;*   Loop source line                : 136
+     266            ;*   Loop closing brace source line  : 136
+     267            ;*   Known Minimum Trip Count        : 1
+     268            ;*   Known Maximum Trip Count        : 4294967295
+     269            ;*   Known Max Trip Count Factor     : 1
+     270            ;* --------------------------------------------------------------------------*
+     271 00004e       $C$L6:    
+     272 00004e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |136| 
+         000050 0000!
+     273 000052 27FD          JEQ       $C$L6                 ; [] |136| 
+     274                                                      ; [] |136| 
+     275            ;* --------------------------------------------------------------------------*
+     276                    .dwpsn  file "../fr2111_swi2c_master.c",line 139,column 14,is_stmt,isa 0
+     277 000054 930A          TST.W     r10                   ; [] |139| 
+     278 000056 23E6          JNE       $C$L2                 ; [] |139| 
+     279                                                      ; [] |139| 
+     280            ;* --------------------------------------------------------------------------*
+     281                    .dwpsn  file "../fr2111_swi2c_master.c",line 144,column 5,is_stmt,isa 0
+     282 000058 C2E2          BIC.B     #4,&P1DIR+0           ; [] |144| 
+         00005a 0000!
+     283                    .dwpsn  file "../fr2111_swi2c_master.c",line 145,column 5,is_stmt,isa 0
+     284 00005c C3E2          BIC.B     #2,&P1DIR+0           ; [] |145| 
+         00005e 0000!
+     285            ;* --------------------------------------------------------------------------*
+     286            ;*   BEGIN LOOP $C$L7
+     287            ;*
+     288            ;*   Loop source line                : 149
+     289            ;*   Loop closing brace source line  : 149
+     290            ;*   Known Minimum Trip Count        : 1
+     291            ;*   Known Maximum Trip Count        : 4294967295
+     292            ;*   Known Max Trip Count Factor     : 1
+     293            ;* --------------------------------------------------------------------------*
+     294 000060       $C$L7:    
+     295                    .dwpsn  file "../fr2111_swi2c_master.c",line 149,column 11,is_stmt,isa 0
+     296 000060 B3E2          BIT.B     #2,&P1IN+0            ; [] |149| 
+         000062 0000!
+     297 000064 27FD          JEQ       $C$L7                 ; [] |149| 
+     298                                                      ; [] |149| 
+     299            ;* --------------------------------------------------------------------------*
+     300                    .dwpsn  file "../fr2111_swi2c_master.c",line 151,column 5,is_stmt,isa 0
+     301 000066 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |151| 
+         000068 0000!
+     302            ;* --------------------------------------------------------------------------*
+     303            ;*   BEGIN LOOP $C$L8
+     304            ;*
+     305            ;*   Loop source line                : 151
+     306            ;*   Loop closing brace source line  : 151
+     307            ;*   Known Minimum Trip Count        : 1
+     308            ;*   Known Maximum Trip Count        : 4294967295
+     309            ;*   Known Max Trip Count Factor     : 1
+     310            ;* --------------------------------------------------------------------------*
+     311 00006a       $C$L8:    
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    7
+
+     312 00006a B392          BIT.W     #1,&TA1CCTL0+0        ; [] |151| 
+         00006c 0000!
+     313 00006e 27FD          JEQ       $C$L8                 ; [] |151| 
+     314                                                      ; [] |151| 
+     315            ;* --------------------------------------------------------------------------*
+     316                    .dwpsn  file "../fr2111_swi2c_master.c",line 155,column 9,is_stmt,isa 0
+     317 000070 B2E2          BIT.B     #4,&P1IN+0            ; [] |155| 
+         000072 0000!
+     318 000074 2040          JNE       $C$L19                ; [] |155| 
+     319                                                      ; [] |155| 
+     320            ;* --------------------------------------------------------------------------*
+     321                    .dwpsn  file "../fr2111_swi2c_master.c",line 159,column 5,is_stmt,isa 0
+     322 000076 D3E2          OR.B      #2,&P1DIR+0           ; [] |159| 
+         000078 0000!
+     323                    .dwpsn  file "../fr2111_swi2c_master.c",line 160,column 5,is_stmt,isa 0
+     324 00007a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |160| 
+         00007c 0000!
+     325            ;* --------------------------------------------------------------------------*
+     326            ;*   BEGIN LOOP $C$L9
+     327            ;*
+     328            ;*   Loop source line                : 160
+     329            ;*   Loop closing brace source line  : 160
+     330            ;*   Known Minimum Trip Count        : 1
+     331            ;*   Known Maximum Trip Count        : 4294967295
+     332            ;*   Known Max Trip Count Factor     : 1
+     333            ;* --------------------------------------------------------------------------*
+     334 00007e       $C$L9:    
+     335 00007e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |160| 
+         000080 0000!
+     336 000082 27FD          JEQ       $C$L9                 ; [] |160| 
+     337                                                      ; [] |160| 
+     338            ;* --------------------------------------------------------------------------*
+     339                    .dwpsn  file "../fr2111_swi2c_master.c",line 163,column 14,is_stmt,isa 0
+     340 000084 9E0B          CMP.W     r14,r11               ; [] |163| 
+     341 000086 2C37          JHS       $C$L19                ; [] |163| 
+     342                                                      ; [] |163| 
+     343            ;* --------------------------------------------------------------------------*
+     344            ;*   BEGIN LOOP $C$L10
+     345            ;*
+     346            ;*   Loop source line                : 163
+     347            ;*   Loop closing brace source line  : 211
+     348            ;*   Known Minimum Trip Count        : 1
+     349            ;*   Known Maximum Trip Count        : 4294967295
+     350            ;*   Known Max Trip Count Factor     : 1
+     351            ;* --------------------------------------------------------------------------*
+     352 000088       $C$L10:    
+     353                    .dwpsn  file "../fr2111_swi2c_master.c",line 165,column 9,is_stmt,isa 0
+     354 000088 4D0C          MOV.W     r13,r12               ; [] |165| 
+     355 00008a 5B0C          ADD.W     r11,r12               ; [] |165| 
+     356 00008c 4C6C          MOV.B     @r12,r12              ; [] |165| 
+     357                    .dwpsn  file "../fr2111_swi2c_master.c",line 166,column 9,is_stmt,isa 0
+     358 00008e 423A          MOV.W     #8,r10                ; [] |166| 
+     359            ;* --------------------------------------------------------------------------*
+     360            ;*   BEGIN LOOP $C$L11
+     361            ;*
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    8
+
+     362            ;*   Loop source line                : 169
+     363            ;*   Loop closing brace source line  : 191
+     364            ;*   Known Minimum Trip Count        : 1
+     365            ;*   Known Maximum Trip Count        : 4294967295
+     366            ;*   Known Max Trip Count Factor     : 1
+     367            ;* --------------------------------------------------------------------------*
+     368 000090       $C$L11:    
+     369                    .dwpsn  file "../fr2111_swi2c_master.c",line 172,column 13,is_stmt,isa 0
+     370 000090 B03C          BIT.W     #128,r12              ; [] |172| 
+         000092 0080 
+     371 000094 2003          JNE       $C$L12                ; [] |172| 
+     372                                                      ; [] |172| 
+     373            ;* --------------------------------------------------------------------------*
+     374                    .dwpsn  file "../fr2111_swi2c_master.c",line 178,column 17,is_stmt,isa 0
+     375 000096 D2E2          OR.B      #4,&P1DIR+0           ; [] |178| 
+         000098 0000!
+     376 00009a 3C02          JMP       $C$L13                ; [] |178| 
+     377                                                      ; [] |178| 
+     378            ;* --------------------------------------------------------------------------*
+     379 00009c       $C$L12:    
+     380                    .dwpsn  file "../fr2111_swi2c_master.c",line 174,column 17,is_stmt,isa 0
+     381 00009c C2E2          BIC.B     #4,&P1DIR+0           ; [] |174| 
+         00009e 0000!
+     382            ;* --------------------------------------------------------------------------*
+     383 0000a0       $C$L13:    
+     384                    .dwpsn  file "../fr2111_swi2c_master.c",line 182,column 13,is_stmt,isa 0
+     385 0000a0 C3E2          BIC.B     #2,&P1DIR+0           ; [] |182| 
+         0000a2 0000!
+     386                    .dwpsn  file "../fr2111_swi2c_master.c",line 183,column 13,is_stmt,isa 0
+     387 0000a4 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |183| 
+         0000a6 0000!
+     388            ;* --------------------------------------------------------------------------*
+     389            ;*   BEGIN LOOP $C$L14
+     390            ;*
+     391            ;*   Loop source line                : 183
+     392            ;*   Loop closing brace source line  : 183
+     393            ;*   Known Minimum Trip Count        : 1
+     394            ;*   Known Maximum Trip Count        : 4294967295
+     395            ;*   Known Max Trip Count Factor     : 1
+     396            ;* --------------------------------------------------------------------------*
+     397 0000a8       $C$L14:    
+     398 0000a8 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |183| 
+         0000aa 0000!
+     399 0000ac 27FD          JEQ       $C$L14                ; [] |183| 
+     400                                                      ; [] |183| 
+     401            ;* --------------------------------------------------------------------------*
+     402                    .dwpsn  file "../fr2111_swi2c_master.c",line 186,column 13,is_stmt,isa 0
+     403 0000ae 5C0C          RLA.W     r12                   ; [] |186| 
+     404                    .dwpsn  file "../fr2111_swi2c_master.c",line 187,column 13,is_stmt,isa 0
+     405 0000b0 831A          SUB.W     #1,r10                ; [] |187| 
+     406                    .dwpsn  file "../fr2111_swi2c_master.c",line 188,column 13,is_stmt,isa 0
+     407 0000b2 D3E2          OR.B      #2,&P1DIR+0           ; [] |188| 
+         0000b4 0000!
+     408                    .dwpsn  file "../fr2111_swi2c_master.c",line 189,column 13,is_stmt,isa 0
+     409 0000b6 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |189| 
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE    9
+
+         0000b8 0000!
+     410            ;* --------------------------------------------------------------------------*
+     411            ;*   BEGIN LOOP $C$L15
+     412            ;*
+     413            ;*   Loop source line                : 189
+     414            ;*   Loop closing brace source line  : 189
+     415            ;*   Known Minimum Trip Count        : 1
+     416            ;*   Known Maximum Trip Count        : 4294967295
+     417            ;*   Known Max Trip Count Factor     : 1
+     418            ;* --------------------------------------------------------------------------*
+     419 0000ba       $C$L15:    
+     420 0000ba B392          BIT.W     #1,&TA1CCTL0+0        ; [] |189| 
+         0000bc 0000!
+     421 0000be 27FD          JEQ       $C$L15                ; [] |189| 
+     422                                                      ; [] |189| 
+     423            ;* --------------------------------------------------------------------------*
+     424                    .dwpsn  file "../fr2111_swi2c_master.c",line 191,column 18,is_stmt,isa 0
+     425 0000c0 930A          TST.W     r10                   ; [] |191| 
+     426 0000c2 23E6          JNE       $C$L11                ; [] |191| 
+     427                                                      ; [] |191| 
+     428            ;* --------------------------------------------------------------------------*
+     429                    .dwpsn  file "../fr2111_swi2c_master.c",line 194,column 9,is_stmt,isa 0
+     430 0000c4 C2E2          BIC.B     #4,&P1DIR+0           ; [] |194| 
+         0000c6 0000!
+     431                    .dwpsn  file "../fr2111_swi2c_master.c",line 195,column 9,is_stmt,isa 0
+     432 0000c8 C3E2          BIC.B     #2,&P1DIR+0           ; [] |195| 
+         0000ca 0000!
+     433            ;* --------------------------------------------------------------------------*
+     434            ;*   BEGIN LOOP $C$L16
+     435            ;*
+     436            ;*   Loop source line                : 199
+     437            ;*   Loop closing brace source line  : 199
+     438            ;*   Known Minimum Trip Count        : 1
+     439            ;*   Known Maximum Trip Count        : 4294967295
+     440            ;*   Known Max Trip Count Factor     : 1
+     441            ;* --------------------------------------------------------------------------*
+     442 0000cc       $C$L16:    
+     443                    .dwpsn  file "../fr2111_swi2c_master.c",line 199,column 15,is_stmt,isa 0
+     444 0000cc B3E2          BIT.B     #2,&P1IN+0            ; [] |199| 
+         0000ce 0000!
+     445 0000d0 27FD          JEQ       $C$L16                ; [] |199| 
+     446                                                      ; [] |199| 
+     447            ;* --------------------------------------------------------------------------*
+     448                    .dwpsn  file "../fr2111_swi2c_master.c",line 201,column 9,is_stmt,isa 0
+     449 0000d2 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |201| 
+         0000d4 0000!
+     450            ;* --------------------------------------------------------------------------*
+     451            ;*   BEGIN LOOP $C$L17
+     452            ;*
+     453            ;*   Loop source line                : 201
+     454            ;*   Loop closing brace source line  : 201
+     455            ;*   Known Minimum Trip Count        : 1
+     456            ;*   Known Maximum Trip Count        : 4294967295
+     457            ;*   Known Max Trip Count Factor     : 1
+     458            ;* --------------------------------------------------------------------------*
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   10
+
+     459 0000d6       $C$L17:    
+     460 0000d6 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |201| 
+         0000d8 0000!
+     461 0000da 27FD          JEQ       $C$L17                ; [] |201| 
+     462                                                      ; [] |201| 
+     463            ;* --------------------------------------------------------------------------*
+     464                    .dwpsn  file "../fr2111_swi2c_master.c",line 205,column 13,is_stmt,isa 0
+     465 0000dc B2E2          BIT.B     #4,&P1IN+0            ; [] |205| 
+         0000de 0000!
+     466 0000e0 200A          JNE       $C$L19                ; [] |205| 
+     467                                                      ; [] |205| 
+     468            ;* --------------------------------------------------------------------------*
+     469                    .dwpsn  file "../fr2111_swi2c_master.c",line 209,column 9,is_stmt,isa 0
+     470 0000e2 D3E2          OR.B      #2,&P1DIR+0           ; [] |209| 
+         0000e4 0000!
+     471                    .dwpsn  file "../fr2111_swi2c_master.c",line 210,column 9,is_stmt,isa 0
+     472 0000e6 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |210| 
+         0000e8 0000!
+     473            ;* --------------------------------------------------------------------------*
+     474            ;*   BEGIN LOOP $C$L18
+     475            ;*
+     476            ;*   Loop source line                : 210
+     477            ;*   Loop closing brace source line  : 210
+     478            ;*   Known Minimum Trip Count        : 1
+     479            ;*   Known Maximum Trip Count        : 4294967295
+     480            ;*   Known Max Trip Count Factor     : 1
+     481            ;* --------------------------------------------------------------------------*
+     482 0000ea       $C$L18:    
+     483 0000ea B392          BIT.W     #1,&TA1CCTL0+0        ; [] |210| 
+         0000ec 0000!
+     484 0000ee 27FD          JEQ       $C$L18                ; [] |210| 
+     485                                                      ; [] |210| 
+     486            ;* --------------------------------------------------------------------------*
+     487                    .dwpsn  file "../fr2111_swi2c_master.c",line 163,column 14,is_stmt,isa 0
+     488 0000f0 531B          ADD.W     #1,r11                ; [] |163| 
+     489 0000f2 9E0B          CMP.W     r14,r11               ; [] |163| 
+     490 0000f4 2BC9          JLO       $C$L10                ; [] |163| 
+     491                                                      ; [] |163| 
+     492            ;* --------------------------------------------------------------------------*
+     493 0000f6       $C$L19:    
+     494                    .dwpsn  file "../fr2111_swi2c_master.c",line 215,column 5,is_stmt,isa 0
+     495 0000f6 935F          CMP.B     #1,r15                ; [] |215| 
+     496 0000f8 2002          JNE       $C$L20                ; [] |215| 
+     497                                                      ; [] |215| 
+     498            ;* --------------------------------------------------------------------------*
+     499 0000fa 9E0B          CMP.W     r14,r11               ; [] |215| 
+     500 0000fc 2407          JEQ       $C$L21                ; [] |215| 
+     501                                                      ; [] |215| 
+     502            ;* --------------------------------------------------------------------------*
+     503 0000fe       $C$L20:    
+     504 0000fe 9E0B          CMP.W     r14,r11               ; [] |215| 
+     505 000100 2005          JNE       $C$L21                ; [] |215| 
+     506                                                      ; [] |215| 
+     507            ;* --------------------------------------------------------------------------*
+     508                    .dwpsn  file "../fr2111_swi2c_master.c",line 227,column 9,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   11
+
+     509 000102 C3E2          BIC.B     #2,&P1DIR+0           ; [] |227| 
+         000104 0000!
+     510                    .dwpsn  file "../fr2111_swi2c_master.c",line 228,column 9,is_stmt,isa 0
+     511 000106 C2E2          BIC.B     #4,&P1DIR+0           ; [] |228| 
+         000108 0000!
+     512 00010a 3C13          JMP       $C$L24                ; [] |228| 
+     513                                                      ; [] |228| 
+     514            ;* --------------------------------------------------------------------------*
+     515 00010c       $C$L21:    
+     516                    .dwpsn  file "../fr2111_swi2c_master.c",line 217,column 9,is_stmt,isa 0
+     517 00010c D3E2          OR.B      #2,&P1DIR+0           ; [] |217| 
+         00010e 0000!
+     518                    .dwpsn  file "../fr2111_swi2c_master.c",line 218,column 9,is_stmt,isa 0
+     519 000110 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |218| 
+         000112 0000!
+     520            ;* --------------------------------------------------------------------------*
+     521            ;*   BEGIN LOOP $C$L22
+     522            ;*
+     523            ;*   Loop source line                : 218
+     524            ;*   Loop closing brace source line  : 218
+     525            ;*   Known Minimum Trip Count        : 1
+     526            ;*   Known Maximum Trip Count        : 4294967295
+     527            ;*   Known Max Trip Count Factor     : 1
+     528            ;* --------------------------------------------------------------------------*
+     529 000114       $C$L22:    
+     530 000114 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |218| 
+         000116 0000!
+     531 000118 27FD          JEQ       $C$L22                ; [] |218| 
+     532                                                      ; [] |218| 
+     533            ;* --------------------------------------------------------------------------*
+     534                    .dwpsn  file "../fr2111_swi2c_master.c",line 219,column 9,is_stmt,isa 0
+     535 00011a D2E2          OR.B      #4,&P1DIR+0           ; [] |219| 
+         00011c 0000!
+     536                    .dwpsn  file "../fr2111_swi2c_master.c",line 220,column 9,is_stmt,isa 0
+     537 00011e C392          BIC.W     #1,&TA1CCTL0+0        ; [] |220| 
+         000120 0000!
+     538            ;* --------------------------------------------------------------------------*
+     539            ;*   BEGIN LOOP $C$L23
+     540            ;*
+     541            ;*   Loop source line                : 220
+     542            ;*   Loop closing brace source line  : 220
+     543            ;*   Known Minimum Trip Count        : 1
+     544            ;*   Known Maximum Trip Count        : 4294967295
+     545            ;*   Known Max Trip Count Factor     : 1
+     546            ;* --------------------------------------------------------------------------*
+     547 000122       $C$L23:    
+     548 000122 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |220| 
+         000124 0000!
+     549 000126 27FD          JEQ       $C$L23                ; [] |220| 
+     550                                                      ; [] |220| 
+     551            ;* --------------------------------------------------------------------------*
+     552                    .dwpsn  file "../fr2111_swi2c_master.c",line 221,column 9,is_stmt,isa 0
+     553 000128 C3E2          BIC.B     #2,&P1DIR+0           ; [] |221| 
+         00012a 0000!
+     554                    .dwpsn  file "../fr2111_swi2c_master.c",line 222,column 9,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   12
+
+     555 00012c 4303          NOP       ; [] |222| 
+     556                    .dwpsn  file "../fr2111_swi2c_master.c",line 223,column 9,is_stmt,isa 0
+     557 00012e C2E2          BIC.B     #4,&P1DIR+0           ; [] |223| 
+         000130 0000!
+     558            ;* --------------------------------------------------------------------------*
+     559 000132       $C$L24:    
+     560                    .dwpsn  file "../fr2111_swi2c_master.c",line 232,column 5,is_stmt,isa 0
+     561 000132 4382          MOV.W     #0,&TA1CTL+0          ; [] |232| 
+         000134 0000!
+     562                    .dwpsn  file "../fr2111_swi2c_master.c",line 236,column 9,is_stmt,isa 0
+     563 000136 434C          MOV.B     #0,r12                ; [] |236| 
+     564 000138 9E0B          CMP.W     r14,r11               ; [] |236| 
+     565 00013a 2001          JNE       $C$L25                ; [] |236| 
+     566                                                      ; [] |236| 
+     567            ;* --------------------------------------------------------------------------*
+     568 00013c 435C          MOV.B     #1,r12                ; [] |236| 
+     569            ;* --------------------------------------------------------------------------*
+     570 00013e       $C$L25:    
+     571                    .dwpsn  file "../fr2111_swi2c_master.c",line 239,column 1,is_stmt,isa 0
+     572 00013e 413A          POP       r10                   ; [] 
+     573                    .dwcfi  restore_reg, 10
+     574                    .dwcfi  cfa_offset, 2
+     575            $C$DW$19        .dwtag  DW_TAG_TI_branch
+     576                    .dwattr $C$DW$19, DW_AT_low_pc(0x00)
+     577                    .dwattr $C$DW$19, DW_AT_TI_return
+     578            
+     579 000140 4130          RET       ; [] 
+     580                    ; [] 
+     581                    .dwattr $C$DW$7, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
+     582                    .dwattr $C$DW$7, DW_AT_TI_end_line(0xef)
+     583                    .dwattr $C$DW$7, DW_AT_TI_end_column(0x01)
+     584                    .dwendentry
+     585                    .dwendtag $C$DW$7
+     586            
+     587 000000               .sect   ".text:SWI2C_readData"
+     588                    .clink
+     589            
+     590            $C$DW$20        .dwtag  DW_TAG_subprogram
+     591                    .dwattr $C$DW$20, DW_AT_name("SWI2C_readData")
+     592                    .dwattr $C$DW$20, DW_AT_low_pc(SWI2C_readData)
+     593                    .dwattr $C$DW$20, DW_AT_high_pc(0x00)
+     594                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("SWI2C_readData")
+     595                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$28)
+     596                    .dwattr $C$DW$20, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
+     597                    .dwattr $C$DW$20, DW_AT_TI_begin_line(0xf1)
+     598                    .dwattr $C$DW$20, DW_AT_TI_begin_column(0x0d)
+     599                    .dwattr $C$DW$20, DW_AT_decl_file("../fr2111_swi2c_master.c")
+     600                    .dwattr $C$DW$20, DW_AT_decl_line(0xf1)
+     601                    .dwattr $C$DW$20, DW_AT_decl_column(0x0d)
+     602                    .dwattr $C$DW$20, DW_AT_TI_max_frame_size(0x02)
+     603                    .dwpsn  file "../fr2111_swi2c_master.c",line 243,column 1,is_stmt,address SWI2C_readData,isa 0
+     604            
+     605                    .dwfde $C$DW$CIE, SWI2C_readData
+     606            $C$DW$21        .dwtag  DW_TAG_formal_parameter
+     607                    .dwattr $C$DW$21, DW_AT_name("addr")
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   13
+
+     608                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("addr")
+     609                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$23)
+     610                    .dwattr $C$DW$21, DW_AT_location[DW_OP_reg12]
+     611            
+     612            $C$DW$22        .dwtag  DW_TAG_formal_parameter
+     613                    .dwattr $C$DW$22, DW_AT_name("inputArray")
+     614                    .dwattr $C$DW$22, DW_AT_TI_symbol_name("inputArray")
+     615                    .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$27)
+     616                    .dwattr $C$DW$22, DW_AT_location[DW_OP_reg13]
+     617            
+     618            $C$DW$23        .dwtag  DW_TAG_formal_parameter
+     619                    .dwattr $C$DW$23, DW_AT_name("size")
+     620                    .dwattr $C$DW$23, DW_AT_TI_symbol_name("size")
+     621                    .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$26)
+     622                    .dwattr $C$DW$23, DW_AT_location[DW_OP_reg14]
+     623            
+     624            
+     625            ;*****************************************************************************
+     626            ;* FUNCTION NAME: SWI2C_readData                                             *
+     627            ;*                                                                           *
+     628            ;*   Regs Modified     : SP,SR,r11,r12,r15                                   *
+     629            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     630            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     631            ;*****************************************************************************
+     632 000000       SWI2C_readData:
+     633            ;* --------------------------------------------------------------------------*
+     634                    .dwcfi  cfa_offset, 2
+     635                    .dwcfi  save_reg_to_mem, 16, -2
+     636            ;* r12   assigned to addr
+     637            $C$DW$24        .dwtag  DW_TAG_variable
+     638                    .dwattr $C$DW$24, DW_AT_name("addr")
+     639                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("addr")
+     640                    .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$23)
+     641                    .dwattr $C$DW$24, DW_AT_location[DW_OP_reg12]
+     642            
+     643            ;* r13   assigned to inputArray
+     644            $C$DW$25        .dwtag  DW_TAG_variable
+     645                    .dwattr $C$DW$25, DW_AT_name("inputArray")
+     646                    .dwattr $C$DW$25, DW_AT_TI_symbol_name("inputArray")
+     647                    .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$27)
+     648                    .dwattr $C$DW$25, DW_AT_location[DW_OP_reg13]
+     649            
+     650            ;* r14   assigned to size
+     651            $C$DW$26        .dwtag  DW_TAG_variable
+     652                    .dwattr $C$DW$26, DW_AT_name("size")
+     653                    .dwattr $C$DW$26, DW_AT_TI_symbol_name("size")
+     654                    .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$26)
+     655                    .dwattr $C$DW$26, DW_AT_location[DW_OP_reg14]
+     656            
+     657            ;* r15   assigned to bits
+     658            $C$DW$27        .dwtag  DW_TAG_variable
+     659                    .dwattr $C$DW$27, DW_AT_name("bits")
+     660                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("bits")
+     661                    .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$77)
+     662                    .dwattr $C$DW$27, DW_AT_location[DW_OP_reg15]
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   14
+
+     663            
+     664            ;* r12   assigned to temp
+     665            $C$DW$28        .dwtag  DW_TAG_variable
+     666                    .dwattr $C$DW$28, DW_AT_name("temp")
+     667                    .dwattr $C$DW$28, DW_AT_TI_symbol_name("temp")
+     668                    .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$77)
+     669                    .dwattr $C$DW$28, DW_AT_location[DW_OP_reg12]
+     670            
+     671            ;* r11   assigned to ii
+     672            $C$DW$29        .dwtag  DW_TAG_variable
+     673                    .dwattr $C$DW$29, DW_AT_name("ii")
+     674                    .dwattr $C$DW$29, DW_AT_TI_symbol_name("ii")
+     675                    .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$83)
+     676                    .dwattr $C$DW$29, DW_AT_location[DW_OP_reg11]
+     677            
+     678                    .dwpsn  file "../fr2111_swi2c_master.c",line 245,column 17,is_stmt,isa 0
+     679 000000 430B          MOV.W     #0,r11                ; [] |245| 
+     680                    .dwpsn  file "../fr2111_swi2c_master.c",line 248,column 5,is_stmt,isa 0
+     681 000002 40B2          MOV.W     #532,&TA1CTL+0        ; [] |248| 
+         000004 0214 
+         000006 0000!
+     682                    .dwpsn  file "../fr2111_swi2c_master.c",line 251,column 5,is_stmt,isa 0
+     683 000008 D2E2          OR.B      #4,&P1DIR+0           ; [] |251| 
+         00000a 0000!
+     684                    .dwpsn  file "../fr2111_swi2c_master.c",line 252,column 5,is_stmt,isa 0
+     685 00000c 4303          NOP       ; [] |252| 
+     686                    .dwpsn  file "../fr2111_swi2c_master.c",line 253,column 5,is_stmt,isa 0
+     687 00000e D3E2          OR.B      #2,&P1DIR+0           ; [] |253| 
+         000010 0000!
+     688                    .dwpsn  file "../fr2111_swi2c_master.c",line 254,column 5,is_stmt,isa 0
+     689 000012 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |254| 
+         000014 0000!
+     690            ;* --------------------------------------------------------------------------*
+     691            ;*   BEGIN LOOP $C$L26
+     692            ;*
+     693            ;*   Loop source line                : 254
+     694            ;*   Loop closing brace source line  : 254
+     695            ;*   Known Minimum Trip Count        : 1
+     696            ;*   Known Maximum Trip Count        : 4294967295
+     697            ;*   Known Max Trip Count Factor     : 1
+     698            ;* --------------------------------------------------------------------------*
+     699 000016       $C$L26:    
+     700 000016 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |254| 
+         000018 0000!
+     701 00001a 27FD          JEQ       $C$L26                ; [] |254| 
+     702                                                      ; [] |254| 
+     703            ;* --------------------------------------------------------------------------*
+     704                    .dwpsn  file "../fr2111_swi2c_master.c",line 257,column 5,is_stmt,isa 0
+     705 00001c 4C4C          MOV.B     r12,r12               ; [] |257| 
+     706 00001e 5C0C          RLA.W     r12                   ; [] |257| 
+     707 000020 D31C          OR.W      #1,r12                ; [] |257| 
+     708                    .dwpsn  file "../fr2111_swi2c_master.c",line 258,column 5,is_stmt,isa 0
+     709 000022 423F          MOV.W     #8,r15                ; [] |258| 
+     710            ;* --------------------------------------------------------------------------*
+     711            ;*   BEGIN LOOP $C$L27
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   15
+
+     712            ;*
+     713            ;*   Loop source line                : 261
+     714            ;*   Loop closing brace source line  : 283
+     715            ;*   Known Minimum Trip Count        : 1
+     716            ;*   Known Maximum Trip Count        : 4294967295
+     717            ;*   Known Max Trip Count Factor     : 1
+     718            ;* --------------------------------------------------------------------------*
+     719 000024       $C$L27:    
+     720                    .dwpsn  file "../fr2111_swi2c_master.c",line 264,column 9,is_stmt,isa 0
+     721 000024 B03C          BIT.W     #128,r12              ; [] |264| 
+         000026 0080 
+     722 000028 2003          JNE       $C$L28                ; [] |264| 
+     723                                                      ; [] |264| 
+     724            ;* --------------------------------------------------------------------------*
+     725                    .dwpsn  file "../fr2111_swi2c_master.c",line 270,column 13,is_stmt,isa 0
+     726 00002a D2E2          OR.B      #4,&P1DIR+0           ; [] |270| 
+         00002c 0000!
+     727 00002e 3C02          JMP       $C$L29                ; [] |270| 
+     728                                                      ; [] |270| 
+     729            ;* --------------------------------------------------------------------------*
+     730 000030       $C$L28:    
+     731                    .dwpsn  file "../fr2111_swi2c_master.c",line 266,column 13,is_stmt,isa 0
+     732 000030 C2E2          BIC.B     #4,&P1DIR+0           ; [] |266| 
+         000032 0000!
+     733            ;* --------------------------------------------------------------------------*
+     734 000034       $C$L29:    
+     735                    .dwpsn  file "../fr2111_swi2c_master.c",line 274,column 9,is_stmt,isa 0
+     736 000034 C3E2          BIC.B     #2,&P1DIR+0           ; [] |274| 
+         000036 0000!
+     737                    .dwpsn  file "../fr2111_swi2c_master.c",line 275,column 9,is_stmt,isa 0
+     738 000038 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |275| 
+         00003a 0000!
+     739            ;* --------------------------------------------------------------------------*
+     740            ;*   BEGIN LOOP $C$L30
+     741            ;*
+     742            ;*   Loop source line                : 275
+     743            ;*   Loop closing brace source line  : 275
+     744            ;*   Known Minimum Trip Count        : 1
+     745            ;*   Known Maximum Trip Count        : 4294967295
+     746            ;*   Known Max Trip Count Factor     : 1
+     747            ;* --------------------------------------------------------------------------*
+     748 00003c       $C$L30:    
+     749 00003c B392          BIT.W     #1,&TA1CCTL0+0        ; [] |275| 
+         00003e 0000!
+     750 000040 27FD          JEQ       $C$L30                ; [] |275| 
+     751                                                      ; [] |275| 
+     752            ;* --------------------------------------------------------------------------*
+     753                    .dwpsn  file "../fr2111_swi2c_master.c",line 278,column 9,is_stmt,isa 0
+     754 000042 5C0C          RLA.W     r12                   ; [] |278| 
+     755                    .dwpsn  file "../fr2111_swi2c_master.c",line 279,column 9,is_stmt,isa 0
+     756 000044 831F          SUB.W     #1,r15                ; [] |279| 
+     757                    .dwpsn  file "../fr2111_swi2c_master.c",line 280,column 9,is_stmt,isa 0
+     758 000046 D3E2          OR.B      #2,&P1DIR+0           ; [] |280| 
+         000048 0000!
+     759                    .dwpsn  file "../fr2111_swi2c_master.c",line 281,column 9,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   16
+
+     760 00004a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |281| 
+         00004c 0000!
+     761            ;* --------------------------------------------------------------------------*
+     762            ;*   BEGIN LOOP $C$L31
+     763            ;*
+     764            ;*   Loop source line                : 281
+     765            ;*   Loop closing brace source line  : 281
+     766            ;*   Known Minimum Trip Count        : 1
+     767            ;*   Known Maximum Trip Count        : 4294967295
+     768            ;*   Known Max Trip Count Factor     : 1
+     769            ;* --------------------------------------------------------------------------*
+     770 00004e       $C$L31:    
+     771 00004e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |281| 
+         000050 0000!
+     772 000052 27FD          JEQ       $C$L31                ; [] |281| 
+     773                                                      ; [] |281| 
+     774            ;* --------------------------------------------------------------------------*
+     775                    .dwpsn  file "../fr2111_swi2c_master.c",line 283,column 14,is_stmt,isa 0
+     776 000054 930F          TST.W     r15                   ; [] |283| 
+     777 000056 23E6          JNE       $C$L27                ; [] |283| 
+     778                                                      ; [] |283| 
+     779            ;* --------------------------------------------------------------------------*
+     780                    .dwpsn  file "../fr2111_swi2c_master.c",line 288,column 5,is_stmt,isa 0
+     781 000058 C2E2          BIC.B     #4,&P1DIR+0           ; [] |288| 
+         00005a 0000!
+     782                    .dwpsn  file "../fr2111_swi2c_master.c",line 289,column 5,is_stmt,isa 0
+     783 00005c C3E2          BIC.B     #2,&P1DIR+0           ; [] |289| 
+         00005e 0000!
+     784                    .dwpsn  file "../fr2111_swi2c_master.c",line 290,column 5,is_stmt,isa 0
+     785 000060 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |290| 
+         000062 0000!
+     786            ;* --------------------------------------------------------------------------*
+     787            ;*   BEGIN LOOP $C$L32
+     788            ;*
+     789            ;*   Loop source line                : 290
+     790            ;*   Loop closing brace source line  : 290
+     791            ;*   Known Minimum Trip Count        : 1
+     792            ;*   Known Maximum Trip Count        : 4294967295
+     793            ;*   Known Max Trip Count Factor     : 1
+     794            ;* --------------------------------------------------------------------------*
+     795 000064       $C$L32:    
+     796 000064 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |290| 
+         000066 0000!
+     797 000068 27FD          JEQ       $C$L32                ; [] |290| 
+     798                                                      ; [] |290| 
+     799            ;* --------------------------------------------------------------------------*
+     800                    .dwpsn  file "../fr2111_swi2c_master.c",line 294,column 9,is_stmt,isa 0
+     801 00006a B2E2          BIT.B     #4,&P1IN+0            ; [] |294| 
+         00006c 0000!
+     802 00006e 2040          JNE       $C$L43                ; [] |294| 
+     803                                                      ; [] |294| 
+     804            ;* --------------------------------------------------------------------------*
+     805                    .dwpsn  file "../fr2111_swi2c_master.c",line 298,column 14,is_stmt,isa 0
+     806 000070 9E0B          CMP.W     r14,r11               ; [] |298| 
+     807 000072 2C3E          JHS       $C$L43                ; [] |298| 
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   17
+
+     808                                                      ; [] |298| 
+     809            ;* --------------------------------------------------------------------------*
+     810            ;*   BEGIN LOOP $C$L33
+     811            ;*
+     812            ;*   Loop source line                : 303
+     813            ;*   Loop closing brace source line  : 303
+     814            ;*   Known Minimum Trip Count        : 1
+     815            ;*   Known Maximum Trip Count        : 4294967295
+     816            ;*   Known Max Trip Count Factor     : 1
+     817            ;* --------------------------------------------------------------------------*
+     818 000074       $C$L33:    
+     819                    .dwpsn  file "../fr2111_swi2c_master.c",line 303,column 15,is_stmt,isa 0
+     820 000074 B3E2          BIT.B     #2,&P1IN+0            ; [] |303| 
+         000076 0000!
+     821 000078 27FD          JEQ       $C$L33                ; [] |303| 
+     822                                                      ; [] |303| 
+     823            ;* --------------------------------------------------------------------------*
+     824                    .dwpsn  file "../fr2111_swi2c_master.c",line 306,column 9,is_stmt,isa 0
+     825 00007a 430C          MOV.W     #0,r12                ; [] |306| 
+     826                    .dwpsn  file "../fr2111_swi2c_master.c",line 307,column 9,is_stmt,isa 0
+     827 00007c 423F          MOV.W     #8,r15                ; [] |307| 
+     828                    .dwpsn  file "../fr2111_swi2c_master.c",line 310,column 10,is_stmt,isa 0
+     829 00007e D3E2          OR.B      #2,&P1DIR+0           ; [] |310| 
+         000080 0000!
+     830                    .dwpsn  file "../fr2111_swi2c_master.c",line 311,column 10,is_stmt,isa 0
+     831 000082 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |311| 
+         000084 0000!
+     832            ;* --------------------------------------------------------------------------*
+     833            ;*   BEGIN LOOP $C$L34
+     834            ;*
+     835            ;*   Loop source line                : 311
+     836            ;*   Loop closing brace source line  : 311
+     837            ;*   Known Minimum Trip Count        : 1
+     838            ;*   Known Maximum Trip Count        : 4294967295
+     839            ;*   Known Max Trip Count Factor     : 1
+     840            ;* --------------------------------------------------------------------------*
+     841 000086       $C$L34:    
+     842 000086 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |311| 
+         000088 0000!
+     843 00008a 27FD          JEQ       $C$L34                ; [] |311| 
+     844                                                      ; [] |311| 
+     845            ;* --------------------------------------------------------------------------*
+     846                    .dwpsn  file "../fr2111_swi2c_master.c",line 312,column 10,is_stmt,isa 0
+     847 00008c C2E2          BIC.B     #4,&P1DIR+0           ; [] |312| 
+         00008e 0000!
+     848            ;* --------------------------------------------------------------------------*
+     849            ;*   BEGIN LOOP $C$L35
+     850            ;*
+     851            ;*   Loop source line                : 315
+     852            ;*   Loop closing brace source line  : 332
+     853            ;*   Known Minimum Trip Count        : 1
+     854            ;*   Known Maximum Trip Count        : 4294967295
+     855            ;*   Known Max Trip Count Factor     : 1
+     856            ;* --------------------------------------------------------------------------*
+     857 000090       $C$L35:    
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   18
+
+     858                    .dwpsn  file "../fr2111_swi2c_master.c",line 318,column 13,is_stmt,isa 0
+     859 000090 5C0C          RLA.W     r12                   ; [] |318| 
+     860                    .dwpsn  file "../fr2111_swi2c_master.c",line 319,column 13,is_stmt,isa 0
+     861 000092 C3E2          BIC.B     #2,&P1DIR+0           ; [] |319| 
+         000094 0000!
+     862                    .dwpsn  file "../fr2111_swi2c_master.c",line 320,column 13,is_stmt,isa 0
+     863 000096 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |320| 
+         000098 0000!
+     864            ;* --------------------------------------------------------------------------*
+     865            ;*   BEGIN LOOP $C$L36
+     866            ;*
+     867            ;*   Loop source line                : 320
+     868            ;*   Loop closing brace source line  : 320
+     869            ;*   Known Minimum Trip Count        : 1
+     870            ;*   Known Maximum Trip Count        : 4294967295
+     871            ;*   Known Max Trip Count Factor     : 1
+     872            ;* --------------------------------------------------------------------------*
+     873 00009a       $C$L36:    
+     874 00009a B392          BIT.W     #1,&TA1CCTL0+0        ; [] |320| 
+         00009c 0000!
+     875 00009e 27FD          JEQ       $C$L36                ; [] |320| 
+     876                                                      ; [] |320| 
+     877            ;* --------------------------------------------------------------------------*
+     878                    .dwpsn  file "../fr2111_swi2c_master.c",line 323,column 13,is_stmt,isa 0
+     879 0000a0 B2E2          BIT.B     #4,&P1IN+0            ; [] |323| 
+         0000a2 0000!
+     880 0000a4 2401          JEQ       $C$L37                ; [] |323| 
+     881                                                      ; [] |323| 
+     882            ;* --------------------------------------------------------------------------*
+     883                    .dwpsn  file "../fr2111_swi2c_master.c",line 325,column 15,is_stmt,isa 0
+     884 0000a6 531C          ADD.W     #1,r12                ; [] |325| 
+     885            ;* --------------------------------------------------------------------------*
+     886 0000a8       $C$L37:    
+     887                    .dwpsn  file "../fr2111_swi2c_master.c",line 329,column 13,is_stmt,isa 0
+     888 0000a8 831F          SUB.W     #1,r15                ; [] |329| 
+     889                    .dwpsn  file "../fr2111_swi2c_master.c",line 330,column 13,is_stmt,isa 0
+     890 0000aa D3E2          OR.B      #2,&P1DIR+0           ; [] |330| 
+         0000ac 0000!
+     891                    .dwpsn  file "../fr2111_swi2c_master.c",line 331,column 13,is_stmt,isa 0
+     892 0000ae C392          BIC.W     #1,&TA1CCTL0+0        ; [] |331| 
+         0000b0 0000!
+     893            ;* --------------------------------------------------------------------------*
+     894            ;*   BEGIN LOOP $C$L38
+     895            ;*
+     896            ;*   Loop source line                : 331
+     897            ;*   Loop closing brace source line  : 331
+     898            ;*   Known Minimum Trip Count        : 1
+     899            ;*   Known Maximum Trip Count        : 4294967295
+     900            ;*   Known Max Trip Count Factor     : 1
+     901            ;* --------------------------------------------------------------------------*
+     902 0000b2       $C$L38:    
+     903 0000b2 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |331| 
+         0000b4 0000!
+     904 0000b6 27FD          JEQ       $C$L38                ; [] |331| 
+     905                                                      ; [] |331| 
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   19
+
+     906            ;* --------------------------------------------------------------------------*
+     907                    .dwpsn  file "../fr2111_swi2c_master.c",line 333,column 16,is_stmt,isa 0
+     908 0000b8 930F          TST.W     r15                   ; [] |333| 
+     909 0000ba 23EA          JNE       $C$L35                ; [] |333| 
+     910                                                      ; [] |333| 
+     911            ;* --------------------------------------------------------------------------*
+     912                    .dwpsn  file "../fr2111_swi2c_master.c",line 336,column 9,is_stmt,isa 0
+     913 0000bc 4D0F          MOV.W     r13,r15               ; [] |336| 
+     914 0000be 5B0F          ADD.W     r11,r15               ; [] |336| 
+     915 0000c0 4CCF          MOV.B     r12,0(r15)            ; [] |336| 
+         0000c2 0000 
+     916                    .dwpsn  file "../fr2111_swi2c_master.c",line 339,column 9,is_stmt,isa 0
+     917 0000c4 4B0F          MOV.W     r11,r15               ; [] |339| 
+     918 0000c6 8E0F          SUB.W     r14,r15               ; [] |339| 
+     919 0000c8 933F          CMP.W     #65535,r15            ; [] |339| 
+     920 0000ca 2403          JEQ       $C$L39                ; [] |339| 
+     921                                                      ; [] |339| 
+     922            ;* --------------------------------------------------------------------------*
+     923                    .dwpsn  file "../fr2111_swi2c_master.c",line 342,column 10,is_stmt,isa 0
+     924 0000cc D2E2          OR.B      #4,&P1DIR+0           ; [] |342| 
+         0000ce 0000!
+     925 0000d0 3C02          JMP       $C$L40                ; [] |342| 
+     926                                                      ; [] |342| 
+     927            ;* --------------------------------------------------------------------------*
+     928 0000d2       $C$L39:    
+     929                    .dwpsn  file "../fr2111_swi2c_master.c",line 340,column 13,is_stmt,isa 0
+     930 0000d2 C2E2          BIC.B     #4,&P1DIR+0           ; [] |340| 
+         0000d4 0000!
+     931            ;* --------------------------------------------------------------------------*
+     932 0000d6       $C$L40:    
+     933                    .dwpsn  file "../fr2111_swi2c_master.c",line 343,column 9,is_stmt,isa 0
+     934 0000d6 C3E2          BIC.B     #2,&P1DIR+0           ; [] |343| 
+         0000d8 0000!
+     935            ;* --------------------------------------------------------------------------*
+     936            ;*   BEGIN LOOP $C$L41
+     937            ;*
+     938            ;*   Loop source line                : 348
+     939            ;*   Loop closing brace source line  : 348
+     940            ;*   Known Minimum Trip Count        : 1
+     941            ;*   Known Maximum Trip Count        : 4294967295
+     942            ;*   Known Max Trip Count Factor     : 1
+     943            ;* --------------------------------------------------------------------------*
+     944 0000da       $C$L41:    
+     945                    .dwpsn  file "../fr2111_swi2c_master.c",line 348,column 15,is_stmt,isa 0
+     946 0000da B3E2          BIT.B     #2,&P1IN+0            ; [] |348| 
+         0000dc 0000!
+     947 0000de 27FD          JEQ       $C$L41                ; [] |348| 
+     948                                                      ; [] |348| 
+     949            ;* --------------------------------------------------------------------------*
+     950                    .dwpsn  file "../fr2111_swi2c_master.c",line 350,column 9,is_stmt,isa 0
+     951 0000e0 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |350| 
+         0000e2 0000!
+     952            ;* --------------------------------------------------------------------------*
+     953            ;*   BEGIN LOOP $C$L42
+     954            ;*
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   20
+
+     955            ;*   Loop source line                : 350
+     956            ;*   Loop closing brace source line  : 350
+     957            ;*   Known Minimum Trip Count        : 1
+     958            ;*   Known Maximum Trip Count        : 4294967295
+     959            ;*   Known Max Trip Count Factor     : 1
+     960            ;* --------------------------------------------------------------------------*
+     961 0000e4       $C$L42:    
+     962 0000e4 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |350| 
+         0000e6 0000!
+     963 0000e8 27FD          JEQ       $C$L42                ; [] |350| 
+     964                                                      ; [] |350| 
+     965            ;* --------------------------------------------------------------------------*
+     966                    .dwpsn  file "../fr2111_swi2c_master.c",line 298,column 14,is_stmt,isa 0
+     967 0000ea 531B          ADD.W     #1,r11                ; [] |298| 
+     968 0000ec 9E0B          CMP.W     r14,r11               ; [] |298| 
+     969 0000ee 2BC2          JLO       $C$L33                ; [] |298| 
+     970                                                      ; [] |298| 
+     971            ;* --------------------------------------------------------------------------*
+     972 0000f0       $C$L43:    
+     973                    .dwpsn  file "../fr2111_swi2c_master.c",line 356,column 5,is_stmt,isa 0
+     974 0000f0 D3E2          OR.B      #2,&P1DIR+0           ; [] |356| 
+         0000f2 0000!
+     975                    .dwpsn  file "../fr2111_swi2c_master.c",line 357,column 5,is_stmt,isa 0
+     976 0000f4 D2E2          OR.B      #4,&P1DIR+0           ; [] |357| 
+         0000f6 0000!
+     977                    .dwpsn  file "../fr2111_swi2c_master.c",line 358,column 5,is_stmt,isa 0
+     978 0000f8 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |358| 
+         0000fa 0000!
+     979            ;* --------------------------------------------------------------------------*
+     980            ;*   BEGIN LOOP $C$L44
+     981            ;*
+     982            ;*   Loop source line                : 358
+     983            ;*   Loop closing brace source line  : 358
+     984            ;*   Known Minimum Trip Count        : 1
+     985            ;*   Known Maximum Trip Count        : 4294967295
+     986            ;*   Known Max Trip Count Factor     : 1
+     987            ;* --------------------------------------------------------------------------*
+     988 0000fc       $C$L44:    
+     989 0000fc B392          BIT.W     #1,&TA1CCTL0+0        ; [] |358| 
+         0000fe 0000!
+     990 000100 27FD          JEQ       $C$L44                ; [] |358| 
+     991                                                      ; [] |358| 
+     992            ;* --------------------------------------------------------------------------*
+     993                    .dwpsn  file "../fr2111_swi2c_master.c",line 359,column 5,is_stmt,isa 0
+     994 000102 C3E2          BIC.B     #2,&P1DIR+0           ; [] |359| 
+         000104 0000!
+     995                    .dwpsn  file "../fr2111_swi2c_master.c",line 360,column 5,is_stmt,isa 0
+     996 000106 4303          NOP       ; [] |360| 
+     997                    .dwpsn  file "../fr2111_swi2c_master.c",line 361,column 5,is_stmt,isa 0
+     998 000108 C2E2          BIC.B     #4,&P1DIR+0           ; [] |361| 
+         00010a 0000!
+     999                    .dwpsn  file "../fr2111_swi2c_master.c",line 362,column 5,is_stmt,isa 0
+    1000 00010c C392          BIC.W     #1,&TA1CCTL0+0        ; [] |362| 
+         00010e 0000!
+    1001            ;* --------------------------------------------------------------------------*
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   21
+
+    1002            ;*   BEGIN LOOP $C$L45
+    1003            ;*
+    1004            ;*   Loop source line                : 362
+    1005            ;*   Loop closing brace source line  : 362
+    1006            ;*   Known Minimum Trip Count        : 1
+    1007            ;*   Known Maximum Trip Count        : 4294967295
+    1008            ;*   Known Max Trip Count Factor     : 1
+    1009            ;* --------------------------------------------------------------------------*
+    1010 000110       $C$L45:    
+    1011 000110 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |362| 
+         000112 0000!
+    1012 000114 27FD          JEQ       $C$L45                ; [] |362| 
+    1013                                                      ; [] |362| 
+    1014            ;* --------------------------------------------------------------------------*
+    1015                    .dwpsn  file "../fr2111_swi2c_master.c",line 365,column 5,is_stmt,isa 0
+    1016 000116 4382          MOV.W     #0,&TA1CTL+0          ; [] |365| 
+         000118 0000!
+    1017                    .dwpsn  file "../fr2111_swi2c_master.c",line 369,column 9,is_stmt,isa 0
+    1018 00011a 434C          MOV.B     #0,r12                ; [] |369| 
+    1019 00011c 9E0B          CMP.W     r14,r11               ; [] |369| 
+    1020 00011e 2001          JNE       $C$L46                ; [] |369| 
+    1021                                                      ; [] |369| 
+    1022            ;* --------------------------------------------------------------------------*
+    1023 000120 435C          MOV.B     #1,r12                ; [] |369| 
+    1024            ;* --------------------------------------------------------------------------*
+    1025 000122       $C$L46:    
+    1026                    .dwpsn  file "../fr2111_swi2c_master.c",line 372,column 1,is_stmt,isa 0
+    1027            $C$DW$30        .dwtag  DW_TAG_TI_branch
+    1028                    .dwattr $C$DW$30, DW_AT_low_pc(0x00)
+    1029                    .dwattr $C$DW$30, DW_AT_TI_return
+    1030            
+    1031 000122 4130          RET       ; [] 
+    1032                    ; [] 
+    1033                    .dwattr $C$DW$20, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
+    1034                    .dwattr $C$DW$20, DW_AT_TI_end_line(0x174)
+    1035                    .dwattr $C$DW$20, DW_AT_TI_end_column(0x01)
+    1036                    .dwendentry
+    1037                    .dwendtag $C$DW$20
+    1038            
+    1039 000000               .sect   ".text:SWI2C_performI2CTransaction"
+    1040                    .clink
+    1041                    .global SWI2C_performI2CTransaction
+    1042            
+    1043            $C$DW$31        .dwtag  DW_TAG_subprogram
+    1044                    .dwattr $C$DW$31, DW_AT_name("SWI2C_performI2CTransaction")
+    1045                    .dwattr $C$DW$31, DW_AT_low_pc(SWI2C_performI2CTransaction)
+    1046                    .dwattr $C$DW$31, DW_AT_high_pc(0x00)
+    1047                    .dwattr $C$DW$31, DW_AT_TI_symbol_name("SWI2C_performI2CTransaction")
+    1048                    .dwattr $C$DW$31, DW_AT_external
+    1049                    .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$28)
+    1050                    .dwattr $C$DW$31, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
+    1051                    .dwattr $C$DW$31, DW_AT_TI_begin_line(0x39)
+    1052                    .dwattr $C$DW$31, DW_AT_TI_begin_column(0x06)
+    1053                    .dwattr $C$DW$31, DW_AT_decl_file("../fr2111_swi2c_master.c")
+    1054                    .dwattr $C$DW$31, DW_AT_decl_line(0x39)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   22
+
+    1055                    .dwattr $C$DW$31, DW_AT_decl_column(0x06)
+    1056                    .dwattr $C$DW$31, DW_AT_TI_max_frame_size(0x04)
+    1057                    .dwpsn  file "../fr2111_swi2c_master.c",line 58,column 1,is_stmt,address SWI2C_performI2CTrans
+    1058            
+    1059                    .dwfde $C$DW$CIE, SWI2C_performI2CTransaction
+    1060            $C$DW$32        .dwtag  DW_TAG_formal_parameter
+    1061                    .dwattr $C$DW$32, DW_AT_name("i2cTransaction")
+    1062                    .dwattr $C$DW$32, DW_AT_TI_symbol_name("i2cTransaction")
+    1063                    .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$32)
+    1064                    .dwattr $C$DW$32, DW_AT_location[DW_OP_reg12]
+    1065            
+    1066            
+    1067            ;*****************************************************************************
+    1068            ;* FUNCTION NAME: SWI2C_performI2CTransaction                                *
+    1069            ;*                                                                           *
+    1070            ;*   Regs Modified     : SP,SR,r10,r11,r12,r13,r14,r15                       *
+    1071            ;*   Regs Used         : SP,SR,r10,r11,r12,r13,r14,r15                       *
+    1072            ;*   Local Frame Size  : 0 Args + 0 Auto + 2 Save = 2 byte                   *
+    1073            ;*****************************************************************************
+    1074 000000       SWI2C_performI2CTransaction:
+    1075            ;* --------------------------------------------------------------------------*
+    1076                    .dwcfi  cfa_offset, 2
+    1077                    .dwcfi  save_reg_to_mem, 16, -2
+    1078 000000 120A          PUSH.W    r10                   ; [] 
+    1079                    .dwcfi  cfa_offset, 4
+    1080                    .dwcfi  save_reg_to_mem, 10, -4
+    1081            ;* r10   assigned to i2cTransaction
+    1082            $C$DW$33        .dwtag  DW_TAG_variable
+    1083                    .dwattr $C$DW$33, DW_AT_name("i2cTransaction")
+    1084                    .dwattr $C$DW$33, DW_AT_TI_symbol_name("i2cTransaction")
+    1085                    .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$32)
+    1086                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg10]
+    1087            
+    1088 000002 4C0A          MOV.W     r12,r10               ; [] |58| 
+    1089                    .dwpsn  file "../fr2111_swi2c_master.c",line 59,column 5,is_stmt,isa 0
+    1090 000004 938A          TST.W     2(r10)                ; [] |59| 
+         000006 0002 
+    1091 000008 241E          JEQ       $C$L49                ; [] |59| 
+    1092                                                      ; [] |59| 
+    1093            ;* --------------------------------------------------------------------------*
+    1094                    .dwpsn  file "../fr2111_swi2c_master.c",line 62,column 9,is_stmt,isa 0
+    1095 00000a 93CA          TST.B     10(r10)               ; [] |62| 
+         00000c 000A 
+    1096 00000e 2403          JEQ       $C$L47                ; [] |62| 
+    1097                                                      ; [] |62| 
+    1098            ;* --------------------------------------------------------------------------*
+    1099 000010 938A          TST.W     6(r10)                ; [] |62| 
+         000012 0006 
+    1100 000014 200C          JNE       $C$L48                ; [] |62| 
+    1101                                                      ; [] |62| 
+    1102            ;* --------------------------------------------------------------------------*
+    1103 000016       $C$L47:    
+    1104                    .dwpsn  file "../fr2111_swi2c_master.c",line 73,column 13,is_stmt,isa 0
+    1105 000016 4A6C          MOV.B     @r10,r12              ; [] |73| 
+    1106 000018 4A1D          MOV.W     4(r10),r13            ; [] |73| 
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   23
+
+         00001a 0004 
+    1107 00001c 4A1E          MOV.W     2(r10),r14            ; [] |73| 
+         00001e 0002 
+    1108 000020 435F          MOV.B     #1,r15                ; [] |73| 
+    1109            $C$DW$34        .dwtag  DW_TAG_TI_branch
+    1110                    .dwattr $C$DW$34, DW_AT_low_pc(0x00)
+    1111                    .dwattr $C$DW$34, DW_AT_name("SWI2C_writeData")
+    1112                    .dwattr $C$DW$34, DW_AT_TI_call
+    1113            
+    1114 000022 12B0          CALL      #SWI2C_writeData      ; [] |73| 
+         000024 0000!
+    1115                                                      ; [] |73| 
+    1116 000026 934C          TST.B     r12                   ; [] |73| 
+    1117 000028 200E          JNE       $C$L49                ; [] |73| 
+    1118                                                      ; [] |73| 
+    1119            ;* --------------------------------------------------------------------------*
+    1120                    .dwpsn  file "../fr2111_swi2c_master.c",line 77,column 17,is_stmt,isa 0
+    1121 00002a 434C          MOV.B     #0,r12                ; [] |77| 
+    1122 00002c 3C1B          JMP       $C$L52                ; [] |77| 
+    1123                                                      ; [] |77| 
+    1124            ;* --------------------------------------------------------------------------*
+    1125 00002e       $C$L48:    
+    1126                    .dwpsn  file "../fr2111_swi2c_master.c",line 64,column 13,is_stmt,isa 0
+    1127 00002e 4A6C          MOV.B     @r10,r12              ; [] |64| 
+    1128 000030 4A1D          MOV.W     4(r10),r13            ; [] |64| 
+         000032 0004 
+    1129 000034 4A1E          MOV.W     2(r10),r14            ; [] |64| 
+         000036 0002 
+    1130 000038 434F          MOV.B     #0,r15                ; [] |64| 
+    1131            $C$DW$35        .dwtag  DW_TAG_TI_branch
+    1132                    .dwattr $C$DW$35, DW_AT_low_pc(0x00)
+    1133                    .dwattr $C$DW$35, DW_AT_name("SWI2C_writeData")
+    1134                    .dwattr $C$DW$35, DW_AT_TI_call
+    1135            
+    1136 00003a 12B0          CALL      #SWI2C_writeData      ; [] |64| 
+         00003c 0000!
+    1137                                                      ; [] |64| 
+    1138 00003e 934C          TST.B     r12                   ; [] |64| 
+    1139 000040 2002          JNE       $C$L49                ; [] |64| 
+    1140                                                      ; [] |64| 
+    1141            ;* --------------------------------------------------------------------------*
+    1142                    .dwpsn  file "../fr2111_swi2c_master.c",line 68,column 17,is_stmt,isa 0
+    1143 000042 434C          MOV.B     #0,r12                ; [] |68| 
+    1144 000044 3C0F          JMP       $C$L52                ; [] |68| 
+    1145                                                      ; [] |68| 
+    1146            ;* --------------------------------------------------------------------------*
+    1147 000046       $C$L49:    
+    1148                    .dwpsn  file "../fr2111_swi2c_master.c",line 83,column 5,is_stmt,isa 0
+    1149 000046 938A          TST.W     6(r10)                ; [] |83| 
+         000048 0006 
+    1150 00004a 2409          JEQ       $C$L50                ; [] |83| 
+    1151                                                      ; [] |83| 
+    1152            ;* --------------------------------------------------------------------------*
+    1153                    .dwpsn  file "../fr2111_swi2c_master.c",line 85,column 9,is_stmt,isa 0
+    1154 00004c 4A6C          MOV.B     @r10,r12              ; [] |85| 
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   24
+
+    1155 00004e 4A1D          MOV.W     8(r10),r13            ; [] |85| 
+         000050 0008 
+    1156 000052 4A1E          MOV.W     6(r10),r14            ; [] |85| 
+         000054 0006 
+    1157            $C$DW$36        .dwtag  DW_TAG_TI_branch
+    1158                    .dwattr $C$DW$36, DW_AT_low_pc(0x00)
+    1159                    .dwattr $C$DW$36, DW_AT_name("SWI2C_readData")
+    1160                    .dwattr $C$DW$36, DW_AT_TI_call
+    1161            
+    1162 000056 12B0          CALL      #SWI2C_readData       ; [] |85| 
+         000058 0000!
+    1163                                                      ; [] |85| 
+    1164 00005a 934C          TST.B     r12                   ; [] |85| 
+    1165 00005c 2402          JEQ       $C$L51                ; [] |85| 
+    1166                                                      ; [] |85| 
+    1167            ;* --------------------------------------------------------------------------*
+    1168 00005e       $C$L50:    
+    1169                    .dwpsn  file "../fr2111_swi2c_master.c",line 92,column 5,is_stmt,isa 0
+    1170 00005e 435C          MOV.B     #1,r12                ; [] |92| 
+    1171 000060 3C01          JMP       $C$L52                ; [] |92| 
+    1172                                                      ; [] |92| 
+    1173            ;* --------------------------------------------------------------------------*
+    1174 000062       $C$L51:    
+    1175                    .dwpsn  file "../fr2111_swi2c_master.c",line 88,column 13,is_stmt,isa 0
+    1176 000062 434C          MOV.B     #0,r12                ; [] |88| 
+    1177            ;* --------------------------------------------------------------------------*
+    1178 000064       $C$L52:    
+    1179                    .dwpsn  file "../fr2111_swi2c_master.c",line 93,column 1,is_stmt,isa 0
+    1180 000064 413A          POP       r10                   ; [] 
+    1181                    .dwcfi  restore_reg, 10
+    1182                    .dwcfi  cfa_offset, 2
+    1183            $C$DW$37        .dwtag  DW_TAG_TI_branch
+    1184                    .dwattr $C$DW$37, DW_AT_low_pc(0x00)
+    1185                    .dwattr $C$DW$37, DW_AT_TI_return
+    1186            
+    1187 000066 4130          RET       ; [] 
+    1188                    ; [] 
+    1189                    .dwattr $C$DW$31, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
+    1190                    .dwattr $C$DW$31, DW_AT_TI_end_line(0x5d)
+    1191                    .dwattr $C$DW$31, DW_AT_TI_end_column(0x01)
+    1192                    .dwendentry
+    1193                    .dwendtag $C$DW$31
+    1194            
+    1195 000000               .sect   ".text:SWI2C_initI2C"
+    1196                    .clink
+    1197                    .global SWI2C_initI2C
+    1198            
+    1199            $C$DW$38        .dwtag  DW_TAG_subprogram
+    1200                    .dwattr $C$DW$38, DW_AT_name("SWI2C_initI2C")
+    1201                    .dwattr $C$DW$38, DW_AT_low_pc(SWI2C_initI2C)
+    1202                    .dwattr $C$DW$38, DW_AT_high_pc(0x00)
+    1203                    .dwattr $C$DW$38, DW_AT_TI_symbol_name("SWI2C_initI2C")
+    1204                    .dwattr $C$DW$38, DW_AT_external
+    1205                    .dwattr $C$DW$38, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
+    1206                    .dwattr $C$DW$38, DW_AT_TI_begin_line(0x2c)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   25
+
+    1207                    .dwattr $C$DW$38, DW_AT_TI_begin_column(0x06)
+    1208                    .dwattr $C$DW$38, DW_AT_decl_file("../fr2111_swi2c_master.c")
+    1209                    .dwattr $C$DW$38, DW_AT_decl_line(0x2c)
+    1210                    .dwattr $C$DW$38, DW_AT_decl_column(0x06)
+    1211                    .dwattr $C$DW$38, DW_AT_TI_max_frame_size(0x02)
+    1212                    .dwpsn  file "../fr2111_swi2c_master.c",line 45,column 1,is_stmt,address SWI2C_initI2C,isa 0
+    1213            
+    1214                    .dwfde $C$DW$CIE, SWI2C_initI2C
+    1215            
+    1216            ;*****************************************************************************
+    1217            ;* FUNCTION NAME: SWI2C_initI2C                                              *
+    1218            ;*                                                                           *
+    1219            ;*   Regs Modified     : SP,SR                                               *
+    1220            ;*   Regs Used         : SP,SR                                               *
+    1221            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1222            ;*****************************************************************************
+    1223 000000       SWI2C_initI2C:
+    1224            ;* --------------------------------------------------------------------------*
+    1225                    .dwcfi  cfa_offset, 2
+    1226                    .dwcfi  save_reg_to_mem, 16, -2
+    1227                    .dwpsn  file "../fr2111_swi2c_master.c",line 49,column 5,is_stmt,isa 0
+    1228 000000 F0F2          AND.B     #249,&P1OUT+0         ; [] |49| 
+         000002 00F9 
+         000004 0000!
+    1229                    .dwpsn  file "../fr2111_swi2c_master.c",line 50,column 5,is_stmt,isa 0
+    1230 000006 C3E2          BIC.B     #2,&P1DIR+0           ; [] |50| 
+         000008 0000!
+    1231                    .dwpsn  file "../fr2111_swi2c_master.c",line 51,column 5,is_stmt,isa 0
+    1232 00000a C2E2          BIC.B     #4,&P1DIR+0           ; [] |51| 
+         00000c 0000!
+    1233                    .dwpsn  file "../fr2111_swi2c_master.c",line 54,column 5,is_stmt,isa 0
+    1234 00000e 40B2          MOV.W     #50,&TA1CCR0+0        ; [] |54| 
+         000010 0032 
+         000012 0000!
+    1235                    .dwpsn  file "../fr2111_swi2c_master.c",line 55,column 1,is_stmt,isa 0
+    1236            $C$DW$39        .dwtag  DW_TAG_TI_branch
+    1237                    .dwattr $C$DW$39, DW_AT_low_pc(0x00)
+    1238                    .dwattr $C$DW$39, DW_AT_TI_return
+    1239            
+    1240 000014 4130          RET       ; [] 
+    1241                    ; [] 
+    1242                    .dwattr $C$DW$38, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
+    1243                    .dwattr $C$DW$38, DW_AT_TI_end_line(0x37)
+    1244                    .dwattr $C$DW$38, DW_AT_TI_end_column(0x01)
+    1245                    .dwendentry
+    1246                    .dwendtag $C$DW$38
+    1247            
+    1248            ;*****************************************************************************
+    1249            ;* UNDEFINED EXTERNAL REFERENCES                                             *
+    1250            ;*****************************************************************************
+    1251                    .global P1IN
+    1252                    .global P1OUT
+    1253                    .global P1DIR
+    1254                    .global TA1CTL
+    1255                    .global TA1CCTL0
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   26
+
+    1256                    .global TA1CCR0
+    1257            
+    1258            ;******************************************************************************
+    1259            ;* BUILD ATTRIBUTES                                                           *
+    1260            ;******************************************************************************
+    1261                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
+    1262                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000010
+    1263                    .battr "TI", Tag_File, 1, Tag_LEA_INFO(1)
+    1264                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
+    1265                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+    1266                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+    1267                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+    1268            
+    1269            ;******************************************************************************
+    1270            ;* TYPE INFORMATION                                                           *
+    1271            ;******************************************************************************
+    1272            
+    1273            $C$DW$T$21      .dwtag  DW_TAG_structure_type
+    1274                    .dwattr $C$DW$T$21, DW_AT_byte_size(0x10)
+    1275            $C$DW$40        .dwtag  DW_TAG_member
+    1276                    .dwattr $C$DW$40, DW_AT_type(*$C$DW$T$14)
+    1277                    .dwattr $C$DW$40, DW_AT_name("__max_align1")
+    1278                    .dwattr $C$DW$40, DW_AT_TI_symbol_name("__max_align1")
+    1279                    .dwattr $C$DW$40, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1280                    .dwattr $C$DW$40, DW_AT_accessibility(DW_ACCESS_public)
+    1281                    .dwattr $C$DW$40, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430
+    1282                    .dwattr $C$DW$40, DW_AT_decl_line(0x7b)
+    1283                    .dwattr $C$DW$40, DW_AT_decl_column(0x0c)
+    1284            
+    1285            $C$DW$41        .dwtag  DW_TAG_member
+    1286                    .dwattr $C$DW$41, DW_AT_type(*$C$DW$T$18)
+    1287                    .dwattr $C$DW$41, DW_AT_name("__max_align2")
+    1288                    .dwattr $C$DW$41, DW_AT_TI_symbol_name("__max_align2")
+    1289                    .dwattr $C$DW$41, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1290                    .dwattr $C$DW$41, DW_AT_accessibility(DW_ACCESS_public)
+    1291                    .dwattr $C$DW$41, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430
+    1292                    .dwattr $C$DW$41, DW_AT_decl_line(0x7c)
+    1293                    .dwattr $C$DW$41, DW_AT_decl_column(0x0e)
+    1294            
+    1295                    .dwattr $C$DW$T$21, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1296                    .dwattr $C$DW$T$21, DW_AT_decl_line(0x7a)
+    1297                    .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
+    1298                    .dwendtag $C$DW$T$21
+    1299            
+    1300            $C$DW$T$30      .dwtag  DW_TAG_typedef
+    1301                    .dwattr $C$DW$T$30, DW_AT_name("__max_align_t")
+    1302                    .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$21)
+    1303                    .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+    1304                    .dwattr $C$DW$T$30, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1305                    .dwattr $C$DW$T$30, DW_AT_decl_line(0x7d)
+    1306                    .dwattr $C$DW$T$30, DW_AT_decl_column(0x03)
+    1307            
+    1308            
+    1309            $C$DW$T$29      .dwtag  DW_TAG_structure_type
+    1310                    .dwattr $C$DW$T$29, DW_AT_name("_SWI2C_I2CTransaction")
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   27
+
+    1311                    .dwattr $C$DW$T$29, DW_AT_byte_size(0x0c)
+    1312            $C$DW$42        .dwtag  DW_TAG_member
+    1313                    .dwattr $C$DW$42, DW_AT_type(*$C$DW$T$23)
+    1314                    .dwattr $C$DW$42, DW_AT_name("address")
+    1315                    .dwattr $C$DW$42, DW_AT_TI_symbol_name("address")
+    1316                    .dwattr $C$DW$42, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1317                    .dwattr $C$DW$42, DW_AT_accessibility(DW_ACCESS_public)
+    1318                    .dwattr $C$DW$42, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1319                    .dwattr $C$DW$42, DW_AT_decl_line(0x3c)
+    1320                    .dwattr $C$DW$42, DW_AT_decl_column(0x19)
+    1321            
+    1322            $C$DW$43        .dwtag  DW_TAG_member
+    1323                    .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$26)
+    1324                    .dwattr $C$DW$43, DW_AT_name("numWriteBytes")
+    1325                    .dwattr $C$DW$43, DW_AT_TI_symbol_name("numWriteBytes")
+    1326                    .dwattr $C$DW$43, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+    1327                    .dwattr $C$DW$43, DW_AT_accessibility(DW_ACCESS_public)
+    1328                    .dwattr $C$DW$43, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1329                    .dwattr $C$DW$43, DW_AT_decl_line(0x3d)
+    1330                    .dwattr $C$DW$43, DW_AT_decl_column(0x19)
+    1331            
+    1332            $C$DW$44        .dwtag  DW_TAG_member
+    1333                    .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$27)
+    1334                    .dwattr $C$DW$44, DW_AT_name("writeBuffer")
+    1335                    .dwattr $C$DW$44, DW_AT_TI_symbol_name("writeBuffer")
+    1336                    .dwattr $C$DW$44, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+    1337                    .dwattr $C$DW$44, DW_AT_accessibility(DW_ACCESS_public)
+    1338                    .dwattr $C$DW$44, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1339                    .dwattr $C$DW$44, DW_AT_decl_line(0x3e)
+    1340                    .dwattr $C$DW$44, DW_AT_decl_column(0x19)
+    1341            
+    1342            $C$DW$45        .dwtag  DW_TAG_member
+    1343                    .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$26)
+    1344                    .dwattr $C$DW$45, DW_AT_name("numReadBytes")
+    1345                    .dwattr $C$DW$45, DW_AT_TI_symbol_name("numReadBytes")
+    1346                    .dwattr $C$DW$45, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+    1347                    .dwattr $C$DW$45, DW_AT_accessibility(DW_ACCESS_public)
+    1348                    .dwattr $C$DW$45, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1349                    .dwattr $C$DW$45, DW_AT_decl_line(0x3f)
+    1350                    .dwattr $C$DW$45, DW_AT_decl_column(0x19)
+    1351            
+    1352            $C$DW$46        .dwtag  DW_TAG_member
+    1353                    .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$27)
+    1354                    .dwattr $C$DW$46, DW_AT_name("readBuffer")
+    1355                    .dwattr $C$DW$46, DW_AT_TI_symbol_name("readBuffer")
+    1356                    .dwattr $C$DW$46, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1357                    .dwattr $C$DW$46, DW_AT_accessibility(DW_ACCESS_public)
+    1358                    .dwattr $C$DW$46, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1359                    .dwattr $C$DW$46, DW_AT_decl_line(0x40)
+    1360                    .dwattr $C$DW$46, DW_AT_decl_column(0x19)
+    1361            
+    1362            $C$DW$47        .dwtag  DW_TAG_member
+    1363                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$28)
+    1364                    .dwattr $C$DW$47, DW_AT_name("repeatedStart")
+    1365                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("repeatedStart")
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   28
+
+    1366                    .dwattr $C$DW$47, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+    1367                    .dwattr $C$DW$47, DW_AT_accessibility(DW_ACCESS_public)
+    1368                    .dwattr $C$DW$47, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1369                    .dwattr $C$DW$47, DW_AT_decl_line(0x41)
+    1370                    .dwattr $C$DW$47, DW_AT_decl_column(0x19)
+    1371            
+    1372                    .dwattr $C$DW$T$29, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1373                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x3a)
+    1374                    .dwattr $C$DW$T$29, DW_AT_decl_column(0x10)
+    1375                    .dwendtag $C$DW$T$29
+    1376            
+    1377            $C$DW$T$31      .dwtag  DW_TAG_typedef
+    1378                    .dwattr $C$DW$T$31, DW_AT_name("SWI2C_I2CTransaction")
+    1379                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$29)
+    1380                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+    1381                    .dwattr $C$DW$T$31, DW_AT_decl_file("../fr2111_swi2c_master.h")
+    1382                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x42)
+    1383                    .dwattr $C$DW$T$31, DW_AT_decl_column(0x03)
+    1384            
+    1385            $C$DW$T$32      .dwtag  DW_TAG_pointer_type
+    1386                    .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+    1387                    .dwattr $C$DW$T$32, DW_AT_address_class(0x10)
+    1388            
+    1389            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1390                    .dwattr $C$DW$T$2, DW_AT_name("void")
+    1391            
+    1392            $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1393                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1394                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1395                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1396            
+    1397            $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1398                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1399                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1400                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1401            
+    1402            $C$DW$T$35      .dwtag  DW_TAG_typedef
+    1403                    .dwattr $C$DW$T$35, DW_AT_name("__int8_t")
+    1404                    .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$5)
+    1405                    .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+    1406                    .dwattr $C$DW$T$35, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1407                    .dwattr $C$DW$T$35, DW_AT_decl_line(0x36)
+    1408                    .dwattr $C$DW$T$35, DW_AT_decl_column(0x16)
+    1409            
+    1410            $C$DW$T$36      .dwtag  DW_TAG_typedef
+    1411                    .dwattr $C$DW$T$36, DW_AT_name("__int_least8_t")
+    1412                    .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$35)
+    1413                    .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+    1414                    .dwattr $C$DW$T$36, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1415                    .dwattr $C$DW$T$36, DW_AT_decl_line(0x5a)
+    1416                    .dwattr $C$DW$T$36, DW_AT_decl_column(0x12)
+    1417            
+    1418            $C$DW$T$37      .dwtag  DW_TAG_typedef
+    1419                    .dwattr $C$DW$T$37, DW_AT_name("int_least8_t")
+    1420                    .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$36)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   29
+
+    1421                    .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+    1422                    .dwattr $C$DW$T$37, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1423                    .dwattr $C$DW$T$37, DW_AT_decl_line(0x2a)
+    1424                    .dwattr $C$DW$T$37, DW_AT_decl_column(0x19)
+    1425            
+    1426            $C$DW$T$38      .dwtag  DW_TAG_typedef
+    1427                    .dwattr $C$DW$T$38, DW_AT_name("int8_t")
+    1428                    .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$35)
+    1429                    .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+    1430                    .dwattr $C$DW$T$38, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1431                    .dwattr $C$DW$T$38, DW_AT_decl_line(0x25)
+    1432                    .dwattr $C$DW$T$38, DW_AT_decl_column(0x13)
+    1433            
+    1434            $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1435                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1436                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1437                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1438            
+    1439            $C$DW$T$39      .dwtag  DW_TAG_volatile_type
+    1440                    .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$6)
+    1441            
+    1442            $C$DW$T$22      .dwtag  DW_TAG_typedef
+    1443                    .dwattr $C$DW$T$22, DW_AT_name("__uint8_t")
+    1444                    .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$6)
+    1445                    .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    1446                    .dwattr $C$DW$T$22, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1447                    .dwattr $C$DW$T$22, DW_AT_decl_line(0x37)
+    1448                    .dwattr $C$DW$T$22, DW_AT_decl_column(0x18)
+    1449            
+    1450            $C$DW$T$46      .dwtag  DW_TAG_typedef
+    1451                    .dwattr $C$DW$T$46, DW_AT_name("__sa_family_t")
+    1452                    .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$22)
+    1453                    .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+    1454                    .dwattr $C$DW$T$46, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1455                    .dwattr $C$DW$T$46, DW_AT_decl_line(0x47)
+    1456                    .dwattr $C$DW$T$46, DW_AT_decl_column(0x13)
+    1457            
+    1458            $C$DW$T$47      .dwtag  DW_TAG_typedef
+    1459                    .dwattr $C$DW$T$47, DW_AT_name("__uint_least8_t")
+    1460                    .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$22)
+    1461                    .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+    1462                    .dwattr $C$DW$T$47, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1463                    .dwattr $C$DW$T$47, DW_AT_decl_line(0x74)
+    1464                    .dwattr $C$DW$T$47, DW_AT_decl_column(0x13)
+    1465            
+    1466            $C$DW$T$48      .dwtag  DW_TAG_typedef
+    1467                    .dwattr $C$DW$T$48, DW_AT_name("uint_least8_t")
+    1468                    .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$47)
+    1469                    .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+    1470                    .dwattr $C$DW$T$48, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1471                    .dwattr $C$DW$T$48, DW_AT_decl_line(0x2f)
+    1472                    .dwattr $C$DW$T$48, DW_AT_decl_column(0x1a)
+    1473            
+    1474            $C$DW$T$23      .dwtag  DW_TAG_typedef
+    1475                    .dwattr $C$DW$T$23, DW_AT_name("uint8_t")
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   30
+
+    1476                    .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
+    1477                    .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+    1478                    .dwattr $C$DW$T$23, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1479                    .dwattr $C$DW$T$23, DW_AT_decl_line(0x3b)
+    1480                    .dwattr $C$DW$T$23, DW_AT_decl_column(0x14)
+    1481            
+    1482            $C$DW$T$27      .dwtag  DW_TAG_pointer_type
+    1483                    .dwattr $C$DW$T$27, DW_AT_type(*$C$DW$T$23)
+    1484                    .dwattr $C$DW$T$27, DW_AT_address_class(0x10)
+    1485            
+    1486            $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1487                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1488                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1489                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    1490            
+    1491            $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1492                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1493                    .dwattr $C$DW$T$8, DW_AT_name("short")
+    1494                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+    1495            
+    1496            $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1497                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1498                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1499                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    1500            
+    1501            $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1502                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1503                    .dwattr $C$DW$T$10, DW_AT_name("int")
+    1504                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+    1505            
+    1506            $C$DW$T$49      .dwtag  DW_TAG_typedef
+    1507                    .dwattr $C$DW$T$49, DW_AT_name("_Mbstatet")
+    1508                    .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$10)
+    1509                    .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    1510                    .dwattr $C$DW$T$49, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1511                    .dwattr $C$DW$T$49, DW_AT_decl_line(0x8f)
+    1512                    .dwattr $C$DW$T$49, DW_AT_decl_column(0x0d)
+    1513            
+    1514            $C$DW$T$50      .dwtag  DW_TAG_typedef
+    1515                    .dwattr $C$DW$T$50, DW_AT_name("__mbstate_t")
+    1516                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$49)
+    1517                    .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    1518                    .dwattr $C$DW$T$50, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1519                    .dwattr $C$DW$T$50, DW_AT_decl_line(0x92)
+    1520                    .dwattr $C$DW$T$50, DW_AT_decl_column(0x13)
+    1521            
+    1522            $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1523                    .dwattr $C$DW$T$51, DW_AT_name("__accmode_t")
+    1524                    .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$10)
+    1525                    .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1526                    .dwattr $C$DW$T$51, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1527                    .dwattr $C$DW$T$51, DW_AT_decl_line(0x3b)
+    1528                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x0e)
+    1529            
+    1530            $C$DW$T$52      .dwtag  DW_TAG_typedef
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   31
+
+    1531                    .dwattr $C$DW$T$52, DW_AT_name("__cpulevel_t")
+    1532                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$10)
+    1533                    .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1534                    .dwattr $C$DW$T$52, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1535                    .dwattr $C$DW$T$52, DW_AT_decl_line(0x50)
+    1536                    .dwattr $C$DW$T$52, DW_AT_decl_column(0x0e)
+    1537            
+    1538            $C$DW$T$53      .dwtag  DW_TAG_typedef
+    1539                    .dwattr $C$DW$T$53, DW_AT_name("__cpusetid_t")
+    1540                    .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$10)
+    1541                    .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1542                    .dwattr $C$DW$T$53, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1543                    .dwattr $C$DW$T$53, DW_AT_decl_line(0x51)
+    1544                    .dwattr $C$DW$T$53, DW_AT_decl_column(0x0e)
+    1545            
+    1546            $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1547                    .dwattr $C$DW$T$54, DW_AT_name("__cpuwhich_t")
+    1548                    .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$10)
+    1549                    .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1550                    .dwattr $C$DW$T$54, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1551                    .dwattr $C$DW$T$54, DW_AT_decl_line(0x4f)
+    1552                    .dwattr $C$DW$T$54, DW_AT_decl_column(0x0e)
+    1553            
+    1554            $C$DW$T$55      .dwtag  DW_TAG_typedef
+    1555                    .dwattr $C$DW$T$55, DW_AT_name("__ct_rune_t")
+    1556                    .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$10)
+    1557                    .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    1558                    .dwattr $C$DW$T$55, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1559                    .dwattr $C$DW$T$55, DW_AT_decl_line(0x69)
+    1560                    .dwattr $C$DW$T$55, DW_AT_decl_column(0x0e)
+    1561            
+    1562            $C$DW$T$56      .dwtag  DW_TAG_typedef
+    1563                    .dwattr $C$DW$T$56, DW_AT_name("__rune_t")
+    1564                    .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$55)
+    1565                    .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    1566                    .dwattr $C$DW$T$56, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1567                    .dwattr $C$DW$T$56, DW_AT_decl_line(0x6c)
+    1568                    .dwattr $C$DW$T$56, DW_AT_decl_column(0x15)
+    1569            
+    1570            $C$DW$T$57      .dwtag  DW_TAG_typedef
+    1571                    .dwattr $C$DW$T$57, DW_AT_name("__wint_t")
+    1572                    .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$55)
+    1573                    .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    1574                    .dwattr $C$DW$T$57, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1575                    .dwattr $C$DW$T$57, DW_AT_decl_line(0x6d)
+    1576                    .dwattr $C$DW$T$57, DW_AT_decl_column(0x15)
+    1577            
+    1578            $C$DW$T$58      .dwtag  DW_TAG_typedef
+    1579                    .dwattr $C$DW$T$58, DW_AT_name("__int16_t")
+    1580                    .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$10)
+    1581                    .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1582                    .dwattr $C$DW$T$58, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1583                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x38)
+    1584                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x0f)
+    1585            
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   32
+
+    1586            $C$DW$T$59      .dwtag  DW_TAG_typedef
+    1587                    .dwattr $C$DW$T$59, DW_AT_name("__int_fast16_t")
+    1588                    .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$58)
+    1589                    .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    1590                    .dwattr $C$DW$T$59, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1591                    .dwattr $C$DW$T$59, DW_AT_decl_line(0x57)
+    1592                    .dwattr $C$DW$T$59, DW_AT_decl_column(0x13)
+    1593            
+    1594            $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1595                    .dwattr $C$DW$T$60, DW_AT_name("int_fast16_t")
+    1596                    .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$59)
+    1597                    .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1598                    .dwattr $C$DW$T$60, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1599                    .dwattr $C$DW$T$60, DW_AT_decl_line(0x35)
+    1600                    .dwattr $C$DW$T$60, DW_AT_decl_column(0x19)
+    1601            
+    1602            $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1603                    .dwattr $C$DW$T$61, DW_AT_name("__int_fast8_t")
+    1604                    .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$58)
+    1605                    .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1606                    .dwattr $C$DW$T$61, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1607                    .dwattr $C$DW$T$61, DW_AT_decl_line(0x56)
+    1608                    .dwattr $C$DW$T$61, DW_AT_decl_column(0x13)
+    1609            
+    1610            $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1611                    .dwattr $C$DW$T$62, DW_AT_name("int_fast8_t")
+    1612                    .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$61)
+    1613                    .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1614                    .dwattr $C$DW$T$62, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1615                    .dwattr $C$DW$T$62, DW_AT_decl_line(0x34)
+    1616                    .dwattr $C$DW$T$62, DW_AT_decl_column(0x18)
+    1617            
+    1618            $C$DW$T$63      .dwtag  DW_TAG_typedef
+    1619                    .dwattr $C$DW$T$63, DW_AT_name("__int_least16_t")
+    1620                    .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$58)
+    1621                    .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    1622                    .dwattr $C$DW$T$63, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1623                    .dwattr $C$DW$T$63, DW_AT_decl_line(0x5b)
+    1624                    .dwattr $C$DW$T$63, DW_AT_decl_column(0x13)
+    1625            
+    1626            $C$DW$T$64      .dwtag  DW_TAG_typedef
+    1627                    .dwattr $C$DW$T$64, DW_AT_name("int_least16_t")
+    1628                    .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$63)
+    1629                    .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1630                    .dwattr $C$DW$T$64, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1631                    .dwattr $C$DW$T$64, DW_AT_decl_line(0x2b)
+    1632                    .dwattr $C$DW$T$64, DW_AT_decl_column(0x1a)
+    1633            
+    1634            $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1635                    .dwattr $C$DW$T$65, DW_AT_name("__intptr_t")
+    1636                    .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$58)
+    1637                    .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    1638                    .dwattr $C$DW$T$65, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1639                    .dwattr $C$DW$T$65, DW_AT_decl_line(0x53)
+    1640                    .dwattr $C$DW$T$65, DW_AT_decl_column(0x19)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   33
+
+    1641            
+    1642            $C$DW$T$66      .dwtag  DW_TAG_typedef
+    1643                    .dwattr $C$DW$T$66, DW_AT_name("intptr_t")
+    1644                    .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$65)
+    1645                    .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1646                    .dwattr $C$DW$T$66, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1647                    .dwattr $C$DW$T$66, DW_AT_decl_line(0x50)
+    1648                    .dwattr $C$DW$T$66, DW_AT_decl_column(0x15)
+    1649            
+    1650            $C$DW$T$67      .dwtag  DW_TAG_typedef
+    1651                    .dwattr $C$DW$T$67, DW_AT_name("__register_t")
+    1652                    .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$58)
+    1653                    .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    1654                    .dwattr $C$DW$T$67, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1655                    .dwattr $C$DW$T$67, DW_AT_decl_line(0x5f)
+    1656                    .dwattr $C$DW$T$67, DW_AT_decl_column(0x13)
+    1657            
+    1658            $C$DW$T$68      .dwtag  DW_TAG_typedef
+    1659                    .dwattr $C$DW$T$68, DW_AT_name("int16_t")
+    1660                    .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$58)
+    1661                    .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    1662                    .dwattr $C$DW$T$68, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1663                    .dwattr $C$DW$T$68, DW_AT_decl_line(0x2b)
+    1664                    .dwattr $C$DW$T$68, DW_AT_decl_column(0x14)
+    1665            
+    1666            $C$DW$T$69      .dwtag  DW_TAG_typedef
+    1667                    .dwattr $C$DW$T$69, DW_AT_name("__nl_item")
+    1668                    .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$10)
+    1669                    .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    1670                    .dwattr $C$DW$T$69, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1671                    .dwattr $C$DW$T$69, DW_AT_decl_line(0x3c)
+    1672                    .dwattr $C$DW$T$69, DW_AT_decl_column(0x0e)
+    1673            
+    1674            $C$DW$T$70      .dwtag  DW_TAG_typedef
+    1675                    .dwattr $C$DW$T$70, DW_AT_name("__ptrdiff_t")
+    1676                    .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$10)
+    1677                    .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+    1678                    .dwattr $C$DW$T$70, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1679                    .dwattr $C$DW$T$70, DW_AT_decl_line(0x5e)
+    1680                    .dwattr $C$DW$T$70, DW_AT_decl_column(0x1c)
+    1681            
+    1682            $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1683                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1684                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1685                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+    1686            
+    1687            $C$DW$T$71      .dwtag  DW_TAG_typedef
+    1688                    .dwattr $C$DW$T$71, DW_AT_name("___wchar_t")
+    1689                    .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$11)
+    1690                    .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+    1691                    .dwattr $C$DW$T$71, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1692                    .dwattr $C$DW$T$71, DW_AT_decl_line(0x7d)
+    1693                    .dwattr $C$DW$T$71, DW_AT_decl_column(0x1a)
+    1694            
+    1695            $C$DW$T$72      .dwtag  DW_TAG_volatile_type
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   34
+
+    1696                    .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$11)
+    1697            
+    1698            $C$DW$T$73      .dwtag  DW_TAG_typedef
+    1699                    .dwattr $C$DW$T$73, DW_AT_name("__size_t")
+    1700                    .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$11)
+    1701                    .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+    1702                    .dwattr $C$DW$T$73, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1703                    .dwattr $C$DW$T$73, DW_AT_decl_line(0x61)
+    1704                    .dwattr $C$DW$T$73, DW_AT_decl_column(0x19)
+    1705            
+    1706            $C$DW$T$24      .dwtag  DW_TAG_typedef
+    1707                    .dwattr $C$DW$T$24, DW_AT_name("__uint16_t")
+    1708                    .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$11)
+    1709                    .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    1710                    .dwattr $C$DW$T$24, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1711                    .dwattr $C$DW$T$24, DW_AT_decl_line(0x39)
+    1712                    .dwattr $C$DW$T$24, DW_AT_decl_column(0x17)
+    1713            
+    1714            $C$DW$T$74      .dwtag  DW_TAG_typedef
+    1715                    .dwattr $C$DW$T$74, DW_AT_name("__mode_t")
+    1716                    .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$24)
+    1717                    .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
+    1718                    .dwattr $C$DW$T$74, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1719                    .dwattr $C$DW$T$74, DW_AT_decl_line(0x3a)
+    1720                    .dwattr $C$DW$T$74, DW_AT_decl_column(0x14)
+    1721            
+    1722            $C$DW$T$75      .dwtag  DW_TAG_typedef
+    1723                    .dwattr $C$DW$T$75, DW_AT_name("__u_register_t")
+    1724                    .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$24)
+    1725                    .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+    1726                    .dwattr $C$DW$T$75, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1727                    .dwattr $C$DW$T$75, DW_AT_decl_line(0x78)
+    1728                    .dwattr $C$DW$T$75, DW_AT_decl_column(0x14)
+    1729            
+    1730            $C$DW$T$25      .dwtag  DW_TAG_typedef
+    1731                    .dwattr $C$DW$T$25, DW_AT_name("__uint_fast16_t")
+    1732                    .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$24)
+    1733                    .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+    1734                    .dwattr $C$DW$T$25, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1735                    .dwattr $C$DW$T$25, DW_AT_decl_line(0x71)
+    1736                    .dwattr $C$DW$T$25, DW_AT_decl_column(0x14)
+    1737            
+    1738            $C$DW$T$26      .dwtag  DW_TAG_typedef
+    1739                    .dwattr $C$DW$T$26, DW_AT_name("uint_fast16_t")
+    1740                    .dwattr $C$DW$T$26, DW_AT_type(*$C$DW$T$25)
+    1741                    .dwattr $C$DW$T$26, DW_AT_language(DW_LANG_C)
+    1742                    .dwattr $C$DW$T$26, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1743                    .dwattr $C$DW$T$26, DW_AT_decl_line(0x3a)
+    1744                    .dwattr $C$DW$T$26, DW_AT_decl_column(0x1a)
+    1745            
+    1746            $C$DW$T$76      .dwtag  DW_TAG_typedef
+    1747                    .dwattr $C$DW$T$76, DW_AT_name("__uint_fast8_t")
+    1748                    .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$24)
+    1749                    .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
+    1750                    .dwattr $C$DW$T$76, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   35
+
+    1751                    .dwattr $C$DW$T$76, DW_AT_decl_line(0x70)
+    1752                    .dwattr $C$DW$T$76, DW_AT_decl_column(0x14)
+    1753            
+    1754            $C$DW$T$77      .dwtag  DW_TAG_typedef
+    1755                    .dwattr $C$DW$T$77, DW_AT_name("uint_fast8_t")
+    1756                    .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$76)
+    1757                    .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
+    1758                    .dwattr $C$DW$T$77, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1759                    .dwattr $C$DW$T$77, DW_AT_decl_line(0x39)
+    1760                    .dwattr $C$DW$T$77, DW_AT_decl_column(0x19)
+    1761            
+    1762            $C$DW$T$78      .dwtag  DW_TAG_typedef
+    1763                    .dwattr $C$DW$T$78, DW_AT_name("__uint_least16_t")
+    1764                    .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$24)
+    1765                    .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
+    1766                    .dwattr $C$DW$T$78, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1767                    .dwattr $C$DW$T$78, DW_AT_decl_line(0x75)
+    1768                    .dwattr $C$DW$T$78, DW_AT_decl_column(0x14)
+    1769            
+    1770            $C$DW$T$79      .dwtag  DW_TAG_typedef
+    1771                    .dwattr $C$DW$T$79, DW_AT_name("__char16_t")
+    1772                    .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$78)
+    1773                    .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
+    1774                    .dwattr $C$DW$T$79, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1775                    .dwattr $C$DW$T$79, DW_AT_decl_line(0x71)
+    1776                    .dwattr $C$DW$T$79, DW_AT_decl_column(0x1a)
+    1777            
+    1778            $C$DW$T$80      .dwtag  DW_TAG_typedef
+    1779                    .dwattr $C$DW$T$80, DW_AT_name("uint_least16_t")
+    1780                    .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$78)
+    1781                    .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
+    1782                    .dwattr $C$DW$T$80, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1783                    .dwattr $C$DW$T$80, DW_AT_decl_line(0x30)
+    1784                    .dwattr $C$DW$T$80, DW_AT_decl_column(0x1a)
+    1785            
+    1786            $C$DW$T$81      .dwtag  DW_TAG_typedef
+    1787                    .dwattr $C$DW$T$81, DW_AT_name("__uintptr_t")
+    1788                    .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$24)
+    1789                    .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
+    1790                    .dwattr $C$DW$T$81, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1791                    .dwattr $C$DW$T$81, DW_AT_decl_line(0x6d)
+    1792                    .dwattr $C$DW$T$81, DW_AT_decl_column(0x14)
+    1793            
+    1794            $C$DW$T$82      .dwtag  DW_TAG_typedef
+    1795                    .dwattr $C$DW$T$82, DW_AT_name("uintptr_t")
+    1796                    .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$81)
+    1797                    .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
+    1798                    .dwattr $C$DW$T$82, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1799                    .dwattr $C$DW$T$82, DW_AT_decl_line(0x54)
+    1800                    .dwattr $C$DW$T$82, DW_AT_decl_column(0x16)
+    1801            
+    1802            $C$DW$T$83      .dwtag  DW_TAG_typedef
+    1803                    .dwattr $C$DW$T$83, DW_AT_name("uint16_t")
+    1804                    .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$24)
+    1805                    .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   36
+
+    1806                    .dwattr $C$DW$T$83, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1807                    .dwattr $C$DW$T$83, DW_AT_decl_line(0x41)
+    1808                    .dwattr $C$DW$T$83, DW_AT_decl_column(0x15)
+    1809            
+    1810            $C$DW$T$84      .dwtag  DW_TAG_typedef
+    1811                    .dwattr $C$DW$T$84, DW_AT_name("__useconds_t")
+    1812                    .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$11)
+    1813                    .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
+    1814                    .dwattr $C$DW$T$84, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1815                    .dwattr $C$DW$T$84, DW_AT_decl_line(0x4e)
+    1816                    .dwattr $C$DW$T$84, DW_AT_decl_column(0x16)
+    1817            
+    1818            $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1819                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1820                    .dwattr $C$DW$T$12, DW_AT_name("long")
+    1821                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1822            
+    1823            $C$DW$T$85      .dwtag  DW_TAG_typedef
+    1824                    .dwattr $C$DW$T$85, DW_AT_name("__int32_t")
+    1825                    .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$12)
+    1826                    .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
+    1827                    .dwattr $C$DW$T$85, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1828                    .dwattr $C$DW$T$85, DW_AT_decl_line(0x3a)
+    1829                    .dwattr $C$DW$T$85, DW_AT_decl_column(0x10)
+    1830            
+    1831            $C$DW$T$86      .dwtag  DW_TAG_typedef
+    1832                    .dwattr $C$DW$T$86, DW_AT_name("__blksize_t")
+    1833                    .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$85)
+    1834                    .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
+    1835                    .dwattr $C$DW$T$86, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1836                    .dwattr $C$DW$T$86, DW_AT_decl_line(0x2f)
+    1837                    .dwattr $C$DW$T$86, DW_AT_decl_column(0x13)
+    1838            
+    1839            $C$DW$T$87      .dwtag  DW_TAG_typedef
+    1840                    .dwattr $C$DW$T$87, DW_AT_name("__clockid_t")
+    1841                    .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$85)
+    1842                    .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
+    1843                    .dwattr $C$DW$T$87, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1844                    .dwattr $C$DW$T$87, DW_AT_decl_line(0x31)
+    1845                    .dwattr $C$DW$T$87, DW_AT_decl_column(0x13)
+    1846            
+    1847            $C$DW$T$88      .dwtag  DW_TAG_typedef
+    1848                    .dwattr $C$DW$T$88, DW_AT_name("__critical_t")
+    1849                    .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$85)
+    1850                    .dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
+    1851                    .dwattr $C$DW$T$88, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1852                    .dwattr $C$DW$T$88, DW_AT_decl_line(0x4b)
+    1853                    .dwattr $C$DW$T$88, DW_AT_decl_column(0x13)
+    1854            
+    1855            $C$DW$T$89      .dwtag  DW_TAG_typedef
+    1856                    .dwattr $C$DW$T$89, DW_AT_name("__int_fast32_t")
+    1857                    .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$85)
+    1858                    .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
+    1859                    .dwattr $C$DW$T$89, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1860                    .dwattr $C$DW$T$89, DW_AT_decl_line(0x58)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   37
+
+    1861                    .dwattr $C$DW$T$89, DW_AT_decl_column(0x13)
+    1862            
+    1863            $C$DW$T$90      .dwtag  DW_TAG_typedef
+    1864                    .dwattr $C$DW$T$90, DW_AT_name("int_fast32_t")
+    1865                    .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$89)
+    1866                    .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
+    1867                    .dwattr $C$DW$T$90, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1868                    .dwattr $C$DW$T$90, DW_AT_decl_line(0x36)
+    1869                    .dwattr $C$DW$T$90, DW_AT_decl_column(0x19)
+    1870            
+    1871            $C$DW$T$91      .dwtag  DW_TAG_typedef
+    1872                    .dwattr $C$DW$T$91, DW_AT_name("__int_least32_t")
+    1873                    .dwattr $C$DW$T$91, DW_AT_type(*$C$DW$T$85)
+    1874                    .dwattr $C$DW$T$91, DW_AT_language(DW_LANG_C)
+    1875                    .dwattr $C$DW$T$91, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1876                    .dwattr $C$DW$T$91, DW_AT_decl_line(0x5c)
+    1877                    .dwattr $C$DW$T$91, DW_AT_decl_column(0x13)
+    1878            
+    1879            $C$DW$T$92      .dwtag  DW_TAG_typedef
+    1880                    .dwattr $C$DW$T$92, DW_AT_name("int_least32_t")
+    1881                    .dwattr $C$DW$T$92, DW_AT_type(*$C$DW$T$91)
+    1882                    .dwattr $C$DW$T$92, DW_AT_language(DW_LANG_C)
+    1883                    .dwattr $C$DW$T$92, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1884                    .dwattr $C$DW$T$92, DW_AT_decl_line(0x2c)
+    1885                    .dwattr $C$DW$T$92, DW_AT_decl_column(0x1a)
+    1886            
+    1887            $C$DW$T$93      .dwtag  DW_TAG_typedef
+    1888                    .dwattr $C$DW$T$93, DW_AT_name("__intfptr_t")
+    1889                    .dwattr $C$DW$T$93, DW_AT_type(*$C$DW$T$85)
+    1890                    .dwattr $C$DW$T$93, DW_AT_language(DW_LANG_C)
+    1891                    .dwattr $C$DW$T$93, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1892                    .dwattr $C$DW$T$93, DW_AT_decl_line(0x4e)
+    1893                    .dwattr $C$DW$T$93, DW_AT_decl_column(0x13)
+    1894            
+    1895            $C$DW$T$94      .dwtag  DW_TAG_typedef
+    1896                    .dwattr $C$DW$T$94, DW_AT_name("__lwpid_t")
+    1897                    .dwattr $C$DW$T$94, DW_AT_type(*$C$DW$T$85)
+    1898                    .dwattr $C$DW$T$94, DW_AT_language(DW_LANG_C)
+    1899                    .dwattr $C$DW$T$94, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1900                    .dwattr $C$DW$T$94, DW_AT_decl_line(0x39)
+    1901                    .dwattr $C$DW$T$94, DW_AT_decl_column(0x13)
+    1902            
+    1903            $C$DW$T$95      .dwtag  DW_TAG_typedef
+    1904                    .dwattr $C$DW$T$95, DW_AT_name("__pid_t")
+    1905                    .dwattr $C$DW$T$95, DW_AT_type(*$C$DW$T$85)
+    1906                    .dwattr $C$DW$T$95, DW_AT_language(DW_LANG_C)
+    1907                    .dwattr $C$DW$T$95, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1908                    .dwattr $C$DW$T$95, DW_AT_decl_line(0x40)
+    1909                    .dwattr $C$DW$T$95, DW_AT_decl_column(0x13)
+    1910            
+    1911            $C$DW$T$96      .dwtag  DW_TAG_typedef
+    1912                    .dwattr $C$DW$T$96, DW_AT_name("__segsz_t")
+    1913                    .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$85)
+    1914                    .dwattr $C$DW$T$96, DW_AT_language(DW_LANG_C)
+    1915                    .dwattr $C$DW$T$96, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   38
+
+    1916                    .dwattr $C$DW$T$96, DW_AT_decl_line(0x60)
+    1917                    .dwattr $C$DW$T$96, DW_AT_decl_column(0x13)
+    1918            
+    1919            $C$DW$T$97      .dwtag  DW_TAG_typedef
+    1920                    .dwattr $C$DW$T$97, DW_AT_name("__ssize_t")
+    1921                    .dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$85)
+    1922                    .dwattr $C$DW$T$97, DW_AT_language(DW_LANG_C)
+    1923                    .dwattr $C$DW$T$97, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1924                    .dwattr $C$DW$T$97, DW_AT_decl_line(0x62)
+    1925                    .dwattr $C$DW$T$97, DW_AT_decl_column(0x13)
+    1926            
+    1927            $C$DW$T$98      .dwtag  DW_TAG_typedef
+    1928                    .dwattr $C$DW$T$98, DW_AT_name("int32_t")
+    1929                    .dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$85)
+    1930                    .dwattr $C$DW$T$98, DW_AT_language(DW_LANG_C)
+    1931                    .dwattr $C$DW$T$98, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1932                    .dwattr $C$DW$T$98, DW_AT_decl_line(0x30)
+    1933                    .dwattr $C$DW$T$98, DW_AT_decl_column(0x14)
+    1934            
+    1935            $C$DW$T$99      .dwtag  DW_TAG_typedef
+    1936                    .dwattr $C$DW$T$99, DW_AT_name("__key_t")
+    1937                    .dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$12)
+    1938                    .dwattr $C$DW$T$99, DW_AT_language(DW_LANG_C)
+    1939                    .dwattr $C$DW$T$99, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1940                    .dwattr $C$DW$T$99, DW_AT_decl_line(0x38)
+    1941                    .dwattr $C$DW$T$99, DW_AT_decl_column(0x0f)
+    1942            
+    1943            $C$DW$T$100     .dwtag  DW_TAG_typedef
+    1944                    .dwattr $C$DW$T$100, DW_AT_name("__suseconds_t")
+    1945                    .dwattr $C$DW$T$100, DW_AT_type(*$C$DW$T$12)
+    1946                    .dwattr $C$DW$T$100, DW_AT_language(DW_LANG_C)
+    1947                    .dwattr $C$DW$T$100, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1948                    .dwattr $C$DW$T$100, DW_AT_decl_line(0x4a)
+    1949                    .dwattr $C$DW$T$100, DW_AT_decl_column(0x0f)
+    1950            
+    1951            $C$DW$T$101     .dwtag  DW_TAG_typedef
+    1952                    .dwattr $C$DW$T$101, DW_AT_name("_off_t")
+    1953                    .dwattr $C$DW$T$101, DW_AT_type(*$C$DW$T$12)
+    1954                    .dwattr $C$DW$T$101, DW_AT_language(DW_LANG_C)
+    1955                    .dwattr $C$DW$T$101, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1956                    .dwattr $C$DW$T$101, DW_AT_decl_line(0x8d)
+    1957                    .dwattr $C$DW$T$101, DW_AT_decl_column(0x12)
+    1958            
+    1959            $C$DW$T$102     .dwtag  DW_TAG_typedef
+    1960                    .dwattr $C$DW$T$102, DW_AT_name("__off_t")
+    1961                    .dwattr $C$DW$T$102, DW_AT_type(*$C$DW$T$101)
+    1962                    .dwattr $C$DW$T$102, DW_AT_language(DW_LANG_C)
+    1963                    .dwattr $C$DW$T$102, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1964                    .dwattr $C$DW$T$102, DW_AT_decl_line(0x3e)
+    1965                    .dwattr $C$DW$T$102, DW_AT_decl_column(0x18)
+    1966            
+    1967            $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1968                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1969                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1970                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   39
+
+    1971            
+    1972            $C$DW$T$103     .dwtag  DW_TAG_typedef
+    1973                    .dwattr $C$DW$T$103, DW_AT_name("__uint32_t")
+    1974                    .dwattr $C$DW$T$103, DW_AT_type(*$C$DW$T$13)
+    1975                    .dwattr $C$DW$T$103, DW_AT_language(DW_LANG_C)
+    1976                    .dwattr $C$DW$T$103, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1977                    .dwattr $C$DW$T$103, DW_AT_decl_line(0x3b)
+    1978                    .dwattr $C$DW$T$103, DW_AT_decl_column(0x18)
+    1979            
+    1980            $C$DW$T$104     .dwtag  DW_TAG_typedef
+    1981                    .dwattr $C$DW$T$104, DW_AT_name("__clock_t")
+    1982                    .dwattr $C$DW$T$104, DW_AT_type(*$C$DW$T$103)
+    1983                    .dwattr $C$DW$T$104, DW_AT_language(DW_LANG_C)
+    1984                    .dwattr $C$DW$T$104, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1985                    .dwattr $C$DW$T$104, DW_AT_decl_line(0x4a)
+    1986                    .dwattr $C$DW$T$104, DW_AT_decl_column(0x14)
+    1987            
+    1988            $C$DW$T$105     .dwtag  DW_TAG_typedef
+    1989                    .dwattr $C$DW$T$105, DW_AT_name("__fflags_t")
+    1990                    .dwattr $C$DW$T$105, DW_AT_type(*$C$DW$T$103)
+    1991                    .dwattr $C$DW$T$105, DW_AT_language(DW_LANG_C)
+    1992                    .dwattr $C$DW$T$105, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1993                    .dwattr $C$DW$T$105, DW_AT_decl_line(0x32)
+    1994                    .dwattr $C$DW$T$105, DW_AT_decl_column(0x14)
+    1995            
+    1996            $C$DW$T$106     .dwtag  DW_TAG_typedef
+    1997                    .dwattr $C$DW$T$106, DW_AT_name("__fixpt_t")
+    1998                    .dwattr $C$DW$T$106, DW_AT_type(*$C$DW$T$103)
+    1999                    .dwattr $C$DW$T$106, DW_AT_language(DW_LANG_C)
+    2000                    .dwattr $C$DW$T$106, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2001                    .dwattr $C$DW$T$106, DW_AT_decl_line(0x81)
+    2002                    .dwattr $C$DW$T$106, DW_AT_decl_column(0x14)
+    2003            
+    2004            $C$DW$T$107     .dwtag  DW_TAG_typedef
+    2005                    .dwattr $C$DW$T$107, DW_AT_name("__gid_t")
+    2006                    .dwattr $C$DW$T$107, DW_AT_type(*$C$DW$T$103)
+    2007                    .dwattr $C$DW$T$107, DW_AT_language(DW_LANG_C)
+    2008                    .dwattr $C$DW$T$107, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2009                    .dwattr $C$DW$T$107, DW_AT_decl_line(0x35)
+    2010                    .dwattr $C$DW$T$107, DW_AT_decl_column(0x14)
+    2011            
+    2012            $C$DW$T$108     .dwtag  DW_TAG_typedef
+    2013                    .dwattr $C$DW$T$108, DW_AT_name("__socklen_t")
+    2014                    .dwattr $C$DW$T$108, DW_AT_type(*$C$DW$T$103)
+    2015                    .dwattr $C$DW$T$108, DW_AT_language(DW_LANG_C)
+    2016                    .dwattr $C$DW$T$108, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2017                    .dwattr $C$DW$T$108, DW_AT_decl_line(0x49)
+    2018                    .dwattr $C$DW$T$108, DW_AT_decl_column(0x14)
+    2019            
+    2020            $C$DW$T$109     .dwtag  DW_TAG_typedef
+    2021                    .dwattr $C$DW$T$109, DW_AT_name("__time_t")
+    2022                    .dwattr $C$DW$T$109, DW_AT_type(*$C$DW$T$103)
+    2023                    .dwattr $C$DW$T$109, DW_AT_language(DW_LANG_C)
+    2024                    .dwattr $C$DW$T$109, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2025                    .dwattr $C$DW$T$109, DW_AT_decl_line(0x66)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   40
+
+    2026                    .dwattr $C$DW$T$109, DW_AT_decl_column(0x19)
+    2027            
+    2028            $C$DW$T$110     .dwtag  DW_TAG_typedef
+    2029                    .dwattr $C$DW$T$110, DW_AT_name("__uid_t")
+    2030                    .dwattr $C$DW$T$110, DW_AT_type(*$C$DW$T$103)
+    2031                    .dwattr $C$DW$T$110, DW_AT_language(DW_LANG_C)
+    2032                    .dwattr $C$DW$T$110, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2033                    .dwattr $C$DW$T$110, DW_AT_decl_line(0x4d)
+    2034                    .dwattr $C$DW$T$110, DW_AT_decl_column(0x14)
+    2035            
+    2036            $C$DW$T$111     .dwtag  DW_TAG_typedef
+    2037                    .dwattr $C$DW$T$111, DW_AT_name("__uint_fast32_t")
+    2038                    .dwattr $C$DW$T$111, DW_AT_type(*$C$DW$T$103)
+    2039                    .dwattr $C$DW$T$111, DW_AT_language(DW_LANG_C)
+    2040                    .dwattr $C$DW$T$111, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2041                    .dwattr $C$DW$T$111, DW_AT_decl_line(0x72)
+    2042                    .dwattr $C$DW$T$111, DW_AT_decl_column(0x14)
+    2043            
+    2044            $C$DW$T$112     .dwtag  DW_TAG_typedef
+    2045                    .dwattr $C$DW$T$112, DW_AT_name("uint_fast32_t")
+    2046                    .dwattr $C$DW$T$112, DW_AT_type(*$C$DW$T$111)
+    2047                    .dwattr $C$DW$T$112, DW_AT_language(DW_LANG_C)
+    2048                    .dwattr $C$DW$T$112, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2049                    .dwattr $C$DW$T$112, DW_AT_decl_line(0x3b)
+    2050                    .dwattr $C$DW$T$112, DW_AT_decl_column(0x1a)
+    2051            
+    2052            $C$DW$T$113     .dwtag  DW_TAG_typedef
+    2053                    .dwattr $C$DW$T$113, DW_AT_name("__uint_least32_t")
+    2054                    .dwattr $C$DW$T$113, DW_AT_type(*$C$DW$T$103)
+    2055                    .dwattr $C$DW$T$113, DW_AT_language(DW_LANG_C)
+    2056                    .dwattr $C$DW$T$113, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2057                    .dwattr $C$DW$T$113, DW_AT_decl_line(0x76)
+    2058                    .dwattr $C$DW$T$113, DW_AT_decl_column(0x14)
+    2059            
+    2060            $C$DW$T$114     .dwtag  DW_TAG_typedef
+    2061                    .dwattr $C$DW$T$114, DW_AT_name("__char32_t")
+    2062                    .dwattr $C$DW$T$114, DW_AT_type(*$C$DW$T$113)
+    2063                    .dwattr $C$DW$T$114, DW_AT_language(DW_LANG_C)
+    2064                    .dwattr $C$DW$T$114, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2065                    .dwattr $C$DW$T$114, DW_AT_decl_line(0x72)
+    2066                    .dwattr $C$DW$T$114, DW_AT_decl_column(0x1a)
+    2067            
+    2068            $C$DW$T$115     .dwtag  DW_TAG_typedef
+    2069                    .dwattr $C$DW$T$115, DW_AT_name("uint_least32_t")
+    2070                    .dwattr $C$DW$T$115, DW_AT_type(*$C$DW$T$113)
+    2071                    .dwattr $C$DW$T$115, DW_AT_language(DW_LANG_C)
+    2072                    .dwattr $C$DW$T$115, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2073                    .dwattr $C$DW$T$115, DW_AT_decl_line(0x31)
+    2074                    .dwattr $C$DW$T$115, DW_AT_decl_column(0x1a)
+    2075            
+    2076            $C$DW$T$116     .dwtag  DW_TAG_typedef
+    2077                    .dwattr $C$DW$T$116, DW_AT_name("__uintfptr_t")
+    2078                    .dwattr $C$DW$T$116, DW_AT_type(*$C$DW$T$103)
+    2079                    .dwattr $C$DW$T$116, DW_AT_language(DW_LANG_C)
+    2080                    .dwattr $C$DW$T$116, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   41
+
+    2081                    .dwattr $C$DW$T$116, DW_AT_decl_line(0x68)
+    2082                    .dwattr $C$DW$T$116, DW_AT_decl_column(0x14)
+    2083            
+    2084            $C$DW$T$117     .dwtag  DW_TAG_typedef
+    2085                    .dwattr $C$DW$T$117, DW_AT_name("__vm_offset_t")
+    2086                    .dwattr $C$DW$T$117, DW_AT_type(*$C$DW$T$103)
+    2087                    .dwattr $C$DW$T$117, DW_AT_language(DW_LANG_C)
+    2088                    .dwattr $C$DW$T$117, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2089                    .dwattr $C$DW$T$117, DW_AT_decl_line(0x79)
+    2090                    .dwattr $C$DW$T$117, DW_AT_decl_column(0x14)
+    2091            
+    2092            $C$DW$T$118     .dwtag  DW_TAG_typedef
+    2093                    .dwattr $C$DW$T$118, DW_AT_name("__vm_paddr_t")
+    2094                    .dwattr $C$DW$T$118, DW_AT_type(*$C$DW$T$103)
+    2095                    .dwattr $C$DW$T$118, DW_AT_language(DW_LANG_C)
+    2096                    .dwattr $C$DW$T$118, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2097                    .dwattr $C$DW$T$118, DW_AT_decl_line(0x7a)
+    2098                    .dwattr $C$DW$T$118, DW_AT_decl_column(0x14)
+    2099            
+    2100            $C$DW$T$119     .dwtag  DW_TAG_typedef
+    2101                    .dwattr $C$DW$T$119, DW_AT_name("__vm_size_t")
+    2102                    .dwattr $C$DW$T$119, DW_AT_type(*$C$DW$T$103)
+    2103                    .dwattr $C$DW$T$119, DW_AT_language(DW_LANG_C)
+    2104                    .dwattr $C$DW$T$119, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2105                    .dwattr $C$DW$T$119, DW_AT_decl_line(0x7b)
+    2106                    .dwattr $C$DW$T$119, DW_AT_decl_column(0x14)
+    2107            
+    2108            $C$DW$T$120     .dwtag  DW_TAG_typedef
+    2109                    .dwattr $C$DW$T$120, DW_AT_name("uint32_t")
+    2110                    .dwattr $C$DW$T$120, DW_AT_type(*$C$DW$T$103)
+    2111                    .dwattr $C$DW$T$120, DW_AT_language(DW_LANG_C)
+    2112                    .dwattr $C$DW$T$120, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2113                    .dwattr $C$DW$T$120, DW_AT_decl_line(0x46)
+    2114                    .dwattr $C$DW$T$120, DW_AT_decl_column(0x15)
+    2115            
+    2116            $C$DW$T$14      .dwtag  DW_TAG_base_type
+    2117                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    2118                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+    2119                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    2120            
+    2121            $C$DW$T$121     .dwtag  DW_TAG_typedef
+    2122                    .dwattr $C$DW$T$121, DW_AT_name("__int64_t")
+    2123                    .dwattr $C$DW$T$121, DW_AT_type(*$C$DW$T$14)
+    2124                    .dwattr $C$DW$T$121, DW_AT_language(DW_LANG_C)
+    2125                    .dwattr $C$DW$T$121, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2126                    .dwattr $C$DW$T$121, DW_AT_decl_line(0x40)
+    2127                    .dwattr $C$DW$T$121, DW_AT_decl_column(0x14)
+    2128            
+    2129            $C$DW$T$122     .dwtag  DW_TAG_typedef
+    2130                    .dwattr $C$DW$T$122, DW_AT_name("__blkcnt_t")
+    2131                    .dwattr $C$DW$T$122, DW_AT_type(*$C$DW$T$121)
+    2132                    .dwattr $C$DW$T$122, DW_AT_language(DW_LANG_C)
+    2133                    .dwattr $C$DW$T$122, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2134                    .dwattr $C$DW$T$122, DW_AT_decl_line(0x30)
+    2135                    .dwattr $C$DW$T$122, DW_AT_decl_column(0x13)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   42
+
+    2136            
+    2137            $C$DW$T$123     .dwtag  DW_TAG_typedef
+    2138                    .dwattr $C$DW$T$123, DW_AT_name("__id_t")
+    2139                    .dwattr $C$DW$T$123, DW_AT_type(*$C$DW$T$121)
+    2140                    .dwattr $C$DW$T$123, DW_AT_language(DW_LANG_C)
+    2141                    .dwattr $C$DW$T$123, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2142                    .dwattr $C$DW$T$123, DW_AT_decl_line(0x36)
+    2143                    .dwattr $C$DW$T$123, DW_AT_decl_column(0x13)
+    2144            
+    2145            $C$DW$T$124     .dwtag  DW_TAG_typedef
+    2146                    .dwattr $C$DW$T$124, DW_AT_name("__int_fast64_t")
+    2147                    .dwattr $C$DW$T$124, DW_AT_type(*$C$DW$T$121)
+    2148                    .dwattr $C$DW$T$124, DW_AT_language(DW_LANG_C)
+    2149                    .dwattr $C$DW$T$124, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2150                    .dwattr $C$DW$T$124, DW_AT_decl_line(0x59)
+    2151                    .dwattr $C$DW$T$124, DW_AT_decl_column(0x13)
+    2152            
+    2153            $C$DW$T$125     .dwtag  DW_TAG_typedef
+    2154                    .dwattr $C$DW$T$125, DW_AT_name("int_fast64_t")
+    2155                    .dwattr $C$DW$T$125, DW_AT_type(*$C$DW$T$124)
+    2156                    .dwattr $C$DW$T$125, DW_AT_language(DW_LANG_C)
+    2157                    .dwattr $C$DW$T$125, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2158                    .dwattr $C$DW$T$125, DW_AT_decl_line(0x37)
+    2159                    .dwattr $C$DW$T$125, DW_AT_decl_column(0x19)
+    2160            
+    2161            $C$DW$T$126     .dwtag  DW_TAG_typedef
+    2162                    .dwattr $C$DW$T$126, DW_AT_name("__int_least64_t")
+    2163                    .dwattr $C$DW$T$126, DW_AT_type(*$C$DW$T$121)
+    2164                    .dwattr $C$DW$T$126, DW_AT_language(DW_LANG_C)
+    2165                    .dwattr $C$DW$T$126, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2166                    .dwattr $C$DW$T$126, DW_AT_decl_line(0x5d)
+    2167                    .dwattr $C$DW$T$126, DW_AT_decl_column(0x13)
+    2168            
+    2169            $C$DW$T$127     .dwtag  DW_TAG_typedef
+    2170                    .dwattr $C$DW$T$127, DW_AT_name("int_least64_t")
+    2171                    .dwattr $C$DW$T$127, DW_AT_type(*$C$DW$T$126)
+    2172                    .dwattr $C$DW$T$127, DW_AT_language(DW_LANG_C)
+    2173                    .dwattr $C$DW$T$127, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2174                    .dwattr $C$DW$T$127, DW_AT_decl_line(0x2d)
+    2175                    .dwattr $C$DW$T$127, DW_AT_decl_column(0x1a)
+    2176            
+    2177            $C$DW$T$128     .dwtag  DW_TAG_typedef
+    2178                    .dwattr $C$DW$T$128, DW_AT_name("__intmax_t")
+    2179                    .dwattr $C$DW$T$128, DW_AT_type(*$C$DW$T$121)
+    2180                    .dwattr $C$DW$T$128, DW_AT_language(DW_LANG_C)
+    2181                    .dwattr $C$DW$T$128, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2182                    .dwattr $C$DW$T$128, DW_AT_decl_line(0x4f)
+    2183                    .dwattr $C$DW$T$128, DW_AT_decl_column(0x13)
+    2184            
+    2185            $C$DW$T$129     .dwtag  DW_TAG_typedef
+    2186                    .dwattr $C$DW$T$129, DW_AT_name("intmax_t")
+    2187                    .dwattr $C$DW$T$129, DW_AT_type(*$C$DW$T$128)
+    2188                    .dwattr $C$DW$T$129, DW_AT_language(DW_LANG_C)
+    2189                    .dwattr $C$DW$T$129, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2190                    .dwattr $C$DW$T$129, DW_AT_decl_line(0x58)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   43
+
+    2191                    .dwattr $C$DW$T$129, DW_AT_decl_column(0x15)
+    2192            
+    2193            $C$DW$T$130     .dwtag  DW_TAG_typedef
+    2194                    .dwattr $C$DW$T$130, DW_AT_name("__off64_t")
+    2195                    .dwattr $C$DW$T$130, DW_AT_type(*$C$DW$T$121)
+    2196                    .dwattr $C$DW$T$130, DW_AT_language(DW_LANG_C)
+    2197                    .dwattr $C$DW$T$130, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2198                    .dwattr $C$DW$T$130, DW_AT_decl_line(0x3f)
+    2199                    .dwattr $C$DW$T$130, DW_AT_decl_column(0x13)
+    2200            
+    2201            $C$DW$T$131     .dwtag  DW_TAG_typedef
+    2202                    .dwattr $C$DW$T$131, DW_AT_name("__rlim_t")
+    2203                    .dwattr $C$DW$T$131, DW_AT_type(*$C$DW$T$121)
+    2204                    .dwattr $C$DW$T$131, DW_AT_language(DW_LANG_C)
+    2205                    .dwattr $C$DW$T$131, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2206                    .dwattr $C$DW$T$131, DW_AT_decl_line(0x41)
+    2207                    .dwattr $C$DW$T$131, DW_AT_decl_column(0x13)
+    2208            
+    2209            $C$DW$T$132     .dwtag  DW_TAG_typedef
+    2210                    .dwattr $C$DW$T$132, DW_AT_name("int64_t")
+    2211                    .dwattr $C$DW$T$132, DW_AT_type(*$C$DW$T$121)
+    2212                    .dwattr $C$DW$T$132, DW_AT_language(DW_LANG_C)
+    2213                    .dwattr $C$DW$T$132, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2214                    .dwattr $C$DW$T$132, DW_AT_decl_line(0x35)
+    2215                    .dwattr $C$DW$T$132, DW_AT_decl_column(0x14)
+    2216            
+    2217            $C$DW$T$15      .dwtag  DW_TAG_base_type
+    2218                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    2219                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    2220                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    2221            
+    2222            $C$DW$T$133     .dwtag  DW_TAG_typedef
+    2223                    .dwattr $C$DW$T$133, DW_AT_name("__uint64_t")
+    2224                    .dwattr $C$DW$T$133, DW_AT_type(*$C$DW$T$15)
+    2225                    .dwattr $C$DW$T$133, DW_AT_language(DW_LANG_C)
+    2226                    .dwattr $C$DW$T$133, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2227                    .dwattr $C$DW$T$133, DW_AT_decl_line(0x45)
+    2228                    .dwattr $C$DW$T$133, DW_AT_decl_column(0x1c)
+    2229            
+    2230            $C$DW$T$134     .dwtag  DW_TAG_typedef
+    2231                    .dwattr $C$DW$T$134, DW_AT_name("__dev_t")
+    2232                    .dwattr $C$DW$T$134, DW_AT_type(*$C$DW$T$133)
+    2233                    .dwattr $C$DW$T$134, DW_AT_language(DW_LANG_C)
+    2234                    .dwattr $C$DW$T$134, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2235                    .dwattr $C$DW$T$134, DW_AT_decl_line(0x7f)
+    2236                    .dwattr $C$DW$T$134, DW_AT_decl_column(0x14)
+    2237            
+    2238            $C$DW$T$135     .dwtag  DW_TAG_typedef
+    2239                    .dwattr $C$DW$T$135, DW_AT_name("__fsblkcnt_t")
+    2240                    .dwattr $C$DW$T$135, DW_AT_type(*$C$DW$T$133)
+    2241                    .dwattr $C$DW$T$135, DW_AT_language(DW_LANG_C)
+    2242                    .dwattr $C$DW$T$135, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2243                    .dwattr $C$DW$T$135, DW_AT_decl_line(0x33)
+    2244                    .dwattr $C$DW$T$135, DW_AT_decl_column(0x14)
+    2245            
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   44
+
+    2246            $C$DW$T$136     .dwtag  DW_TAG_typedef
+    2247                    .dwattr $C$DW$T$136, DW_AT_name("__fsfilcnt_t")
+    2248                    .dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$133)
+    2249                    .dwattr $C$DW$T$136, DW_AT_language(DW_LANG_C)
+    2250                    .dwattr $C$DW$T$136, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2251                    .dwattr $C$DW$T$136, DW_AT_decl_line(0x34)
+    2252                    .dwattr $C$DW$T$136, DW_AT_decl_column(0x14)
+    2253            
+    2254            $C$DW$T$137     .dwtag  DW_TAG_typedef
+    2255                    .dwattr $C$DW$T$137, DW_AT_name("__ino_t")
+    2256                    .dwattr $C$DW$T$137, DW_AT_type(*$C$DW$T$133)
+    2257                    .dwattr $C$DW$T$137, DW_AT_language(DW_LANG_C)
+    2258                    .dwattr $C$DW$T$137, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2259                    .dwattr $C$DW$T$137, DW_AT_decl_line(0x37)
+    2260                    .dwattr $C$DW$T$137, DW_AT_decl_column(0x14)
+    2261            
+    2262            $C$DW$T$138     .dwtag  DW_TAG_typedef
+    2263                    .dwattr $C$DW$T$138, DW_AT_name("__nlink_t")
+    2264                    .dwattr $C$DW$T$138, DW_AT_type(*$C$DW$T$133)
+    2265                    .dwattr $C$DW$T$138, DW_AT_language(DW_LANG_C)
+    2266                    .dwattr $C$DW$T$138, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2267                    .dwattr $C$DW$T$138, DW_AT_decl_line(0x3d)
+    2268                    .dwattr $C$DW$T$138, DW_AT_decl_column(0x14)
+    2269            
+    2270            $C$DW$T$139     .dwtag  DW_TAG_typedef
+    2271                    .dwattr $C$DW$T$139, DW_AT_name("__uint_fast64_t")
+    2272                    .dwattr $C$DW$T$139, DW_AT_type(*$C$DW$T$133)
+    2273                    .dwattr $C$DW$T$139, DW_AT_language(DW_LANG_C)
+    2274                    .dwattr $C$DW$T$139, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2275                    .dwattr $C$DW$T$139, DW_AT_decl_line(0x73)
+    2276                    .dwattr $C$DW$T$139, DW_AT_decl_column(0x14)
+    2277            
+    2278            $C$DW$T$140     .dwtag  DW_TAG_typedef
+    2279                    .dwattr $C$DW$T$140, DW_AT_name("uint_fast64_t")
+    2280                    .dwattr $C$DW$T$140, DW_AT_type(*$C$DW$T$139)
+    2281                    .dwattr $C$DW$T$140, DW_AT_language(DW_LANG_C)
+    2282                    .dwattr $C$DW$T$140, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2283                    .dwattr $C$DW$T$140, DW_AT_decl_line(0x3c)
+    2284                    .dwattr $C$DW$T$140, DW_AT_decl_column(0x1a)
+    2285            
+    2286            $C$DW$T$141     .dwtag  DW_TAG_typedef
+    2287                    .dwattr $C$DW$T$141, DW_AT_name("__uint_least64_t")
+    2288                    .dwattr $C$DW$T$141, DW_AT_type(*$C$DW$T$133)
+    2289                    .dwattr $C$DW$T$141, DW_AT_language(DW_LANG_C)
+    2290                    .dwattr $C$DW$T$141, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2291                    .dwattr $C$DW$T$141, DW_AT_decl_line(0x77)
+    2292                    .dwattr $C$DW$T$141, DW_AT_decl_column(0x14)
+    2293            
+    2294            $C$DW$T$142     .dwtag  DW_TAG_typedef
+    2295                    .dwattr $C$DW$T$142, DW_AT_name("uint_least64_t")
+    2296                    .dwattr $C$DW$T$142, DW_AT_type(*$C$DW$T$141)
+    2297                    .dwattr $C$DW$T$142, DW_AT_language(DW_LANG_C)
+    2298                    .dwattr $C$DW$T$142, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2299                    .dwattr $C$DW$T$142, DW_AT_decl_line(0x32)
+    2300                    .dwattr $C$DW$T$142, DW_AT_decl_column(0x1a)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   45
+
+    2301            
+    2302            $C$DW$T$143     .dwtag  DW_TAG_typedef
+    2303                    .dwattr $C$DW$T$143, DW_AT_name("__uintmax_t")
+    2304                    .dwattr $C$DW$T$143, DW_AT_type(*$C$DW$T$133)
+    2305                    .dwattr $C$DW$T$143, DW_AT_language(DW_LANG_C)
+    2306                    .dwattr $C$DW$T$143, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2307                    .dwattr $C$DW$T$143, DW_AT_decl_line(0x69)
+    2308                    .dwattr $C$DW$T$143, DW_AT_decl_column(0x14)
+    2309            
+    2310            $C$DW$T$144     .dwtag  DW_TAG_typedef
+    2311                    .dwattr $C$DW$T$144, DW_AT_name("__rman_res_t")
+    2312                    .dwattr $C$DW$T$144, DW_AT_type(*$C$DW$T$143)
+    2313                    .dwattr $C$DW$T$144, DW_AT_language(DW_LANG_C)
+    2314                    .dwattr $C$DW$T$144, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2315                    .dwattr $C$DW$T$144, DW_AT_decl_line(0x9a)
+    2316                    .dwattr $C$DW$T$144, DW_AT_decl_column(0x19)
+    2317            
+    2318            $C$DW$T$145     .dwtag  DW_TAG_typedef
+    2319                    .dwattr $C$DW$T$145, DW_AT_name("uintmax_t")
+    2320                    .dwattr $C$DW$T$145, DW_AT_type(*$C$DW$T$143)
+    2321                    .dwattr $C$DW$T$145, DW_AT_language(DW_LANG_C)
+    2322                    .dwattr $C$DW$T$145, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2323                    .dwattr $C$DW$T$145, DW_AT_decl_line(0x5c)
+    2324                    .dwattr $C$DW$T$145, DW_AT_decl_column(0x16)
+    2325            
+    2326            $C$DW$T$146     .dwtag  DW_TAG_typedef
+    2327                    .dwattr $C$DW$T$146, DW_AT_name("uint64_t")
+    2328                    .dwattr $C$DW$T$146, DW_AT_type(*$C$DW$T$133)
+    2329                    .dwattr $C$DW$T$146, DW_AT_language(DW_LANG_C)
+    2330                    .dwattr $C$DW$T$146, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2331                    .dwattr $C$DW$T$146, DW_AT_decl_line(0x4b)
+    2332                    .dwattr $C$DW$T$146, DW_AT_decl_column(0x15)
+    2333            
+    2334            $C$DW$T$16      .dwtag  DW_TAG_base_type
+    2335                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    2336                    .dwattr $C$DW$T$16, DW_AT_name("float")
+    2337                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    2338            
+    2339            $C$DW$T$147     .dwtag  DW_TAG_typedef
+    2340                    .dwattr $C$DW$T$147, DW_AT_name("__float_t")
+    2341                    .dwattr $C$DW$T$147, DW_AT_type(*$C$DW$T$16)
+    2342                    .dwattr $C$DW$T$147, DW_AT_language(DW_LANG_C)
+    2343                    .dwattr $C$DW$T$147, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2344                    .dwattr $C$DW$T$147, DW_AT_decl_line(0x4d)
+    2345                    .dwattr $C$DW$T$147, DW_AT_decl_column(0x10)
+    2346            
+    2347            $C$DW$T$17      .dwtag  DW_TAG_base_type
+    2348                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    2349                    .dwattr $C$DW$T$17, DW_AT_name("double")
+    2350                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    2351            
+    2352            $C$DW$T$148     .dwtag  DW_TAG_typedef
+    2353                    .dwattr $C$DW$T$148, DW_AT_name("__double_t")
+    2354                    .dwattr $C$DW$T$148, DW_AT_type(*$C$DW$T$17)
+    2355                    .dwattr $C$DW$T$148, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   46
+
+    2356                    .dwattr $C$DW$T$148, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2357                    .dwattr $C$DW$T$148, DW_AT_decl_line(0x4c)
+    2358                    .dwattr $C$DW$T$148, DW_AT_decl_column(0x11)
+    2359            
+    2360            $C$DW$T$18      .dwtag  DW_TAG_base_type
+    2361                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    2362                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+    2363                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    2364            
+    2365            $C$DW$T$28      .dwtag  DW_TAG_base_type
+    2366                    .dwattr $C$DW$T$28, DW_AT_encoding(DW_ATE_unsigned_char)
+    2367                    .dwattr $C$DW$T$28, DW_AT_name("unsigned char")
+    2368                    .dwattr $C$DW$T$28, DW_AT_byte_size(0x01)
+    2369            
+    2370            $C$DW$T$153     .dwtag  DW_TAG_pointer_type
+    2371                    .dwattr $C$DW$T$153, DW_AT_type(*$C$DW$T$6)
+    2372                    .dwattr $C$DW$T$153, DW_AT_address_class(0x10)
+    2373            
+    2374            $C$DW$T$154     .dwtag  DW_TAG_typedef
+    2375                    .dwattr $C$DW$T$154, DW_AT_name("__va_list")
+    2376                    .dwattr $C$DW$T$154, DW_AT_type(*$C$DW$T$153)
+    2377                    .dwattr $C$DW$T$154, DW_AT_language(DW_LANG_C)
+    2378                    .dwattr $C$DW$T$154, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2379                    .dwattr $C$DW$T$154, DW_AT_decl_line(0x92)
+    2380                    .dwattr $C$DW$T$154, DW_AT_decl_column(0x0f)
+    2381            
+    2382            
+    2383            $C$DW$T$19      .dwtag  DW_TAG_structure_type
+    2384                    .dwattr $C$DW$T$19, DW_AT_name("__mq")
+    2385                    .dwattr $C$DW$T$19, DW_AT_declaration
+    2386                    .dwattr $C$DW$T$19, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    2387                    .dwattr $C$DW$T$19, DW_AT_decl_line(0x4c)
+    2388                    .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+    2389                    .dwendtag $C$DW$T$19
+    2390            
+    2391            $C$DW$T$155     .dwtag  DW_TAG_pointer_type
+    2392                    .dwattr $C$DW$T$155, DW_AT_type(*$C$DW$T$19)
+    2393                    .dwattr $C$DW$T$155, DW_AT_address_class(0x10)
+    2394            
+    2395            $C$DW$T$156     .dwtag  DW_TAG_typedef
+    2396                    .dwattr $C$DW$T$156, DW_AT_name("__mqd_t")
+    2397                    .dwattr $C$DW$T$156, DW_AT_type(*$C$DW$T$155)
+    2398                    .dwattr $C$DW$T$156, DW_AT_language(DW_LANG_C)
+    2399                    .dwattr $C$DW$T$156, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2400                    .dwattr $C$DW$T$156, DW_AT_decl_line(0x4c)
+    2401                    .dwattr $C$DW$T$156, DW_AT_decl_column(0x16)
+    2402            
+    2403            
+    2404            $C$DW$T$20      .dwtag  DW_TAG_structure_type
+    2405                    .dwattr $C$DW$T$20, DW_AT_name("__timer")
+    2406                    .dwattr $C$DW$T$20, DW_AT_declaration
+    2407                    .dwattr $C$DW$T$20, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    2408                    .dwattr $C$DW$T$20, DW_AT_decl_line(0x4b)
+    2409                    .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
+    2410                    .dwendtag $C$DW$T$20
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   47
+
+    2411            
+    2412            $C$DW$T$157     .dwtag  DW_TAG_pointer_type
+    2413                    .dwattr $C$DW$T$157, DW_AT_type(*$C$DW$T$20)
+    2414                    .dwattr $C$DW$T$157, DW_AT_address_class(0x10)
+    2415            
+    2416            $C$DW$T$158     .dwtag  DW_TAG_typedef
+    2417                    .dwattr $C$DW$T$158, DW_AT_name("__timer_t")
+    2418                    .dwattr $C$DW$T$158, DW_AT_type(*$C$DW$T$157)
+    2419                    .dwattr $C$DW$T$158, DW_AT_language(DW_LANG_C)
+    2420                    .dwattr $C$DW$T$158, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    2421                    .dwattr $C$DW$T$158, DW_AT_decl_line(0x4b)
+    2422                    .dwattr $C$DW$T$158, DW_AT_decl_column(0x19)
+    2423            
+    2424                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    2425            
+    2426            ;***************************************************************
+    2427            ;* DWARF CIE ENTRIES                                           *
+    2428            ;***************************************************************
+    2429            
+    2430            $C$DW$CIE       .dwcie 16
+    2431                    .dwcfi  cfa_register, 1
+    2432                    .dwcfi  cfa_offset, 0
+    2433                    .dwcfi  same_value, 0
+    2434                    .dwcfi  same_value, 1
+    2435                    .dwcfi  same_value, 3
+    2436                    .dwcfi  same_value, 4
+    2437                    .dwcfi  same_value, 5
+    2438                    .dwcfi  same_value, 6
+    2439                    .dwcfi  same_value, 7
+    2440                    .dwcfi  same_value, 8
+    2441                    .dwcfi  same_value, 9
+    2442                    .dwcfi  same_value, 10
+    2443                    .dwendentry
+    2444            
+    2445            ;***************************************************************
+    2446            ;* DWARF REGISTER MAP                                          *
+    2447            ;***************************************************************
+    2448            
+    2449            $C$DW$48        .dwtag  DW_TAG_TI_assign_register
+    2450                    .dwattr $C$DW$48, DW_AT_name("PC")
+    2451                    .dwattr $C$DW$48, DW_AT_location[DW_OP_reg0]
+    2452            
+    2453            $C$DW$49        .dwtag  DW_TAG_TI_assign_register
+    2454                    .dwattr $C$DW$49, DW_AT_name("SP")
+    2455                    .dwattr $C$DW$49, DW_AT_location[DW_OP_reg1]
+    2456            
+    2457            $C$DW$50        .dwtag  DW_TAG_TI_assign_register
+    2458                    .dwattr $C$DW$50, DW_AT_name("SR")
+    2459                    .dwattr $C$DW$50, DW_AT_location[DW_OP_reg2]
+    2460            
+    2461            $C$DW$51        .dwtag  DW_TAG_TI_assign_register
+    2462                    .dwattr $C$DW$51, DW_AT_name("CG")
+    2463                    .dwattr $C$DW$51, DW_AT_location[DW_OP_reg3]
+    2464            
+    2465            $C$DW$52        .dwtag  DW_TAG_TI_assign_register
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+fr2111_swi2c_master.asm                                              PAGE   48
+
+    2466                    .dwattr $C$DW$52, DW_AT_name("r4")
+    2467                    .dwattr $C$DW$52, DW_AT_location[DW_OP_reg4]
+    2468            
+    2469            $C$DW$53        .dwtag  DW_TAG_TI_assign_register
+    2470                    .dwattr $C$DW$53, DW_AT_name("r5")
+    2471                    .dwattr $C$DW$53, DW_AT_location[DW_OP_reg5]
+    2472            
+    2473            $C$DW$54        .dwtag  DW_TAG_TI_assign_register
+    2474                    .dwattr $C$DW$54, DW_AT_name("r6")
+    2475                    .dwattr $C$DW$54, DW_AT_location[DW_OP_reg6]
+    2476            
+    2477            $C$DW$55        .dwtag  DW_TAG_TI_assign_register
+    2478                    .dwattr $C$DW$55, DW_AT_name("r7")
+    2479                    .dwattr $C$DW$55, DW_AT_location[DW_OP_reg7]
+    2480            
+    2481            $C$DW$56        .dwtag  DW_TAG_TI_assign_register
+    2482                    .dwattr $C$DW$56, DW_AT_name("r8")
+    2483                    .dwattr $C$DW$56, DW_AT_location[DW_OP_reg8]
+    2484            
+    2485            $C$DW$57        .dwtag  DW_TAG_TI_assign_register
+    2486                    .dwattr $C$DW$57, DW_AT_name("r9")
+    2487                    .dwattr $C$DW$57, DW_AT_location[DW_OP_reg9]
+    2488            
+    2489            $C$DW$58        .dwtag  DW_TAG_TI_assign_register
+    2490                    .dwattr $C$DW$58, DW_AT_name("r10")
+    2491                    .dwattr $C$DW$58, DW_AT_location[DW_OP_reg10]
+    2492            
+    2493            $C$DW$59        .dwtag  DW_TAG_TI_assign_register
+    2494                    .dwattr $C$DW$59, DW_AT_name("r11")
+    2495                    .dwattr $C$DW$59, DW_AT_location[DW_OP_reg11]
+    2496            
+    2497            $C$DW$60        .dwtag  DW_TAG_TI_assign_register
+    2498                    .dwattr $C$DW$60, DW_AT_name("r12")
+    2499                    .dwattr $C$DW$60, DW_AT_location[DW_OP_reg12]
+    2500            
+    2501            $C$DW$61        .dwtag  DW_TAG_TI_assign_register
+    2502                    .dwattr $C$DW$61, DW_AT_name("r13")
+    2503                    .dwattr $C$DW$61, DW_AT_location[DW_OP_reg13]
+    2504            
+    2505            $C$DW$62        .dwtag  DW_TAG_TI_assign_register
+    2506                    .dwattr $C$DW$62, DW_AT_name("r14")
+    2507                    .dwattr $C$DW$62, DW_AT_location[DW_OP_reg14]
+    2508            
+    2509            $C$DW$63        .dwtag  DW_TAG_TI_assign_register
+    2510                    .dwattr $C$DW$63, DW_AT_name("r15")
+    2511                    .dwattr $C$DW$63, DW_AT_location[DW_OP_reg15]
+    2512            
+    2513            $C$DW$64        .dwtag  DW_TAG_TI_assign_register
+    2514                    .dwattr $C$DW$64, DW_AT_name("CIE_RETA")
+    2515                    .dwattr $C$DW$64, DW_AT_location[DW_OP_reg16]
+    2516            
+    2517                    .dwendtag $C$DW$CU
+    2518            
+
+No Assembly Errors, No Assembly Warnings

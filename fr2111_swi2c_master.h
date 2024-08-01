@@ -31,6 +31,8 @@
  * --/COPYRIGHT--*/
 //*****************************************************************************
 
+// TODO: Rename file and note modifications!
+
 #include <msp430.h>
 #include <stdbool.h>
 #include <stdint.h>
@@ -38,7 +40,7 @@
 /* Pin Definitions. These  should be changed depending on the device that
  * you are using.
  */
-#define SWI2C_SCL         BIT3
+#define SWI2C_SCL         BIT1
 #define SWI2C_SDA         BIT2
 #define SWI2C_PxDIR       P1DIR
 #define SWI2C_PxOUT       P1OUT
@@ -76,11 +78,11 @@ typedef struct _SWI2C_I2CTransaction
  *
  *                      2 * TimerPeriod
  */
-#define SWI2C_TIMER_PERIOD  15
+#define SWI2C_TIMER_PERIOD  50
 
 /* Macro for a timer iteration */
-#define TIMER_ITERATION()            TB0CCTL0 &= ~(CCIFG);           \
-                                     while(!(TB0CCTL0 & CCIFG));
+#define TIMER_ITERATION()            TA1CCTL0 &= ~(CCIFG);           \
+                                     while(!(TA1CCTL0 & CCIFG));
 
 /* Function Prototypes */
 
