@@ -1,11 +1,11 @@
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-       3            ;* Date/Time created: Thu Aug  1 01:12:12 2024                                *
+       3            ;* Date/Time created: Thu Aug  1 02:33:59 2024                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
        6            
@@ -58,7 +58,7 @@ sensorApp.asm                                                        PAGE    1
       51                    .dwattr $C$DW$4, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
       52                    .dwattr $C$DW$4, DW_AT_decl_line(0x1cf)
       53                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    2
@@ -118,7 +118,7 @@ sensorApp.asm                                                        PAGE    2
      106                    .dwattr $C$DW$10, DW_AT_name("TA0R")
      107                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("TA0R")
      108                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$21)
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    3
@@ -178,7 +178,7 @@ sensorApp.asm                                                        PAGE    3
      161                    .dwattr $C$DW$15, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
      162                    .dwattr $C$DW$15, DW_AT_decl_line(0x284)
      163                    .dwattr $C$DW$15, DW_AT_decl_column(0x01)
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    4
@@ -238,14 +238,14 @@ sensorApp.asm                                                        PAGE    4
      215                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("uartTxData")
      216                    .dwattr $C$DW$20, DW_AT_location[DW_OP_addr uartTxData]
      217                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$13)
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    5
 
      218                    .dwattr $C$DW$20, DW_AT_external
      219                    .dwattr $C$DW$20, DW_AT_decl_file("../sensorApp.c")
-     220                    .dwattr $C$DW$20, DW_AT_decl_line(0x2d)
+     220                    .dwattr $C$DW$20, DW_AT_decl_line(0x0d)
      221                    .dwattr $C$DW$20, DW_AT_decl_column(0x0f)
      222            
      223                    .global uartBytesTransmitted
@@ -263,7 +263,7 @@ sensorApp.asm                                                        PAGE    5
      235                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$6)
      236                    .dwattr $C$DW$21, DW_AT_external
      237                    .dwattr $C$DW$21, DW_AT_decl_file("../sensorApp.c")
-     238                    .dwattr $C$DW$21, DW_AT_decl_line(0x30)
+     238                    .dwattr $C$DW$21, DW_AT_decl_line(0x10)
      239                    .dwattr $C$DW$21, DW_AT_decl_column(0x0f)
      240            
      241                    .global counter
@@ -281,7 +281,7 @@ sensorApp.asm                                                        PAGE    5
      253                    .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$6)
      254                    .dwattr $C$DW$22, DW_AT_external
      255                    .dwattr $C$DW$22, DW_AT_decl_file("../sensorApp.c")
-     256                    .dwattr $C$DW$22, DW_AT_decl_line(0x33)
+     256                    .dwattr $C$DW$22, DW_AT_decl_line(0x13)
      257                    .dwattr $C$DW$22, DW_AT_decl_column(0x0f)
      258            
      259            
@@ -296,9 +296,9 @@ sensorApp.asm                                                        PAGE    5
      268            
      269                    .dwendtag $C$DW$23
      270            
-     271            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIi
+     271            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIj
      272 000000               .sect   ".text:main"
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    6
@@ -313,13 +313,13 @@ sensorApp.asm                                                        PAGE    6
      280                    .dwattr $C$DW$25, DW_AT_TI_symbol_name("main")
      281                    .dwattr $C$DW$25, DW_AT_external
      282                    .dwattr $C$DW$25, DW_AT_TI_begin_file("../sensorApp.c")
-     283                    .dwattr $C$DW$25, DW_AT_TI_begin_line(0x38)
+     283                    .dwattr $C$DW$25, DW_AT_TI_begin_line(0x18)
      284                    .dwattr $C$DW$25, DW_AT_TI_begin_column(0x06)
      285                    .dwattr $C$DW$25, DW_AT_decl_file("../sensorApp.c")
-     286                    .dwattr $C$DW$25, DW_AT_decl_line(0x38)
+     286                    .dwattr $C$DW$25, DW_AT_decl_line(0x18)
      287                    .dwattr $C$DW$25, DW_AT_decl_column(0x06)
      288                    .dwattr $C$DW$25, DW_AT_TI_max_frame_size(0x02)
-     289                    .dwpsn  file "../sensorApp.c",line 57,column 1,is_stmt,address main,isa 0
+     289                    .dwpsn  file "../sensorApp.c",line 25,column 1,is_stmt,address main,isa 0
      290            
      291                    .dwfde $C$DW$CIE, main
      292            
@@ -334,91 +334,91 @@ sensorApp.asm                                                        PAGE    6
      301            ;* --------------------------------------------------------------------------*
      302                    .dwcfi  cfa_offset, 2
      303                    .dwcfi  save_reg_to_mem, 16, -2
-     304                    .dwpsn  file "../sensorApp.c",line 58,column 2,is_stmt,isa 0
-     305 000000 40B2          MOV.W     #23168,&WDTCTL+0      ; [] |58| 
+     304                    .dwpsn  file "../sensorApp.c",line 26,column 2,is_stmt,isa 0
+     305 000000 40B2          MOV.W     #23168,&WDTCTL+0      ; [] |26| 
          000002 5A80 
          000004 0000!
-     306                    .dwpsn  file "../sensorApp.c",line 60,column 2,is_stmt,isa 0
-     307 000006 93F2          CMP.B     #255,&CALBC1_8MHZ+0   ; [] |60| 
+     306                    .dwpsn  file "../sensorApp.c",line 28,column 2,is_stmt,isa 0
+     307 000006 93F2          CMP.B     #255,&CALBC1_8MHZ+0   ; [] |28| 
          000008 0000!
-     308 00000a 242C          JEQ       $C$L1                 ; [] |60| 
-     309                                                      ; [] |60| 
+     308 00000a 242C          JEQ       $C$L1                 ; [] |28| 
+     309                                                      ; [] |28| 
      310            ;* --------------------------------------------------------------------------*
-     311 00000c 93F2          CMP.B     #255,&CALDCO_8MHZ+0   ; [] |60| 
+     311 00000c 93F2          CMP.B     #255,&CALDCO_8MHZ+0   ; [] |28| 
          00000e 0000!
-     312 000010 2429          JEQ       $C$L1                 ; [] |60| 
-     313                                                      ; [] |60| 
+     312 000010 2429          JEQ       $C$L1                 ; [] |28| 
+     313                                                      ; [] |28| 
      314            ;* --------------------------------------------------------------------------*
-     315                    .dwpsn  file "../sensorApp.c",line 64,column 2,is_stmt,isa 0
-     316 000012 43C2          MOV.B     #0,&DCOCTL+0          ; [] |64| 
+     315                    .dwpsn  file "../sensorApp.c",line 32,column 2,is_stmt,isa 0
+     316 000012 43C2          MOV.B     #0,&DCOCTL+0          ; [] |32| 
          000014 0000!
-     317                    .dwpsn  file "../sensorApp.c",line 65,column 2,is_stmt,isa 0
-     318 000016 42D2          MOV.B     &CALBC1_8MHZ+0,&BCSCTL1+0 ; [] |65| 
+     317                    .dwpsn  file "../sensorApp.c",line 33,column 2,is_stmt,isa 0
+     318 000016 42D2          MOV.B     &CALBC1_8MHZ+0,&BCSCTL1+0 ; [] |33| 
          000018 0000!
          00001a 0000!
-     319                    .dwpsn  file "../sensorApp.c",line 66,column 2,is_stmt,isa 0
-     320 00001c 42D2          MOV.B     &CALDCO_8MHZ+0,&DCOCTL+0 ; [] |66| 
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+     319                    .dwpsn  file "../sensorApp.c",line 34,column 2,is_stmt,isa 0
+     320 00001c 42D2          MOV.B     &CALDCO_8MHZ+0,&DCOCTL+0 ; [] |34| 
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    7
 
          00001e 0000!
          000020 0000!
-     321                    .dwpsn  file "../sensorApp.c",line 68,column 2,is_stmt,isa 0
-     322 000022 D3D2          OR.B      #1,&P1DIR+0           ; [] |68| 
+     321                    .dwpsn  file "../sensorApp.c",line 36,column 2,is_stmt,isa 0
+     322 000022 D3D2          OR.B      #1,&P1DIR+0           ; [] |36| 
          000024 0000!
-     323                    .dwpsn  file "../sensorApp.c",line 70,column 2,is_stmt,isa 0
-     324 000026 40B2          MOV.W     #16,&TA0CCTL0+0       ; [] |70| 
+     323                    .dwpsn  file "../sensorApp.c",line 38,column 2,is_stmt,isa 0
+     324 000026 40B2          MOV.W     #16,&TA0CCTL0+0       ; [] |38| 
          000028 0010 
          00002a 0000!
-     325                    .dwpsn  file "../sensorApp.c",line 71,column 2,is_stmt,isa 0
-     326 00002c 40B2          MOV.W     #50000,&TA0CCR0+0     ; [] |71| 
+     325                    .dwpsn  file "../sensorApp.c",line 39,column 2,is_stmt,isa 0
+     326 00002c 40B2          MOV.W     #50000,&TA0CCR0+0     ; [] |39| 
          00002e C350 
          000030 0000!
-     327                    .dwpsn  file "../sensorApp.c",line 80,column 2,is_stmt,isa 0
-     328 000032 40B2          MOV.W     #736,&TA0CTL+0        ; [] |80| 
+     327                    .dwpsn  file "../sensorApp.c",line 48,column 2,is_stmt,isa 0
+     328 000032 40B2          MOV.W     #736,&TA0CTL+0        ; [] |48| 
          000034 02E0 
          000036 0000!
-     329                    .dwpsn  file "../sensorApp.c",line 82,column 2,is_stmt,isa 0
-     330 000038 40F2          MOV.B     #6,&P1SEL+0           ; [] |82| 
+     329                    .dwpsn  file "../sensorApp.c",line 50,column 2,is_stmt,isa 0
+     330 000038 40F2          MOV.B     #6,&P1SEL+0           ; [] |50| 
          00003a 0006 
          00003c 0000!
-     331                    .dwpsn  file "../sensorApp.c",line 83,column 2,is_stmt,isa 0
-     332 00003e 40F2          MOV.B     #6,&P1SEL2+0          ; [] |83| 
+     331                    .dwpsn  file "../sensorApp.c",line 51,column 2,is_stmt,isa 0
+     332 00003e 40F2          MOV.B     #6,&P1SEL2+0          ; [] |51| 
          000040 0006 
          000042 0000!
-     333                    .dwpsn  file "../sensorApp.c",line 84,column 2,is_stmt,isa 0
-     334 000044 D0F2          OR.B      #128,&UCA0CTL1+0      ; [] |84| 
+     333                    .dwpsn  file "../sensorApp.c",line 52,column 2,is_stmt,isa 0
+     334 000044 D0F2          OR.B      #128,&UCA0CTL1+0      ; [] |52| 
          000046 0080 
          000048 0000!
-     335                    .dwpsn  file "../sensorApp.c",line 85,column 2,is_stmt,isa 0
-     336 00004a 40F2          MOV.B     #65,&UCA0BR0+0        ; [] |85| 
+     335                    .dwpsn  file "../sensorApp.c",line 53,column 2,is_stmt,isa 0
+     336 00004a 40F2          MOV.B     #65,&UCA0BR0+0        ; [] |53| 
          00004c 0041 
          00004e 0000!
-     337                    .dwpsn  file "../sensorApp.c",line 86,column 2,is_stmt,isa 0
-     338 000050 40F2          MOV.B     #3,&UCA0BR1+0         ; [] |86| 
+     337                    .dwpsn  file "../sensorApp.c",line 54,column 2,is_stmt,isa 0
+     338 000050 40F2          MOV.B     #3,&UCA0BR1+0         ; [] |54| 
          000052 0003 
          000054 0000!
-     339                    .dwpsn  file "../sensorApp.c",line 87,column 2,is_stmt,isa 0
-     340 000056 43E2          MOV.B     #2,&UCA0MCTL+0        ; [] |87| 
+     339                    .dwpsn  file "../sensorApp.c",line 55,column 2,is_stmt,isa 0
+     340 000056 43E2          MOV.B     #2,&UCA0MCTL+0        ; [] |55| 
          000058 0000!
-     341                    .dwpsn  file "../sensorApp.c",line 88,column 2,is_stmt,isa 0
-     342 00005a C3D2          BIC.B     #1,&UCA0CTL1+0        ; [] |88| 
+     341                    .dwpsn  file "../sensorApp.c",line 56,column 2,is_stmt,isa 0
+     342 00005a C3D2          BIC.B     #1,&UCA0CTL1+0        ; [] |56| 
          00005c 0000!
-     343                    .dwpsn  file "../sensorApp.c",line 91,column 2,is_stmt,isa 0
-     344 00005e D032          BIS.W     #24,SR                ; [] |91| 
+     343                    .dwpsn  file "../sensorApp.c",line 59,column 2,is_stmt,isa 0
+     344 00005e D032          BIS.W     #24,SR                ; [] |59| 
          000060 0018 
      345 000062 3C01          JMP       $C$L2                 ; [] 
      346                                                      ; [] 
      347            ;* --------------------------------------------------------------------------*
      348            ;*   BEGIN LOOP $C$L1
      349            ;*
-     350            ;*   Loop source line                : 62
-     351            ;*   Loop closing brace source line  : 62
+     350            ;*   Loop source line                : 30
+     351            ;*   Loop closing brace source line  : 30
      352            ;*   Known Minimum Trip Count        : 1
      353            ;*   Known Maximum Trip Count        : 4294967295
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    8
@@ -426,12 +426,12 @@ sensorApp.asm                                                        PAGE    8
      354            ;*   Known Max Trip Count Factor     : 1
      355            ;* --------------------------------------------------------------------------*
      356 000064       $C$L1:    
-     357                    .dwpsn  file "../sensorApp.c",line 62,column 12,is_stmt,isa 0
-     358 000064 3FFF          JMP       $C$L1                 ; [] |62| 
-     359                                                      ; [] |62| 
+     357                    .dwpsn  file "../sensorApp.c",line 30,column 12,is_stmt,isa 0
+     358 000064 3FFF          JMP       $C$L1                 ; [] |30| 
+     359                                                      ; [] |30| 
      360            ;* --------------------------------------------------------------------------*
      361 000066       $C$L2:    
-     362                    .dwpsn  file "../sensorApp.c",line 92,column 1,is_stmt,isa 0
+     362                    .dwpsn  file "../sensorApp.c",line 60,column 1,is_stmt,isa 0
      363            $C$DW$26        .dwtag  DW_TAG_TI_branch
      364                    .dwattr $C$DW$26, DW_AT_low_pc(0x00)
      365                    .dwattr $C$DW$26, DW_AT_TI_return
@@ -439,7 +439,7 @@ sensorApp.asm                                                        PAGE    8
      367 000066 4130          RET       ; [] 
      368                    ; [] 
      369                    .dwattr $C$DW$25, DW_AT_TI_end_file("../sensorApp.c")
-     370                    .dwattr $C$DW$25, DW_AT_TI_end_line(0x5c)
+     370                    .dwattr $C$DW$25, DW_AT_TI_end_line(0x3c)
      371                    .dwattr $C$DW$25, DW_AT_TI_end_column(0x01)
      372                    .dwendentry
      373                    .dwendtag $C$DW$25
@@ -455,14 +455,14 @@ sensorApp.asm                                                        PAGE    8
      383                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("USCI_A0_Tx_ISR")
      384                    .dwattr $C$DW$27, DW_AT_external
      385                    .dwattr $C$DW$27, DW_AT_TI_begin_file("../sensorApp.c")
-     386                    .dwattr $C$DW$27, DW_AT_TI_begin_line(0x81)
+     386                    .dwattr $C$DW$27, DW_AT_TI_begin_line(0x65)
      387                    .dwattr $C$DW$27, DW_AT_TI_begin_column(0x12)
      388                    .dwattr $C$DW$27, DW_AT_decl_file("../sensorApp.c")
-     389                    .dwattr $C$DW$27, DW_AT_decl_line(0x81)
+     389                    .dwattr $C$DW$27, DW_AT_decl_line(0x65)
      390                    .dwattr $C$DW$27, DW_AT_decl_column(0x12)
      391                    .dwattr $C$DW$27, DW_AT_TI_interrupt
      392                    .dwattr $C$DW$27, DW_AT_TI_max_frame_size(0x0c)
-     393                    .dwpsn  file "../sensorApp.c",line 130,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
+     393                    .dwpsn  file "../sensorApp.c",line 102,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
      394            
      395                    .dwfde $C$DW$CIE, USCI_A0_Tx_ISR
      396            
@@ -478,7 +478,7 @@ sensorApp.asm                                                        PAGE    8
      406                    .dwcfi  cfa_offset, 2
      407                    .dwcfi  save_reg_to_mem, 16, -2
      408 000000 120F          PUSH.W    r15                   ; [] 
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    9
@@ -497,48 +497,48 @@ sensorApp.asm                                                        PAGE    9
      420 000008 120B          PUSH.W    r11                   ; [] 
      421                    .dwcfi  cfa_offset, 12
      422                    .dwcfi  save_reg_to_mem, 11, -12
-     423                    .dwpsn  file "../sensorApp.c",line 131,column 5,is_stmt,isa 0
-     424 00000a 90F2          CMP.B     #5,&uartBytesTransmitted+0 ; [] |131| 
+     423                    .dwpsn  file "../sensorApp.c",line 103,column 5,is_stmt,isa 0
+     424 00000a 90F2          CMP.B     #5,&uartBytesTransmitted+0 ; [] |103| 
          00000c 0005 
          00000e 0000!
-     425 000010 2810          JLO       $C$L3                 ; [] |131| 
-     426                                                      ; [] |131| 
+     425 000010 2810          JLO       $C$L3                 ; [] |103| 
+     426                                                      ; [] |103| 
      427            ;* --------------------------------------------------------------------------*
-     428                    .dwpsn  file "../sensorApp.c",line 137,column 9,is_stmt,isa 0
-     429 000012 42D2          MOV.B     &uartTxData+0,&UCA0TXBUF+0 ; [] |137| 
+     428                    .dwpsn  file "../sensorApp.c",line 109,column 9,is_stmt,isa 0
+     429 000012 42D2          MOV.B     &uartTxData+0,&UCA0TXBUF+0 ; [] |109| 
          000014 0000!
          000016 0000!
-     430                    .dwpsn  file "../sensorApp.c",line 138,column 9,is_stmt,isa 0
-     431 000018 53D2          ADD.B     #1,&uartBytesTransmitted+0 ; [] |138| 
+     430                    .dwpsn  file "../sensorApp.c",line 110,column 9,is_stmt,isa 0
+     431 000018 53D2          ADD.B     #1,&uartBytesTransmitted+0 ; [] |110| 
          00001a 0000!
-     432                    .dwpsn  file "../sensorApp.c",line 139,column 9,is_stmt,isa 0
-     433 00001c 421C          MOV.W     &uartTxData+0,r12     ; [] |139| 
+     432                    .dwpsn  file "../sensorApp.c",line 111,column 9,is_stmt,isa 0
+     433 00001c 421C          MOV.W     &uartTxData+0,r12     ; [] |111| 
          00001e 0000!
-     434 000020 421D          MOV.W     &uartTxData+2,r13     ; [] |139| 
+     434 000020 421D          MOV.W     &uartTxData+2,r13     ; [] |111| 
          000022 0002!
      435            $C$DW$28        .dwtag  DW_TAG_TI_branch
      436                    .dwattr $C$DW$28, DW_AT_low_pc(0x00)
      437                    .dwattr $C$DW$28, DW_AT_name("__mspabi_srll_8")
      438                    .dwattr $C$DW$28, DW_AT_TI_call
      439            
-     440 000024 12B0          CALL      #__mspabi_srll_8      ; [] |139| 
+     440 000024 12B0          CALL      #__mspabi_srll_8      ; [] |111| 
          000026 0000!
-     441                                                      ; [] |139| 
-     442 000028 4C82          MOV.W     r12,&uartTxData+0     ; [] |139| 
+     441                                                      ; [] |111| 
+     442 000028 4C82          MOV.W     r12,&uartTxData+0     ; [] |111| 
          00002a 0000!
-     443 00002c 4D82          MOV.W     r13,&uartTxData+2     ; [] |139| 
+     443 00002c 4D82          MOV.W     r13,&uartTxData+2     ; [] |111| 
          00002e 0002!
-     444 000030 3C02          JMP       $C$L4                 ; [] |139| 
-     445                                                      ; [] |139| 
+     444 000030 3C02          JMP       $C$L4                 ; [] |111| 
+     445                                                      ; [] |111| 
      446            ;* --------------------------------------------------------------------------*
      447 000032       $C$L3:    
-     448                    .dwpsn  file "../sensorApp.c",line 133,column 9,is_stmt,isa 0
-     449 000032 C3E2          BIC.B     #2,&IE2+0             ; [] |133| 
+     448                    .dwpsn  file "../sensorApp.c",line 105,column 9,is_stmt,isa 0
+     449 000032 C3E2          BIC.B     #2,&IE2+0             ; [] |105| 
          000034 0000!
      450            ;* --------------------------------------------------------------------------*
      451 000036       $C$L4:    
-     452                    .dwpsn  file "../sensorApp.c",line 142,column 1,is_stmt,isa 0
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+     452                    .dwpsn  file "../sensorApp.c",line 114,column 1,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   10
@@ -565,7 +565,7 @@ sensorApp.asm                                                        PAGE   10
      472 000040 1300          RETI      ; [] 
      473                    ; [] 
      474                    .dwattr $C$DW$27, DW_AT_TI_end_file("../sensorApp.c")
-     475                    .dwattr $C$DW$27, DW_AT_TI_end_line(0x8e)
+     475                    .dwattr $C$DW$27, DW_AT_TI_end_line(0x72)
      476                    .dwattr $C$DW$27, DW_AT_TI_end_column(0x01)
      477                    .dwendentry
      478                    .dwendtag $C$DW$27
@@ -581,14 +581,14 @@ sensorApp.asm                                                        PAGE   10
      488                    .dwattr $C$DW$30, DW_AT_TI_symbol_name("Timer_A")
      489                    .dwattr $C$DW$30, DW_AT_external
      490                    .dwattr $C$DW$30, DW_AT_TI_begin_file("../sensorApp.c")
-     491                    .dwattr $C$DW$30, DW_AT_TI_begin_line(0x72)
+     491                    .dwattr $C$DW$30, DW_AT_TI_begin_line(0x56)
      492                    .dwattr $C$DW$30, DW_AT_TI_begin_column(0x12)
      493                    .dwattr $C$DW$30, DW_AT_decl_file("../sensorApp.c")
-     494                    .dwattr $C$DW$30, DW_AT_decl_line(0x72)
+     494                    .dwattr $C$DW$30, DW_AT_decl_line(0x56)
      495                    .dwattr $C$DW$30, DW_AT_decl_column(0x12)
      496                    .dwattr $C$DW$30, DW_AT_TI_interrupt
      497                    .dwattr $C$DW$30, DW_AT_TI_max_frame_size(0x02)
-     498                    .dwpsn  file "../sensorApp.c",line 115,column 1,is_stmt,address Timer_A,isa 0
+     498                    .dwpsn  file "../sensorApp.c",line 87,column 1,is_stmt,address Timer_A,isa 0
      499            
      500                    .dwfde $C$DW$CIE, Timer_A
      501            
@@ -598,7 +598,7 @@ sensorApp.asm                                                        PAGE   10
      505            ;*   Regs Modified     : SP,SR                                               *
      506            ;*   Regs Used         : SP,SR                                               *
      507            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   11
@@ -608,27 +608,27 @@ sensorApp.asm                                                        PAGE   11
      510            ;* --------------------------------------------------------------------------*
      511                    .dwcfi  cfa_offset, 2
      512                    .dwcfi  save_reg_to_mem, 16, -2
-     513                    .dwpsn  file "../sensorApp.c",line 116,column 5,is_stmt,isa 0
-     514 000000 E3D2          XOR.B     #1,&P1OUT+0           ; [] |116| 
+     513                    .dwpsn  file "../sensorApp.c",line 88,column 5,is_stmt,isa 0
+     514 000000 E3D2          XOR.B     #1,&P1OUT+0           ; [] |88| 
          000002 0000!
-     515                    .dwpsn  file "../sensorApp.c",line 117,column 5,is_stmt,isa 0
-     516 000004 80B2          SUB.W     #15536,&TA0CCR0+0     ; [] |117| 
+     515                    .dwpsn  file "../sensorApp.c",line 89,column 5,is_stmt,isa 0
+     516 000004 80B2          SUB.W     #15536,&TA0CCR0+0     ; [] |89| 
          000006 3CB0 
          000008 0000!
-     517                    .dwpsn  file "../sensorApp.c",line 119,column 5,is_stmt,isa 0
-     518 00000a 4292          MOV.W     &TA0R+0,&uartTxData+0 ; [] |119| 
+     517                    .dwpsn  file "../sensorApp.c",line 91,column 5,is_stmt,isa 0
+     518 00000a 4292          MOV.W     &TA0R+0,&uartTxData+0 ; [] |91| 
          00000c 0000!
          00000e 0000!
-     519 000010 4382          MOV.W     #0,&uartTxData+2      ; [] |119| 
+     519 000010 4382          MOV.W     #0,&uartTxData+2      ; [] |91| 
          000012 0002!
-     520                    .dwpsn  file "../sensorApp.c",line 120,column 5,is_stmt,isa 0
-     521 000014 42D2          MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |120| 
+     520                    .dwpsn  file "../sensorApp.c",line 92,column 5,is_stmt,isa 0
+     521 000014 42D2          MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |92| 
          000016 0000!
          000018 0000!
-     522                    .dwpsn  file "../sensorApp.c",line 121,column 5,is_stmt,isa 0
-     523 00001a 53D2          ADD.B     #1,&counter+0         ; [] |121| 
+     522                    .dwpsn  file "../sensorApp.c",line 93,column 5,is_stmt,isa 0
+     523 00001a 53D2          ADD.B     #1,&counter+0         ; [] |93| 
          00001c 0000!
-     524                    .dwpsn  file "../sensorApp.c",line 122,column 1,is_stmt,isa 0
+     524                    .dwpsn  file "../sensorApp.c",line 94,column 1,is_stmt,isa 0
      525            $C$DW$31        .dwtag  DW_TAG_TI_branch
      526                    .dwattr $C$DW$31, DW_AT_low_pc(0x00)
      527                    .dwattr $C$DW$31, DW_AT_TI_return
@@ -636,7 +636,7 @@ sensorApp.asm                                                        PAGE   11
      529 00001e 1300          RETI      ; [] 
      530                    ; [] 
      531                    .dwattr $C$DW$30, DW_AT_TI_end_file("../sensorApp.c")
-     532                    .dwattr $C$DW$30, DW_AT_TI_end_line(0x7a)
+     532                    .dwattr $C$DW$30, DW_AT_TI_end_line(0x5e)
      533                    .dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
      534                    .dwendentry
      535                    .dwendtag $C$DW$30
@@ -658,7 +658,7 @@ sensorApp.asm                                                        PAGE   11
      551                    .global UCA0CTL1
      552                    .global UCA0BR0
      553                    .global UCA0BR1
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   12
@@ -718,7 +718,7 @@ sensorApp.asm                                                        PAGE   12
      606            $C$DW$T$9       .dwtag  DW_TAG_base_type
      607                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
      608                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   13
@@ -778,7 +778,7 @@ sensorApp.asm                                                        PAGE   13
      661            ;***************************************************************
      662            ;* DWARF CIE ENTRIES                                           *
      663            ;***************************************************************
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   14
@@ -838,7 +838,7 @@ sensorApp.asm                                                        PAGE   14
      716            $C$DW$40        .dwtag  DW_TAG_TI_assign_register
      717                    .dwattr $C$DW$40, DW_AT_name("r8")
      718                    .dwattr $C$DW$40, DW_AT_location[DW_OP_reg8]
-MSP430 Assembler Unix v21.6.1 Thu Aug  1 01:12:12 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug  1 02:33:59 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   15
