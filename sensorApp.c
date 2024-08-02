@@ -69,12 +69,8 @@ void main(void)
  *    (which is equal to the timer counter set during the initial timer ISR).
  * 5. The Tx ISR is disabled after 4 times, and normal operation continues until the next time the timer ISR triggers.
  *
- * For unknown reasons, this is currently not working. There is some semblance of the counter when debugging over UART,
- * but in general the values received by the computer do not make any sense.
- *
- * Theories:
- * 1. xxd may not be accurately reflecting all binary data passing through. It may be
- *    just be stuck on non-ASCII values and not know what to do with them.
+ * For unknown reasons, this is currently not working. The counter from 0 to 255 appears to be getting sent over,
+ * but nothing else (32-bit timer value) is.
  *
  */
 

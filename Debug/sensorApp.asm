@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-;* Date/Time created: Thu Aug  1 02:33:59 2024                                *
+;* Date/Time created: Fri Aug  2 00:13:23 2024                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:data=small --object_format=elf --silicon_version=msp --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -268,7 +268,7 @@ $C$DW$24	.dwtag  DW_TAG_formal_parameter
 
 	.dwendtag $C$DW$23
 
-;	/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIj2o7tIFXe /var/tmp/TIj2otKy4Wo 
+;	/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIorw8JU6eq /var/tmp/TIorwiZJG0c 
 	.sect	".text:main"
 	.clink
 	.global	main
@@ -383,14 +383,14 @@ $C$DW$27	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$27, DW_AT_TI_symbol_name("USCI_A0_Tx_ISR")
 	.dwattr $C$DW$27, DW_AT_external
 	.dwattr $C$DW$27, DW_AT_TI_begin_file("../sensorApp.c")
-	.dwattr $C$DW$27, DW_AT_TI_begin_line(0x65)
+	.dwattr $C$DW$27, DW_AT_TI_begin_line(0x61)
 	.dwattr $C$DW$27, DW_AT_TI_begin_column(0x12)
 	.dwattr $C$DW$27, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$27, DW_AT_decl_line(0x65)
+	.dwattr $C$DW$27, DW_AT_decl_line(0x61)
 	.dwattr $C$DW$27, DW_AT_decl_column(0x12)
 	.dwattr $C$DW$27, DW_AT_TI_interrupt
 	.dwattr $C$DW$27, DW_AT_TI_max_frame_size(0x0c)
-	.dwpsn	file "../sensorApp.c",line 102,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
+	.dwpsn	file "../sensorApp.c",line 98,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
 
 	.dwfde $C$DW$CIE, USCI_A0_Tx_ISR
 
@@ -420,36 +420,36 @@ USCI_A0_Tx_ISR:
         PUSH.W    r11                   ; [] 
 	.dwcfi	cfa_offset, 12
 	.dwcfi	save_reg_to_mem, 11, -12
-	.dwpsn	file "../sensorApp.c",line 103,column 5,is_stmt,isa 0
-        CMP.B     #5,&uartBytesTransmitted+0 ; [] |103| 
-        JLO       $C$L3                 ; [] |103| 
-                                          ; [] |103| 
+	.dwpsn	file "../sensorApp.c",line 99,column 5,is_stmt,isa 0
+        CMP.B     #5,&uartBytesTransmitted+0 ; [] |99| 
+        JLO       $C$L3                 ; [] |99| 
+                                          ; [] |99| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../sensorApp.c",line 109,column 9,is_stmt,isa 0
-        MOV.B     &uartTxData+0,&UCA0TXBUF+0 ; [] |109| 
-	.dwpsn	file "../sensorApp.c",line 110,column 9,is_stmt,isa 0
-        ADD.B     #1,&uartBytesTransmitted+0 ; [] |110| 
-	.dwpsn	file "../sensorApp.c",line 111,column 9,is_stmt,isa 0
-        MOV.W     &uartTxData+0,r12     ; [] |111| 
-        MOV.W     &uartTxData+2,r13     ; [] |111| 
+	.dwpsn	file "../sensorApp.c",line 105,column 9,is_stmt,isa 0
+        MOV.B     &uartTxData+0,&UCA0TXBUF+0 ; [] |105| 
+	.dwpsn	file "../sensorApp.c",line 106,column 9,is_stmt,isa 0
+        ADD.B     #1,&uartBytesTransmitted+0 ; [] |106| 
+	.dwpsn	file "../sensorApp.c",line 107,column 9,is_stmt,isa 0
+        MOV.W     &uartTxData+0,r12     ; [] |107| 
+        MOV.W     &uartTxData+2,r13     ; [] |107| 
 $C$DW$28	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$28, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$28, DW_AT_name("__mspabi_srll_8")
 	.dwattr $C$DW$28, DW_AT_TI_call
 
-        CALL      #__mspabi_srll_8      ; [] |111| 
-                                          ; [] |111| 
-        MOV.W     r12,&uartTxData+0     ; [] |111| 
-        MOV.W     r13,&uartTxData+2     ; [] |111| 
-        JMP       $C$L4                 ; [] |111| 
-                                          ; [] |111| 
+        CALL      #__mspabi_srll_8      ; [] |107| 
+                                          ; [] |107| 
+        MOV.W     r12,&uartTxData+0     ; [] |107| 
+        MOV.W     r13,&uartTxData+2     ; [] |107| 
+        JMP       $C$L4                 ; [] |107| 
+                                          ; [] |107| 
 ;* --------------------------------------------------------------------------*
 $C$L3:    
-	.dwpsn	file "../sensorApp.c",line 105,column 9,is_stmt,isa 0
-        BIC.B     #2,&IE2+0             ; [] |105| 
+	.dwpsn	file "../sensorApp.c",line 101,column 9,is_stmt,isa 0
+        BIC.B     #2,&IE2+0             ; [] |101| 
 ;* --------------------------------------------------------------------------*
 $C$L4:    
-	.dwpsn	file "../sensorApp.c",line 114,column 1,is_stmt,isa 0
+	.dwpsn	file "../sensorApp.c",line 110,column 1,is_stmt,isa 0
         POP       r11                   ; [] 
 	.dwcfi	restore_reg, 11
 	.dwcfi	cfa_offset, 10
@@ -472,7 +472,7 @@ $C$DW$29	.dwtag  DW_TAG_TI_branch
         RETI      ; [] 
         ; [] 
 	.dwattr $C$DW$27, DW_AT_TI_end_file("../sensorApp.c")
-	.dwattr $C$DW$27, DW_AT_TI_end_line(0x72)
+	.dwattr $C$DW$27, DW_AT_TI_end_line(0x6e)
 	.dwattr $C$DW$27, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$27
@@ -488,14 +488,14 @@ $C$DW$30	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$30, DW_AT_TI_symbol_name("Timer_A")
 	.dwattr $C$DW$30, DW_AT_external
 	.dwattr $C$DW$30, DW_AT_TI_begin_file("../sensorApp.c")
-	.dwattr $C$DW$30, DW_AT_TI_begin_line(0x56)
+	.dwattr $C$DW$30, DW_AT_TI_begin_line(0x52)
 	.dwattr $C$DW$30, DW_AT_TI_begin_column(0x12)
 	.dwattr $C$DW$30, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$30, DW_AT_decl_line(0x56)
+	.dwattr $C$DW$30, DW_AT_decl_line(0x52)
 	.dwattr $C$DW$30, DW_AT_decl_column(0x12)
 	.dwattr $C$DW$30, DW_AT_TI_interrupt
 	.dwattr $C$DW$30, DW_AT_TI_max_frame_size(0x02)
-	.dwpsn	file "../sensorApp.c",line 87,column 1,is_stmt,address Timer_A,isa 0
+	.dwpsn	file "../sensorApp.c",line 83,column 1,is_stmt,address Timer_A,isa 0
 
 	.dwfde $C$DW$CIE, Timer_A
 
@@ -510,18 +510,18 @@ Timer_A:
 ;* --------------------------------------------------------------------------*
 	.dwcfi	cfa_offset, 2
 	.dwcfi	save_reg_to_mem, 16, -2
+	.dwpsn	file "../sensorApp.c",line 84,column 5,is_stmt,isa 0
+        XOR.B     #1,&P1OUT+0           ; [] |84| 
+	.dwpsn	file "../sensorApp.c",line 85,column 5,is_stmt,isa 0
+        SUB.W     #15536,&TA0CCR0+0     ; [] |85| 
+	.dwpsn	file "../sensorApp.c",line 87,column 5,is_stmt,isa 0
+        MOV.W     &TA0R+0,&uartTxData+0 ; [] |87| 
+        MOV.W     #0,&uartTxData+2      ; [] |87| 
 	.dwpsn	file "../sensorApp.c",line 88,column 5,is_stmt,isa 0
-        XOR.B     #1,&P1OUT+0           ; [] |88| 
+        MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |88| 
 	.dwpsn	file "../sensorApp.c",line 89,column 5,is_stmt,isa 0
-        SUB.W     #15536,&TA0CCR0+0     ; [] |89| 
-	.dwpsn	file "../sensorApp.c",line 91,column 5,is_stmt,isa 0
-        MOV.W     &TA0R+0,&uartTxData+0 ; [] |91| 
-        MOV.W     #0,&uartTxData+2      ; [] |91| 
-	.dwpsn	file "../sensorApp.c",line 92,column 5,is_stmt,isa 0
-        MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |92| 
-	.dwpsn	file "../sensorApp.c",line 93,column 5,is_stmt,isa 0
-        ADD.B     #1,&counter+0         ; [] |93| 
-	.dwpsn	file "../sensorApp.c",line 94,column 1,is_stmt,isa 0
+        ADD.B     #1,&counter+0         ; [] |89| 
+	.dwpsn	file "../sensorApp.c",line 90,column 1,is_stmt,isa 0
 $C$DW$31	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$31, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$31, DW_AT_TI_return
@@ -529,7 +529,7 @@ $C$DW$31	.dwtag  DW_TAG_TI_branch
         RETI      ; [] 
         ; [] 
 	.dwattr $C$DW$30, DW_AT_TI_end_file("../sensorApp.c")
-	.dwattr $C$DW$30, DW_AT_TI_end_line(0x5e)
+	.dwattr $C$DW$30, DW_AT_TI_end_line(0x5a)
 	.dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$30
