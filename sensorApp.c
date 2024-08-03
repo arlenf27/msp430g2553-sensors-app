@@ -13,7 +13,7 @@
 unsigned long uartTxData = 0;
 
 /** UART transmitted bytes */
-unsigned char uartBytesTransmitted = 0;
+unsigned char uartBitsTransmitted = 0;
 
 /** Temporary Test Counter */
 unsigned char counter = 0;
@@ -33,7 +33,7 @@ void main(void)
 	BCSCTL1 = CALBC1_8MHZ;          // Set DCO to 8 MHz, SMCLK is sourced by DCO
 	DCOCTL = CALDCO_8MHZ;
 
-	P1DIR |= BIT0;                  // Configure P1.0 as output
+	P1DIR |= BIT0;                  // Configure P1.0 and P1.6 as output
 
 	CCTL0 = CCIE;                   // Timer interrupt enabled
 	CCR0 = 50000;                   // Compare value = 50000 clock cycles
@@ -55,23 +55,11 @@ void main(void)
 	UCA0MCTL = UCBRS0;              // Modulation Control second modulation stage UCBRSx = 1
 	UCA0CTL1 &= ~UCSWRST;           // Disable software reset, USCI reset released for operation
 
-
 	_BIS_SR(LPM0_bits + GIE);       // Enter LPM0 with interrupt
 }
 
-// TODO: Fix the below issues!
 /*
- * The intention with the two interrupts below (that are not currently working properly) is to:
- * 1. Send out the value of an 8-bit counter via a timer interrupt (every 0.05 seconds).
- * 2. Increment the counter.
- * 3. Once the timer ISR is over and once the byte has been transmitted, the UART Tx ISR is triggered.
- * 4. The UART Tx ISR will run 4 times, each time transmitting the next 8 bits of a 32-bit value
- *    (which is equal to the timer counter set during the initial timer ISR).
- * 5. The Tx ISR is disabled after 4 times, and normal operation continues until the next time the timer ISR triggers.
- *
- * For unknown reasons, this is currently not working. The counter from 0 to 255 appears to be getting sent over,
- * but nothing else (32-bit timer value) is.
- *
+ * Currently, an 8-bit counter is getting sent, followed by a 32-bit counter.
  */
 
 /**
@@ -84,7 +72,8 @@ __interrupt void Timer_A (void)
     P1OUT ^= BIT0;                  // Bitwise XOR 1st bit, toggle P1.0
     CCR0 += 50000;                  // Timer will overflow, adding 50000 clock cycles to compare value will cause overflow as well
 
-    uartTxData = TA0R;
+    uartTxData+=0x00000010;
+    IE2 |= UCA0TXIE;                // Enable UART Tx Interupt
     UCA0TXBUF = counter;            // Start transmit process with counter
     counter++;
 }
@@ -96,15 +85,15 @@ __interrupt void Timer_A (void)
 #pragma vector=USCIAB0TX_VECTOR
 __interrupt void USCI_A0_Tx_ISR (void)
 {
-    if (uartBytesTransmitted < 5)
+    if (uartBitsTransmitted < 32)
     {
-        IE2 &= ~UCA0TXIE;               // Disable USCI_A0 TX interrupt
+        UCA0TXBUF = (uartTxData >> uartBitsTransmitted) & 0xFF;  // TX Lower 8 bits of 32-bit data to be sent out
+        uartBitsTransmitted+=8;
     }
     else
     {
-        UCA0TXBUF = uartTxData & 0xFF;  // TX Lower 8 bits of 32-bit data to be sent out
-        uartBytesTransmitted++;
-        uartTxData >>= 8;               // Bit shift the next 8 bits.
+        uartBitsTransmitted = 0;
+        IE2 &= ~UCA0TXIE;               // Disable USCI_A0 TX interrupt
     }
 
 }

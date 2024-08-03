@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-;* Date/Time created: Fri Aug  2 00:13:23 2024                                *
+;* Date/Time created: Sat Aug  3 03:06:13 2024                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:data=small --object_format=elf --silicon_version=msp --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -103,104 +103,94 @@ $C$DW$9	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$9, DW_AT_decl_column(0x01)
 
 $C$DW$10	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$10, DW_AT_name("TA0R")
-	.dwattr $C$DW$10, DW_AT_TI_symbol_name("TA0R")
+	.dwattr $C$DW$10, DW_AT_name("TA0CCR0")
+	.dwattr $C$DW$10, DW_AT_TI_symbol_name("TA0CCR0")
 	.dwattr $C$DW$10, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$10, DW_AT_declaration
 	.dwattr $C$DW$10, DW_AT_external
 	.dwattr $C$DW$10, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$10, DW_AT_decl_line(0x1fb)
+	.dwattr $C$DW$10, DW_AT_decl_line(0x1fc)
 	.dwattr $C$DW$10, DW_AT_decl_column(0x01)
 
 $C$DW$11	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$11, DW_AT_name("TA0CCR0")
-	.dwattr $C$DW$11, DW_AT_TI_symbol_name("TA0CCR0")
-	.dwattr $C$DW$11, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$11, DW_AT_name("UCA0CTL1")
+	.dwattr $C$DW$11, DW_AT_TI_symbol_name("UCA0CTL1")
+	.dwattr $C$DW$11, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$11, DW_AT_declaration
 	.dwattr $C$DW$11, DW_AT_external
 	.dwattr $C$DW$11, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$11, DW_AT_decl_line(0x1fc)
+	.dwattr $C$DW$11, DW_AT_decl_line(0x281)
 	.dwattr $C$DW$11, DW_AT_decl_column(0x01)
 
 $C$DW$12	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$12, DW_AT_name("UCA0CTL1")
-	.dwattr $C$DW$12, DW_AT_TI_symbol_name("UCA0CTL1")
+	.dwattr $C$DW$12, DW_AT_name("UCA0BR0")
+	.dwattr $C$DW$12, DW_AT_TI_symbol_name("UCA0BR0")
 	.dwattr $C$DW$12, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$12, DW_AT_declaration
 	.dwattr $C$DW$12, DW_AT_external
 	.dwattr $C$DW$12, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$12, DW_AT_decl_line(0x281)
+	.dwattr $C$DW$12, DW_AT_decl_line(0x282)
 	.dwattr $C$DW$12, DW_AT_decl_column(0x01)
 
 $C$DW$13	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$13, DW_AT_name("UCA0BR0")
-	.dwattr $C$DW$13, DW_AT_TI_symbol_name("UCA0BR0")
+	.dwattr $C$DW$13, DW_AT_name("UCA0BR1")
+	.dwattr $C$DW$13, DW_AT_TI_symbol_name("UCA0BR1")
 	.dwattr $C$DW$13, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$13, DW_AT_declaration
 	.dwattr $C$DW$13, DW_AT_external
 	.dwattr $C$DW$13, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$13, DW_AT_decl_line(0x282)
+	.dwattr $C$DW$13, DW_AT_decl_line(0x283)
 	.dwattr $C$DW$13, DW_AT_decl_column(0x01)
 
 $C$DW$14	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$14, DW_AT_name("UCA0BR1")
-	.dwattr $C$DW$14, DW_AT_TI_symbol_name("UCA0BR1")
+	.dwattr $C$DW$14, DW_AT_name("UCA0MCTL")
+	.dwattr $C$DW$14, DW_AT_TI_symbol_name("UCA0MCTL")
 	.dwattr $C$DW$14, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$14, DW_AT_declaration
 	.dwattr $C$DW$14, DW_AT_external
 	.dwattr $C$DW$14, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$14, DW_AT_decl_line(0x283)
+	.dwattr $C$DW$14, DW_AT_decl_line(0x284)
 	.dwattr $C$DW$14, DW_AT_decl_column(0x01)
 
 $C$DW$15	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$15, DW_AT_name("UCA0MCTL")
-	.dwattr $C$DW$15, DW_AT_TI_symbol_name("UCA0MCTL")
+	.dwattr $C$DW$15, DW_AT_name("UCA0TXBUF")
+	.dwattr $C$DW$15, DW_AT_TI_symbol_name("UCA0TXBUF")
 	.dwattr $C$DW$15, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$15, DW_AT_declaration
 	.dwattr $C$DW$15, DW_AT_external
 	.dwattr $C$DW$15, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$15, DW_AT_decl_line(0x284)
+	.dwattr $C$DW$15, DW_AT_decl_line(0x287)
 	.dwattr $C$DW$15, DW_AT_decl_column(0x01)
 
 $C$DW$16	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$16, DW_AT_name("UCA0TXBUF")
-	.dwattr $C$DW$16, DW_AT_TI_symbol_name("UCA0TXBUF")
-	.dwattr $C$DW$16, DW_AT_type(*$C$DW$T$20)
+	.dwattr $C$DW$16, DW_AT_name("WDTCTL")
+	.dwattr $C$DW$16, DW_AT_TI_symbol_name("WDTCTL")
+	.dwattr $C$DW$16, DW_AT_type(*$C$DW$T$21)
 	.dwattr $C$DW$16, DW_AT_declaration
 	.dwattr $C$DW$16, DW_AT_external
 	.dwattr $C$DW$16, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$16, DW_AT_decl_line(0x287)
+	.dwattr $C$DW$16, DW_AT_decl_line(0x343)
 	.dwattr $C$DW$16, DW_AT_decl_column(0x01)
 
 $C$DW$17	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$17, DW_AT_name("WDTCTL")
-	.dwattr $C$DW$17, DW_AT_TI_symbol_name("WDTCTL")
-	.dwattr $C$DW$17, DW_AT_type(*$C$DW$T$21)
+	.dwattr $C$DW$17, DW_AT_name("CALDCO_8MHZ")
+	.dwattr $C$DW$17, DW_AT_TI_symbol_name("CALDCO_8MHZ")
+	.dwattr $C$DW$17, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$17, DW_AT_declaration
 	.dwattr $C$DW$17, DW_AT_external
 	.dwattr $C$DW$17, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$17, DW_AT_decl_line(0x343)
+	.dwattr $C$DW$17, DW_AT_decl_line(0x376)
 	.dwattr $C$DW$17, DW_AT_decl_column(0x01)
 
 $C$DW$18	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$18, DW_AT_name("CALDCO_8MHZ")
-	.dwattr $C$DW$18, DW_AT_TI_symbol_name("CALDCO_8MHZ")
+	.dwattr $C$DW$18, DW_AT_name("CALBC1_8MHZ")
+	.dwattr $C$DW$18, DW_AT_TI_symbol_name("CALBC1_8MHZ")
 	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$20)
 	.dwattr $C$DW$18, DW_AT_declaration
 	.dwattr $C$DW$18, DW_AT_external
 	.dwattr $C$DW$18, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$18, DW_AT_decl_line(0x376)
+	.dwattr $C$DW$18, DW_AT_decl_line(0x377)
 	.dwattr $C$DW$18, DW_AT_decl_column(0x01)
-
-$C$DW$19	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$19, DW_AT_name("CALBC1_8MHZ")
-	.dwattr $C$DW$19, DW_AT_TI_symbol_name("CALBC1_8MHZ")
-	.dwattr $C$DW$19, DW_AT_type(*$C$DW$T$20)
-	.dwattr $C$DW$19, DW_AT_declaration
-	.dwattr $C$DW$19, DW_AT_external
-	.dwattr $C$DW$19, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp430g2553.h")
-	.dwattr $C$DW$19, DW_AT_decl_line(0x377)
-	.dwattr $C$DW$19, DW_AT_decl_column(0x01)
 
 	.global	uartTxData
 	.data
@@ -210,33 +200,33 @@ uartTxData:
 	.bits		0,32
 			; uartTxData @ 0
 
-$C$DW$20	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$20, DW_AT_name("uartTxData")
-	.dwattr $C$DW$20, DW_AT_TI_symbol_name("uartTxData")
-	.dwattr $C$DW$20, DW_AT_location[DW_OP_addr uartTxData]
-	.dwattr $C$DW$20, DW_AT_type(*$C$DW$T$13)
-	.dwattr $C$DW$20, DW_AT_external
-	.dwattr $C$DW$20, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$20, DW_AT_decl_line(0x0d)
-	.dwattr $C$DW$20, DW_AT_decl_column(0x0f)
+$C$DW$19	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$19, DW_AT_name("uartTxData")
+	.dwattr $C$DW$19, DW_AT_TI_symbol_name("uartTxData")
+	.dwattr $C$DW$19, DW_AT_location[DW_OP_addr uartTxData]
+	.dwattr $C$DW$19, DW_AT_type(*$C$DW$T$13)
+	.dwattr $C$DW$19, DW_AT_external
+	.dwattr $C$DW$19, DW_AT_decl_file("../sensorApp.c")
+	.dwattr $C$DW$19, DW_AT_decl_line(0x0d)
+	.dwattr $C$DW$19, DW_AT_decl_column(0x0f)
 
-	.global	uartBytesTransmitted
+	.global	uartBitsTransmitted
 	.data
 	.align	1
-	.elfsym	uartBytesTransmitted,SYM_SIZE(1)
-uartBytesTransmitted:
+	.elfsym	uartBitsTransmitted,SYM_SIZE(1)
+uartBitsTransmitted:
 	.bits		0,8
-			; uartBytesTransmitted @ 0
+			; uartBitsTransmitted @ 0
 
-$C$DW$21	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$21, DW_AT_name("uartBytesTransmitted")
-	.dwattr $C$DW$21, DW_AT_TI_symbol_name("uartBytesTransmitted")
-	.dwattr $C$DW$21, DW_AT_location[DW_OP_addr uartBytesTransmitted]
-	.dwattr $C$DW$21, DW_AT_type(*$C$DW$T$6)
-	.dwattr $C$DW$21, DW_AT_external
-	.dwattr $C$DW$21, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$21, DW_AT_decl_line(0x10)
-	.dwattr $C$DW$21, DW_AT_decl_column(0x0f)
+$C$DW$20	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$20, DW_AT_name("uartBitsTransmitted")
+	.dwattr $C$DW$20, DW_AT_TI_symbol_name("uartBitsTransmitted")
+	.dwattr $C$DW$20, DW_AT_location[DW_OP_addr uartBitsTransmitted]
+	.dwattr $C$DW$20, DW_AT_type(*$C$DW$T$6)
+	.dwattr $C$DW$20, DW_AT_external
+	.dwattr $C$DW$20, DW_AT_decl_file("../sensorApp.c")
+	.dwattr $C$DW$20, DW_AT_decl_line(0x10)
+	.dwattr $C$DW$20, DW_AT_decl_column(0x0f)
 
 	.global	counter
 	.data
@@ -246,46 +236,46 @@ counter:
 	.bits		0,8
 			; counter @ 0
 
-$C$DW$22	.dwtag  DW_TAG_variable
-	.dwattr $C$DW$22, DW_AT_name("counter")
-	.dwattr $C$DW$22, DW_AT_TI_symbol_name("counter")
-	.dwattr $C$DW$22, DW_AT_location[DW_OP_addr counter]
-	.dwattr $C$DW$22, DW_AT_type(*$C$DW$T$6)
+$C$DW$21	.dwtag  DW_TAG_variable
+	.dwattr $C$DW$21, DW_AT_name("counter")
+	.dwattr $C$DW$21, DW_AT_TI_symbol_name("counter")
+	.dwattr $C$DW$21, DW_AT_location[DW_OP_addr counter]
+	.dwattr $C$DW$21, DW_AT_type(*$C$DW$T$6)
+	.dwattr $C$DW$21, DW_AT_external
+	.dwattr $C$DW$21, DW_AT_decl_file("../sensorApp.c")
+	.dwattr $C$DW$21, DW_AT_decl_line(0x13)
+	.dwattr $C$DW$21, DW_AT_decl_column(0x0f)
+
+
+$C$DW$22	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$22, DW_AT_name("__bis_SR_register")
+	.dwattr $C$DW$22, DW_AT_TI_symbol_name("__bis_SR_register")
+	.dwattr $C$DW$22, DW_AT_type(*$C$DW$T$11)
+	.dwattr $C$DW$22, DW_AT_declaration
 	.dwattr $C$DW$22, DW_AT_external
-	.dwattr $C$DW$22, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$22, DW_AT_decl_line(0x13)
-	.dwattr $C$DW$22, DW_AT_decl_column(0x0f)
+$C$DW$23	.dwtag  DW_TAG_formal_parameter
+	.dwattr $C$DW$23, DW_AT_type(*$C$DW$T$9)
 
+	.dwendtag $C$DW$22
 
-$C$DW$23	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$23, DW_AT_name("__bis_SR_register")
-	.dwattr $C$DW$23, DW_AT_TI_symbol_name("__bis_SR_register")
-	.dwattr $C$DW$23, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$23, DW_AT_declaration
-	.dwattr $C$DW$23, DW_AT_external
-$C$DW$24	.dwtag  DW_TAG_formal_parameter
-	.dwattr $C$DW$24, DW_AT_type(*$C$DW$T$9)
-
-	.dwendtag $C$DW$23
-
-;	/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIorw8JU6eq /var/tmp/TIorwiZJG0c 
+;	/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI1cSkkbA0D /var/tmp/TI1cSd3KHS6 
 	.sect	".text:main"
 	.clink
 	.global	main
 
-$C$DW$25	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$25, DW_AT_name("main")
-	.dwattr $C$DW$25, DW_AT_low_pc(main)
-	.dwattr $C$DW$25, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$25, DW_AT_TI_symbol_name("main")
-	.dwattr $C$DW$25, DW_AT_external
-	.dwattr $C$DW$25, DW_AT_TI_begin_file("../sensorApp.c")
-	.dwattr $C$DW$25, DW_AT_TI_begin_line(0x18)
-	.dwattr $C$DW$25, DW_AT_TI_begin_column(0x06)
-	.dwattr $C$DW$25, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$25, DW_AT_decl_line(0x18)
-	.dwattr $C$DW$25, DW_AT_decl_column(0x06)
-	.dwattr $C$DW$25, DW_AT_TI_max_frame_size(0x02)
+$C$DW$24	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$24, DW_AT_name("main")
+	.dwattr $C$DW$24, DW_AT_low_pc(main)
+	.dwattr $C$DW$24, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$24, DW_AT_TI_symbol_name("main")
+	.dwattr $C$DW$24, DW_AT_external
+	.dwattr $C$DW$24, DW_AT_TI_begin_file("../sensorApp.c")
+	.dwattr $C$DW$24, DW_AT_TI_begin_line(0x18)
+	.dwattr $C$DW$24, DW_AT_TI_begin_column(0x06)
+	.dwattr $C$DW$24, DW_AT_decl_file("../sensorApp.c")
+	.dwattr $C$DW$24, DW_AT_decl_line(0x18)
+	.dwattr $C$DW$24, DW_AT_decl_column(0x06)
+	.dwattr $C$DW$24, DW_AT_TI_max_frame_size(0x02)
 	.dwpsn	file "../sensorApp.c",line 25,column 1,is_stmt,address main,isa 0
 
 	.dwfde $C$DW$CIE, main
@@ -340,8 +330,8 @@ main:
         MOV.B     #2,&UCA0MCTL+0        ; [] |55| 
 	.dwpsn	file "../sensorApp.c",line 56,column 2,is_stmt,isa 0
         BIC.B     #1,&UCA0CTL1+0        ; [] |56| 
-	.dwpsn	file "../sensorApp.c",line 59,column 2,is_stmt,isa 0
-        BIS.W     #24,SR                ; [] |59| 
+	.dwpsn	file "../sensorApp.c",line 58,column 2,is_stmt,isa 0
+        BIS.W     #24,SR                ; [] |58| 
         JMP       $C$L2                 ; [] 
                                           ; [] 
 ;* --------------------------------------------------------------------------*
@@ -359,38 +349,38 @@ $C$L1:
                                           ; [] |30| 
 ;* --------------------------------------------------------------------------*
 $C$L2:    
-	.dwpsn	file "../sensorApp.c",line 60,column 1,is_stmt,isa 0
-$C$DW$26	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$26, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$26, DW_AT_TI_return
+	.dwpsn	file "../sensorApp.c",line 59,column 1,is_stmt,isa 0
+$C$DW$25	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$25, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$25, DW_AT_TI_return
 
         RET       ; [] 
         ; [] 
-	.dwattr $C$DW$25, DW_AT_TI_end_file("../sensorApp.c")
-	.dwattr $C$DW$25, DW_AT_TI_end_line(0x3c)
-	.dwattr $C$DW$25, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$24, DW_AT_TI_end_file("../sensorApp.c")
+	.dwattr $C$DW$24, DW_AT_TI_end_line(0x3b)
+	.dwattr $C$DW$24, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$25
+	.dwendtag $C$DW$24
 
 	.sect	".text:USCI_A0_Tx_ISR"
 	.clink
 	.global	USCI_A0_Tx_ISR
 
-$C$DW$27	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$27, DW_AT_name("USCI_A0_Tx_ISR")
-	.dwattr $C$DW$27, DW_AT_low_pc(USCI_A0_Tx_ISR)
-	.dwattr $C$DW$27, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$27, DW_AT_TI_symbol_name("USCI_A0_Tx_ISR")
-	.dwattr $C$DW$27, DW_AT_external
-	.dwattr $C$DW$27, DW_AT_TI_begin_file("../sensorApp.c")
-	.dwattr $C$DW$27, DW_AT_TI_begin_line(0x61)
-	.dwattr $C$DW$27, DW_AT_TI_begin_column(0x12)
-	.dwattr $C$DW$27, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$27, DW_AT_decl_line(0x61)
-	.dwattr $C$DW$27, DW_AT_decl_column(0x12)
-	.dwattr $C$DW$27, DW_AT_TI_interrupt
-	.dwattr $C$DW$27, DW_AT_TI_max_frame_size(0x0c)
-	.dwpsn	file "../sensorApp.c",line 98,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
+$C$DW$26	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$26, DW_AT_name("USCI_A0_Tx_ISR")
+	.dwattr $C$DW$26, DW_AT_low_pc(USCI_A0_Tx_ISR)
+	.dwattr $C$DW$26, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$26, DW_AT_TI_symbol_name("USCI_A0_Tx_ISR")
+	.dwattr $C$DW$26, DW_AT_external
+	.dwattr $C$DW$26, DW_AT_TI_begin_file("../sensorApp.c")
+	.dwattr $C$DW$26, DW_AT_TI_begin_line(0x56)
+	.dwattr $C$DW$26, DW_AT_TI_begin_column(0x12)
+	.dwattr $C$DW$26, DW_AT_decl_file("../sensorApp.c")
+	.dwattr $C$DW$26, DW_AT_decl_line(0x56)
+	.dwattr $C$DW$26, DW_AT_decl_column(0x12)
+	.dwattr $C$DW$26, DW_AT_TI_interrupt
+	.dwattr $C$DW$26, DW_AT_TI_max_frame_size(0x0c)
+	.dwpsn	file "../sensorApp.c",line 87,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
 
 	.dwfde $C$DW$CIE, USCI_A0_Tx_ISR
 
@@ -420,36 +410,36 @@ USCI_A0_Tx_ISR:
         PUSH.W    r11                   ; [] 
 	.dwcfi	cfa_offset, 12
 	.dwcfi	save_reg_to_mem, 11, -12
-	.dwpsn	file "../sensorApp.c",line 99,column 5,is_stmt,isa 0
-        CMP.B     #5,&uartBytesTransmitted+0 ; [] |99| 
-        JLO       $C$L3                 ; [] |99| 
-                                          ; [] |99| 
+	.dwpsn	file "../sensorApp.c",line 88,column 5,is_stmt,isa 0
+        CMP.B     #32,&uartBitsTransmitted+0 ; [] |88| 
+        JLO       $C$L3                 ; [] |88| 
+                                          ; [] |88| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../sensorApp.c",line 105,column 9,is_stmt,isa 0
-        MOV.B     &uartTxData+0,&UCA0TXBUF+0 ; [] |105| 
-	.dwpsn	file "../sensorApp.c",line 106,column 9,is_stmt,isa 0
-        ADD.B     #1,&uartBytesTransmitted+0 ; [] |106| 
-	.dwpsn	file "../sensorApp.c",line 107,column 9,is_stmt,isa 0
-        MOV.W     &uartTxData+0,r12     ; [] |107| 
-        MOV.W     &uartTxData+2,r13     ; [] |107| 
-$C$DW$28	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$28, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$28, DW_AT_name("__mspabi_srll_8")
-	.dwattr $C$DW$28, DW_AT_TI_call
-
-        CALL      #__mspabi_srll_8      ; [] |107| 
-                                          ; [] |107| 
-        MOV.W     r12,&uartTxData+0     ; [] |107| 
-        MOV.W     r13,&uartTxData+2     ; [] |107| 
-        JMP       $C$L4                 ; [] |107| 
-                                          ; [] |107| 
+	.dwpsn	file "../sensorApp.c",line 95,column 9,is_stmt,isa 0
+        MOV.B     #0,&uartBitsTransmitted+0 ; [] |95| 
+	.dwpsn	file "../sensorApp.c",line 96,column 9,is_stmt,isa 0
+        BIC.B     #2,&IE2+0             ; [] |96| 
+        JMP       $C$L4                 ; [] |96| 
+                                          ; [] |96| 
 ;* --------------------------------------------------------------------------*
 $C$L3:    
-	.dwpsn	file "../sensorApp.c",line 101,column 9,is_stmt,isa 0
-        BIC.B     #2,&IE2+0             ; [] |101| 
+	.dwpsn	file "../sensorApp.c",line 90,column 9,is_stmt,isa 0
+        MOV.B     &uartBitsTransmitted+0,r14 ; [] |90| 
+        MOV.W     &uartTxData+0,r12     ; [] |90| 
+        MOV.W     &uartTxData+2,r13     ; [] |90| 
+$C$DW$27	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$27, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$27, DW_AT_name("__mspabi_srll")
+	.dwattr $C$DW$27, DW_AT_TI_call
+
+        CALL      #__mspabi_srll        ; [] |90| 
+                                          ; [] |90| 
+        MOV.B     r12,&UCA0TXBUF+0      ; [] |90| 
+	.dwpsn	file "../sensorApp.c",line 91,column 9,is_stmt,isa 0
+        ADD.B     #8,&uartBitsTransmitted+0 ; [] |91| 
 ;* --------------------------------------------------------------------------*
 $C$L4:    
-	.dwpsn	file "../sensorApp.c",line 110,column 1,is_stmt,isa 0
+	.dwpsn	file "../sensorApp.c",line 99,column 1,is_stmt,isa 0
         POP       r11                   ; [] 
 	.dwcfi	restore_reg, 11
 	.dwcfi	cfa_offset, 10
@@ -465,37 +455,37 @@ $C$L4:
         POP       r15                   ; [] 
 	.dwcfi	restore_reg, 15
 	.dwcfi	cfa_offset, 2
-$C$DW$29	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$29, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$29, DW_AT_TI_return
+$C$DW$28	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$28, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$28, DW_AT_TI_return
 
         RETI      ; [] 
         ; [] 
-	.dwattr $C$DW$27, DW_AT_TI_end_file("../sensorApp.c")
-	.dwattr $C$DW$27, DW_AT_TI_end_line(0x6e)
-	.dwattr $C$DW$27, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$26, DW_AT_TI_end_file("../sensorApp.c")
+	.dwattr $C$DW$26, DW_AT_TI_end_line(0x63)
+	.dwattr $C$DW$26, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$27
+	.dwendtag $C$DW$26
 
 	.sect	".text:Timer_A"
 	.clink
 	.global	Timer_A
 
-$C$DW$30	.dwtag  DW_TAG_subprogram
-	.dwattr $C$DW$30, DW_AT_name("Timer_A")
-	.dwattr $C$DW$30, DW_AT_low_pc(Timer_A)
-	.dwattr $C$DW$30, DW_AT_high_pc(0x00)
-	.dwattr $C$DW$30, DW_AT_TI_symbol_name("Timer_A")
-	.dwattr $C$DW$30, DW_AT_external
-	.dwattr $C$DW$30, DW_AT_TI_begin_file("../sensorApp.c")
-	.dwattr $C$DW$30, DW_AT_TI_begin_line(0x52)
-	.dwattr $C$DW$30, DW_AT_TI_begin_column(0x12)
-	.dwattr $C$DW$30, DW_AT_decl_file("../sensorApp.c")
-	.dwattr $C$DW$30, DW_AT_decl_line(0x52)
-	.dwattr $C$DW$30, DW_AT_decl_column(0x12)
-	.dwattr $C$DW$30, DW_AT_TI_interrupt
-	.dwattr $C$DW$30, DW_AT_TI_max_frame_size(0x02)
-	.dwpsn	file "../sensorApp.c",line 83,column 1,is_stmt,address Timer_A,isa 0
+$C$DW$29	.dwtag  DW_TAG_subprogram
+	.dwattr $C$DW$29, DW_AT_name("Timer_A")
+	.dwattr $C$DW$29, DW_AT_low_pc(Timer_A)
+	.dwattr $C$DW$29, DW_AT_high_pc(0x00)
+	.dwattr $C$DW$29, DW_AT_TI_symbol_name("Timer_A")
+	.dwattr $C$DW$29, DW_AT_external
+	.dwattr $C$DW$29, DW_AT_TI_begin_file("../sensorApp.c")
+	.dwattr $C$DW$29, DW_AT_TI_begin_line(0x46)
+	.dwattr $C$DW$29, DW_AT_TI_begin_column(0x12)
+	.dwattr $C$DW$29, DW_AT_decl_file("../sensorApp.c")
+	.dwattr $C$DW$29, DW_AT_decl_line(0x46)
+	.dwattr $C$DW$29, DW_AT_decl_column(0x12)
+	.dwattr $C$DW$29, DW_AT_TI_interrupt
+	.dwattr $C$DW$29, DW_AT_TI_max_frame_size(0x02)
+	.dwpsn	file "../sensorApp.c",line 71,column 1,is_stmt,address Timer_A,isa 0
 
 	.dwfde $C$DW$CIE, Timer_A
 
@@ -510,29 +500,31 @@ Timer_A:
 ;* --------------------------------------------------------------------------*
 	.dwcfi	cfa_offset, 2
 	.dwcfi	save_reg_to_mem, 16, -2
-	.dwpsn	file "../sensorApp.c",line 84,column 5,is_stmt,isa 0
-        XOR.B     #1,&P1OUT+0           ; [] |84| 
-	.dwpsn	file "../sensorApp.c",line 85,column 5,is_stmt,isa 0
-        SUB.W     #15536,&TA0CCR0+0     ; [] |85| 
-	.dwpsn	file "../sensorApp.c",line 87,column 5,is_stmt,isa 0
-        MOV.W     &TA0R+0,&uartTxData+0 ; [] |87| 
-        MOV.W     #0,&uartTxData+2      ; [] |87| 
-	.dwpsn	file "../sensorApp.c",line 88,column 5,is_stmt,isa 0
-        MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |88| 
-	.dwpsn	file "../sensorApp.c",line 89,column 5,is_stmt,isa 0
-        ADD.B     #1,&counter+0         ; [] |89| 
-	.dwpsn	file "../sensorApp.c",line 90,column 1,is_stmt,isa 0
-$C$DW$31	.dwtag  DW_TAG_TI_branch
-	.dwattr $C$DW$31, DW_AT_low_pc(0x00)
-	.dwattr $C$DW$31, DW_AT_TI_return
+	.dwpsn	file "../sensorApp.c",line 72,column 5,is_stmt,isa 0
+        XOR.B     #1,&P1OUT+0           ; [] |72| 
+	.dwpsn	file "../sensorApp.c",line 73,column 5,is_stmt,isa 0
+        SUB.W     #15536,&TA0CCR0+0     ; [] |73| 
+	.dwpsn	file "../sensorApp.c",line 75,column 5,is_stmt,isa 0
+        ADD.W     #16,&uartTxData+0     ; [] |75| 
+        ADDC.W    #0,&uartTxData+2      ; [] |75| 
+	.dwpsn	file "../sensorApp.c",line 76,column 5,is_stmt,isa 0
+        OR.B      #2,&IE2+0             ; [] |76| 
+	.dwpsn	file "../sensorApp.c",line 77,column 5,is_stmt,isa 0
+        MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |77| 
+	.dwpsn	file "../sensorApp.c",line 78,column 5,is_stmt,isa 0
+        ADD.B     #1,&counter+0         ; [] |78| 
+	.dwpsn	file "../sensorApp.c",line 79,column 1,is_stmt,isa 0
+$C$DW$30	.dwtag  DW_TAG_TI_branch
+	.dwattr $C$DW$30, DW_AT_low_pc(0x00)
+	.dwattr $C$DW$30, DW_AT_TI_return
 
         RETI      ; [] 
         ; [] 
-	.dwattr $C$DW$30, DW_AT_TI_end_file("../sensorApp.c")
-	.dwattr $C$DW$30, DW_AT_TI_end_line(0x5a)
-	.dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
+	.dwattr $C$DW$29, DW_AT_TI_end_file("../sensorApp.c")
+	.dwattr $C$DW$29, DW_AT_TI_end_line(0x4f)
+	.dwattr $C$DW$29, DW_AT_TI_end_column(0x01)
 	.dwendentry
-	.dwendtag $C$DW$30
+	.dwendtag $C$DW$29
 
 ;*****************************************************************************
 ;* UNDEFINED EXTERNAL REFERENCES                                             *
@@ -546,7 +538,6 @@ $C$DW$31	.dwtag  DW_TAG_TI_branch
 	.global	P1SEL2
 	.global	TA0CTL
 	.global	TA0CCTL0
-	.global	TA0R
 	.global	TA0CCR0
 	.global	UCA0CTL1
 	.global	UCA0BR0
@@ -556,7 +547,7 @@ $C$DW$31	.dwtag  DW_TAG_TI_branch
 	.global	WDTCTL
 	.global	CALDCO_8MHZ
 	.global	CALBC1_8MHZ
-	.global	__mspabi_srll_8
+	.global	__mspabi_srll
 
 ;******************************************************************************
 ;* BUILD ATTRIBUTES                                                           *
@@ -681,73 +672,73 @@ $C$DW$CIE	.dwcie 16
 ;* DWARF REGISTER MAP                                          *
 ;***************************************************************
 
+$C$DW$31	.dwtag  DW_TAG_TI_assign_register
+	.dwattr $C$DW$31, DW_AT_name("PC")
+	.dwattr $C$DW$31, DW_AT_location[DW_OP_reg0]
+
 $C$DW$32	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$32, DW_AT_name("PC")
-	.dwattr $C$DW$32, DW_AT_location[DW_OP_reg0]
+	.dwattr $C$DW$32, DW_AT_name("SP")
+	.dwattr $C$DW$32, DW_AT_location[DW_OP_reg1]
 
 $C$DW$33	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$33, DW_AT_name("SP")
-	.dwattr $C$DW$33, DW_AT_location[DW_OP_reg1]
+	.dwattr $C$DW$33, DW_AT_name("SR")
+	.dwattr $C$DW$33, DW_AT_location[DW_OP_reg2]
 
 $C$DW$34	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$34, DW_AT_name("SR")
-	.dwattr $C$DW$34, DW_AT_location[DW_OP_reg2]
+	.dwattr $C$DW$34, DW_AT_name("CG")
+	.dwattr $C$DW$34, DW_AT_location[DW_OP_reg3]
 
 $C$DW$35	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$35, DW_AT_name("CG")
-	.dwattr $C$DW$35, DW_AT_location[DW_OP_reg3]
+	.dwattr $C$DW$35, DW_AT_name("r4")
+	.dwattr $C$DW$35, DW_AT_location[DW_OP_reg4]
 
 $C$DW$36	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$36, DW_AT_name("r4")
-	.dwattr $C$DW$36, DW_AT_location[DW_OP_reg4]
+	.dwattr $C$DW$36, DW_AT_name("r5")
+	.dwattr $C$DW$36, DW_AT_location[DW_OP_reg5]
 
 $C$DW$37	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$37, DW_AT_name("r5")
-	.dwattr $C$DW$37, DW_AT_location[DW_OP_reg5]
+	.dwattr $C$DW$37, DW_AT_name("r6")
+	.dwattr $C$DW$37, DW_AT_location[DW_OP_reg6]
 
 $C$DW$38	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$38, DW_AT_name("r6")
-	.dwattr $C$DW$38, DW_AT_location[DW_OP_reg6]
+	.dwattr $C$DW$38, DW_AT_name("r7")
+	.dwattr $C$DW$38, DW_AT_location[DW_OP_reg7]
 
 $C$DW$39	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$39, DW_AT_name("r7")
-	.dwattr $C$DW$39, DW_AT_location[DW_OP_reg7]
+	.dwattr $C$DW$39, DW_AT_name("r8")
+	.dwattr $C$DW$39, DW_AT_location[DW_OP_reg8]
 
 $C$DW$40	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$40, DW_AT_name("r8")
-	.dwattr $C$DW$40, DW_AT_location[DW_OP_reg8]
+	.dwattr $C$DW$40, DW_AT_name("r9")
+	.dwattr $C$DW$40, DW_AT_location[DW_OP_reg9]
 
 $C$DW$41	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$41, DW_AT_name("r9")
-	.dwattr $C$DW$41, DW_AT_location[DW_OP_reg9]
+	.dwattr $C$DW$41, DW_AT_name("r10")
+	.dwattr $C$DW$41, DW_AT_location[DW_OP_reg10]
 
 $C$DW$42	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$42, DW_AT_name("r10")
-	.dwattr $C$DW$42, DW_AT_location[DW_OP_reg10]
+	.dwattr $C$DW$42, DW_AT_name("r11")
+	.dwattr $C$DW$42, DW_AT_location[DW_OP_reg11]
 
 $C$DW$43	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$43, DW_AT_name("r11")
-	.dwattr $C$DW$43, DW_AT_location[DW_OP_reg11]
+	.dwattr $C$DW$43, DW_AT_name("r12")
+	.dwattr $C$DW$43, DW_AT_location[DW_OP_reg12]
 
 $C$DW$44	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$44, DW_AT_name("r12")
-	.dwattr $C$DW$44, DW_AT_location[DW_OP_reg12]
+	.dwattr $C$DW$44, DW_AT_name("r13")
+	.dwattr $C$DW$44, DW_AT_location[DW_OP_reg13]
 
 $C$DW$45	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$45, DW_AT_name("r13")
-	.dwattr $C$DW$45, DW_AT_location[DW_OP_reg13]
+	.dwattr $C$DW$45, DW_AT_name("r14")
+	.dwattr $C$DW$45, DW_AT_location[DW_OP_reg14]
 
 $C$DW$46	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$46, DW_AT_name("r14")
-	.dwattr $C$DW$46, DW_AT_location[DW_OP_reg14]
+	.dwattr $C$DW$46, DW_AT_name("r15")
+	.dwattr $C$DW$46, DW_AT_location[DW_OP_reg15]
 
 $C$DW$47	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$47, DW_AT_name("r15")
-	.dwattr $C$DW$47, DW_AT_location[DW_OP_reg15]
-
-$C$DW$48	.dwtag  DW_TAG_TI_assign_register
-	.dwattr $C$DW$48, DW_AT_name("CIE_RETA")
-	.dwattr $C$DW$48, DW_AT_location[DW_OP_reg16]
+	.dwattr $C$DW$47, DW_AT_name("CIE_RETA")
+	.dwattr $C$DW$47, DW_AT_location[DW_OP_reg16]
 
 	.dwendtag $C$DW$CU
 
