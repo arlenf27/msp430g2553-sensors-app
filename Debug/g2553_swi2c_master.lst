@@ -1,47 +1,47 @@
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    1
+g2553_swi2c_master.asm                                               PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-       3            ;* Date/Time created: Sat Aug  3 03:06:13 2024                                *
+       3            ;* Date/Time created: Sat Aug  3 14:35:58 2024                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
        6            
        7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
-       8                    .dwattr $C$DW$CU, DW_AT_name("../fr2111_swi2c_master.c")
+       8                    .dwattr $C$DW$CU, DW_AT_name("../g2553_swi2c_master.c")
        9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 G3 C/C++ Codegen Unix v21.6.1.LTS Copyright (c) 20
       10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
       11                    .dwattr $C$DW$CU, DW_AT_comp_dir("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MS
       12            $C$DW$1 .dwtag  DW_TAG_variable
-      13                    .dwattr $C$DW$1, DW_AT_name("P1IN")
-      14                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("P1IN")
+      13                    .dwattr $C$DW$1, DW_AT_name("IN *")
+      14                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("P2IN")
       15                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$39)
       16                    .dwattr $C$DW$1, DW_AT_declaration
       17                    .dwattr $C$DW$1, DW_AT_external
       18                    .dwattr $C$DW$1, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      19                    .dwattr $C$DW$1, DW_AT_decl_line(0x1ce)
+      19                    .dwattr $C$DW$1, DW_AT_decl_line(0x1d8)
       20                    .dwattr $C$DW$1, DW_AT_decl_column(0x01)
       21            
       22            $C$DW$2 .dwtag  DW_TAG_variable
-      23                    .dwattr $C$DW$2, DW_AT_name("P1OUT")
-      24                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("P1OUT")
+      23                    .dwattr $C$DW$2, DW_AT_name("P2OUT")
+      24                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("P2OUT")
       25                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$39)
       26                    .dwattr $C$DW$2, DW_AT_declaration
       27                    .dwattr $C$DW$2, DW_AT_external
       28                    .dwattr $C$DW$2, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      29                    .dwattr $C$DW$2, DW_AT_decl_line(0x1cf)
+      29                    .dwattr $C$DW$2, DW_AT_decl_line(0x1d9)
       30                    .dwattr $C$DW$2, DW_AT_decl_column(0x01)
       31            
       32            $C$DW$3 .dwtag  DW_TAG_variable
-      33                    .dwattr $C$DW$3, DW_AT_name("P1DIR")
-      34                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("P1DIR")
+      33                    .dwattr $C$DW$3, DW_AT_name("P2DIR")
+      34                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("P2DIR")
       35                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$39)
       36                    .dwattr $C$DW$3, DW_AT_declaration
       37                    .dwattr $C$DW$3, DW_AT_external
       38                    .dwattr $C$DW$3, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      39                    .dwattr $C$DW$3, DW_AT_decl_line(0x1d0)
+      39                    .dwattr $C$DW$3, DW_AT_decl_line(0x1da)
       40                    .dwattr $C$DW$3, DW_AT_decl_column(0x01)
       41            
       42            $C$DW$4 .dwtag  DW_TAG_variable
@@ -58,10 +58,10 @@ fr2111_swi2c_master.asm                                              PAGE    1
       53                    .dwattr $C$DW$5, DW_AT_name("TA1CCTL0")
       54                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("TA1CCTL0")
       55                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$72)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    2
+g2553_swi2c_master.asm                                               PAGE    2
 
       56                    .dwattr $C$DW$5, DW_AT_declaration
       57                    .dwattr $C$DW$5, DW_AT_external
@@ -79,7 +79,7 @@ fr2111_swi2c_master.asm                                              PAGE    2
       69                    .dwattr $C$DW$6, DW_AT_decl_line(0x26d)
       70                    .dwattr $C$DW$6, DW_AT_decl_column(0x01)
       71            
-      72            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI1
+      72            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI2
       73 000000               .sect   ".text:SWI2C_writeData"
       74                    .clink
       75            
@@ -89,14 +89,14 @@ fr2111_swi2c_master.asm                                              PAGE    2
       79                    .dwattr $C$DW$7, DW_AT_high_pc(0x00)
       80                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("SWI2C_writeData")
       81                    .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$28)
-      82                    .dwattr $C$DW$7, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
-      83                    .dwattr $C$DW$7, DW_AT_TI_begin_line(0x5f)
+      82                    .dwattr $C$DW$7, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
+      83                    .dwattr $C$DW$7, DW_AT_TI_begin_line(0x6f)
       84                    .dwattr $C$DW$7, DW_AT_TI_begin_column(0x0d)
-      85                    .dwattr $C$DW$7, DW_AT_decl_file("../fr2111_swi2c_master.c")
-      86                    .dwattr $C$DW$7, DW_AT_decl_line(0x5f)
+      85                    .dwattr $C$DW$7, DW_AT_decl_file("../g2553_swi2c_master.c")
+      86                    .dwattr $C$DW$7, DW_AT_decl_line(0x6f)
       87                    .dwattr $C$DW$7, DW_AT_decl_column(0x0d)
       88                    .dwattr $C$DW$7, DW_AT_TI_max_frame_size(0x04)
-      89                    .dwpsn  file "../fr2111_swi2c_master.c",line 97,column 1,is_stmt,address SWI2C_writeData,isa 0
+      89                    .dwpsn  file "../g2553_swi2c_master.c",line 113,column 1,is_stmt,address SWI2C_writeData,isa 0
       90            
       91                    .dwfde $C$DW$CIE, SWI2C_writeData
       92            $C$DW$8 .dwtag  DW_TAG_formal_parameter
@@ -118,10 +118,10 @@ fr2111_swi2c_master.asm                                              PAGE    2
      108                    .dwattr $C$DW$10, DW_AT_location[DW_OP_reg14]
      109            
      110            $C$DW$11        .dwtag  DW_TAG_formal_parameter
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    3
+g2553_swi2c_master.asm                                               PAGE    3
 
      111                    .dwattr $C$DW$11, DW_AT_name("sendStop")
      112                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("sendStop")
@@ -178,10 +178,10 @@ fr2111_swi2c_master.asm                                              PAGE    3
      163                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$77)
      164                    .dwattr $C$DW$16, DW_AT_location[DW_OP_reg10]
      165            
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    4
+g2553_swi2c_master.asm                                               PAGE    4
 
      166            ;* r12   assigned to temp
      167            $C$DW$17        .dwtag  DW_TAG_variable
@@ -197,491 +197,491 @@ fr2111_swi2c_master.asm                                              PAGE    4
      177                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$83)
      178                    .dwattr $C$DW$18, DW_AT_location[DW_OP_reg11]
      179            
-     180                    .dwpsn  file "../fr2111_swi2c_master.c",line 99,column 17,is_stmt,isa 0
-     181 000002 430B          MOV.W     #0,r11                ; [] |99| 
-     182                    .dwpsn  file "../fr2111_swi2c_master.c",line 102,column 5,is_stmt,isa 0
-     183 000004 40B2          MOV.W     #532,&TA1CTL+0        ; [] |102| 
+     180                    .dwpsn  file "../g2553_swi2c_master.c",line 115,column 17,is_stmt,isa 0
+     181 000002 430B          MOV.W     #0,r11                ; [] |115| 
+     182                    .dwpsn  file "../g2553_swi2c_master.c",line 118,column 5,is_stmt,isa 0
+     183 000004 40B2          MOV.W     #532,&TA1CTL+0        ; [] |118| 
          000006 0214 
          000008 0000!
-     184                    .dwpsn  file "../fr2111_swi2c_master.c",line 105,column 5,is_stmt,isa 0
-     185 00000a D2E2          OR.B      #4,&P1DIR+0           ; [] |105| 
+     184                    .dwpsn  file "../g2553_swi2c_master.c",line 121,column 5,is_stmt,isa 0
+     185 00000a D2E2          OR.B      #4,&P2DIR+0           ; [] |121| 
          00000c 0000!
-     186                    .dwpsn  file "../fr2111_swi2c_master.c",line 106,column 5,is_stmt,isa 0
-     187 00000e 4303          NOP       ; [] |106| 
-     188                    .dwpsn  file "../fr2111_swi2c_master.c",line 107,column 5,is_stmt,isa 0
-     189 000010 D3E2          OR.B      #2,&P1DIR+0           ; [] |107| 
+     186                    .dwpsn  file "../g2553_swi2c_master.c",line 122,column 5,is_stmt,isa 0
+     187 00000e 4303          NOP       ; [] |122| 
+     188                    .dwpsn  file "../g2553_swi2c_master.c",line 123,column 5,is_stmt,isa 0
+     189 000010 D3E2          OR.B      #2,&P2DIR+0           ; [] |123| 
          000012 0000!
-     190                    .dwpsn  file "../fr2111_swi2c_master.c",line 108,column 5,is_stmt,isa 0
-     191 000014 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |108| 
+     190                    .dwpsn  file "../g2553_swi2c_master.c",line 124,column 5,is_stmt,isa 0
+     191 000014 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |124| 
          000016 0000!
      192            ;* --------------------------------------------------------------------------*
      193            ;*   BEGIN LOOP $C$L1
      194            ;*
-     195            ;*   Loop source line                : 108
-     196            ;*   Loop closing brace source line  : 108
+     195            ;*   Loop source line                : 124
+     196            ;*   Loop closing brace source line  : 124
      197            ;*   Known Minimum Trip Count        : 1
      198            ;*   Known Maximum Trip Count        : 4294967295
      199            ;*   Known Max Trip Count Factor     : 1
      200            ;* --------------------------------------------------------------------------*
      201 000018       $C$L1:    
-     202 000018 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |108| 
+     202 000018 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |124| 
          00001a 0000!
-     203 00001c 27FD          JEQ       $C$L1                 ; [] |108| 
-     204                                                      ; [] |108| 
+     203 00001c 27FD          JEQ       $C$L1                 ; [] |124| 
+     204                                                      ; [] |124| 
      205            ;* --------------------------------------------------------------------------*
-     206                    .dwpsn  file "../fr2111_swi2c_master.c",line 111,column 5,is_stmt,isa 0
-     207 00001e 4C4C          MOV.B     r12,r12               ; [] |111| 
-     208 000020 5C0C          RLA.W     r12                   ; [] |111| 
-     209                    .dwpsn  file "../fr2111_swi2c_master.c",line 112,column 5,is_stmt,isa 0
-     210 000022 423A          MOV.W     #8,r10                ; [] |112| 
+     206                    .dwpsn  file "../g2553_swi2c_master.c",line 127,column 5,is_stmt,isa 0
+     207 00001e 4C4C          MOV.B     r12,r12               ; [] |127| 
+     208 000020 5C0C          RLA.W     r12                   ; [] |127| 
+     209                    .dwpsn  file "../g2553_swi2c_master.c",line 128,column 5,is_stmt,isa 0
+     210 000022 423A          MOV.W     #8,r10                ; [] |128| 
      211            ;* --------------------------------------------------------------------------*
      212            ;*   BEGIN LOOP $C$L2
      213            ;*
-     214            ;*   Loop source line                : 115
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     214            ;*   Loop source line                : 131
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    5
+g2553_swi2c_master.asm                                               PAGE    5
 
-     215            ;*   Loop closing brace source line  : 139
+     215            ;*   Loop closing brace source line  : 155
      216            ;*   Known Minimum Trip Count        : 1
      217            ;*   Known Maximum Trip Count        : 4294967295
      218            ;*   Known Max Trip Count Factor     : 1
      219            ;* --------------------------------------------------------------------------*
      220 000024       $C$L2:    
-     221                    .dwpsn  file "../fr2111_swi2c_master.c",line 118,column 9,is_stmt,isa 0
-     222 000024 B03C          BIT.W     #128,r12              ; [] |118| 
+     221                    .dwpsn  file "../g2553_swi2c_master.c",line 134,column 9,is_stmt,isa 0
+     222 000024 B03C          BIT.W     #128,r12              ; [] |134| 
          000026 0080 
-     223 000028 2003          JNE       $C$L3                 ; [] |118| 
-     224                                                      ; [] |118| 
+     223 000028 2003          JNE       $C$L3                 ; [] |134| 
+     224                                                      ; [] |134| 
      225            ;* --------------------------------------------------------------------------*
-     226                    .dwpsn  file "../fr2111_swi2c_master.c",line 124,column 13,is_stmt,isa 0
-     227 00002a D2E2          OR.B      #4,&P1DIR+0           ; [] |124| 
+     226                    .dwpsn  file "../g2553_swi2c_master.c",line 140,column 13,is_stmt,isa 0
+     227 00002a D2E2          OR.B      #4,&P2DIR+0           ; [] |140| 
          00002c 0000!
-     228 00002e 3C02          JMP       $C$L4                 ; [] |124| 
-     229                                                      ; [] |124| 
+     228 00002e 3C02          JMP       $C$L4                 ; [] |140| 
+     229                                                      ; [] |140| 
      230            ;* --------------------------------------------------------------------------*
      231 000030       $C$L3:    
-     232                    .dwpsn  file "../fr2111_swi2c_master.c",line 120,column 13,is_stmt,isa 0
-     233 000030 C2E2          BIC.B     #4,&P1DIR+0           ; [] |120| 
+     232                    .dwpsn  file "../g2553_swi2c_master.c",line 136,column 13,is_stmt,isa 0
+     233 000030 C2E2          BIC.B     #4,&P2DIR+0           ; [] |136| 
          000032 0000!
      234            ;* --------------------------------------------------------------------------*
      235 000034       $C$L4:    
-     236                    .dwpsn  file "../fr2111_swi2c_master.c",line 128,column 9,is_stmt,isa 0
-     237 000034 C3E2          BIC.B     #2,&P1DIR+0           ; [] |128| 
+     236                    .dwpsn  file "../g2553_swi2c_master.c",line 144,column 9,is_stmt,isa 0
+     237 000034 C3E2          BIC.B     #2,&P2DIR+0           ; [] |144| 
          000036 0000!
-     238                    .dwpsn  file "../fr2111_swi2c_master.c",line 129,column 9,is_stmt,isa 0
-     239 000038 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |129| 
+     238                    .dwpsn  file "../g2553_swi2c_master.c",line 145,column 9,is_stmt,isa 0
+     239 000038 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |145| 
          00003a 0000!
      240            ;* --------------------------------------------------------------------------*
      241            ;*   BEGIN LOOP $C$L5
      242            ;*
-     243            ;*   Loop source line                : 129
-     244            ;*   Loop closing brace source line  : 129
+     243            ;*   Loop source line                : 145
+     244            ;*   Loop closing brace source line  : 145
      245            ;*   Known Minimum Trip Count        : 1
      246            ;*   Known Maximum Trip Count        : 4294967295
      247            ;*   Known Max Trip Count Factor     : 1
      248            ;* --------------------------------------------------------------------------*
      249 00003c       $C$L5:    
-     250 00003c B392          BIT.W     #1,&TA1CCTL0+0        ; [] |129| 
+     250 00003c B392          BIT.W     #1,&TA1CCTL0+0        ; [] |145| 
          00003e 0000!
-     251 000040 27FD          JEQ       $C$L5                 ; [] |129| 
-     252                                                      ; [] |129| 
+     251 000040 27FD          JEQ       $C$L5                 ; [] |145| 
+     252                                                      ; [] |145| 
      253            ;* --------------------------------------------------------------------------*
-     254                    .dwpsn  file "../fr2111_swi2c_master.c",line 132,column 9,is_stmt,isa 0
-     255 000042 5C0C          RLA.W     r12                   ; [] |132| 
-     256                    .dwpsn  file "../fr2111_swi2c_master.c",line 133,column 9,is_stmt,isa 0
-     257 000044 831A          SUB.W     #1,r10                ; [] |133| 
-     258                    .dwpsn  file "../fr2111_swi2c_master.c",line 135,column 9,is_stmt,isa 0
-     259 000046 D3E2          OR.B      #2,&P1DIR+0           ; [] |135| 
+     254                    .dwpsn  file "../g2553_swi2c_master.c",line 148,column 9,is_stmt,isa 0
+     255 000042 5C0C          RLA.W     r12                   ; [] |148| 
+     256                    .dwpsn  file "../g2553_swi2c_master.c",line 149,column 9,is_stmt,isa 0
+     257 000044 831A          SUB.W     #1,r10                ; [] |149| 
+     258                    .dwpsn  file "../g2553_swi2c_master.c",line 151,column 9,is_stmt,isa 0
+     259 000046 D3E2          OR.B      #2,&P2DIR+0           ; [] |151| 
          000048 0000!
-     260                    .dwpsn  file "../fr2111_swi2c_master.c",line 136,column 9,is_stmt,isa 0
-     261 00004a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |136| 
+     260                    .dwpsn  file "../g2553_swi2c_master.c",line 152,column 9,is_stmt,isa 0
+     261 00004a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |152| 
          00004c 0000!
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    6
+g2553_swi2c_master.asm                                               PAGE    6
 
      262            ;* --------------------------------------------------------------------------*
      263            ;*   BEGIN LOOP $C$L6
      264            ;*
-     265            ;*   Loop source line                : 136
-     266            ;*   Loop closing brace source line  : 136
+     265            ;*   Loop source line                : 152
+     266            ;*   Loop closing brace source line  : 152
      267            ;*   Known Minimum Trip Count        : 1
      268            ;*   Known Maximum Trip Count        : 4294967295
      269            ;*   Known Max Trip Count Factor     : 1
      270            ;* --------------------------------------------------------------------------*
      271 00004e       $C$L6:    
-     272 00004e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |136| 
+     272 00004e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |152| 
          000050 0000!
-     273 000052 27FD          JEQ       $C$L6                 ; [] |136| 
-     274                                                      ; [] |136| 
+     273 000052 27FD          JEQ       $C$L6                 ; [] |152| 
+     274                                                      ; [] |152| 
      275            ;* --------------------------------------------------------------------------*
-     276                    .dwpsn  file "../fr2111_swi2c_master.c",line 139,column 14,is_stmt,isa 0
-     277 000054 930A          TST.W     r10                   ; [] |139| 
-     278 000056 23E6          JNE       $C$L2                 ; [] |139| 
-     279                                                      ; [] |139| 
+     276                    .dwpsn  file "../g2553_swi2c_master.c",line 155,column 14,is_stmt,isa 0
+     277 000054 930A          TST.W     r10                   ; [] |155| 
+     278 000056 23E6          JNE       $C$L2                 ; [] |155| 
+     279                                                      ; [] |155| 
      280            ;* --------------------------------------------------------------------------*
-     281                    .dwpsn  file "../fr2111_swi2c_master.c",line 144,column 5,is_stmt,isa 0
-     282 000058 C2E2          BIC.B     #4,&P1DIR+0           ; [] |144| 
+     281                    .dwpsn  file "../g2553_swi2c_master.c",line 160,column 5,is_stmt,isa 0
+     282 000058 C2E2          BIC.B     #4,&P2DIR+0           ; [] |160| 
          00005a 0000!
-     283                    .dwpsn  file "../fr2111_swi2c_master.c",line 145,column 5,is_stmt,isa 0
-     284 00005c C3E2          BIC.B     #2,&P1DIR+0           ; [] |145| 
+     283                    .dwpsn  file "../g2553_swi2c_master.c",line 161,column 5,is_stmt,isa 0
+     284 00005c C3E2          BIC.B     #2,&P2DIR+0           ; [] |161| 
          00005e 0000!
      285            ;* --------------------------------------------------------------------------*
      286            ;*   BEGIN LOOP $C$L7
      287            ;*
-     288            ;*   Loop source line                : 149
-     289            ;*   Loop closing brace source line  : 149
+     288            ;*   Loop source line                : 165
+     289            ;*   Loop closing brace source line  : 165
      290            ;*   Known Minimum Trip Count        : 1
      291            ;*   Known Maximum Trip Count        : 4294967295
      292            ;*   Known Max Trip Count Factor     : 1
      293            ;* --------------------------------------------------------------------------*
      294 000060       $C$L7:    
-     295                    .dwpsn  file "../fr2111_swi2c_master.c",line 149,column 11,is_stmt,isa 0
-     296 000060 B3E2          BIT.B     #2,&P1IN+0            ; [] |149| 
+     295                    .dwpsn  file "../g2553_swi2c_master.c",line 165,column 11,is_stmt,isa 0
+     296 000060 B3E2          BIT.B     #2,&P2IN+0            ; [] |165| 
          000062 0000!
-     297 000064 27FD          JEQ       $C$L7                 ; [] |149| 
-     298                                                      ; [] |149| 
+     297 000064 27FD          JEQ       $C$L7                 ; [] |165| 
+     298                                                      ; [] |165| 
      299            ;* --------------------------------------------------------------------------*
-     300                    .dwpsn  file "../fr2111_swi2c_master.c",line 151,column 5,is_stmt,isa 0
-     301 000066 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |151| 
+     300                    .dwpsn  file "../g2553_swi2c_master.c",line 167,column 5,is_stmt,isa 0
+     301 000066 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |167| 
          000068 0000!
      302            ;* --------------------------------------------------------------------------*
      303            ;*   BEGIN LOOP $C$L8
      304            ;*
-     305            ;*   Loop source line                : 151
-     306            ;*   Loop closing brace source line  : 151
+     305            ;*   Loop source line                : 167
+     306            ;*   Loop closing brace source line  : 167
      307            ;*   Known Minimum Trip Count        : 1
      308            ;*   Known Maximum Trip Count        : 4294967295
      309            ;*   Known Max Trip Count Factor     : 1
      310            ;* --------------------------------------------------------------------------*
      311 00006a       $C$L8:    
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    7
+g2553_swi2c_master.asm                                               PAGE    7
 
-     312 00006a B392          BIT.W     #1,&TA1CCTL0+0        ; [] |151| 
+     312 00006a B392          BIT.W     #1,&TA1CCTL0+0        ; [] |167| 
          00006c 0000!
-     313 00006e 27FD          JEQ       $C$L8                 ; [] |151| 
-     314                                                      ; [] |151| 
+     313 00006e 27FD          JEQ       $C$L8                 ; [] |167| 
+     314                                                      ; [] |167| 
      315            ;* --------------------------------------------------------------------------*
-     316                    .dwpsn  file "../fr2111_swi2c_master.c",line 155,column 9,is_stmt,isa 0
-     317 000070 B2E2          BIT.B     #4,&P1IN+0            ; [] |155| 
+     316                    .dwpsn  file "../g2553_swi2c_master.c",line 171,column 9,is_stmt,isa 0
+     317 000070 B2E2          BIT.B     #4,&P2IN+0            ; [] |171| 
          000072 0000!
-     318 000074 2040          JNE       $C$L19                ; [] |155| 
-     319                                                      ; [] |155| 
+     318 000074 2040          JNE       $C$L19                ; [] |171| 
+     319                                                      ; [] |171| 
      320            ;* --------------------------------------------------------------------------*
-     321                    .dwpsn  file "../fr2111_swi2c_master.c",line 159,column 5,is_stmt,isa 0
-     322 000076 D3E2          OR.B      #2,&P1DIR+0           ; [] |159| 
+     321                    .dwpsn  file "../g2553_swi2c_master.c",line 175,column 5,is_stmt,isa 0
+     322 000076 D3E2          OR.B      #2,&P2DIR+0           ; [] |175| 
          000078 0000!
-     323                    .dwpsn  file "../fr2111_swi2c_master.c",line 160,column 5,is_stmt,isa 0
-     324 00007a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |160| 
+     323                    .dwpsn  file "../g2553_swi2c_master.c",line 176,column 5,is_stmt,isa 0
+     324 00007a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |176| 
          00007c 0000!
      325            ;* --------------------------------------------------------------------------*
      326            ;*   BEGIN LOOP $C$L9
      327            ;*
-     328            ;*   Loop source line                : 160
-     329            ;*   Loop closing brace source line  : 160
+     328            ;*   Loop source line                : 176
+     329            ;*   Loop closing brace source line  : 176
      330            ;*   Known Minimum Trip Count        : 1
      331            ;*   Known Maximum Trip Count        : 4294967295
      332            ;*   Known Max Trip Count Factor     : 1
      333            ;* --------------------------------------------------------------------------*
      334 00007e       $C$L9:    
-     335 00007e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |160| 
+     335 00007e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |176| 
          000080 0000!
-     336 000082 27FD          JEQ       $C$L9                 ; [] |160| 
-     337                                                      ; [] |160| 
+     336 000082 27FD          JEQ       $C$L9                 ; [] |176| 
+     337                                                      ; [] |176| 
      338            ;* --------------------------------------------------------------------------*
-     339                    .dwpsn  file "../fr2111_swi2c_master.c",line 163,column 14,is_stmt,isa 0
-     340 000084 9E0B          CMP.W     r14,r11               ; [] |163| 
-     341 000086 2C37          JHS       $C$L19                ; [] |163| 
-     342                                                      ; [] |163| 
+     339                    .dwpsn  file "../g2553_swi2c_master.c",line 179,column 14,is_stmt,isa 0
+     340 000084 9E0B          CMP.W     r14,r11               ; [] |179| 
+     341 000086 2C37          JHS       $C$L19                ; [] |179| 
+     342                                                      ; [] |179| 
      343            ;* --------------------------------------------------------------------------*
      344            ;*   BEGIN LOOP $C$L10
      345            ;*
-     346            ;*   Loop source line                : 163
-     347            ;*   Loop closing brace source line  : 211
+     346            ;*   Loop source line                : 179
+     347            ;*   Loop closing brace source line  : 227
      348            ;*   Known Minimum Trip Count        : 1
      349            ;*   Known Maximum Trip Count        : 4294967295
      350            ;*   Known Max Trip Count Factor     : 1
      351            ;* --------------------------------------------------------------------------*
      352 000088       $C$L10:    
-     353                    .dwpsn  file "../fr2111_swi2c_master.c",line 165,column 9,is_stmt,isa 0
-     354 000088 4D0C          MOV.W     r13,r12               ; [] |165| 
-     355 00008a 5B0C          ADD.W     r11,r12               ; [] |165| 
-     356 00008c 4C6C          MOV.B     @r12,r12              ; [] |165| 
-     357                    .dwpsn  file "../fr2111_swi2c_master.c",line 166,column 9,is_stmt,isa 0
-     358 00008e 423A          MOV.W     #8,r10                ; [] |166| 
+     353                    .dwpsn  file "../g2553_swi2c_master.c",line 181,column 9,is_stmt,isa 0
+     354 000088 4D0C          MOV.W     r13,r12               ; [] |181| 
+     355 00008a 5B0C          ADD.W     r11,r12               ; [] |181| 
+     356 00008c 4C6C          MOV.B     @r12,r12              ; [] |181| 
+     357                    .dwpsn  file "../g2553_swi2c_master.c",line 182,column 9,is_stmt,isa 0
+     358 00008e 423A          MOV.W     #8,r10                ; [] |182| 
      359            ;* --------------------------------------------------------------------------*
      360            ;*   BEGIN LOOP $C$L11
      361            ;*
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    8
+g2553_swi2c_master.asm                                               PAGE    8
 
-     362            ;*   Loop source line                : 169
-     363            ;*   Loop closing brace source line  : 191
+     362            ;*   Loop source line                : 185
+     363            ;*   Loop closing brace source line  : 207
      364            ;*   Known Minimum Trip Count        : 1
      365            ;*   Known Maximum Trip Count        : 4294967295
      366            ;*   Known Max Trip Count Factor     : 1
      367            ;* --------------------------------------------------------------------------*
      368 000090       $C$L11:    
-     369                    .dwpsn  file "../fr2111_swi2c_master.c",line 172,column 13,is_stmt,isa 0
-     370 000090 B03C          BIT.W     #128,r12              ; [] |172| 
+     369                    .dwpsn  file "../g2553_swi2c_master.c",line 188,column 13,is_stmt,isa 0
+     370 000090 B03C          BIT.W     #128,r12              ; [] |188| 
          000092 0080 
-     371 000094 2003          JNE       $C$L12                ; [] |172| 
-     372                                                      ; [] |172| 
+     371 000094 2003          JNE       $C$L12                ; [] |188| 
+     372                                                      ; [] |188| 
      373            ;* --------------------------------------------------------------------------*
-     374                    .dwpsn  file "../fr2111_swi2c_master.c",line 178,column 17,is_stmt,isa 0
-     375 000096 D2E2          OR.B      #4,&P1DIR+0           ; [] |178| 
+     374                    .dwpsn  file "../g2553_swi2c_master.c",line 194,column 17,is_stmt,isa 0
+     375 000096 D2E2          OR.B      #4,&P2DIR+0           ; [] |194| 
          000098 0000!
-     376 00009a 3C02          JMP       $C$L13                ; [] |178| 
-     377                                                      ; [] |178| 
+     376 00009a 3C02          JMP       $C$L13                ; [] |194| 
+     377                                                      ; [] |194| 
      378            ;* --------------------------------------------------------------------------*
      379 00009c       $C$L12:    
-     380                    .dwpsn  file "../fr2111_swi2c_master.c",line 174,column 17,is_stmt,isa 0
-     381 00009c C2E2          BIC.B     #4,&P1DIR+0           ; [] |174| 
+     380                    .dwpsn  file "../g2553_swi2c_master.c",line 190,column 17,is_stmt,isa 0
+     381 00009c C2E2          BIC.B     #4,&P2DIR+0           ; [] |190| 
          00009e 0000!
      382            ;* --------------------------------------------------------------------------*
      383 0000a0       $C$L13:    
-     384                    .dwpsn  file "../fr2111_swi2c_master.c",line 182,column 13,is_stmt,isa 0
-     385 0000a0 C3E2          BIC.B     #2,&P1DIR+0           ; [] |182| 
+     384                    .dwpsn  file "../g2553_swi2c_master.c",line 198,column 13,is_stmt,isa 0
+     385 0000a0 C3E2          BIC.B     #2,&P2DIR+0           ; [] |198| 
          0000a2 0000!
-     386                    .dwpsn  file "../fr2111_swi2c_master.c",line 183,column 13,is_stmt,isa 0
-     387 0000a4 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |183| 
+     386                    .dwpsn  file "../g2553_swi2c_master.c",line 199,column 13,is_stmt,isa 0
+     387 0000a4 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |199| 
          0000a6 0000!
      388            ;* --------------------------------------------------------------------------*
      389            ;*   BEGIN LOOP $C$L14
      390            ;*
-     391            ;*   Loop source line                : 183
-     392            ;*   Loop closing brace source line  : 183
+     391            ;*   Loop source line                : 199
+     392            ;*   Loop closing brace source line  : 199
      393            ;*   Known Minimum Trip Count        : 1
      394            ;*   Known Maximum Trip Count        : 4294967295
      395            ;*   Known Max Trip Count Factor     : 1
      396            ;* --------------------------------------------------------------------------*
      397 0000a8       $C$L14:    
-     398 0000a8 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |183| 
+     398 0000a8 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |199| 
          0000aa 0000!
-     399 0000ac 27FD          JEQ       $C$L14                ; [] |183| 
-     400                                                      ; [] |183| 
+     399 0000ac 27FD          JEQ       $C$L14                ; [] |199| 
+     400                                                      ; [] |199| 
      401            ;* --------------------------------------------------------------------------*
-     402                    .dwpsn  file "../fr2111_swi2c_master.c",line 186,column 13,is_stmt,isa 0
-     403 0000ae 5C0C          RLA.W     r12                   ; [] |186| 
-     404                    .dwpsn  file "../fr2111_swi2c_master.c",line 187,column 13,is_stmt,isa 0
-     405 0000b0 831A          SUB.W     #1,r10                ; [] |187| 
-     406                    .dwpsn  file "../fr2111_swi2c_master.c",line 188,column 13,is_stmt,isa 0
-     407 0000b2 D3E2          OR.B      #2,&P1DIR+0           ; [] |188| 
+     402                    .dwpsn  file "../g2553_swi2c_master.c",line 202,column 13,is_stmt,isa 0
+     403 0000ae 5C0C          RLA.W     r12                   ; [] |202| 
+     404                    .dwpsn  file "../g2553_swi2c_master.c",line 203,column 13,is_stmt,isa 0
+     405 0000b0 831A          SUB.W     #1,r10                ; [] |203| 
+     406                    .dwpsn  file "../g2553_swi2c_master.c",line 204,column 13,is_stmt,isa 0
+     407 0000b2 D3E2          OR.B      #2,&P2DIR+0           ; [] |204| 
          0000b4 0000!
-     408                    .dwpsn  file "../fr2111_swi2c_master.c",line 189,column 13,is_stmt,isa 0
-     409 0000b6 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |189| 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     408                    .dwpsn  file "../g2553_swi2c_master.c",line 205,column 13,is_stmt,isa 0
+     409 0000b6 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |205| 
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE    9
+g2553_swi2c_master.asm                                               PAGE    9
 
          0000b8 0000!
      410            ;* --------------------------------------------------------------------------*
      411            ;*   BEGIN LOOP $C$L15
      412            ;*
-     413            ;*   Loop source line                : 189
-     414            ;*   Loop closing brace source line  : 189
+     413            ;*   Loop source line                : 205
+     414            ;*   Loop closing brace source line  : 205
      415            ;*   Known Minimum Trip Count        : 1
      416            ;*   Known Maximum Trip Count        : 4294967295
      417            ;*   Known Max Trip Count Factor     : 1
      418            ;* --------------------------------------------------------------------------*
      419 0000ba       $C$L15:    
-     420 0000ba B392          BIT.W     #1,&TA1CCTL0+0        ; [] |189| 
+     420 0000ba B392          BIT.W     #1,&TA1CCTL0+0        ; [] |205| 
          0000bc 0000!
-     421 0000be 27FD          JEQ       $C$L15                ; [] |189| 
-     422                                                      ; [] |189| 
+     421 0000be 27FD          JEQ       $C$L15                ; [] |205| 
+     422                                                      ; [] |205| 
      423            ;* --------------------------------------------------------------------------*
-     424                    .dwpsn  file "../fr2111_swi2c_master.c",line 191,column 18,is_stmt,isa 0
-     425 0000c0 930A          TST.W     r10                   ; [] |191| 
-     426 0000c2 23E6          JNE       $C$L11                ; [] |191| 
-     427                                                      ; [] |191| 
+     424                    .dwpsn  file "../g2553_swi2c_master.c",line 207,column 18,is_stmt,isa 0
+     425 0000c0 930A          TST.W     r10                   ; [] |207| 
+     426 0000c2 23E6          JNE       $C$L11                ; [] |207| 
+     427                                                      ; [] |207| 
      428            ;* --------------------------------------------------------------------------*
-     429                    .dwpsn  file "../fr2111_swi2c_master.c",line 194,column 9,is_stmt,isa 0
-     430 0000c4 C2E2          BIC.B     #4,&P1DIR+0           ; [] |194| 
+     429                    .dwpsn  file "../g2553_swi2c_master.c",line 210,column 9,is_stmt,isa 0
+     430 0000c4 C2E2          BIC.B     #4,&P2DIR+0           ; [] |210| 
          0000c6 0000!
-     431                    .dwpsn  file "../fr2111_swi2c_master.c",line 195,column 9,is_stmt,isa 0
-     432 0000c8 C3E2          BIC.B     #2,&P1DIR+0           ; [] |195| 
+     431                    .dwpsn  file "../g2553_swi2c_master.c",line 211,column 9,is_stmt,isa 0
+     432 0000c8 C3E2          BIC.B     #2,&P2DIR+0           ; [] |211| 
          0000ca 0000!
      433            ;* --------------------------------------------------------------------------*
      434            ;*   BEGIN LOOP $C$L16
      435            ;*
-     436            ;*   Loop source line                : 199
-     437            ;*   Loop closing brace source line  : 199
+     436            ;*   Loop source line                : 215
+     437            ;*   Loop closing brace source line  : 215
      438            ;*   Known Minimum Trip Count        : 1
      439            ;*   Known Maximum Trip Count        : 4294967295
      440            ;*   Known Max Trip Count Factor     : 1
      441            ;* --------------------------------------------------------------------------*
      442 0000cc       $C$L16:    
-     443                    .dwpsn  file "../fr2111_swi2c_master.c",line 199,column 15,is_stmt,isa 0
-     444 0000cc B3E2          BIT.B     #2,&P1IN+0            ; [] |199| 
+     443                    .dwpsn  file "../g2553_swi2c_master.c",line 215,column 15,is_stmt,isa 0
+     444 0000cc B3E2          BIT.B     #2,&P2IN+0            ; [] |215| 
          0000ce 0000!
-     445 0000d0 27FD          JEQ       $C$L16                ; [] |199| 
-     446                                                      ; [] |199| 
+     445 0000d0 27FD          JEQ       $C$L16                ; [] |215| 
+     446                                                      ; [] |215| 
      447            ;* --------------------------------------------------------------------------*
-     448                    .dwpsn  file "../fr2111_swi2c_master.c",line 201,column 9,is_stmt,isa 0
-     449 0000d2 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |201| 
+     448                    .dwpsn  file "../g2553_swi2c_master.c",line 217,column 9,is_stmt,isa 0
+     449 0000d2 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |217| 
          0000d4 0000!
      450            ;* --------------------------------------------------------------------------*
      451            ;*   BEGIN LOOP $C$L17
      452            ;*
-     453            ;*   Loop source line                : 201
-     454            ;*   Loop closing brace source line  : 201
+     453            ;*   Loop source line                : 217
+     454            ;*   Loop closing brace source line  : 217
      455            ;*   Known Minimum Trip Count        : 1
      456            ;*   Known Maximum Trip Count        : 4294967295
      457            ;*   Known Max Trip Count Factor     : 1
      458            ;* --------------------------------------------------------------------------*
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   10
+g2553_swi2c_master.asm                                               PAGE   10
 
      459 0000d6       $C$L17:    
-     460 0000d6 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |201| 
+     460 0000d6 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |217| 
          0000d8 0000!
-     461 0000da 27FD          JEQ       $C$L17                ; [] |201| 
-     462                                                      ; [] |201| 
+     461 0000da 27FD          JEQ       $C$L17                ; [] |217| 
+     462                                                      ; [] |217| 
      463            ;* --------------------------------------------------------------------------*
-     464                    .dwpsn  file "../fr2111_swi2c_master.c",line 205,column 13,is_stmt,isa 0
-     465 0000dc B2E2          BIT.B     #4,&P1IN+0            ; [] |205| 
+     464                    .dwpsn  file "../g2553_swi2c_master.c",line 221,column 13,is_stmt,isa 0
+     465 0000dc B2E2          BIT.B     #4,&P2IN+0            ; [] |221| 
          0000de 0000!
-     466 0000e0 200A          JNE       $C$L19                ; [] |205| 
-     467                                                      ; [] |205| 
+     466 0000e0 200A          JNE       $C$L19                ; [] |221| 
+     467                                                      ; [] |221| 
      468            ;* --------------------------------------------------------------------------*
-     469                    .dwpsn  file "../fr2111_swi2c_master.c",line 209,column 9,is_stmt,isa 0
-     470 0000e2 D3E2          OR.B      #2,&P1DIR+0           ; [] |209| 
+     469                    .dwpsn  file "../g2553_swi2c_master.c",line 225,column 9,is_stmt,isa 0
+     470 0000e2 D3E2          OR.B      #2,&P2DIR+0           ; [] |225| 
          0000e4 0000!
-     471                    .dwpsn  file "../fr2111_swi2c_master.c",line 210,column 9,is_stmt,isa 0
-     472 0000e6 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |210| 
+     471                    .dwpsn  file "../g2553_swi2c_master.c",line 226,column 9,is_stmt,isa 0
+     472 0000e6 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |226| 
          0000e8 0000!
      473            ;* --------------------------------------------------------------------------*
      474            ;*   BEGIN LOOP $C$L18
      475            ;*
-     476            ;*   Loop source line                : 210
-     477            ;*   Loop closing brace source line  : 210
+     476            ;*   Loop source line                : 226
+     477            ;*   Loop closing brace source line  : 226
      478            ;*   Known Minimum Trip Count        : 1
      479            ;*   Known Maximum Trip Count        : 4294967295
      480            ;*   Known Max Trip Count Factor     : 1
      481            ;* --------------------------------------------------------------------------*
      482 0000ea       $C$L18:    
-     483 0000ea B392          BIT.W     #1,&TA1CCTL0+0        ; [] |210| 
+     483 0000ea B392          BIT.W     #1,&TA1CCTL0+0        ; [] |226| 
          0000ec 0000!
-     484 0000ee 27FD          JEQ       $C$L18                ; [] |210| 
-     485                                                      ; [] |210| 
+     484 0000ee 27FD          JEQ       $C$L18                ; [] |226| 
+     485                                                      ; [] |226| 
      486            ;* --------------------------------------------------------------------------*
-     487                    .dwpsn  file "../fr2111_swi2c_master.c",line 163,column 14,is_stmt,isa 0
-     488 0000f0 531B          ADD.W     #1,r11                ; [] |163| 
-     489 0000f2 9E0B          CMP.W     r14,r11               ; [] |163| 
-     490 0000f4 2BC9          JLO       $C$L10                ; [] |163| 
-     491                                                      ; [] |163| 
+     487                    .dwpsn  file "../g2553_swi2c_master.c",line 179,column 14,is_stmt,isa 0
+     488 0000f0 531B          ADD.W     #1,r11                ; [] |179| 
+     489 0000f2 9E0B          CMP.W     r14,r11               ; [] |179| 
+     490 0000f4 2BC9          JLO       $C$L10                ; [] |179| 
+     491                                                      ; [] |179| 
      492            ;* --------------------------------------------------------------------------*
      493 0000f6       $C$L19:    
-     494                    .dwpsn  file "../fr2111_swi2c_master.c",line 215,column 5,is_stmt,isa 0
-     495 0000f6 935F          CMP.B     #1,r15                ; [] |215| 
-     496 0000f8 2002          JNE       $C$L20                ; [] |215| 
-     497                                                      ; [] |215| 
+     494                    .dwpsn  file "../g2553_swi2c_master.c",line 231,column 5,is_stmt,isa 0
+     495 0000f6 935F          CMP.B     #1,r15                ; [] |231| 
+     496 0000f8 2002          JNE       $C$L20                ; [] |231| 
+     497                                                      ; [] |231| 
      498            ;* --------------------------------------------------------------------------*
-     499 0000fa 9E0B          CMP.W     r14,r11               ; [] |215| 
-     500 0000fc 2407          JEQ       $C$L21                ; [] |215| 
-     501                                                      ; [] |215| 
+     499 0000fa 9E0B          CMP.W     r14,r11               ; [] |231| 
+     500 0000fc 2407          JEQ       $C$L21                ; [] |231| 
+     501                                                      ; [] |231| 
      502            ;* --------------------------------------------------------------------------*
      503 0000fe       $C$L20:    
-     504 0000fe 9E0B          CMP.W     r14,r11               ; [] |215| 
-     505 000100 2005          JNE       $C$L21                ; [] |215| 
-     506                                                      ; [] |215| 
+     504 0000fe 9E0B          CMP.W     r14,r11               ; [] |231| 
+     505 000100 2005          JNE       $C$L21                ; [] |231| 
+     506                                                      ; [] |231| 
      507            ;* --------------------------------------------------------------------------*
-     508                    .dwpsn  file "../fr2111_swi2c_master.c",line 227,column 9,is_stmt,isa 0
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     508                    .dwpsn  file "../g2553_swi2c_master.c",line 243,column 9,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   11
+g2553_swi2c_master.asm                                               PAGE   11
 
-     509 000102 C3E2          BIC.B     #2,&P1DIR+0           ; [] |227| 
+     509 000102 C3E2          BIC.B     #2,&P2DIR+0           ; [] |243| 
          000104 0000!
-     510                    .dwpsn  file "../fr2111_swi2c_master.c",line 228,column 9,is_stmt,isa 0
-     511 000106 C2E2          BIC.B     #4,&P1DIR+0           ; [] |228| 
+     510                    .dwpsn  file "../g2553_swi2c_master.c",line 244,column 9,is_stmt,isa 0
+     511 000106 C2E2          BIC.B     #4,&P2DIR+0           ; [] |244| 
          000108 0000!
-     512 00010a 3C13          JMP       $C$L24                ; [] |228| 
-     513                                                      ; [] |228| 
+     512 00010a 3C13          JMP       $C$L24                ; [] |244| 
+     513                                                      ; [] |244| 
      514            ;* --------------------------------------------------------------------------*
      515 00010c       $C$L21:    
-     516                    .dwpsn  file "../fr2111_swi2c_master.c",line 217,column 9,is_stmt,isa 0
-     517 00010c D3E2          OR.B      #2,&P1DIR+0           ; [] |217| 
+     516                    .dwpsn  file "../g2553_swi2c_master.c",line 233,column 9,is_stmt,isa 0
+     517 00010c D3E2          OR.B      #2,&P2DIR+0           ; [] |233| 
          00010e 0000!
-     518                    .dwpsn  file "../fr2111_swi2c_master.c",line 218,column 9,is_stmt,isa 0
-     519 000110 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |218| 
+     518                    .dwpsn  file "../g2553_swi2c_master.c",line 234,column 9,is_stmt,isa 0
+     519 000110 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |234| 
          000112 0000!
      520            ;* --------------------------------------------------------------------------*
      521            ;*   BEGIN LOOP $C$L22
      522            ;*
-     523            ;*   Loop source line                : 218
-     524            ;*   Loop closing brace source line  : 218
+     523            ;*   Loop source line                : 234
+     524            ;*   Loop closing brace source line  : 234
      525            ;*   Known Minimum Trip Count        : 1
      526            ;*   Known Maximum Trip Count        : 4294967295
      527            ;*   Known Max Trip Count Factor     : 1
      528            ;* --------------------------------------------------------------------------*
      529 000114       $C$L22:    
-     530 000114 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |218| 
+     530 000114 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |234| 
          000116 0000!
-     531 000118 27FD          JEQ       $C$L22                ; [] |218| 
-     532                                                      ; [] |218| 
+     531 000118 27FD          JEQ       $C$L22                ; [] |234| 
+     532                                                      ; [] |234| 
      533            ;* --------------------------------------------------------------------------*
-     534                    .dwpsn  file "../fr2111_swi2c_master.c",line 219,column 9,is_stmt,isa 0
-     535 00011a D2E2          OR.B      #4,&P1DIR+0           ; [] |219| 
+     534                    .dwpsn  file "../g2553_swi2c_master.c",line 235,column 9,is_stmt,isa 0
+     535 00011a D2E2          OR.B      #4,&P2DIR+0           ; [] |235| 
          00011c 0000!
-     536                    .dwpsn  file "../fr2111_swi2c_master.c",line 220,column 9,is_stmt,isa 0
-     537 00011e C392          BIC.W     #1,&TA1CCTL0+0        ; [] |220| 
+     536                    .dwpsn  file "../g2553_swi2c_master.c",line 236,column 9,is_stmt,isa 0
+     537 00011e C392          BIC.W     #1,&TA1CCTL0+0        ; [] |236| 
          000120 0000!
      538            ;* --------------------------------------------------------------------------*
      539            ;*   BEGIN LOOP $C$L23
      540            ;*
-     541            ;*   Loop source line                : 220
-     542            ;*   Loop closing brace source line  : 220
+     541            ;*   Loop source line                : 236
+     542            ;*   Loop closing brace source line  : 236
      543            ;*   Known Minimum Trip Count        : 1
      544            ;*   Known Maximum Trip Count        : 4294967295
      545            ;*   Known Max Trip Count Factor     : 1
      546            ;* --------------------------------------------------------------------------*
      547 000122       $C$L23:    
-     548 000122 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |220| 
+     548 000122 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |236| 
          000124 0000!
-     549 000126 27FD          JEQ       $C$L23                ; [] |220| 
-     550                                                      ; [] |220| 
+     549 000126 27FD          JEQ       $C$L23                ; [] |236| 
+     550                                                      ; [] |236| 
      551            ;* --------------------------------------------------------------------------*
-     552                    .dwpsn  file "../fr2111_swi2c_master.c",line 221,column 9,is_stmt,isa 0
-     553 000128 C3E2          BIC.B     #2,&P1DIR+0           ; [] |221| 
+     552                    .dwpsn  file "../g2553_swi2c_master.c",line 237,column 9,is_stmt,isa 0
+     553 000128 C3E2          BIC.B     #2,&P2DIR+0           ; [] |237| 
          00012a 0000!
-     554                    .dwpsn  file "../fr2111_swi2c_master.c",line 222,column 9,is_stmt,isa 0
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     554                    .dwpsn  file "../g2553_swi2c_master.c",line 238,column 9,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   12
+g2553_swi2c_master.asm                                               PAGE   12
 
-     555 00012c 4303          NOP       ; [] |222| 
-     556                    .dwpsn  file "../fr2111_swi2c_master.c",line 223,column 9,is_stmt,isa 0
-     557 00012e C2E2          BIC.B     #4,&P1DIR+0           ; [] |223| 
+     555 00012c 4303          NOP       ; [] |238| 
+     556                    .dwpsn  file "../g2553_swi2c_master.c",line 239,column 9,is_stmt,isa 0
+     557 00012e C2E2          BIC.B     #4,&P2DIR+0           ; [] |239| 
          000130 0000!
      558            ;* --------------------------------------------------------------------------*
      559 000132       $C$L24:    
-     560                    .dwpsn  file "../fr2111_swi2c_master.c",line 232,column 5,is_stmt,isa 0
-     561 000132 4382          MOV.W     #0,&TA1CTL+0          ; [] |232| 
+     560                    .dwpsn  file "../g2553_swi2c_master.c",line 248,column 5,is_stmt,isa 0
+     561 000132 4382          MOV.W     #0,&TA1CTL+0          ; [] |248| 
          000134 0000!
-     562                    .dwpsn  file "../fr2111_swi2c_master.c",line 236,column 9,is_stmt,isa 0
-     563 000136 434C          MOV.B     #0,r12                ; [] |236| 
-     564 000138 9E0B          CMP.W     r14,r11               ; [] |236| 
-     565 00013a 2001          JNE       $C$L25                ; [] |236| 
-     566                                                      ; [] |236| 
+     562                    .dwpsn  file "../g2553_swi2c_master.c",line 252,column 9,is_stmt,isa 0
+     563 000136 434C          MOV.B     #0,r12                ; [] |252| 
+     564 000138 9E0B          CMP.W     r14,r11               ; [] |252| 
+     565 00013a 2001          JNE       $C$L25                ; [] |252| 
+     566                                                      ; [] |252| 
      567            ;* --------------------------------------------------------------------------*
-     568 00013c 435C          MOV.B     #1,r12                ; [] |236| 
+     568 00013c 435C          MOV.B     #1,r12                ; [] |252| 
      569            ;* --------------------------------------------------------------------------*
      570 00013e       $C$L25:    
-     571                    .dwpsn  file "../fr2111_swi2c_master.c",line 239,column 1,is_stmt,isa 0
+     571                    .dwpsn  file "../g2553_swi2c_master.c",line 255,column 1,is_stmt,isa 0
      572 00013e 413A          POP       r10                   ; [] 
      573                    .dwcfi  restore_reg, 10
      574                    .dwcfi  cfa_offset, 2
@@ -691,8 +691,8 @@ fr2111_swi2c_master.asm                                              PAGE   12
      578            
      579 000140 4130          RET       ; [] 
      580                    ; [] 
-     581                    .dwattr $C$DW$7, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
-     582                    .dwattr $C$DW$7, DW_AT_TI_end_line(0xef)
+     581                    .dwattr $C$DW$7, DW_AT_TI_end_file("../g2553_swi2c_master.c")
+     582                    .dwattr $C$DW$7, DW_AT_TI_end_line(0xff)
      583                    .dwattr $C$DW$7, DW_AT_TI_end_column(0x01)
      584                    .dwendentry
      585                    .dwendtag $C$DW$7
@@ -706,22 +706,22 @@ fr2111_swi2c_master.asm                                              PAGE   12
      593                    .dwattr $C$DW$20, DW_AT_high_pc(0x00)
      594                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("SWI2C_readData")
      595                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$28)
-     596                    .dwattr $C$DW$20, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
-     597                    .dwattr $C$DW$20, DW_AT_TI_begin_line(0xf1)
+     596                    .dwattr $C$DW$20, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
+     597                    .dwattr $C$DW$20, DW_AT_TI_begin_line(0x101)
      598                    .dwattr $C$DW$20, DW_AT_TI_begin_column(0x0d)
-     599                    .dwattr $C$DW$20, DW_AT_decl_file("../fr2111_swi2c_master.c")
-     600                    .dwattr $C$DW$20, DW_AT_decl_line(0xf1)
+     599                    .dwattr $C$DW$20, DW_AT_decl_file("../g2553_swi2c_master.c")
+     600                    .dwattr $C$DW$20, DW_AT_decl_line(0x101)
      601                    .dwattr $C$DW$20, DW_AT_decl_column(0x0d)
      602                    .dwattr $C$DW$20, DW_AT_TI_max_frame_size(0x02)
-     603                    .dwpsn  file "../fr2111_swi2c_master.c",line 243,column 1,is_stmt,address SWI2C_readData,isa 0
+     603                    .dwpsn  file "../g2553_swi2c_master.c",line 259,column 1,is_stmt,address SWI2C_readData,isa 0
      604            
      605                    .dwfde $C$DW$CIE, SWI2C_readData
      606            $C$DW$21        .dwtag  DW_TAG_formal_parameter
      607                    .dwattr $C$DW$21, DW_AT_name("addr")
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   13
+g2553_swi2c_master.asm                                               PAGE   13
 
      608                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("addr")
      609                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$23)
@@ -778,10 +778,10 @@ fr2111_swi2c_master.asm                                              PAGE   13
      660                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("bits")
      661                    .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$77)
      662                    .dwattr $C$DW$27, DW_AT_location[DW_OP_reg15]
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   14
+g2553_swi2c_master.asm                                               PAGE   14
 
      663            
      664            ;* r12   assigned to temp
@@ -798,446 +798,446 @@ fr2111_swi2c_master.asm                                              PAGE   14
      675                    .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$83)
      676                    .dwattr $C$DW$29, DW_AT_location[DW_OP_reg11]
      677            
-     678                    .dwpsn  file "../fr2111_swi2c_master.c",line 245,column 17,is_stmt,isa 0
-     679 000000 430B          MOV.W     #0,r11                ; [] |245| 
-     680                    .dwpsn  file "../fr2111_swi2c_master.c",line 248,column 5,is_stmt,isa 0
-     681 000002 40B2          MOV.W     #532,&TA1CTL+0        ; [] |248| 
+     678                    .dwpsn  file "../g2553_swi2c_master.c",line 261,column 17,is_stmt,isa 0
+     679 000000 430B          MOV.W     #0,r11                ; [] |261| 
+     680                    .dwpsn  file "../g2553_swi2c_master.c",line 264,column 5,is_stmt,isa 0
+     681 000002 40B2          MOV.W     #532,&TA1CTL+0        ; [] |264| 
          000004 0214 
          000006 0000!
-     682                    .dwpsn  file "../fr2111_swi2c_master.c",line 251,column 5,is_stmt,isa 0
-     683 000008 D2E2          OR.B      #4,&P1DIR+0           ; [] |251| 
+     682                    .dwpsn  file "../g2553_swi2c_master.c",line 267,column 5,is_stmt,isa 0
+     683 000008 D2E2          OR.B      #4,&P2DIR+0           ; [] |267| 
          00000a 0000!
-     684                    .dwpsn  file "../fr2111_swi2c_master.c",line 252,column 5,is_stmt,isa 0
-     685 00000c 4303          NOP       ; [] |252| 
-     686                    .dwpsn  file "../fr2111_swi2c_master.c",line 253,column 5,is_stmt,isa 0
-     687 00000e D3E2          OR.B      #2,&P1DIR+0           ; [] |253| 
+     684                    .dwpsn  file "../g2553_swi2c_master.c",line 268,column 5,is_stmt,isa 0
+     685 00000c 4303          NOP       ; [] |268| 
+     686                    .dwpsn  file "../g2553_swi2c_master.c",line 269,column 5,is_stmt,isa 0
+     687 00000e D3E2          OR.B      #2,&P2DIR+0           ; [] |269| 
          000010 0000!
-     688                    .dwpsn  file "../fr2111_swi2c_master.c",line 254,column 5,is_stmt,isa 0
-     689 000012 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |254| 
+     688                    .dwpsn  file "../g2553_swi2c_master.c",line 270,column 5,is_stmt,isa 0
+     689 000012 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |270| 
          000014 0000!
      690            ;* --------------------------------------------------------------------------*
      691            ;*   BEGIN LOOP $C$L26
      692            ;*
-     693            ;*   Loop source line                : 254
-     694            ;*   Loop closing brace source line  : 254
+     693            ;*   Loop source line                : 270
+     694            ;*   Loop closing brace source line  : 270
      695            ;*   Known Minimum Trip Count        : 1
      696            ;*   Known Maximum Trip Count        : 4294967295
      697            ;*   Known Max Trip Count Factor     : 1
      698            ;* --------------------------------------------------------------------------*
      699 000016       $C$L26:    
-     700 000016 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |254| 
+     700 000016 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |270| 
          000018 0000!
-     701 00001a 27FD          JEQ       $C$L26                ; [] |254| 
-     702                                                      ; [] |254| 
+     701 00001a 27FD          JEQ       $C$L26                ; [] |270| 
+     702                                                      ; [] |270| 
      703            ;* --------------------------------------------------------------------------*
-     704                    .dwpsn  file "../fr2111_swi2c_master.c",line 257,column 5,is_stmt,isa 0
-     705 00001c 4C4C          MOV.B     r12,r12               ; [] |257| 
-     706 00001e 5C0C          RLA.W     r12                   ; [] |257| 
-     707 000020 D31C          OR.W      #1,r12                ; [] |257| 
-     708                    .dwpsn  file "../fr2111_swi2c_master.c",line 258,column 5,is_stmt,isa 0
-     709 000022 423F          MOV.W     #8,r15                ; [] |258| 
+     704                    .dwpsn  file "../g2553_swi2c_master.c",line 273,column 5,is_stmt,isa 0
+     705 00001c 4C4C          MOV.B     r12,r12               ; [] |273| 
+     706 00001e 5C0C          RLA.W     r12                   ; [] |273| 
+     707 000020 D31C          OR.W      #1,r12                ; [] |273| 
+     708                    .dwpsn  file "../g2553_swi2c_master.c",line 274,column 5,is_stmt,isa 0
+     709 000022 423F          MOV.W     #8,r15                ; [] |274| 
      710            ;* --------------------------------------------------------------------------*
      711            ;*   BEGIN LOOP $C$L27
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   15
+g2553_swi2c_master.asm                                               PAGE   15
 
      712            ;*
-     713            ;*   Loop source line                : 261
-     714            ;*   Loop closing brace source line  : 283
+     713            ;*   Loop source line                : 277
+     714            ;*   Loop closing brace source line  : 299
      715            ;*   Known Minimum Trip Count        : 1
      716            ;*   Known Maximum Trip Count        : 4294967295
      717            ;*   Known Max Trip Count Factor     : 1
      718            ;* --------------------------------------------------------------------------*
      719 000024       $C$L27:    
-     720                    .dwpsn  file "../fr2111_swi2c_master.c",line 264,column 9,is_stmt,isa 0
-     721 000024 B03C          BIT.W     #128,r12              ; [] |264| 
+     720                    .dwpsn  file "../g2553_swi2c_master.c",line 280,column 9,is_stmt,isa 0
+     721 000024 B03C          BIT.W     #128,r12              ; [] |280| 
          000026 0080 
-     722 000028 2003          JNE       $C$L28                ; [] |264| 
-     723                                                      ; [] |264| 
+     722 000028 2003          JNE       $C$L28                ; [] |280| 
+     723                                                      ; [] |280| 
      724            ;* --------------------------------------------------------------------------*
-     725                    .dwpsn  file "../fr2111_swi2c_master.c",line 270,column 13,is_stmt,isa 0
-     726 00002a D2E2          OR.B      #4,&P1DIR+0           ; [] |270| 
+     725                    .dwpsn  file "../g2553_swi2c_master.c",line 286,column 13,is_stmt,isa 0
+     726 00002a D2E2          OR.B      #4,&P2DIR+0           ; [] |286| 
          00002c 0000!
-     727 00002e 3C02          JMP       $C$L29                ; [] |270| 
-     728                                                      ; [] |270| 
+     727 00002e 3C02          JMP       $C$L29                ; [] |286| 
+     728                                                      ; [] |286| 
      729            ;* --------------------------------------------------------------------------*
      730 000030       $C$L28:    
-     731                    .dwpsn  file "../fr2111_swi2c_master.c",line 266,column 13,is_stmt,isa 0
-     732 000030 C2E2          BIC.B     #4,&P1DIR+0           ; [] |266| 
+     731                    .dwpsn  file "../g2553_swi2c_master.c",line 282,column 13,is_stmt,isa 0
+     732 000030 C2E2          BIC.B     #4,&P2DIR+0           ; [] |282| 
          000032 0000!
      733            ;* --------------------------------------------------------------------------*
      734 000034       $C$L29:    
-     735                    .dwpsn  file "../fr2111_swi2c_master.c",line 274,column 9,is_stmt,isa 0
-     736 000034 C3E2          BIC.B     #2,&P1DIR+0           ; [] |274| 
+     735                    .dwpsn  file "../g2553_swi2c_master.c",line 290,column 9,is_stmt,isa 0
+     736 000034 C3E2          BIC.B     #2,&P2DIR+0           ; [] |290| 
          000036 0000!
-     737                    .dwpsn  file "../fr2111_swi2c_master.c",line 275,column 9,is_stmt,isa 0
-     738 000038 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |275| 
+     737                    .dwpsn  file "../g2553_swi2c_master.c",line 291,column 9,is_stmt,isa 0
+     738 000038 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |291| 
          00003a 0000!
      739            ;* --------------------------------------------------------------------------*
      740            ;*   BEGIN LOOP $C$L30
      741            ;*
-     742            ;*   Loop source line                : 275
-     743            ;*   Loop closing brace source line  : 275
+     742            ;*   Loop source line                : 291
+     743            ;*   Loop closing brace source line  : 291
      744            ;*   Known Minimum Trip Count        : 1
      745            ;*   Known Maximum Trip Count        : 4294967295
      746            ;*   Known Max Trip Count Factor     : 1
      747            ;* --------------------------------------------------------------------------*
      748 00003c       $C$L30:    
-     749 00003c B392          BIT.W     #1,&TA1CCTL0+0        ; [] |275| 
+     749 00003c B392          BIT.W     #1,&TA1CCTL0+0        ; [] |291| 
          00003e 0000!
-     750 000040 27FD          JEQ       $C$L30                ; [] |275| 
-     751                                                      ; [] |275| 
+     750 000040 27FD          JEQ       $C$L30                ; [] |291| 
+     751                                                      ; [] |291| 
      752            ;* --------------------------------------------------------------------------*
-     753                    .dwpsn  file "../fr2111_swi2c_master.c",line 278,column 9,is_stmt,isa 0
-     754 000042 5C0C          RLA.W     r12                   ; [] |278| 
-     755                    .dwpsn  file "../fr2111_swi2c_master.c",line 279,column 9,is_stmt,isa 0
-     756 000044 831F          SUB.W     #1,r15                ; [] |279| 
-     757                    .dwpsn  file "../fr2111_swi2c_master.c",line 280,column 9,is_stmt,isa 0
-     758 000046 D3E2          OR.B      #2,&P1DIR+0           ; [] |280| 
+     753                    .dwpsn  file "../g2553_swi2c_master.c",line 294,column 9,is_stmt,isa 0
+     754 000042 5C0C          RLA.W     r12                   ; [] |294| 
+     755                    .dwpsn  file "../g2553_swi2c_master.c",line 295,column 9,is_stmt,isa 0
+     756 000044 831F          SUB.W     #1,r15                ; [] |295| 
+     757                    .dwpsn  file "../g2553_swi2c_master.c",line 296,column 9,is_stmt,isa 0
+     758 000046 D3E2          OR.B      #2,&P2DIR+0           ; [] |296| 
          000048 0000!
-     759                    .dwpsn  file "../fr2111_swi2c_master.c",line 281,column 9,is_stmt,isa 0
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     759                    .dwpsn  file "../g2553_swi2c_master.c",line 297,column 9,is_stmt,isa 0
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   16
+g2553_swi2c_master.asm                                               PAGE   16
 
-     760 00004a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |281| 
+     760 00004a C392          BIC.W     #1,&TA1CCTL0+0        ; [] |297| 
          00004c 0000!
      761            ;* --------------------------------------------------------------------------*
      762            ;*   BEGIN LOOP $C$L31
      763            ;*
-     764            ;*   Loop source line                : 281
-     765            ;*   Loop closing brace source line  : 281
+     764            ;*   Loop source line                : 297
+     765            ;*   Loop closing brace source line  : 297
      766            ;*   Known Minimum Trip Count        : 1
      767            ;*   Known Maximum Trip Count        : 4294967295
      768            ;*   Known Max Trip Count Factor     : 1
      769            ;* --------------------------------------------------------------------------*
      770 00004e       $C$L31:    
-     771 00004e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |281| 
+     771 00004e B392          BIT.W     #1,&TA1CCTL0+0        ; [] |297| 
          000050 0000!
-     772 000052 27FD          JEQ       $C$L31                ; [] |281| 
-     773                                                      ; [] |281| 
+     772 000052 27FD          JEQ       $C$L31                ; [] |297| 
+     773                                                      ; [] |297| 
      774            ;* --------------------------------------------------------------------------*
-     775                    .dwpsn  file "../fr2111_swi2c_master.c",line 283,column 14,is_stmt,isa 0
-     776 000054 930F          TST.W     r15                   ; [] |283| 
-     777 000056 23E6          JNE       $C$L27                ; [] |283| 
-     778                                                      ; [] |283| 
+     775                    .dwpsn  file "../g2553_swi2c_master.c",line 299,column 14,is_stmt,isa 0
+     776 000054 930F          TST.W     r15                   ; [] |299| 
+     777 000056 23E6          JNE       $C$L27                ; [] |299| 
+     778                                                      ; [] |299| 
      779            ;* --------------------------------------------------------------------------*
-     780                    .dwpsn  file "../fr2111_swi2c_master.c",line 288,column 5,is_stmt,isa 0
-     781 000058 C2E2          BIC.B     #4,&P1DIR+0           ; [] |288| 
+     780                    .dwpsn  file "../g2553_swi2c_master.c",line 304,column 5,is_stmt,isa 0
+     781 000058 C2E2          BIC.B     #4,&P2DIR+0           ; [] |304| 
          00005a 0000!
-     782                    .dwpsn  file "../fr2111_swi2c_master.c",line 289,column 5,is_stmt,isa 0
-     783 00005c C3E2          BIC.B     #2,&P1DIR+0           ; [] |289| 
+     782                    .dwpsn  file "../g2553_swi2c_master.c",line 305,column 5,is_stmt,isa 0
+     783 00005c C3E2          BIC.B     #2,&P2DIR+0           ; [] |305| 
          00005e 0000!
-     784                    .dwpsn  file "../fr2111_swi2c_master.c",line 290,column 5,is_stmt,isa 0
-     785 000060 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |290| 
+     784                    .dwpsn  file "../g2553_swi2c_master.c",line 306,column 5,is_stmt,isa 0
+     785 000060 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |306| 
          000062 0000!
      786            ;* --------------------------------------------------------------------------*
      787            ;*   BEGIN LOOP $C$L32
      788            ;*
-     789            ;*   Loop source line                : 290
-     790            ;*   Loop closing brace source line  : 290
+     789            ;*   Loop source line                : 306
+     790            ;*   Loop closing brace source line  : 306
      791            ;*   Known Minimum Trip Count        : 1
      792            ;*   Known Maximum Trip Count        : 4294967295
      793            ;*   Known Max Trip Count Factor     : 1
      794            ;* --------------------------------------------------------------------------*
      795 000064       $C$L32:    
-     796 000064 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |290| 
+     796 000064 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |306| 
          000066 0000!
-     797 000068 27FD          JEQ       $C$L32                ; [] |290| 
-     798                                                      ; [] |290| 
+     797 000068 27FD          JEQ       $C$L32                ; [] |306| 
+     798                                                      ; [] |306| 
      799            ;* --------------------------------------------------------------------------*
-     800                    .dwpsn  file "../fr2111_swi2c_master.c",line 294,column 9,is_stmt,isa 0
-     801 00006a B2E2          BIT.B     #4,&P1IN+0            ; [] |294| 
+     800                    .dwpsn  file "../g2553_swi2c_master.c",line 310,column 9,is_stmt,isa 0
+     801 00006a B2E2          BIT.B     #4,&P2IN+0            ; [] |310| 
          00006c 0000!
-     802 00006e 2040          JNE       $C$L43                ; [] |294| 
-     803                                                      ; [] |294| 
+     802 00006e 2040          JNE       $C$L43                ; [] |310| 
+     803                                                      ; [] |310| 
      804            ;* --------------------------------------------------------------------------*
-     805                    .dwpsn  file "../fr2111_swi2c_master.c",line 298,column 14,is_stmt,isa 0
-     806 000070 9E0B          CMP.W     r14,r11               ; [] |298| 
-     807 000072 2C3E          JHS       $C$L43                ; [] |298| 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     805                    .dwpsn  file "../g2553_swi2c_master.c",line 314,column 14,is_stmt,isa 0
+     806 000070 9E0B          CMP.W     r14,r11               ; [] |314| 
+     807 000072 2C3E          JHS       $C$L43                ; [] |314| 
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   17
+g2553_swi2c_master.asm                                               PAGE   17
 
-     808                                                      ; [] |298| 
+     808                                                      ; [] |314| 
      809            ;* --------------------------------------------------------------------------*
      810            ;*   BEGIN LOOP $C$L33
      811            ;*
-     812            ;*   Loop source line                : 303
-     813            ;*   Loop closing brace source line  : 303
+     812            ;*   Loop source line                : 319
+     813            ;*   Loop closing brace source line  : 319
      814            ;*   Known Minimum Trip Count        : 1
      815            ;*   Known Maximum Trip Count        : 4294967295
      816            ;*   Known Max Trip Count Factor     : 1
      817            ;* --------------------------------------------------------------------------*
      818 000074       $C$L33:    
-     819                    .dwpsn  file "../fr2111_swi2c_master.c",line 303,column 15,is_stmt,isa 0
-     820 000074 B3E2          BIT.B     #2,&P1IN+0            ; [] |303| 
+     819                    .dwpsn  file "../g2553_swi2c_master.c",line 319,column 15,is_stmt,isa 0
+     820 000074 B3E2          BIT.B     #2,&P2IN+0            ; [] |319| 
          000076 0000!
-     821 000078 27FD          JEQ       $C$L33                ; [] |303| 
-     822                                                      ; [] |303| 
+     821 000078 27FD          JEQ       $C$L33                ; [] |319| 
+     822                                                      ; [] |319| 
      823            ;* --------------------------------------------------------------------------*
-     824                    .dwpsn  file "../fr2111_swi2c_master.c",line 306,column 9,is_stmt,isa 0
-     825 00007a 430C          MOV.W     #0,r12                ; [] |306| 
-     826                    .dwpsn  file "../fr2111_swi2c_master.c",line 307,column 9,is_stmt,isa 0
-     827 00007c 423F          MOV.W     #8,r15                ; [] |307| 
-     828                    .dwpsn  file "../fr2111_swi2c_master.c",line 310,column 10,is_stmt,isa 0
-     829 00007e D3E2          OR.B      #2,&P1DIR+0           ; [] |310| 
+     824                    .dwpsn  file "../g2553_swi2c_master.c",line 322,column 9,is_stmt,isa 0
+     825 00007a 430C          MOV.W     #0,r12                ; [] |322| 
+     826                    .dwpsn  file "../g2553_swi2c_master.c",line 323,column 9,is_stmt,isa 0
+     827 00007c 423F          MOV.W     #8,r15                ; [] |323| 
+     828                    .dwpsn  file "../g2553_swi2c_master.c",line 326,column 10,is_stmt,isa 0
+     829 00007e D3E2          OR.B      #2,&P2DIR+0           ; [] |326| 
          000080 0000!
-     830                    .dwpsn  file "../fr2111_swi2c_master.c",line 311,column 10,is_stmt,isa 0
-     831 000082 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |311| 
+     830                    .dwpsn  file "../g2553_swi2c_master.c",line 327,column 10,is_stmt,isa 0
+     831 000082 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |327| 
          000084 0000!
      832            ;* --------------------------------------------------------------------------*
      833            ;*   BEGIN LOOP $C$L34
      834            ;*
-     835            ;*   Loop source line                : 311
-     836            ;*   Loop closing brace source line  : 311
+     835            ;*   Loop source line                : 327
+     836            ;*   Loop closing brace source line  : 327
      837            ;*   Known Minimum Trip Count        : 1
      838            ;*   Known Maximum Trip Count        : 4294967295
      839            ;*   Known Max Trip Count Factor     : 1
      840            ;* --------------------------------------------------------------------------*
      841 000086       $C$L34:    
-     842 000086 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |311| 
+     842 000086 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |327| 
          000088 0000!
-     843 00008a 27FD          JEQ       $C$L34                ; [] |311| 
-     844                                                      ; [] |311| 
+     843 00008a 27FD          JEQ       $C$L34                ; [] |327| 
+     844                                                      ; [] |327| 
      845            ;* --------------------------------------------------------------------------*
-     846                    .dwpsn  file "../fr2111_swi2c_master.c",line 312,column 10,is_stmt,isa 0
-     847 00008c C2E2          BIC.B     #4,&P1DIR+0           ; [] |312| 
+     846                    .dwpsn  file "../g2553_swi2c_master.c",line 328,column 10,is_stmt,isa 0
+     847 00008c C2E2          BIC.B     #4,&P2DIR+0           ; [] |328| 
          00008e 0000!
      848            ;* --------------------------------------------------------------------------*
      849            ;*   BEGIN LOOP $C$L35
      850            ;*
-     851            ;*   Loop source line                : 315
-     852            ;*   Loop closing brace source line  : 332
+     851            ;*   Loop source line                : 331
+     852            ;*   Loop closing brace source line  : 348
      853            ;*   Known Minimum Trip Count        : 1
      854            ;*   Known Maximum Trip Count        : 4294967295
      855            ;*   Known Max Trip Count Factor     : 1
      856            ;* --------------------------------------------------------------------------*
      857 000090       $C$L35:    
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   18
+g2553_swi2c_master.asm                                               PAGE   18
 
-     858                    .dwpsn  file "../fr2111_swi2c_master.c",line 318,column 13,is_stmt,isa 0
-     859 000090 5C0C          RLA.W     r12                   ; [] |318| 
-     860                    .dwpsn  file "../fr2111_swi2c_master.c",line 319,column 13,is_stmt,isa 0
-     861 000092 C3E2          BIC.B     #2,&P1DIR+0           ; [] |319| 
+     858                    .dwpsn  file "../g2553_swi2c_master.c",line 334,column 13,is_stmt,isa 0
+     859 000090 5C0C          RLA.W     r12                   ; [] |334| 
+     860                    .dwpsn  file "../g2553_swi2c_master.c",line 335,column 13,is_stmt,isa 0
+     861 000092 C3E2          BIC.B     #2,&P2DIR+0           ; [] |335| 
          000094 0000!
-     862                    .dwpsn  file "../fr2111_swi2c_master.c",line 320,column 13,is_stmt,isa 0
-     863 000096 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |320| 
+     862                    .dwpsn  file "../g2553_swi2c_master.c",line 336,column 13,is_stmt,isa 0
+     863 000096 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |336| 
          000098 0000!
      864            ;* --------------------------------------------------------------------------*
      865            ;*   BEGIN LOOP $C$L36
      866            ;*
-     867            ;*   Loop source line                : 320
-     868            ;*   Loop closing brace source line  : 320
+     867            ;*   Loop source line                : 336
+     868            ;*   Loop closing brace source line  : 336
      869            ;*   Known Minimum Trip Count        : 1
      870            ;*   Known Maximum Trip Count        : 4294967295
      871            ;*   Known Max Trip Count Factor     : 1
      872            ;* --------------------------------------------------------------------------*
      873 00009a       $C$L36:    
-     874 00009a B392          BIT.W     #1,&TA1CCTL0+0        ; [] |320| 
+     874 00009a B392          BIT.W     #1,&TA1CCTL0+0        ; [] |336| 
          00009c 0000!
-     875 00009e 27FD          JEQ       $C$L36                ; [] |320| 
-     876                                                      ; [] |320| 
+     875 00009e 27FD          JEQ       $C$L36                ; [] |336| 
+     876                                                      ; [] |336| 
      877            ;* --------------------------------------------------------------------------*
-     878                    .dwpsn  file "../fr2111_swi2c_master.c",line 323,column 13,is_stmt,isa 0
-     879 0000a0 B2E2          BIT.B     #4,&P1IN+0            ; [] |323| 
+     878                    .dwpsn  file "../g2553_swi2c_master.c",line 339,column 13,is_stmt,isa 0
+     879 0000a0 B2E2          BIT.B     #4,&P2IN+0            ; [] |339| 
          0000a2 0000!
-     880 0000a4 2401          JEQ       $C$L37                ; [] |323| 
-     881                                                      ; [] |323| 
+     880 0000a4 2401          JEQ       $C$L37                ; [] |339| 
+     881                                                      ; [] |339| 
      882            ;* --------------------------------------------------------------------------*
-     883                    .dwpsn  file "../fr2111_swi2c_master.c",line 325,column 15,is_stmt,isa 0
-     884 0000a6 531C          ADD.W     #1,r12                ; [] |325| 
+     883                    .dwpsn  file "../g2553_swi2c_master.c",line 341,column 15,is_stmt,isa 0
+     884 0000a6 531C          ADD.W     #1,r12                ; [] |341| 
      885            ;* --------------------------------------------------------------------------*
      886 0000a8       $C$L37:    
-     887                    .dwpsn  file "../fr2111_swi2c_master.c",line 329,column 13,is_stmt,isa 0
-     888 0000a8 831F          SUB.W     #1,r15                ; [] |329| 
-     889                    .dwpsn  file "../fr2111_swi2c_master.c",line 330,column 13,is_stmt,isa 0
-     890 0000aa D3E2          OR.B      #2,&P1DIR+0           ; [] |330| 
+     887                    .dwpsn  file "../g2553_swi2c_master.c",line 345,column 13,is_stmt,isa 0
+     888 0000a8 831F          SUB.W     #1,r15                ; [] |345| 
+     889                    .dwpsn  file "../g2553_swi2c_master.c",line 346,column 13,is_stmt,isa 0
+     890 0000aa D3E2          OR.B      #2,&P2DIR+0           ; [] |346| 
          0000ac 0000!
-     891                    .dwpsn  file "../fr2111_swi2c_master.c",line 331,column 13,is_stmt,isa 0
-     892 0000ae C392          BIC.W     #1,&TA1CCTL0+0        ; [] |331| 
+     891                    .dwpsn  file "../g2553_swi2c_master.c",line 347,column 13,is_stmt,isa 0
+     892 0000ae C392          BIC.W     #1,&TA1CCTL0+0        ; [] |347| 
          0000b0 0000!
      893            ;* --------------------------------------------------------------------------*
      894            ;*   BEGIN LOOP $C$L38
      895            ;*
-     896            ;*   Loop source line                : 331
-     897            ;*   Loop closing brace source line  : 331
+     896            ;*   Loop source line                : 347
+     897            ;*   Loop closing brace source line  : 347
      898            ;*   Known Minimum Trip Count        : 1
      899            ;*   Known Maximum Trip Count        : 4294967295
      900            ;*   Known Max Trip Count Factor     : 1
      901            ;* --------------------------------------------------------------------------*
      902 0000b2       $C$L38:    
-     903 0000b2 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |331| 
+     903 0000b2 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |347| 
          0000b4 0000!
-     904 0000b6 27FD          JEQ       $C$L38                ; [] |331| 
-     905                                                      ; [] |331| 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+     904 0000b6 27FD          JEQ       $C$L38                ; [] |347| 
+     905                                                      ; [] |347| 
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   19
+g2553_swi2c_master.asm                                               PAGE   19
 
      906            ;* --------------------------------------------------------------------------*
-     907                    .dwpsn  file "../fr2111_swi2c_master.c",line 333,column 16,is_stmt,isa 0
-     908 0000b8 930F          TST.W     r15                   ; [] |333| 
-     909 0000ba 23EA          JNE       $C$L35                ; [] |333| 
-     910                                                      ; [] |333| 
+     907                    .dwpsn  file "../g2553_swi2c_master.c",line 349,column 16,is_stmt,isa 0
+     908 0000b8 930F          TST.W     r15                   ; [] |349| 
+     909 0000ba 23EA          JNE       $C$L35                ; [] |349| 
+     910                                                      ; [] |349| 
      911            ;* --------------------------------------------------------------------------*
-     912                    .dwpsn  file "../fr2111_swi2c_master.c",line 336,column 9,is_stmt,isa 0
-     913 0000bc 4D0F          MOV.W     r13,r15               ; [] |336| 
-     914 0000be 5B0F          ADD.W     r11,r15               ; [] |336| 
-     915 0000c0 4CCF          MOV.B     r12,0(r15)            ; [] |336| 
+     912                    .dwpsn  file "../g2553_swi2c_master.c",line 352,column 9,is_stmt,isa 0
+     913 0000bc 4D0F          MOV.W     r13,r15               ; [] |352| 
+     914 0000be 5B0F          ADD.W     r11,r15               ; [] |352| 
+     915 0000c0 4CCF          MOV.B     r12,0(r15)            ; [] |352| 
          0000c2 0000 
-     916                    .dwpsn  file "../fr2111_swi2c_master.c",line 339,column 9,is_stmt,isa 0
-     917 0000c4 4B0F          MOV.W     r11,r15               ; [] |339| 
-     918 0000c6 8E0F          SUB.W     r14,r15               ; [] |339| 
-     919 0000c8 933F          CMP.W     #65535,r15            ; [] |339| 
-     920 0000ca 2403          JEQ       $C$L39                ; [] |339| 
-     921                                                      ; [] |339| 
+     916                    .dwpsn  file "../g2553_swi2c_master.c",line 355,column 9,is_stmt,isa 0
+     917 0000c4 4B0F          MOV.W     r11,r15               ; [] |355| 
+     918 0000c6 8E0F          SUB.W     r14,r15               ; [] |355| 
+     919 0000c8 933F          CMP.W     #65535,r15            ; [] |355| 
+     920 0000ca 2403          JEQ       $C$L39                ; [] |355| 
+     921                                                      ; [] |355| 
      922            ;* --------------------------------------------------------------------------*
-     923                    .dwpsn  file "../fr2111_swi2c_master.c",line 342,column 10,is_stmt,isa 0
-     924 0000cc D2E2          OR.B      #4,&P1DIR+0           ; [] |342| 
+     923                    .dwpsn  file "../g2553_swi2c_master.c",line 358,column 10,is_stmt,isa 0
+     924 0000cc D2E2          OR.B      #4,&P2DIR+0           ; [] |358| 
          0000ce 0000!
-     925 0000d0 3C02          JMP       $C$L40                ; [] |342| 
-     926                                                      ; [] |342| 
+     925 0000d0 3C02          JMP       $C$L40                ; [] |358| 
+     926                                                      ; [] |358| 
      927            ;* --------------------------------------------------------------------------*
      928 0000d2       $C$L39:    
-     929                    .dwpsn  file "../fr2111_swi2c_master.c",line 340,column 13,is_stmt,isa 0
-     930 0000d2 C2E2          BIC.B     #4,&P1DIR+0           ; [] |340| 
+     929                    .dwpsn  file "../g2553_swi2c_master.c",line 356,column 13,is_stmt,isa 0
+     930 0000d2 C2E2          BIC.B     #4,&P2DIR+0           ; [] |356| 
          0000d4 0000!
      931            ;* --------------------------------------------------------------------------*
      932 0000d6       $C$L40:    
-     933                    .dwpsn  file "../fr2111_swi2c_master.c",line 343,column 9,is_stmt,isa 0
-     934 0000d6 C3E2          BIC.B     #2,&P1DIR+0           ; [] |343| 
+     933                    .dwpsn  file "../g2553_swi2c_master.c",line 359,column 9,is_stmt,isa 0
+     934 0000d6 C3E2          BIC.B     #2,&P2DIR+0           ; [] |359| 
          0000d8 0000!
      935            ;* --------------------------------------------------------------------------*
      936            ;*   BEGIN LOOP $C$L41
      937            ;*
-     938            ;*   Loop source line                : 348
-     939            ;*   Loop closing brace source line  : 348
+     938            ;*   Loop source line                : 364
+     939            ;*   Loop closing brace source line  : 364
      940            ;*   Known Minimum Trip Count        : 1
      941            ;*   Known Maximum Trip Count        : 4294967295
      942            ;*   Known Max Trip Count Factor     : 1
      943            ;* --------------------------------------------------------------------------*
      944 0000da       $C$L41:    
-     945                    .dwpsn  file "../fr2111_swi2c_master.c",line 348,column 15,is_stmt,isa 0
-     946 0000da B3E2          BIT.B     #2,&P1IN+0            ; [] |348| 
+     945                    .dwpsn  file "../g2553_swi2c_master.c",line 364,column 15,is_stmt,isa 0
+     946 0000da B3E2          BIT.B     #2,&P2IN+0            ; [] |364| 
          0000dc 0000!
-     947 0000de 27FD          JEQ       $C$L41                ; [] |348| 
-     948                                                      ; [] |348| 
+     947 0000de 27FD          JEQ       $C$L41                ; [] |364| 
+     948                                                      ; [] |364| 
      949            ;* --------------------------------------------------------------------------*
-     950                    .dwpsn  file "../fr2111_swi2c_master.c",line 350,column 9,is_stmt,isa 0
-     951 0000e0 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |350| 
+     950                    .dwpsn  file "../g2553_swi2c_master.c",line 366,column 9,is_stmt,isa 0
+     951 0000e0 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |366| 
          0000e2 0000!
      952            ;* --------------------------------------------------------------------------*
      953            ;*   BEGIN LOOP $C$L42
      954            ;*
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   20
+g2553_swi2c_master.asm                                               PAGE   20
 
-     955            ;*   Loop source line                : 350
-     956            ;*   Loop closing brace source line  : 350
+     955            ;*   Loop source line                : 366
+     956            ;*   Loop closing brace source line  : 366
      957            ;*   Known Minimum Trip Count        : 1
      958            ;*   Known Maximum Trip Count        : 4294967295
      959            ;*   Known Max Trip Count Factor     : 1
      960            ;* --------------------------------------------------------------------------*
      961 0000e4       $C$L42:    
-     962 0000e4 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |350| 
+     962 0000e4 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |366| 
          0000e6 0000!
-     963 0000e8 27FD          JEQ       $C$L42                ; [] |350| 
-     964                                                      ; [] |350| 
+     963 0000e8 27FD          JEQ       $C$L42                ; [] |366| 
+     964                                                      ; [] |366| 
      965            ;* --------------------------------------------------------------------------*
-     966                    .dwpsn  file "../fr2111_swi2c_master.c",line 298,column 14,is_stmt,isa 0
-     967 0000ea 531B          ADD.W     #1,r11                ; [] |298| 
-     968 0000ec 9E0B          CMP.W     r14,r11               ; [] |298| 
-     969 0000ee 2BC2          JLO       $C$L33                ; [] |298| 
-     970                                                      ; [] |298| 
+     966                    .dwpsn  file "../g2553_swi2c_master.c",line 314,column 14,is_stmt,isa 0
+     967 0000ea 531B          ADD.W     #1,r11                ; [] |314| 
+     968 0000ec 9E0B          CMP.W     r14,r11               ; [] |314| 
+     969 0000ee 2BC2          JLO       $C$L33                ; [] |314| 
+     970                                                      ; [] |314| 
      971            ;* --------------------------------------------------------------------------*
      972 0000f0       $C$L43:    
-     973                    .dwpsn  file "../fr2111_swi2c_master.c",line 356,column 5,is_stmt,isa 0
-     974 0000f0 D3E2          OR.B      #2,&P1DIR+0           ; [] |356| 
+     973                    .dwpsn  file "../g2553_swi2c_master.c",line 372,column 5,is_stmt,isa 0
+     974 0000f0 D3E2          OR.B      #2,&P2DIR+0           ; [] |372| 
          0000f2 0000!
-     975                    .dwpsn  file "../fr2111_swi2c_master.c",line 357,column 5,is_stmt,isa 0
-     976 0000f4 D2E2          OR.B      #4,&P1DIR+0           ; [] |357| 
+     975                    .dwpsn  file "../g2553_swi2c_master.c",line 373,column 5,is_stmt,isa 0
+     976 0000f4 D2E2          OR.B      #4,&P2DIR+0           ; [] |373| 
          0000f6 0000!
-     977                    .dwpsn  file "../fr2111_swi2c_master.c",line 358,column 5,is_stmt,isa 0
-     978 0000f8 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |358| 
+     977                    .dwpsn  file "../g2553_swi2c_master.c",line 374,column 5,is_stmt,isa 0
+     978 0000f8 C392          BIC.W     #1,&TA1CCTL0+0        ; [] |374| 
          0000fa 0000!
      979            ;* --------------------------------------------------------------------------*
      980            ;*   BEGIN LOOP $C$L44
      981            ;*
-     982            ;*   Loop source line                : 358
-     983            ;*   Loop closing brace source line  : 358
+     982            ;*   Loop source line                : 374
+     983            ;*   Loop closing brace source line  : 374
      984            ;*   Known Minimum Trip Count        : 1
      985            ;*   Known Maximum Trip Count        : 4294967295
      986            ;*   Known Max Trip Count Factor     : 1
      987            ;* --------------------------------------------------------------------------*
      988 0000fc       $C$L44:    
-     989 0000fc B392          BIT.W     #1,&TA1CCTL0+0        ; [] |358| 
+     989 0000fc B392          BIT.W     #1,&TA1CCTL0+0        ; [] |374| 
          0000fe 0000!
-     990 000100 27FD          JEQ       $C$L44                ; [] |358| 
-     991                                                      ; [] |358| 
+     990 000100 27FD          JEQ       $C$L44                ; [] |374| 
+     991                                                      ; [] |374| 
      992            ;* --------------------------------------------------------------------------*
-     993                    .dwpsn  file "../fr2111_swi2c_master.c",line 359,column 5,is_stmt,isa 0
-     994 000102 C3E2          BIC.B     #2,&P1DIR+0           ; [] |359| 
+     993                    .dwpsn  file "../g2553_swi2c_master.c",line 375,column 5,is_stmt,isa 0
+     994 000102 C3E2          BIC.B     #2,&P2DIR+0           ; [] |375| 
          000104 0000!
-     995                    .dwpsn  file "../fr2111_swi2c_master.c",line 360,column 5,is_stmt,isa 0
-     996 000106 4303          NOP       ; [] |360| 
-     997                    .dwpsn  file "../fr2111_swi2c_master.c",line 361,column 5,is_stmt,isa 0
-     998 000108 C2E2          BIC.B     #4,&P1DIR+0           ; [] |361| 
+     995                    .dwpsn  file "../g2553_swi2c_master.c",line 376,column 5,is_stmt,isa 0
+     996 000106 4303          NOP       ; [] |376| 
+     997                    .dwpsn  file "../g2553_swi2c_master.c",line 377,column 5,is_stmt,isa 0
+     998 000108 C2E2          BIC.B     #4,&P2DIR+0           ; [] |377| 
          00010a 0000!
-     999                    .dwpsn  file "../fr2111_swi2c_master.c",line 362,column 5,is_stmt,isa 0
-    1000 00010c C392          BIC.W     #1,&TA1CCTL0+0        ; [] |362| 
+     999                    .dwpsn  file "../g2553_swi2c_master.c",line 378,column 5,is_stmt,isa 0
+    1000 00010c C392          BIC.W     #1,&TA1CCTL0+0        ; [] |378| 
          00010e 0000!
     1001            ;* --------------------------------------------------------------------------*
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   21
+g2553_swi2c_master.asm                                               PAGE   21
 
     1002            ;*   BEGIN LOOP $C$L45
     1003            ;*
-    1004            ;*   Loop source line                : 362
-    1005            ;*   Loop closing brace source line  : 362
+    1004            ;*   Loop source line                : 378
+    1005            ;*   Loop closing brace source line  : 378
     1006            ;*   Known Minimum Trip Count        : 1
     1007            ;*   Known Maximum Trip Count        : 4294967295
     1008            ;*   Known Max Trip Count Factor     : 1
     1009            ;* --------------------------------------------------------------------------*
     1010 000110       $C$L45:    
-    1011 000110 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |362| 
+    1011 000110 B392          BIT.W     #1,&TA1CCTL0+0        ; [] |378| 
          000112 0000!
-    1012 000114 27FD          JEQ       $C$L45                ; [] |362| 
-    1013                                                      ; [] |362| 
+    1012 000114 27FD          JEQ       $C$L45                ; [] |378| 
+    1013                                                      ; [] |378| 
     1014            ;* --------------------------------------------------------------------------*
-    1015                    .dwpsn  file "../fr2111_swi2c_master.c",line 365,column 5,is_stmt,isa 0
-    1016 000116 4382          MOV.W     #0,&TA1CTL+0          ; [] |365| 
+    1015                    .dwpsn  file "../g2553_swi2c_master.c",line 381,column 5,is_stmt,isa 0
+    1016 000116 4382          MOV.W     #0,&TA1CTL+0          ; [] |381| 
          000118 0000!
-    1017                    .dwpsn  file "../fr2111_swi2c_master.c",line 369,column 9,is_stmt,isa 0
-    1018 00011a 434C          MOV.B     #0,r12                ; [] |369| 
-    1019 00011c 9E0B          CMP.W     r14,r11               ; [] |369| 
-    1020 00011e 2001          JNE       $C$L46                ; [] |369| 
-    1021                                                      ; [] |369| 
+    1017                    .dwpsn  file "../g2553_swi2c_master.c",line 385,column 9,is_stmt,isa 0
+    1018 00011a 434C          MOV.B     #0,r12                ; [] |385| 
+    1019 00011c 9E0B          CMP.W     r14,r11               ; [] |385| 
+    1020 00011e 2001          JNE       $C$L46                ; [] |385| 
+    1021                                                      ; [] |385| 
     1022            ;* --------------------------------------------------------------------------*
-    1023 000120 435C          MOV.B     #1,r12                ; [] |369| 
+    1023 000120 435C          MOV.B     #1,r12                ; [] |385| 
     1024            ;* --------------------------------------------------------------------------*
     1025 000122       $C$L46:    
-    1026                    .dwpsn  file "../fr2111_swi2c_master.c",line 372,column 1,is_stmt,isa 0
+    1026                    .dwpsn  file "../g2553_swi2c_master.c",line 388,column 1,is_stmt,isa 0
     1027            $C$DW$30        .dwtag  DW_TAG_TI_branch
     1028                    .dwattr $C$DW$30, DW_AT_low_pc(0x00)
     1029                    .dwattr $C$DW$30, DW_AT_TI_return
     1030            
     1031 000122 4130          RET       ; [] 
     1032                    ; [] 
-    1033                    .dwattr $C$DW$20, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
-    1034                    .dwattr $C$DW$20, DW_AT_TI_end_line(0x174)
+    1033                    .dwattr $C$DW$20, DW_AT_TI_end_file("../g2553_swi2c_master.c")
+    1034                    .dwattr $C$DW$20, DW_AT_TI_end_line(0x184)
     1035                    .dwattr $C$DW$20, DW_AT_TI_end_column(0x01)
     1036                    .dwendentry
     1037                    .dwendtag $C$DW$20
@@ -1253,19 +1253,19 @@ fr2111_swi2c_master.asm                                              PAGE   21
     1047                    .dwattr $C$DW$31, DW_AT_TI_symbol_name("SWI2C_performI2CTransaction")
     1048                    .dwattr $C$DW$31, DW_AT_external
     1049                    .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$28)
-    1050                    .dwattr $C$DW$31, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
-    1051                    .dwattr $C$DW$31, DW_AT_TI_begin_line(0x39)
+    1050                    .dwattr $C$DW$31, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
+    1051                    .dwattr $C$DW$31, DW_AT_TI_begin_line(0x49)
     1052                    .dwattr $C$DW$31, DW_AT_TI_begin_column(0x06)
-    1053                    .dwattr $C$DW$31, DW_AT_decl_file("../fr2111_swi2c_master.c")
-    1054                    .dwattr $C$DW$31, DW_AT_decl_line(0x39)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+    1053                    .dwattr $C$DW$31, DW_AT_decl_file("../g2553_swi2c_master.c")
+    1054                    .dwattr $C$DW$31, DW_AT_decl_line(0x49)
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   22
+g2553_swi2c_master.asm                                               PAGE   22
 
     1055                    .dwattr $C$DW$31, DW_AT_decl_column(0x06)
     1056                    .dwattr $C$DW$31, DW_AT_TI_max_frame_size(0x04)
-    1057                    .dwpsn  file "../fr2111_swi2c_master.c",line 58,column 1,is_stmt,address SWI2C_performI2CTrans
+    1057                    .dwpsn  file "../g2553_swi2c_master.c",line 74,column 1,is_stmt,address SWI2C_performI2CTransa
     1058            
     1059                    .dwfde $C$DW$CIE, SWI2C_performI2CTransaction
     1060            $C$DW$32        .dwtag  DW_TAG_formal_parameter
@@ -1296,121 +1296,121 @@ fr2111_swi2c_master.asm                                              PAGE   22
     1085                    .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$32)
     1086                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg10]
     1087            
-    1088 000002 4C0A          MOV.W     r12,r10               ; [] |58| 
-    1089                    .dwpsn  file "../fr2111_swi2c_master.c",line 59,column 5,is_stmt,isa 0
-    1090 000004 938A          TST.W     2(r10)                ; [] |59| 
+    1088 000002 4C0A          MOV.W     r12,r10               ; [] |74| 
+    1089                    .dwpsn  file "../g2553_swi2c_master.c",line 75,column 5,is_stmt,isa 0
+    1090 000004 938A          TST.W     2(r10)                ; [] |75| 
          000006 0002 
-    1091 000008 241E          JEQ       $C$L49                ; [] |59| 
-    1092                                                      ; [] |59| 
+    1091 000008 241E          JEQ       $C$L49                ; [] |75| 
+    1092                                                      ; [] |75| 
     1093            ;* --------------------------------------------------------------------------*
-    1094                    .dwpsn  file "../fr2111_swi2c_master.c",line 62,column 9,is_stmt,isa 0
-    1095 00000a 93CA          TST.B     10(r10)               ; [] |62| 
+    1094                    .dwpsn  file "../g2553_swi2c_master.c",line 78,column 9,is_stmt,isa 0
+    1095 00000a 93CA          TST.B     10(r10)               ; [] |78| 
          00000c 000A 
-    1096 00000e 2403          JEQ       $C$L47                ; [] |62| 
-    1097                                                      ; [] |62| 
+    1096 00000e 2403          JEQ       $C$L47                ; [] |78| 
+    1097                                                      ; [] |78| 
     1098            ;* --------------------------------------------------------------------------*
-    1099 000010 938A          TST.W     6(r10)                ; [] |62| 
+    1099 000010 938A          TST.W     6(r10)                ; [] |78| 
          000012 0006 
-    1100 000014 200C          JNE       $C$L48                ; [] |62| 
-    1101                                                      ; [] |62| 
+    1100 000014 200C          JNE       $C$L48                ; [] |78| 
+    1101                                                      ; [] |78| 
     1102            ;* --------------------------------------------------------------------------*
     1103 000016       $C$L47:    
-    1104                    .dwpsn  file "../fr2111_swi2c_master.c",line 73,column 13,is_stmt,isa 0
-    1105 000016 4A6C          MOV.B     @r10,r12              ; [] |73| 
-    1106 000018 4A1D          MOV.W     4(r10),r13            ; [] |73| 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+    1104                    .dwpsn  file "../g2553_swi2c_master.c",line 89,column 13,is_stmt,isa 0
+    1105 000016 4A6C          MOV.B     @r10,r12              ; [] |89| 
+    1106 000018 4A1D          MOV.W     4(r10),r13            ; [] |89| 
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   23
+g2553_swi2c_master.asm                                               PAGE   23
 
          00001a 0004 
-    1107 00001c 4A1E          MOV.W     2(r10),r14            ; [] |73| 
+    1107 00001c 4A1E          MOV.W     2(r10),r14            ; [] |89| 
          00001e 0002 
-    1108 000020 435F          MOV.B     #1,r15                ; [] |73| 
+    1108 000020 435F          MOV.B     #1,r15                ; [] |89| 
     1109            $C$DW$34        .dwtag  DW_TAG_TI_branch
     1110                    .dwattr $C$DW$34, DW_AT_low_pc(0x00)
     1111                    .dwattr $C$DW$34, DW_AT_name("SWI2C_writeData")
     1112                    .dwattr $C$DW$34, DW_AT_TI_call
     1113            
-    1114 000022 12B0          CALL      #SWI2C_writeData      ; [] |73| 
+    1114 000022 12B0          CALL      #SWI2C_writeData      ; [] |89| 
          000024 0000!
-    1115                                                      ; [] |73| 
-    1116 000026 934C          TST.B     r12                   ; [] |73| 
-    1117 000028 200E          JNE       $C$L49                ; [] |73| 
-    1118                                                      ; [] |73| 
+    1115                                                      ; [] |89| 
+    1116 000026 934C          TST.B     r12                   ; [] |89| 
+    1117 000028 200E          JNE       $C$L49                ; [] |89| 
+    1118                                                      ; [] |89| 
     1119            ;* --------------------------------------------------------------------------*
-    1120                    .dwpsn  file "../fr2111_swi2c_master.c",line 77,column 17,is_stmt,isa 0
-    1121 00002a 434C          MOV.B     #0,r12                ; [] |77| 
-    1122 00002c 3C1B          JMP       $C$L52                ; [] |77| 
-    1123                                                      ; [] |77| 
+    1120                    .dwpsn  file "../g2553_swi2c_master.c",line 93,column 17,is_stmt,isa 0
+    1121 00002a 434C          MOV.B     #0,r12                ; [] |93| 
+    1122 00002c 3C1B          JMP       $C$L52                ; [] |93| 
+    1123                                                      ; [] |93| 
     1124            ;* --------------------------------------------------------------------------*
     1125 00002e       $C$L48:    
-    1126                    .dwpsn  file "../fr2111_swi2c_master.c",line 64,column 13,is_stmt,isa 0
-    1127 00002e 4A6C          MOV.B     @r10,r12              ; [] |64| 
-    1128 000030 4A1D          MOV.W     4(r10),r13            ; [] |64| 
+    1126                    .dwpsn  file "../g2553_swi2c_master.c",line 80,column 13,is_stmt,isa 0
+    1127 00002e 4A6C          MOV.B     @r10,r12              ; [] |80| 
+    1128 000030 4A1D          MOV.W     4(r10),r13            ; [] |80| 
          000032 0004 
-    1129 000034 4A1E          MOV.W     2(r10),r14            ; [] |64| 
+    1129 000034 4A1E          MOV.W     2(r10),r14            ; [] |80| 
          000036 0002 
-    1130 000038 434F          MOV.B     #0,r15                ; [] |64| 
+    1130 000038 434F          MOV.B     #0,r15                ; [] |80| 
     1131            $C$DW$35        .dwtag  DW_TAG_TI_branch
     1132                    .dwattr $C$DW$35, DW_AT_low_pc(0x00)
     1133                    .dwattr $C$DW$35, DW_AT_name("SWI2C_writeData")
     1134                    .dwattr $C$DW$35, DW_AT_TI_call
     1135            
-    1136 00003a 12B0          CALL      #SWI2C_writeData      ; [] |64| 
+    1136 00003a 12B0          CALL      #SWI2C_writeData      ; [] |80| 
          00003c 0000!
-    1137                                                      ; [] |64| 
-    1138 00003e 934C          TST.B     r12                   ; [] |64| 
-    1139 000040 2002          JNE       $C$L49                ; [] |64| 
-    1140                                                      ; [] |64| 
+    1137                                                      ; [] |80| 
+    1138 00003e 934C          TST.B     r12                   ; [] |80| 
+    1139 000040 2002          JNE       $C$L49                ; [] |80| 
+    1140                                                      ; [] |80| 
     1141            ;* --------------------------------------------------------------------------*
-    1142                    .dwpsn  file "../fr2111_swi2c_master.c",line 68,column 17,is_stmt,isa 0
-    1143 000042 434C          MOV.B     #0,r12                ; [] |68| 
-    1144 000044 3C0F          JMP       $C$L52                ; [] |68| 
-    1145                                                      ; [] |68| 
+    1142                    .dwpsn  file "../g2553_swi2c_master.c",line 84,column 17,is_stmt,isa 0
+    1143 000042 434C          MOV.B     #0,r12                ; [] |84| 
+    1144 000044 3C0F          JMP       $C$L52                ; [] |84| 
+    1145                                                      ; [] |84| 
     1146            ;* --------------------------------------------------------------------------*
     1147 000046       $C$L49:    
-    1148                    .dwpsn  file "../fr2111_swi2c_master.c",line 83,column 5,is_stmt,isa 0
-    1149 000046 938A          TST.W     6(r10)                ; [] |83| 
+    1148                    .dwpsn  file "../g2553_swi2c_master.c",line 99,column 5,is_stmt,isa 0
+    1149 000046 938A          TST.W     6(r10)                ; [] |99| 
          000048 0006 
-    1150 00004a 2409          JEQ       $C$L50                ; [] |83| 
-    1151                                                      ; [] |83| 
+    1150 00004a 2409          JEQ       $C$L50                ; [] |99| 
+    1151                                                      ; [] |99| 
     1152            ;* --------------------------------------------------------------------------*
-    1153                    .dwpsn  file "../fr2111_swi2c_master.c",line 85,column 9,is_stmt,isa 0
-    1154 00004c 4A6C          MOV.B     @r10,r12              ; [] |85| 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+    1153                    .dwpsn  file "../g2553_swi2c_master.c",line 101,column 9,is_stmt,isa 0
+    1154 00004c 4A6C          MOV.B     @r10,r12              ; [] |101| 
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   24
+g2553_swi2c_master.asm                                               PAGE   24
 
-    1155 00004e 4A1D          MOV.W     8(r10),r13            ; [] |85| 
+    1155 00004e 4A1D          MOV.W     8(r10),r13            ; [] |101| 
          000050 0008 
-    1156 000052 4A1E          MOV.W     6(r10),r14            ; [] |85| 
+    1156 000052 4A1E          MOV.W     6(r10),r14            ; [] |101| 
          000054 0006 
     1157            $C$DW$36        .dwtag  DW_TAG_TI_branch
     1158                    .dwattr $C$DW$36, DW_AT_low_pc(0x00)
     1159                    .dwattr $C$DW$36, DW_AT_name("SWI2C_readData")
     1160                    .dwattr $C$DW$36, DW_AT_TI_call
     1161            
-    1162 000056 12B0          CALL      #SWI2C_readData       ; [] |85| 
+    1162 000056 12B0          CALL      #SWI2C_readData       ; [] |101| 
          000058 0000!
-    1163                                                      ; [] |85| 
-    1164 00005a 934C          TST.B     r12                   ; [] |85| 
-    1165 00005c 2402          JEQ       $C$L51                ; [] |85| 
-    1166                                                      ; [] |85| 
+    1163                                                      ; [] |101| 
+    1164 00005a 934C          TST.B     r12                   ; [] |101| 
+    1165 00005c 2402          JEQ       $C$L51                ; [] |101| 
+    1166                                                      ; [] |101| 
     1167            ;* --------------------------------------------------------------------------*
     1168 00005e       $C$L50:    
-    1169                    .dwpsn  file "../fr2111_swi2c_master.c",line 92,column 5,is_stmt,isa 0
-    1170 00005e 435C          MOV.B     #1,r12                ; [] |92| 
-    1171 000060 3C01          JMP       $C$L52                ; [] |92| 
-    1172                                                      ; [] |92| 
+    1169                    .dwpsn  file "../g2553_swi2c_master.c",line 108,column 5,is_stmt,isa 0
+    1170 00005e 435C          MOV.B     #1,r12                ; [] |108| 
+    1171 000060 3C01          JMP       $C$L52                ; [] |108| 
+    1172                                                      ; [] |108| 
     1173            ;* --------------------------------------------------------------------------*
     1174 000062       $C$L51:    
-    1175                    .dwpsn  file "../fr2111_swi2c_master.c",line 88,column 13,is_stmt,isa 0
-    1176 000062 434C          MOV.B     #0,r12                ; [] |88| 
+    1175                    .dwpsn  file "../g2553_swi2c_master.c",line 104,column 13,is_stmt,isa 0
+    1176 000062 434C          MOV.B     #0,r12                ; [] |104| 
     1177            ;* --------------------------------------------------------------------------*
     1178 000064       $C$L52:    
-    1179                    .dwpsn  file "../fr2111_swi2c_master.c",line 93,column 1,is_stmt,isa 0
+    1179                    .dwpsn  file "../g2553_swi2c_master.c",line 109,column 1,is_stmt,isa 0
     1180 000064 413A          POP       r10                   ; [] 
     1181                    .dwcfi  restore_reg, 10
     1182                    .dwcfi  cfa_offset, 2
@@ -1420,8 +1420,8 @@ fr2111_swi2c_master.asm                                              PAGE   24
     1186            
     1187 000066 4130          RET       ; [] 
     1188                    ; [] 
-    1189                    .dwattr $C$DW$31, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
-    1190                    .dwattr $C$DW$31, DW_AT_TI_end_line(0x5d)
+    1189                    .dwattr $C$DW$31, DW_AT_TI_end_file("../g2553_swi2c_master.c")
+    1190                    .dwattr $C$DW$31, DW_AT_TI_end_line(0x6d)
     1191                    .dwattr $C$DW$31, DW_AT_TI_end_column(0x01)
     1192                    .dwendentry
     1193                    .dwendtag $C$DW$31
@@ -1436,19 +1436,19 @@ fr2111_swi2c_master.asm                                              PAGE   24
     1202                    .dwattr $C$DW$38, DW_AT_high_pc(0x00)
     1203                    .dwattr $C$DW$38, DW_AT_TI_symbol_name("SWI2C_initI2C")
     1204                    .dwattr $C$DW$38, DW_AT_external
-    1205                    .dwattr $C$DW$38, DW_AT_TI_begin_file("../fr2111_swi2c_master.c")
-    1206                    .dwattr $C$DW$38, DW_AT_TI_begin_line(0x2c)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+    1205                    .dwattr $C$DW$38, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
+    1206                    .dwattr $C$DW$38, DW_AT_TI_begin_line(0x3c)
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   25
+g2553_swi2c_master.asm                                               PAGE   25
 
     1207                    .dwattr $C$DW$38, DW_AT_TI_begin_column(0x06)
-    1208                    .dwattr $C$DW$38, DW_AT_decl_file("../fr2111_swi2c_master.c")
-    1209                    .dwattr $C$DW$38, DW_AT_decl_line(0x2c)
+    1208                    .dwattr $C$DW$38, DW_AT_decl_file("../g2553_swi2c_master.c")
+    1209                    .dwattr $C$DW$38, DW_AT_decl_line(0x3c)
     1210                    .dwattr $C$DW$38, DW_AT_decl_column(0x06)
     1211                    .dwattr $C$DW$38, DW_AT_TI_max_frame_size(0x02)
-    1212                    .dwpsn  file "../fr2111_swi2c_master.c",line 45,column 1,is_stmt,address SWI2C_initI2C,isa 0
+    1212                    .dwpsn  file "../g2553_swi2c_master.c",line 61,column 1,is_stmt,address SWI2C_initI2C,isa 0
     1213            
     1214                    .dwfde $C$DW$CIE, SWI2C_initI2C
     1215            
@@ -1463,29 +1463,29 @@ fr2111_swi2c_master.asm                                              PAGE   25
     1224            ;* --------------------------------------------------------------------------*
     1225                    .dwcfi  cfa_offset, 2
     1226                    .dwcfi  save_reg_to_mem, 16, -2
-    1227                    .dwpsn  file "../fr2111_swi2c_master.c",line 49,column 5,is_stmt,isa 0
-    1228 000000 F0F2          AND.B     #249,&P1OUT+0         ; [] |49| 
+    1227                    .dwpsn  file "../g2553_swi2c_master.c",line 65,column 5,is_stmt,isa 0
+    1228 000000 F0F2          AND.B     #249,&P2OUT+0         ; [] |65| 
          000002 00F9 
          000004 0000!
-    1229                    .dwpsn  file "../fr2111_swi2c_master.c",line 50,column 5,is_stmt,isa 0
-    1230 000006 C3E2          BIC.B     #2,&P1DIR+0           ; [] |50| 
+    1229                    .dwpsn  file "../g2553_swi2c_master.c",line 66,column 5,is_stmt,isa 0
+    1230 000006 C3E2          BIC.B     #2,&P2DIR+0           ; [] |66| 
          000008 0000!
-    1231                    .dwpsn  file "../fr2111_swi2c_master.c",line 51,column 5,is_stmt,isa 0
-    1232 00000a C2E2          BIC.B     #4,&P1DIR+0           ; [] |51| 
+    1231                    .dwpsn  file "../g2553_swi2c_master.c",line 67,column 5,is_stmt,isa 0
+    1232 00000a C2E2          BIC.B     #4,&P2DIR+0           ; [] |67| 
          00000c 0000!
-    1233                    .dwpsn  file "../fr2111_swi2c_master.c",line 54,column 5,is_stmt,isa 0
-    1234 00000e 40B2          MOV.W     #50,&TA1CCR0+0        ; [] |54| 
-         000010 0032 
+    1233                    .dwpsn  file "../g2553_swi2c_master.c",line 70,column 5,is_stmt,isa 0
+    1234 00000e 40B2          MOV.W     #20,&TA1CCR0+0        ; [] |70| 
+         000010 0014 
          000012 0000!
-    1235                    .dwpsn  file "../fr2111_swi2c_master.c",line 55,column 1,is_stmt,isa 0
+    1235                    .dwpsn  file "../g2553_swi2c_master.c",line 71,column 1,is_stmt,isa 0
     1236            $C$DW$39        .dwtag  DW_TAG_TI_branch
     1237                    .dwattr $C$DW$39, DW_AT_low_pc(0x00)
     1238                    .dwattr $C$DW$39, DW_AT_TI_return
     1239            
     1240 000014 4130          RET       ; [] 
     1241                    ; [] 
-    1242                    .dwattr $C$DW$38, DW_AT_TI_end_file("../fr2111_swi2c_master.c")
-    1243                    .dwattr $C$DW$38, DW_AT_TI_end_line(0x37)
+    1242                    .dwattr $C$DW$38, DW_AT_TI_end_file("../g2553_swi2c_master.c")
+    1243                    .dwattr $C$DW$38, DW_AT_TI_end_line(0x47)
     1244                    .dwattr $C$DW$38, DW_AT_TI_end_column(0x01)
     1245                    .dwendentry
     1246                    .dwendtag $C$DW$38
@@ -1493,15 +1493,15 @@ fr2111_swi2c_master.asm                                              PAGE   25
     1248            ;*****************************************************************************
     1249            ;* UNDEFINED EXTERNAL REFERENCES                                             *
     1250            ;*****************************************************************************
-    1251                    .global P1IN
-    1252                    .global P1OUT
-    1253                    .global P1DIR
+    1251                    .global P2IN
+    1252                    .global P2OUT
+    1253                    .global P2DIR
     1254                    .global TA1CTL
     1255                    .global TA1CCTL0
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   26
+g2553_swi2c_master.asm                                               PAGE   26
 
     1256                    .global TA1CCR0
     1257            
@@ -1509,7 +1509,7 @@ fr2111_swi2c_master.asm                                              PAGE   26
     1259            ;* BUILD ATTRIBUTES                                                           *
     1260            ;******************************************************************************
     1261                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
-    1262                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000010
+    1262                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000001
     1263                    .battr "TI", Tag_File, 1, Tag_LEA_INFO(1)
     1264                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
     1265                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
@@ -1558,10 +1558,10 @@ fr2111_swi2c_master.asm                                              PAGE   26
     1308            
     1309            $C$DW$T$29      .dwtag  DW_TAG_structure_type
     1310                    .dwattr $C$DW$T$29, DW_AT_name("_SWI2C_I2CTransaction")
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   27
+g2553_swi2c_master.asm                                               PAGE   27
 
     1311                    .dwattr $C$DW$T$29, DW_AT_byte_size(0x0c)
     1312            $C$DW$42        .dwtag  DW_TAG_member
@@ -1570,8 +1570,8 @@ fr2111_swi2c_master.asm                                              PAGE   27
     1315                    .dwattr $C$DW$42, DW_AT_TI_symbol_name("address")
     1316                    .dwattr $C$DW$42, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1317                    .dwattr $C$DW$42, DW_AT_accessibility(DW_ACCESS_public)
-    1318                    .dwattr $C$DW$42, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1319                    .dwattr $C$DW$42, DW_AT_decl_line(0x3c)
+    1318                    .dwattr $C$DW$42, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+    1319                    .dwattr $C$DW$42, DW_AT_decl_line(0x4c)
     1320                    .dwattr $C$DW$42, DW_AT_decl_column(0x19)
     1321            
     1322            $C$DW$43        .dwtag  DW_TAG_member
@@ -1580,8 +1580,8 @@ fr2111_swi2c_master.asm                                              PAGE   27
     1325                    .dwattr $C$DW$43, DW_AT_TI_symbol_name("numWriteBytes")
     1326                    .dwattr $C$DW$43, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
     1327                    .dwattr $C$DW$43, DW_AT_accessibility(DW_ACCESS_public)
-    1328                    .dwattr $C$DW$43, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1329                    .dwattr $C$DW$43, DW_AT_decl_line(0x3d)
+    1328                    .dwattr $C$DW$43, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+    1329                    .dwattr $C$DW$43, DW_AT_decl_line(0x4d)
     1330                    .dwattr $C$DW$43, DW_AT_decl_column(0x19)
     1331            
     1332            $C$DW$44        .dwtag  DW_TAG_member
@@ -1590,8 +1590,8 @@ fr2111_swi2c_master.asm                                              PAGE   27
     1335                    .dwattr $C$DW$44, DW_AT_TI_symbol_name("writeBuffer")
     1336                    .dwattr $C$DW$44, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
     1337                    .dwattr $C$DW$44, DW_AT_accessibility(DW_ACCESS_public)
-    1338                    .dwattr $C$DW$44, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1339                    .dwattr $C$DW$44, DW_AT_decl_line(0x3e)
+    1338                    .dwattr $C$DW$44, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+    1339                    .dwattr $C$DW$44, DW_AT_decl_line(0x4e)
     1340                    .dwattr $C$DW$44, DW_AT_decl_column(0x19)
     1341            
     1342            $C$DW$45        .dwtag  DW_TAG_member
@@ -1600,8 +1600,8 @@ fr2111_swi2c_master.asm                                              PAGE   27
     1345                    .dwattr $C$DW$45, DW_AT_TI_symbol_name("numReadBytes")
     1346                    .dwattr $C$DW$45, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
     1347                    .dwattr $C$DW$45, DW_AT_accessibility(DW_ACCESS_public)
-    1348                    .dwattr $C$DW$45, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1349                    .dwattr $C$DW$45, DW_AT_decl_line(0x3f)
+    1348                    .dwattr $C$DW$45, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+    1349                    .dwattr $C$DW$45, DW_AT_decl_line(0x4f)
     1350                    .dwattr $C$DW$45, DW_AT_decl_column(0x19)
     1351            
     1352            $C$DW$46        .dwtag  DW_TAG_member
@@ -1610,27 +1610,27 @@ fr2111_swi2c_master.asm                                              PAGE   27
     1355                    .dwattr $C$DW$46, DW_AT_TI_symbol_name("readBuffer")
     1356                    .dwattr $C$DW$46, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     1357                    .dwattr $C$DW$46, DW_AT_accessibility(DW_ACCESS_public)
-    1358                    .dwattr $C$DW$46, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1359                    .dwattr $C$DW$46, DW_AT_decl_line(0x40)
+    1358                    .dwattr $C$DW$46, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+    1359                    .dwattr $C$DW$46, DW_AT_decl_line(0x50)
     1360                    .dwattr $C$DW$46, DW_AT_decl_column(0x19)
     1361            
     1362            $C$DW$47        .dwtag  DW_TAG_member
     1363                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$28)
     1364                    .dwattr $C$DW$47, DW_AT_name("repeatedStart")
     1365                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("repeatedStart")
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   28
+g2553_swi2c_master.asm                                               PAGE   28
 
     1366                    .dwattr $C$DW$47, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
     1367                    .dwattr $C$DW$47, DW_AT_accessibility(DW_ACCESS_public)
-    1368                    .dwattr $C$DW$47, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1369                    .dwattr $C$DW$47, DW_AT_decl_line(0x41)
+    1368                    .dwattr $C$DW$47, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+    1369                    .dwattr $C$DW$47, DW_AT_decl_line(0x51)
     1370                    .dwattr $C$DW$47, DW_AT_decl_column(0x19)
     1371            
-    1372                    .dwattr $C$DW$T$29, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1373                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x3a)
+    1372                    .dwattr $C$DW$T$29, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0
+    1373                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x4a)
     1374                    .dwattr $C$DW$T$29, DW_AT_decl_column(0x10)
     1375                    .dwendtag $C$DW$T$29
     1376            
@@ -1638,8 +1638,8 @@ fr2111_swi2c_master.asm                                              PAGE   28
     1378                    .dwattr $C$DW$T$31, DW_AT_name("SWI2C_I2CTransaction")
     1379                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$29)
     1380                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
-    1381                    .dwattr $C$DW$T$31, DW_AT_decl_file("../fr2111_swi2c_master.h")
-    1382                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x42)
+    1381                    .dwattr $C$DW$T$31, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0
+    1382                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x52)
     1383                    .dwattr $C$DW$T$31, DW_AT_decl_column(0x03)
     1384            
     1385            $C$DW$T$32      .dwtag  DW_TAG_pointer_type
@@ -1678,10 +1678,10 @@ fr2111_swi2c_master.asm                                              PAGE   28
     1418            $C$DW$T$37      .dwtag  DW_TAG_typedef
     1419                    .dwattr $C$DW$T$37, DW_AT_name("int_least8_t")
     1420                    .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$36)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   29
+g2553_swi2c_master.asm                                               PAGE   29
 
     1421                    .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
     1422                    .dwattr $C$DW$T$37, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
@@ -1738,10 +1738,10 @@ fr2111_swi2c_master.asm                                              PAGE   29
     1473            
     1474            $C$DW$T$23      .dwtag  DW_TAG_typedef
     1475                    .dwattr $C$DW$T$23, DW_AT_name("uint8_t")
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   30
+g2553_swi2c_master.asm                                               PAGE   30
 
     1476                    .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
     1477                    .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
@@ -1798,10 +1798,10 @@ fr2111_swi2c_master.asm                                              PAGE   30
     1528                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x0e)
     1529            
     1530            $C$DW$T$52      .dwtag  DW_TAG_typedef
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   31
+g2553_swi2c_master.asm                                               PAGE   31
 
     1531                    .dwattr $C$DW$T$52, DW_AT_name("__cpulevel_t")
     1532                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$10)
@@ -1858,10 +1858,10 @@ fr2111_swi2c_master.asm                                              PAGE   31
     1583                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x38)
     1584                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x0f)
     1585            
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   32
+g2553_swi2c_master.asm                                               PAGE   32
 
     1586            $C$DW$T$59      .dwtag  DW_TAG_typedef
     1587                    .dwattr $C$DW$T$59, DW_AT_name("__int_fast16_t")
@@ -1918,10 +1918,10 @@ fr2111_swi2c_master.asm                                              PAGE   32
     1638                    .dwattr $C$DW$T$65, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
     1639                    .dwattr $C$DW$T$65, DW_AT_decl_line(0x53)
     1640                    .dwattr $C$DW$T$65, DW_AT_decl_column(0x19)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   33
+g2553_swi2c_master.asm                                               PAGE   33
 
     1641            
     1642            $C$DW$T$66      .dwtag  DW_TAG_typedef
@@ -1978,10 +1978,10 @@ fr2111_swi2c_master.asm                                              PAGE   33
     1693                    .dwattr $C$DW$T$71, DW_AT_decl_column(0x1a)
     1694            
     1695            $C$DW$T$72      .dwtag  DW_TAG_volatile_type
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   34
+g2553_swi2c_master.asm                                               PAGE   34
 
     1696                    .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$11)
     1697            
@@ -2038,10 +2038,10 @@ fr2111_swi2c_master.asm                                              PAGE   34
     1748                    .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$24)
     1749                    .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
     1750                    .dwattr $C$DW$T$76, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   35
+g2553_swi2c_master.asm                                               PAGE   35
 
     1751                    .dwattr $C$DW$T$76, DW_AT_decl_line(0x70)
     1752                    .dwattr $C$DW$T$76, DW_AT_decl_column(0x14)
@@ -2098,10 +2098,10 @@ fr2111_swi2c_master.asm                                              PAGE   35
     1803                    .dwattr $C$DW$T$83, DW_AT_name("uint16_t")
     1804                    .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$24)
     1805                    .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   36
+g2553_swi2c_master.asm                                               PAGE   36
 
     1806                    .dwattr $C$DW$T$83, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
     1807                    .dwattr $C$DW$T$83, DW_AT_decl_line(0x41)
@@ -2158,10 +2158,10 @@ fr2111_swi2c_master.asm                                              PAGE   36
     1858                    .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
     1859                    .dwattr $C$DW$T$89, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
     1860                    .dwattr $C$DW$T$89, DW_AT_decl_line(0x58)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   37
+g2553_swi2c_master.asm                                               PAGE   37
 
     1861                    .dwattr $C$DW$T$89, DW_AT_decl_column(0x13)
     1862            
@@ -2218,10 +2218,10 @@ fr2111_swi2c_master.asm                                              PAGE   37
     1913                    .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$85)
     1914                    .dwattr $C$DW$T$96, DW_AT_language(DW_LANG_C)
     1915                    .dwattr $C$DW$T$96, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   38
+g2553_swi2c_master.asm                                               PAGE   38
 
     1916                    .dwattr $C$DW$T$96, DW_AT_decl_line(0x60)
     1917                    .dwattr $C$DW$T$96, DW_AT_decl_column(0x13)
@@ -2278,10 +2278,10 @@ fr2111_swi2c_master.asm                                              PAGE   38
     1968                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
     1969                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
     1970                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   39
+g2553_swi2c_master.asm                                               PAGE   39
 
     1971            
     1972            $C$DW$T$103     .dwtag  DW_TAG_typedef
@@ -2338,10 +2338,10 @@ fr2111_swi2c_master.asm                                              PAGE   39
     2023                    .dwattr $C$DW$T$109, DW_AT_language(DW_LANG_C)
     2024                    .dwattr $C$DW$T$109, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
     2025                    .dwattr $C$DW$T$109, DW_AT_decl_line(0x66)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   40
+g2553_swi2c_master.asm                                               PAGE   40
 
     2026                    .dwattr $C$DW$T$109, DW_AT_decl_column(0x19)
     2027            
@@ -2398,10 +2398,10 @@ fr2111_swi2c_master.asm                                              PAGE   40
     2078                    .dwattr $C$DW$T$116, DW_AT_type(*$C$DW$T$103)
     2079                    .dwattr $C$DW$T$116, DW_AT_language(DW_LANG_C)
     2080                    .dwattr $C$DW$T$116, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   41
+g2553_swi2c_master.asm                                               PAGE   41
 
     2081                    .dwattr $C$DW$T$116, DW_AT_decl_line(0x68)
     2082                    .dwattr $C$DW$T$116, DW_AT_decl_column(0x14)
@@ -2458,10 +2458,10 @@ fr2111_swi2c_master.asm                                              PAGE   41
     2133                    .dwattr $C$DW$T$122, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
     2134                    .dwattr $C$DW$T$122, DW_AT_decl_line(0x30)
     2135                    .dwattr $C$DW$T$122, DW_AT_decl_column(0x13)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   42
+g2553_swi2c_master.asm                                               PAGE   42
 
     2136            
     2137            $C$DW$T$123     .dwtag  DW_TAG_typedef
@@ -2518,10 +2518,10 @@ fr2111_swi2c_master.asm                                              PAGE   42
     2188                    .dwattr $C$DW$T$129, DW_AT_language(DW_LANG_C)
     2189                    .dwattr $C$DW$T$129, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
     2190                    .dwattr $C$DW$T$129, DW_AT_decl_line(0x58)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   43
+g2553_swi2c_master.asm                                               PAGE   43
 
     2191                    .dwattr $C$DW$T$129, DW_AT_decl_column(0x15)
     2192            
@@ -2578,10 +2578,10 @@ fr2111_swi2c_master.asm                                              PAGE   43
     2243                    .dwattr $C$DW$T$135, DW_AT_decl_line(0x33)
     2244                    .dwattr $C$DW$T$135, DW_AT_decl_column(0x14)
     2245            
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   44
+g2553_swi2c_master.asm                                               PAGE   44
 
     2246            $C$DW$T$136     .dwtag  DW_TAG_typedef
     2247                    .dwattr $C$DW$T$136, DW_AT_name("__fsfilcnt_t")
@@ -2638,10 +2638,10 @@ fr2111_swi2c_master.asm                                              PAGE   44
     2298                    .dwattr $C$DW$T$142, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
     2299                    .dwattr $C$DW$T$142, DW_AT_decl_line(0x32)
     2300                    .dwattr $C$DW$T$142, DW_AT_decl_column(0x1a)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   45
+g2553_swi2c_master.asm                                               PAGE   45
 
     2301            
     2302            $C$DW$T$143     .dwtag  DW_TAG_typedef
@@ -2698,10 +2698,10 @@ fr2111_swi2c_master.asm                                              PAGE   45
     2353                    .dwattr $C$DW$T$148, DW_AT_name("__double_t")
     2354                    .dwattr $C$DW$T$148, DW_AT_type(*$C$DW$T$17)
     2355                    .dwattr $C$DW$T$148, DW_AT_language(DW_LANG_C)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   46
+g2553_swi2c_master.asm                                               PAGE   46
 
     2356                    .dwattr $C$DW$T$148, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
     2357                    .dwattr $C$DW$T$148, DW_AT_decl_line(0x4c)
@@ -2758,10 +2758,10 @@ fr2111_swi2c_master.asm                                              PAGE   46
     2408                    .dwattr $C$DW$T$20, DW_AT_decl_line(0x4b)
     2409                    .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
     2410                    .dwendtag $C$DW$T$20
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   47
+g2553_swi2c_master.asm                                               PAGE   47
 
     2411            
     2412            $C$DW$T$157     .dwtag  DW_TAG_pointer_type
@@ -2818,10 +2818,10 @@ fr2111_swi2c_master.asm                                              PAGE   47
     2463                    .dwattr $C$DW$51, DW_AT_location[DW_OP_reg3]
     2464            
     2465            $C$DW$52        .dwtag  DW_TAG_TI_assign_register
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
-fr2111_swi2c_master.asm                                              PAGE   48
+g2553_swi2c_master.asm                                               PAGE   48
 
     2466                    .dwattr $C$DW$52, DW_AT_name("r4")
     2467                    .dwattr $C$DW$52, DW_AT_location[DW_OP_reg4]

@@ -35,8 +35,8 @@ void main(void)
 
 	P1DIR |= BIT0;                  // Configure P1.0 and P1.6 as output
 
-	CCTL0 = CCIE;                   // Timer interrupt enabled
-	CCR0 = 50000;                   // Compare value = 50000 clock cycles
+	TA0CCTL0 = CCIE;                   // Timer interrupt enabled
+	TA0CCR0 = 50000;                   // Compare value = 50000 clock cycles
 
 	/*
 	 * 10b (SMCLK's frequency is ~ 8 MHz in LPM0) +
@@ -45,7 +45,7 @@ void main(void)
 	 *
 	 * 50000 clock cycles * 1/(~8000000/8) seconds should equate to around 0.05 seconds between interrupts.
 	 */
-	TACTL = TASSEL_2 + MC_2 + ID_3;
+	TA0CTL = TASSEL_2 + MC_2 + ID_3;
 
 	P1SEL = BIT1 + BIT2 ;           // P1.1 and P1.2 secondary peripheral module function selected: 11b
 	P1SEL2 = BIT1 + BIT2 ;          // P1.1 and P1.2 secondary peripheral module function selected: 11b
@@ -70,7 +70,7 @@ void main(void)
 __interrupt void Timer_A (void)
 {
     P1OUT ^= BIT0;                  // Bitwise XOR 1st bit, toggle P1.0
-    CCR0 += 50000;                  // Timer will overflow, adding 50000 clock cycles to compare value will cause overflow as well
+    TA0CCR0 += 50000;                  // Timer will overflow, adding 50000 clock cycles to compare value will cause overflow as well
 
     uartTxData+=0x00000010;
     IE2 |= UCA0TXIE;                // Enable UART Tx Interupt

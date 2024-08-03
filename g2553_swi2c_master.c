@@ -31,9 +31,25 @@
  * --/COPYRIGHT--*/
 //*****************************************************************************
 
+/*
+ * Original File Name: "fr2111_swi2c_master.c"
+ *
+ * File originally provided by Texas Instruments as an example software
+ * implementation for I2C using GPIO pins; originally intended for MSP430FR2111.
+ *
+ * File modified to support MSP430G2553 instead of MSP430FR2111.
+ *
+ * Modifications made by Arlen Feng:
+ * 1. Software SCL and SDA pin definitions
+ * 2. Timer period for determining I2C clock rate
+ * 3. Timer changed from Timer B to Timer A1
+ * 4. Deleted code for disabling GPIO power-on high impedance mode
+ */
+//*****************************************************************************
+
 // TODO: Rename file and note modifications!
 
-#include "fr2111_swi2c_master.h"
+#include <g2553_swi2c_master.h>
 
 /* Static Functions */
 static bool SWI2C_readData(uint8_t addr,  uint8_t *inputArray,

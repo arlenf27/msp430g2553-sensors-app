@@ -31,6 +31,22 @@
  * --/COPYRIGHT--*/
 //*****************************************************************************
 
+/*
+ * Original File Name: "fr2111_swi2c_master.h"
+ *
+ * File originally provided by Texas Instruments as an example software
+ * implementation for I2C using GPIO pins; originally intended for MSP430FR2111.
+ *
+ * File modified to support MSP430G2553 instead of MSP430FR2111.
+ *
+ * Modifications made by Arlen Feng:
+ * 1. Software SCL and SDA pin definitions
+ * 2. Timer period for determining I2C clock rate
+ * 3. Timer changed from Timer B to Timer A1
+ * 4. Deleted code for disabling GPIO power-on high impedance mode
+ */
+//*****************************************************************************
+
 // TODO: Rename file and note modifications!
 
 #include <msp430.h>
@@ -42,9 +58,9 @@
  */
 #define SWI2C_SCL         BIT1
 #define SWI2C_SDA         BIT2
-#define SWI2C_PxDIR       P1DIR
-#define SWI2C_PxOUT       P1OUT
-#define SWI2C_PxIN        P1IN
+#define SWI2C_PxDIR       P2DIR
+#define SWI2C_PxOUT       P2OUT
+#define SWI2C_PxIN        P2IN
 #define SWI2C_SDA_LOW     SWI2C_PxDIR |= SWI2C_SDA
 #define SWI2C_SCL_LOW     SWI2C_PxDIR |= SWI2C_SCL
 #define SWI2C_SCL_HIGH    SWI2C_PxDIR &= ~SWI2C_SCL
@@ -78,7 +94,7 @@ typedef struct _SWI2C_I2CTransaction
  *
  *                      2 * TimerPeriod
  */
-#define SWI2C_TIMER_PERIOD  50
+#define SWI2C_TIMER_PERIOD  20
 
 /* Macro for a timer iteration */
 #define TIMER_ITERATION()            TA1CCTL0 &= ~(CCIFG);           \

@@ -1,11 +1,11 @@
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-       3            ;* Date/Time created: Sat Aug  3 03:06:13 2024                                *
+       3            ;* Date/Time created: Sat Aug  3 14:35:58 2024                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
        6            
@@ -58,7 +58,7 @@ sensorApp.asm                                                        PAGE    1
       51                    .dwattr $C$DW$4, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
       52                    .dwattr $C$DW$4, DW_AT_decl_line(0x1cf)
       53                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    2
@@ -118,7 +118,7 @@ sensorApp.asm                                                        PAGE    2
      106                    .dwattr $C$DW$10, DW_AT_name("TA0CCR0")
      107                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("TA0CCR0")
      108                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$21)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    3
@@ -178,7 +178,7 @@ sensorApp.asm                                                        PAGE    3
      161                    .dwattr $C$DW$15, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
      162                    .dwattr $C$DW$15, DW_AT_decl_line(0x287)
      163                    .dwattr $C$DW$15, DW_AT_decl_column(0x01)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    4
@@ -238,7 +238,7 @@ sensorApp.asm                                                        PAGE    4
      215                    .align  1
      216                    .elfsym uartBitsTransmitted,SYM_SIZE(1)
      217 000004       uartBitsTransmitted:
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    5
@@ -286,7 +286,7 @@ sensorApp.asm                                                        PAGE    5
      258            
      259                    .dwendtag $C$DW$22
      260            
-     261            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI1
+     261            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI2
      262 000000               .sect   ".text:main"
      263                    .clink
      264                    .global main
@@ -298,7 +298,7 @@ sensorApp.asm                                                        PAGE    5
      270                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("main")
      271                    .dwattr $C$DW$24, DW_AT_external
      272                    .dwattr $C$DW$24, DW_AT_TI_begin_file("../sensorApp.c")
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    6
@@ -358,7 +358,7 @@ sensorApp.asm                                                        PAGE    6
          000028 0010 
          00002a 0000!
      315                    .dwpsn  file "../sensorApp.c",line 39,column 2,is_stmt,isa 0
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    7
@@ -418,7 +418,7 @@ sensorApp.asm                                                        PAGE    7
      351 000066       $C$L2:    
      352                    .dwpsn  file "../sensorApp.c",line 59,column 1,is_stmt,isa 0
      353            $C$DW$25        .dwtag  DW_TAG_TI_branch
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    8
@@ -478,7 +478,7 @@ sensorApp.asm                                                        PAGE    8
      406                    .dwcfi  save_reg_to_mem, 13, -8
      407 000006 120C          PUSH.W    r12                   ; [] 
      408                    .dwcfi  cfa_offset, 10
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    9
@@ -538,7 +538,7 @@ sensorApp.asm                                                        PAGE    9
      451                    .dwcfi  cfa_offset, 6
      452 00003a 413E          POP       r14                   ; [] 
      453                    .dwcfi  restore_reg, 14
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   10
@@ -598,7 +598,7 @@ sensorApp.asm                                                        PAGE   10
      505                    .dwpsn  file "../sensorApp.c",line 73,column 5,is_stmt,isa 0
      506 000004 80B2          SUB.W     #15536,&TA0CCR0+0     ; [] |73| 
          000006 3CB0 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   11
@@ -658,7 +658,7 @@ sensorApp.asm                                                        PAGE   11
      551            
      552            ;******************************************************************************
      553            ;* BUILD ATTRIBUTES                                                           *
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   12
@@ -718,7 +718,7 @@ sensorApp.asm                                                        PAGE   12
      606            
      607            $C$DW$T$11      .dwtag  DW_TAG_base_type
      608                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   13
@@ -778,7 +778,7 @@ sensorApp.asm                                                        PAGE   13
      661                    .dwcfi  same_value, 3
      662                    .dwcfi  same_value, 4
      663                    .dwcfi  same_value, 5
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   14
@@ -838,7 +838,7 @@ sensorApp.asm                                                        PAGE   14
      716                    .dwattr $C$DW$41, DW_AT_name("r10")
      717                    .dwattr $C$DW$41, DW_AT_location[DW_OP_reg10]
      718            
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 03:06:13 2024
+MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   15
