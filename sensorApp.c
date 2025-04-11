@@ -1,22 +1,45 @@
-// TODO: Continue testing UART capabilities.
-// TODO: Once comfortable with UART and Timer, move onto working out connections (I2C) with external sensors (those included with BOOSTXL-BASSENSORS).
-
 /**
  * Simple Timer Test Program.
  *
  * Author: Arlen Feng
  */
 
-#include <msp430.h>				
+// TODO: Make Software I2C Communications Work.
 
-/** UART Tx Data */
-unsigned long uartTxData = 0;
+/*
+ * Pins Currently Used:
+ * P1.6 Digital Output: High when I2C NACK is received, Low when no I2C NACK is received
+ * P2.3 Digital Output: Toggles at the start of every UART transmit sequence (Currently 3 bytes total)
+ * P1.1: Hardware UART Receive
+ * P1.2: Hardware UART Transmit
+ * P2.1: Software I2C SCL
+ * P2.2: Software I2C SDA
+ *
+ * Reserved Pins for Future Use:
+ * P1.0: Analog Input: DRV_OUT
+ * P1.4: HDC V+
+ */
 
-/** UART transmitted bytes */
-unsigned char uartBitsTransmitted = 0;
+#include <msp430.h>
+#include <g2553_swi2c_master.h>
+
+/** UART Transmitted Bytes */
+unsigned char uartBytesTransmitted = 0;
 
 /** Temporary Test Counter */
 unsigned char counter = 0;
+
+/** SW I2C Configuration Structure */
+SWI2C_I2CTransaction transaction;
+
+/** SW I2C Write Buffer with Device Result Register */
+unsigned char WBuffer = 0x00;
+
+/** SW I2C Read Buffer with 8 Bytes*/
+unsigned char OPT3001RBuffer[2];
+
+/** I2C Transaction starts when this flag is 1 */
+unsigned char startSWI2CFlag = 0;
 
 /**
  * Main method
@@ -33,7 +56,8 @@ void main(void)
 	BCSCTL1 = CALBC1_8MHZ;          // Set DCO to 8 MHz, SMCLK is sourced by DCO
 	DCOCTL = CALDCO_8MHZ;
 
-	P1DIR |= BIT0;                  // Configure P1.0 and P1.6 as output
+	P1DIR |= BIT6;                  // Configure P1.6 as output
+	P2DIR |= BIT3;                  // P2.3 as output
 
 	TA0CCTL0 = CCIE;                   // Timer interrupt enabled
 	TA0CCR0 = 50000;                   // Compare value = 50000 clock cycles
@@ -55,7 +79,40 @@ void main(void)
 	UCA0MCTL = UCBRS0;              // Modulation Control second modulation stage UCBRSx = 1
 	UCA0CTL1 &= ~UCSWRST;           // Disable software reset, USCI reset released for operation
 
-	_BIS_SR(LPM0_bits + GIE);       // Enter LPM0 with interrupt
+	SWI2C_initI2C();
+
+	/*
+	 * Initial SW I2C Configuration Structure Settings
+	 */
+
+	transaction.writeBuffer = &WBuffer;     // Register Address
+	transaction.numWriteBytes = 1;
+	transaction.repeatedStart = 1;
+
+	TA0CCTL1 = CCIE;
+	TA0CCR1 = 10000;
+
+	_BIS_SR(GIE);       // Global interrupts enabled, may have to stay in active mode to execute while(1) loop below
+
+	while(1)
+	{
+	    if(startSWI2CFlag == 1)
+	    {
+	        transaction.address = 0x88;     // In the future, this will cycle between devices on the same bus
+	        WBuffer = 0x00;                 // This will be used for different register locations
+	        transaction.numReadBytes = 2;
+	        transaction.readBuffer = OPT3001RBuffer;       // This will be used for each device's read buffer
+	        if(SWI2C_performI2CTransaction(&transaction) == 0)
+	        {
+	            P1OUT |= BIT6;              // Turn on 1.6 if NACK received
+	        }
+	        else
+	        {
+	            P1OUT &= ~BIT6;              // Turn off 1.6 if no NACKs received
+	        }
+	        startSWI2CFlag = 0;
+	    }
+	}
 }
 
 /*
@@ -63,16 +120,15 @@ void main(void)
  */
 
 /**
- * Interrupt Service Routine - Timer A0
+ * Interrupt Service Routine - Timer A0 CCR0
  * Toggles P1.0 Digital Output and puts lowest 8 bits of data into UART transmit buffer.
  */
 #pragma vector=TIMER0_A0_VECTOR
-__interrupt void Timer_A (void)
+__interrupt void Timer_A0_CCR0 (void)
 {
-    P1OUT ^= BIT0;                  // Bitwise XOR 1st bit, toggle P1.0
+    P2OUT ^= BIT3;                  // Bitwise XOR 1st bit, toggle P1.0
     TA0CCR0 += 50000;                  // Timer will overflow, adding 50000 clock cycles to compare value will cause overflow as well
 
-    uartTxData+=0x00000010;
     IE2 |= UCA0TXIE;                // Enable UART Tx Interupt
     UCA0TXBUF = counter;            // Start transmit process with counter
     counter++;
@@ -85,15 +141,26 @@ __interrupt void Timer_A (void)
 #pragma vector=USCIAB0TX_VECTOR
 __interrupt void USCI_A0_Tx_ISR (void)
 {
-    if (uartBitsTransmitted < 32)
+    if (uartBytesTransmitted < 2)
     {
-        UCA0TXBUF = (uartTxData >> uartBitsTransmitted) & 0xFF;  // TX Lower 8 bits of 32-bit data to be sent out
-        uartBitsTransmitted+=8;
+        UCA0TXBUF = OPT3001RBuffer[uartBytesTransmitted];  // TX 8 bits of 16-bit data to be sent out
+        uartBytesTransmitted++;
     }
     else
     {
-        uartBitsTransmitted = 0;
+        uartBytesTransmitted = 0;
         IE2 &= ~UCA0TXIE;               // Disable USCI_A0 TX interrupt
     }
 
+}
+
+/**
+ * Interrupt Service Routine - Timer A0 CCR1
+ * Time to start a new Software I2C Transaction.
+ */
+#pragma vector=TIMER0_A1_VECTOR
+__interrupt void Timer_A0_CCR1 (void)
+{
+    TA0CCR1 += 10000;
+    startSWI2CFlag = 1;
 }

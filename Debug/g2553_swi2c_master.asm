@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-;* Date/Time created: Sat Aug  3 14:35:58 2024                                *
+;* Date/Time created: Thu Aug 22 10:43:10 2024                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:data=small --object_format=elf --silicon_version=msp --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -69,7 +69,7 @@ $C$DW$6	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$6, DW_AT_decl_line(0x26d)
 	.dwattr $C$DW$6, DW_AT_decl_column(0x01)
 
-;	/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI25Kykwy7R /var/tmp/TI25KCs9DPP 
+;	/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIaM1cPjf5n /var/tmp/TIaM1jkYA4F 
 	.sect	".text:SWI2C_writeData"
 	.clink
 
@@ -80,13 +80,13 @@ $C$DW$7	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$7, DW_AT_TI_symbol_name("SWI2C_writeData")
 	.dwattr $C$DW$7, DW_AT_type(*$C$DW$T$28)
 	.dwattr $C$DW$7, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$7, DW_AT_TI_begin_line(0x6f)
+	.dwattr $C$DW$7, DW_AT_TI_begin_line(0x6d)
 	.dwattr $C$DW$7, DW_AT_TI_begin_column(0x0d)
 	.dwattr $C$DW$7, DW_AT_decl_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$7, DW_AT_decl_line(0x6f)
+	.dwattr $C$DW$7, DW_AT_decl_line(0x6d)
 	.dwattr $C$DW$7, DW_AT_decl_column(0x0d)
 	.dwattr $C$DW$7, DW_AT_TI_max_frame_size(0x04)
-	.dwpsn	file "../g2553_swi2c_master.c",line 113,column 1,is_stmt,address SWI2C_writeData,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 111,column 1,is_stmt,address SWI2C_writeData,isa 0
 
 	.dwfde $C$DW$CIE, SWI2C_writeData
 $C$DW$8	.dwtag  DW_TAG_formal_parameter
@@ -177,113 +177,130 @@ $C$DW$18	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$18, DW_AT_type(*$C$DW$T$83)
 	.dwattr $C$DW$18, DW_AT_location[DW_OP_reg11]
 
-	.dwpsn	file "../g2553_swi2c_master.c",line 115,column 17,is_stmt,isa 0
-        MOV.W     #0,r11                ; [] |115| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 118,column 5,is_stmt,isa 0
-        MOV.W     #532,&TA1CTL+0        ; [] |118| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 113,column 17,is_stmt,isa 0
+        MOV.W     #0,r11                ; [] |113| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 116,column 5,is_stmt,isa 0
+        MOV.W     #532,&TA1CTL+0        ; [] |116| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 119,column 5,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |119| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 120,column 5,is_stmt,isa 0
+        NOP       ; [] |120| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 121,column 5,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |121| 
+        OR.B      #2,&P2DIR+0           ; [] |121| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 122,column 5,is_stmt,isa 0
-        NOP       ; [] |122| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 123,column 5,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |123| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 124,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |124| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |122| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L1
 ;*
-;*   Loop source line                : 124
-;*   Loop closing brace source line  : 124
+;*   Loop source line                : 122
+;*   Loop closing brace source line  : 122
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L1:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |124| 
-        JEQ       $C$L1                 ; [] |124| 
-                                          ; [] |124| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |122| 
+        JEQ       $C$L1                 ; [] |122| 
+                                          ; [] |122| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 127,column 5,is_stmt,isa 0
-        MOV.B     r12,r12               ; [] |127| 
-        RLA.W     r12                   ; [] |127| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 128,column 5,is_stmt,isa 0
-        MOV.W     #8,r10                ; [] |128| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 125,column 5,is_stmt,isa 0
+        MOV.B     r12,r12               ; [] |125| 
+        RLA.W     r12                   ; [] |125| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 126,column 5,is_stmt,isa 0
+        MOV.W     #8,r10                ; [] |126| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L2
 ;*
-;*   Loop source line                : 131
-;*   Loop closing brace source line  : 155
+;*   Loop source line                : 129
+;*   Loop closing brace source line  : 153
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L2:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 134,column 9,is_stmt,isa 0
-        BIT.W     #128,r12              ; [] |134| 
-        JNE       $C$L3                 ; [] |134| 
-                                          ; [] |134| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 132,column 9,is_stmt,isa 0
+        BIT.W     #128,r12              ; [] |132| 
+        JNE       $C$L3                 ; [] |132| 
+                                          ; [] |132| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 140,column 13,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |140| 
-        JMP       $C$L4                 ; [] |140| 
-                                          ; [] |140| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 138,column 13,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |138| 
+        JMP       $C$L4                 ; [] |138| 
+                                          ; [] |138| 
 ;* --------------------------------------------------------------------------*
 $C$L3:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 136,column 13,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |136| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 134,column 13,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |134| 
 ;* --------------------------------------------------------------------------*
 $C$L4:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 144,column 9,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |144| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 145,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |145| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 142,column 9,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |142| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 143,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |143| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L5
 ;*
-;*   Loop source line                : 145
-;*   Loop closing brace source line  : 145
+;*   Loop source line                : 143
+;*   Loop closing brace source line  : 143
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L5:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |145| 
-        JEQ       $C$L5                 ; [] |145| 
-                                          ; [] |145| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |143| 
+        JEQ       $C$L5                 ; [] |143| 
+                                          ; [] |143| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 148,column 9,is_stmt,isa 0
-        RLA.W     r12                   ; [] |148| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 146,column 9,is_stmt,isa 0
+        RLA.W     r12                   ; [] |146| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 147,column 9,is_stmt,isa 0
+        SUB.W     #1,r10                ; [] |147| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 149,column 9,is_stmt,isa 0
-        SUB.W     #1,r10                ; [] |149| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 151,column 9,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |151| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 152,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |152| 
+        OR.B      #2,&P2DIR+0           ; [] |149| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 150,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |150| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L6
 ;*
-;*   Loop source line                : 152
-;*   Loop closing brace source line  : 152
+;*   Loop source line                : 150
+;*   Loop closing brace source line  : 150
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L6:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |152| 
-        JEQ       $C$L6                 ; [] |152| 
-                                          ; [] |152| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |150| 
+        JEQ       $C$L6                 ; [] |150| 
+                                          ; [] |150| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 155,column 14,is_stmt,isa 0
-        TST.W     r10                   ; [] |155| 
-        JNE       $C$L2                 ; [] |155| 
-                                          ; [] |155| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 153,column 14,is_stmt,isa 0
+        TST.W     r10                   ; [] |153| 
+        JNE       $C$L2                 ; [] |153| 
+                                          ; [] |153| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 160,column 5,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |160| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 161,column 5,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |161| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 158,column 5,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |158| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 159,column 5,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |159| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L7
+;*
+;*   Loop source line                : 163
+;*   Loop closing brace source line  : 163
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
+$C$L7:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 163,column 11,is_stmt,isa 0
+        BIT.B     #2,&P2IN+0            ; [] |163| 
+        JEQ       $C$L7                 ; [] |163| 
+                                          ; [] |163| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 165,column 5,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |165| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L8
 ;*
 ;*   Loop source line                : 165
 ;*   Loop closing brace source line  : 165
@@ -291,147 +308,147 @@ $C$L6:
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-$C$L7:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 165,column 11,is_stmt,isa 0
-        BIT.B     #2,&P2IN+0            ; [] |165| 
-        JEQ       $C$L7                 ; [] |165| 
+$C$L8:    
+        BIT.W     #1,&TA1CCTL0+0        ; [] |165| 
+        JEQ       $C$L8                 ; [] |165| 
                                           ; [] |165| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 167,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |167| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 169,column 9,is_stmt,isa 0
+        BIT.B     #4,&P2IN+0            ; [] |169| 
+        JNE       $C$L19                ; [] |169| 
+                                          ; [] |169| 
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L8
-;*
-;*   Loop source line                : 167
-;*   Loop closing brace source line  : 167
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L8:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |167| 
-        JEQ       $C$L8                 ; [] |167| 
-                                          ; [] |167| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 171,column 9,is_stmt,isa 0
-        BIT.B     #4,&P2IN+0            ; [] |171| 
-        JNE       $C$L19                ; [] |171| 
-                                          ; [] |171| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 175,column 5,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |175| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 176,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |176| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 173,column 5,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |173| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 174,column 5,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |174| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L9
 ;*
-;*   Loop source line                : 176
-;*   Loop closing brace source line  : 176
+;*   Loop source line                : 174
+;*   Loop closing brace source line  : 174
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L9:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |176| 
-        JEQ       $C$L9                 ; [] |176| 
-                                          ; [] |176| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |174| 
+        JEQ       $C$L9                 ; [] |174| 
+                                          ; [] |174| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 179,column 14,is_stmt,isa 0
-        CMP.W     r14,r11               ; [] |179| 
-        JHS       $C$L19                ; [] |179| 
-                                          ; [] |179| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 177,column 14,is_stmt,isa 0
+        CMP.W     r14,r11               ; [] |177| 
+        JHS       $C$L19                ; [] |177| 
+                                          ; [] |177| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L10
 ;*
-;*   Loop source line                : 179
-;*   Loop closing brace source line  : 227
+;*   Loop source line                : 177
+;*   Loop closing brace source line  : 225
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L10:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 181,column 9,is_stmt,isa 0
-        MOV.W     r13,r12               ; [] |181| 
-        ADD.W     r11,r12               ; [] |181| 
-        MOV.B     @r12,r12              ; [] |181| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 182,column 9,is_stmt,isa 0
-        MOV.W     #8,r10                ; [] |182| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 179,column 9,is_stmt,isa 0
+        MOV.W     r13,r12               ; [] |179| 
+        ADD.W     r11,r12               ; [] |179| 
+        MOV.B     @r12,r12              ; [] |179| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 180,column 9,is_stmt,isa 0
+        MOV.W     #8,r10                ; [] |180| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L11
 ;*
-;*   Loop source line                : 185
-;*   Loop closing brace source line  : 207
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L11:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 188,column 13,is_stmt,isa 0
-        BIT.W     #128,r12              ; [] |188| 
-        JNE       $C$L12                ; [] |188| 
-                                          ; [] |188| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 194,column 17,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |194| 
-        JMP       $C$L13                ; [] |194| 
-                                          ; [] |194| 
-;* --------------------------------------------------------------------------*
-$C$L12:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 190,column 17,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |190| 
-;* --------------------------------------------------------------------------*
-$C$L13:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 198,column 13,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |198| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 199,column 13,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |199| 
-;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L14
-;*
-;*   Loop source line                : 199
-;*   Loop closing brace source line  : 199
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L14:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |199| 
-        JEQ       $C$L14                ; [] |199| 
-                                          ; [] |199| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 202,column 13,is_stmt,isa 0
-        RLA.W     r12                   ; [] |202| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 203,column 13,is_stmt,isa 0
-        SUB.W     #1,r10                ; [] |203| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 204,column 13,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |204| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 205,column 13,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |205| 
-;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L15
-;*
-;*   Loop source line                : 205
+;*   Loop source line                : 183
 ;*   Loop closing brace source line  : 205
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
+$C$L11:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 186,column 13,is_stmt,isa 0
+        BIT.W     #128,r12              ; [] |186| 
+        JNE       $C$L12                ; [] |186| 
+                                          ; [] |186| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 192,column 17,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |192| 
+        JMP       $C$L13                ; [] |192| 
+                                          ; [] |192| 
+;* --------------------------------------------------------------------------*
+$C$L12:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 188,column 17,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |188| 
+;* --------------------------------------------------------------------------*
+$C$L13:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 196,column 13,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |196| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 197,column 13,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |197| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L14
+;*
+;*   Loop source line                : 197
+;*   Loop closing brace source line  : 197
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
+$C$L14:    
+        BIT.W     #1,&TA1CCTL0+0        ; [] |197| 
+        JEQ       $C$L14                ; [] |197| 
+                                          ; [] |197| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 200,column 13,is_stmt,isa 0
+        RLA.W     r12                   ; [] |200| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 201,column 13,is_stmt,isa 0
+        SUB.W     #1,r10                ; [] |201| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 202,column 13,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |202| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 203,column 13,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |203| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L15
+;*
+;*   Loop source line                : 203
+;*   Loop closing brace source line  : 203
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
 $C$L15:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |205| 
-        JEQ       $C$L15                ; [] |205| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |203| 
+        JEQ       $C$L15                ; [] |203| 
+                                          ; [] |203| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 205,column 18,is_stmt,isa 0
+        TST.W     r10                   ; [] |205| 
+        JNE       $C$L11                ; [] |205| 
                                           ; [] |205| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 207,column 18,is_stmt,isa 0
-        TST.W     r10                   ; [] |207| 
-        JNE       $C$L11                ; [] |207| 
-                                          ; [] |207| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 210,column 9,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |210| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 211,column 9,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |211| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 208,column 9,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |208| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 209,column 9,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |209| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L16
+;*
+;*   Loop source line                : 213
+;*   Loop closing brace source line  : 213
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
+$C$L16:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 213,column 15,is_stmt,isa 0
+        BIT.B     #2,&P2IN+0            ; [] |213| 
+        JEQ       $C$L16                ; [] |213| 
+                                          ; [] |213| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 215,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |215| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L17
 ;*
 ;*   Loop source line                : 215
 ;*   Loop closing brace source line  : 215
@@ -439,86 +456,87 @@ $C$L15:
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-$C$L16:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 215,column 15,is_stmt,isa 0
-        BIT.B     #2,&P2IN+0            ; [] |215| 
-        JEQ       $C$L16                ; [] |215| 
+$C$L17:    
+        BIT.W     #1,&TA1CCTL0+0        ; [] |215| 
+        JEQ       $C$L17                ; [] |215| 
                                           ; [] |215| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 217,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |217| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 219,column 13,is_stmt,isa 0
+        BIT.B     #4,&P2IN+0            ; [] |219| 
+        JNE       $C$L19                ; [] |219| 
+                                          ; [] |219| 
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L17
-;*
-;*   Loop source line                : 217
-;*   Loop closing brace source line  : 217
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L17:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |217| 
-        JEQ       $C$L17                ; [] |217| 
-                                          ; [] |217| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 221,column 13,is_stmt,isa 0
-        BIT.B     #4,&P2IN+0            ; [] |221| 
-        JNE       $C$L19                ; [] |221| 
-                                          ; [] |221| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 225,column 9,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |225| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 226,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |226| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 223,column 9,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |223| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 224,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |224| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L18
 ;*
-;*   Loop source line                : 226
-;*   Loop closing brace source line  : 226
+;*   Loop source line                : 224
+;*   Loop closing brace source line  : 224
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L18:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |226| 
-        JEQ       $C$L18                ; [] |226| 
-                                          ; [] |226| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |224| 
+        JEQ       $C$L18                ; [] |224| 
+                                          ; [] |224| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 179,column 14,is_stmt,isa 0
-        ADD.W     #1,r11                ; [] |179| 
-        CMP.W     r14,r11               ; [] |179| 
-        JLO       $C$L10                ; [] |179| 
-                                          ; [] |179| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 177,column 14,is_stmt,isa 0
+        ADD.W     #1,r11                ; [] |177| 
+        CMP.W     r14,r11               ; [] |177| 
+        JLO       $C$L10                ; [] |177| 
+                                          ; [] |177| 
 ;* --------------------------------------------------------------------------*
 $C$L19:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 231,column 5,is_stmt,isa 0
-        CMP.B     #1,r15                ; [] |231| 
-        JNE       $C$L20                ; [] |231| 
-                                          ; [] |231| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 229,column 5,is_stmt,isa 0
+        CMP.B     #1,r15                ; [] |229| 
+        JNE       $C$L20                ; [] |229| 
+                                          ; [] |229| 
 ;* --------------------------------------------------------------------------*
-        CMP.W     r14,r11               ; [] |231| 
-        JEQ       $C$L21                ; [] |231| 
-                                          ; [] |231| 
+        CMP.W     r14,r11               ; [] |229| 
+        JEQ       $C$L21                ; [] |229| 
+                                          ; [] |229| 
 ;* --------------------------------------------------------------------------*
 $C$L20:    
-        CMP.W     r14,r11               ; [] |231| 
-        JNE       $C$L21                ; [] |231| 
-                                          ; [] |231| 
+        CMP.W     r14,r11               ; [] |229| 
+        JNE       $C$L21                ; [] |229| 
+                                          ; [] |229| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 243,column 9,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |243| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 244,column 9,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |244| 
-        JMP       $C$L24                ; [] |244| 
-                                          ; [] |244| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 241,column 9,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |241| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 242,column 9,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |242| 
+        JMP       $C$L24                ; [] |242| 
+                                          ; [] |242| 
 ;* --------------------------------------------------------------------------*
 $C$L21:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 231,column 9,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |231| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 232,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |232| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L22
+;*
+;*   Loop source line                : 232
+;*   Loop closing brace source line  : 232
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
+$C$L22:    
+        BIT.W     #1,&TA1CCTL0+0        ; [] |232| 
+        JEQ       $C$L22                ; [] |232| 
+                                          ; [] |232| 
+;* --------------------------------------------------------------------------*
 	.dwpsn	file "../g2553_swi2c_master.c",line 233,column 9,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |233| 
+        OR.B      #4,&P2DIR+0           ; [] |233| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 234,column 9,is_stmt,isa 0
         BIC.W     #1,&TA1CCTL0+0        ; [] |234| 
 ;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L22
+;*   BEGIN LOOP $C$L23
 ;*
 ;*   Loop source line                : 234
 ;*   Loop closing brace source line  : 234
@@ -526,49 +544,31 @@ $C$L21:
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-$C$L22:    
+$C$L23:    
         BIT.W     #1,&TA1CCTL0+0        ; [] |234| 
-        JEQ       $C$L22                ; [] |234| 
+        JEQ       $C$L23                ; [] |234| 
                                           ; [] |234| 
 ;* --------------------------------------------------------------------------*
 	.dwpsn	file "../g2553_swi2c_master.c",line 235,column 9,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |235| 
+        BIC.B     #2,&P2DIR+0           ; [] |235| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 236,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |236| 
-;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L23
-;*
-;*   Loop source line                : 236
-;*   Loop closing brace source line  : 236
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L23:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |236| 
-        JEQ       $C$L23                ; [] |236| 
-                                          ; [] |236| 
-;* --------------------------------------------------------------------------*
+        NOP       ; [] |236| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 237,column 9,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |237| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 238,column 9,is_stmt,isa 0
-        NOP       ; [] |238| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 239,column 9,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |239| 
+        BIC.B     #4,&P2DIR+0           ; [] |237| 
 ;* --------------------------------------------------------------------------*
 $C$L24:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 248,column 5,is_stmt,isa 0
-        MOV.W     #0,&TA1CTL+0          ; [] |248| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 252,column 9,is_stmt,isa 0
-        MOV.B     #0,r12                ; [] |252| 
-        CMP.W     r14,r11               ; [] |252| 
-        JNE       $C$L25                ; [] |252| 
-                                          ; [] |252| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 246,column 5,is_stmt,isa 0
+        MOV.W     #0,&TA1CTL+0          ; [] |246| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 250,column 9,is_stmt,isa 0
+        MOV.B     #0,r12                ; [] |250| 
+        CMP.W     r14,r11               ; [] |250| 
+        JNE       $C$L25                ; [] |250| 
+                                          ; [] |250| 
 ;* --------------------------------------------------------------------------*
-        MOV.B     #1,r12                ; [] |252| 
+        MOV.B     #1,r12                ; [] |250| 
 ;* --------------------------------------------------------------------------*
 $C$L25:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 255,column 1,is_stmt,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 253,column 1,is_stmt,isa 0
         POP       r10                   ; [] 
 	.dwcfi	restore_reg, 10
 	.dwcfi	cfa_offset, 2
@@ -579,7 +579,7 @@ $C$DW$19	.dwtag  DW_TAG_TI_branch
         RET       ; [] 
         ; [] 
 	.dwattr $C$DW$7, DW_AT_TI_end_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$7, DW_AT_TI_end_line(0xff)
+	.dwattr $C$DW$7, DW_AT_TI_end_line(0xfd)
 	.dwattr $C$DW$7, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$7
@@ -594,13 +594,13 @@ $C$DW$20	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$20, DW_AT_TI_symbol_name("SWI2C_readData")
 	.dwattr $C$DW$20, DW_AT_type(*$C$DW$T$28)
 	.dwattr $C$DW$20, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$20, DW_AT_TI_begin_line(0x101)
+	.dwattr $C$DW$20, DW_AT_TI_begin_line(0xff)
 	.dwattr $C$DW$20, DW_AT_TI_begin_column(0x0d)
 	.dwattr $C$DW$20, DW_AT_decl_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$20, DW_AT_decl_line(0x101)
+	.dwattr $C$DW$20, DW_AT_decl_line(0xff)
 	.dwattr $C$DW$20, DW_AT_decl_column(0x0d)
 	.dwattr $C$DW$20, DW_AT_TI_max_frame_size(0x02)
-	.dwpsn	file "../g2553_swi2c_master.c",line 259,column 1,is_stmt,address SWI2C_readData,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 257,column 1,is_stmt,address SWI2C_readData,isa 0
 
 	.dwfde $C$DW$CIE, SWI2C_readData
 $C$DW$21	.dwtag  DW_TAG_formal_parameter
@@ -675,265 +675,282 @@ $C$DW$29	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$29, DW_AT_type(*$C$DW$T$83)
 	.dwattr $C$DW$29, DW_AT_location[DW_OP_reg11]
 
-	.dwpsn	file "../g2553_swi2c_master.c",line 261,column 17,is_stmt,isa 0
-        MOV.W     #0,r11                ; [] |261| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 264,column 5,is_stmt,isa 0
-        MOV.W     #532,&TA1CTL+0        ; [] |264| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 259,column 17,is_stmt,isa 0
+        MOV.W     #0,r11                ; [] |259| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 262,column 5,is_stmt,isa 0
+        MOV.W     #532,&TA1CTL+0        ; [] |262| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 265,column 5,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |265| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 266,column 5,is_stmt,isa 0
+        NOP       ; [] |266| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 267,column 5,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |267| 
+        OR.B      #2,&P2DIR+0           ; [] |267| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 268,column 5,is_stmt,isa 0
-        NOP       ; [] |268| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 269,column 5,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |269| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 270,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |270| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |268| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L26
 ;*
-;*   Loop source line                : 270
-;*   Loop closing brace source line  : 270
+;*   Loop source line                : 268
+;*   Loop closing brace source line  : 268
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L26:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |270| 
-        JEQ       $C$L26                ; [] |270| 
-                                          ; [] |270| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |268| 
+        JEQ       $C$L26                ; [] |268| 
+                                          ; [] |268| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 273,column 5,is_stmt,isa 0
-        MOV.B     r12,r12               ; [] |273| 
-        RLA.W     r12                   ; [] |273| 
-        OR.W      #1,r12                ; [] |273| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 274,column 5,is_stmt,isa 0
-        MOV.W     #8,r15                ; [] |274| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 271,column 5,is_stmt,isa 0
+        MOV.B     r12,r12               ; [] |271| 
+        RLA.W     r12                   ; [] |271| 
+        OR.W      #1,r12                ; [] |271| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 272,column 5,is_stmt,isa 0
+        MOV.W     #8,r15                ; [] |272| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L27
 ;*
-;*   Loop source line                : 277
-;*   Loop closing brace source line  : 299
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L27:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 280,column 9,is_stmt,isa 0
-        BIT.W     #128,r12              ; [] |280| 
-        JNE       $C$L28                ; [] |280| 
-                                          ; [] |280| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 286,column 13,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |286| 
-        JMP       $C$L29                ; [] |286| 
-                                          ; [] |286| 
-;* --------------------------------------------------------------------------*
-$C$L28:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 282,column 13,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |282| 
-;* --------------------------------------------------------------------------*
-$C$L29:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 290,column 9,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |290| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 291,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |291| 
-;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L30
-;*
-;*   Loop source line                : 291
-;*   Loop closing brace source line  : 291
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L30:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |291| 
-        JEQ       $C$L30                ; [] |291| 
-                                          ; [] |291| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 294,column 9,is_stmt,isa 0
-        RLA.W     r12                   ; [] |294| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 295,column 9,is_stmt,isa 0
-        SUB.W     #1,r15                ; [] |295| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 296,column 9,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |296| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 297,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |297| 
-;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L31
-;*
-;*   Loop source line                : 297
+;*   Loop source line                : 275
 ;*   Loop closing brace source line  : 297
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
+$C$L27:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 278,column 9,is_stmt,isa 0
+        BIT.W     #128,r12              ; [] |278| 
+        JNE       $C$L28                ; [] |278| 
+                                          ; [] |278| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 284,column 13,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |284| 
+        JMP       $C$L29                ; [] |284| 
+                                          ; [] |284| 
+;* --------------------------------------------------------------------------*
+$C$L28:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 280,column 13,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |280| 
+;* --------------------------------------------------------------------------*
+$C$L29:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 288,column 9,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |288| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 289,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |289| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L30
+;*
+;*   Loop source line                : 289
+;*   Loop closing brace source line  : 289
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
+$C$L30:    
+        BIT.W     #1,&TA1CCTL0+0        ; [] |289| 
+        JEQ       $C$L30                ; [] |289| 
+                                          ; [] |289| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 292,column 9,is_stmt,isa 0
+        RLA.W     r12                   ; [] |292| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 293,column 9,is_stmt,isa 0
+        SUB.W     #1,r15                ; [] |293| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 294,column 9,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |294| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 295,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |295| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L31
+;*
+;*   Loop source line                : 295
+;*   Loop closing brace source line  : 295
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
 $C$L31:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |297| 
-        JEQ       $C$L31                ; [] |297| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |295| 
+        JEQ       $C$L31                ; [] |295| 
+                                          ; [] |295| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 297,column 14,is_stmt,isa 0
+        TST.W     r15                   ; [] |297| 
+        JNE       $C$L27                ; [] |297| 
                                           ; [] |297| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 299,column 14,is_stmt,isa 0
-        TST.W     r15                   ; [] |299| 
-        JNE       $C$L27                ; [] |299| 
-                                          ; [] |299| 
-;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 302,column 5,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |302| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 303,column 5,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |303| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 304,column 5,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |304| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 305,column 5,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |305| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 306,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |306| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |304| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L32
 ;*
-;*   Loop source line                : 306
-;*   Loop closing brace source line  : 306
+;*   Loop source line                : 304
+;*   Loop closing brace source line  : 304
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L32:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |306| 
-        JEQ       $C$L32                ; [] |306| 
-                                          ; [] |306| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |304| 
+        JEQ       $C$L32                ; [] |304| 
+                                          ; [] |304| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 310,column 9,is_stmt,isa 0
-        BIT.B     #4,&P2IN+0            ; [] |310| 
-        JNE       $C$L43                ; [] |310| 
-                                          ; [] |310| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 308,column 9,is_stmt,isa 0
+        BIT.B     #4,&P2IN+0            ; [] |308| 
+        JNE       $C$L43                ; [] |308| 
+                                          ; [] |308| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 314,column 14,is_stmt,isa 0
-        CMP.W     r14,r11               ; [] |314| 
-        JHS       $C$L43                ; [] |314| 
-                                          ; [] |314| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 312,column 14,is_stmt,isa 0
+        CMP.W     r14,r11               ; [] |312| 
+        JHS       $C$L43                ; [] |312| 
+                                          ; [] |312| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L33
 ;*
-;*   Loop source line                : 319
-;*   Loop closing brace source line  : 319
+;*   Loop source line                : 317
+;*   Loop closing brace source line  : 317
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L33:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 319,column 15,is_stmt,isa 0
-        BIT.B     #2,&P2IN+0            ; [] |319| 
-        JEQ       $C$L33                ; [] |319| 
-                                          ; [] |319| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 317,column 15,is_stmt,isa 0
+        BIT.B     #2,&P2IN+0            ; [] |317| 
+        JEQ       $C$L33                ; [] |317| 
+                                          ; [] |317| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 322,column 9,is_stmt,isa 0
-        MOV.W     #0,r12                ; [] |322| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 323,column 9,is_stmt,isa 0
-        MOV.W     #8,r15                ; [] |323| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 326,column 10,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |326| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 327,column 10,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |327| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 320,column 9,is_stmt,isa 0
+        MOV.W     #0,r12                ; [] |320| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 321,column 9,is_stmt,isa 0
+        MOV.W     #8,r15                ; [] |321| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 324,column 10,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |324| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 325,column 10,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |325| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L34
 ;*
-;*   Loop source line                : 327
-;*   Loop closing brace source line  : 327
+;*   Loop source line                : 325
+;*   Loop closing brace source line  : 325
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L34:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |327| 
-        JEQ       $C$L34                ; [] |327| 
-                                          ; [] |327| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |325| 
+        JEQ       $C$L34                ; [] |325| 
+                                          ; [] |325| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 328,column 10,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |328| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 326,column 10,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |326| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L35
 ;*
-;*   Loop source line                : 331
-;*   Loop closing brace source line  : 348
+;*   Loop source line                : 329
+;*   Loop closing brace source line  : 346
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L35:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 332,column 13,is_stmt,isa 0
+        RLA.W     r12                   ; [] |332| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 333,column 13,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |333| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 334,column 13,is_stmt,isa 0
-        RLA.W     r12                   ; [] |334| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 335,column 13,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |335| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 336,column 13,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |336| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |334| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L36
 ;*
-;*   Loop source line                : 336
-;*   Loop closing brace source line  : 336
+;*   Loop source line                : 334
+;*   Loop closing brace source line  : 334
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L36:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |336| 
-        JEQ       $C$L36                ; [] |336| 
-                                          ; [] |336| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |334| 
+        JEQ       $C$L36                ; [] |334| 
+                                          ; [] |334| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 339,column 13,is_stmt,isa 0
-        BIT.B     #4,&P2IN+0            ; [] |339| 
-        JEQ       $C$L37                ; [] |339| 
-                                          ; [] |339| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 337,column 13,is_stmt,isa 0
+        BIT.B     #4,&P2IN+0            ; [] |337| 
+        JEQ       $C$L37                ; [] |337| 
+                                          ; [] |337| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 341,column 15,is_stmt,isa 0
-        ADD.W     #1,r12                ; [] |341| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 339,column 15,is_stmt,isa 0
+        ADD.W     #1,r12                ; [] |339| 
 ;* --------------------------------------------------------------------------*
 $C$L37:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 343,column 13,is_stmt,isa 0
+        SUB.W     #1,r15                ; [] |343| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 344,column 13,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |344| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 345,column 13,is_stmt,isa 0
-        SUB.W     #1,r15                ; [] |345| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 346,column 13,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |346| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 347,column 13,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |347| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |345| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L38
 ;*
-;*   Loop source line                : 347
-;*   Loop closing brace source line  : 347
+;*   Loop source line                : 345
+;*   Loop closing brace source line  : 345
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L38:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |347| 
-        JEQ       $C$L38                ; [] |347| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |345| 
+        JEQ       $C$L38                ; [] |345| 
+                                          ; [] |345| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 347,column 16,is_stmt,isa 0
+        TST.W     r15                   ; [] |347| 
+        JNE       $C$L35                ; [] |347| 
                                           ; [] |347| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 349,column 16,is_stmt,isa 0
-        TST.W     r15                   ; [] |349| 
-        JNE       $C$L35                ; [] |349| 
-                                          ; [] |349| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 350,column 9,is_stmt,isa 0
+        MOV.W     r13,r15               ; [] |350| 
+        ADD.W     r11,r15               ; [] |350| 
+        MOV.B     r12,0(r15)            ; [] |350| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 353,column 9,is_stmt,isa 0
+        MOV.W     r11,r15               ; [] |353| 
+        SUB.W     r14,r15               ; [] |353| 
+        CMP.W     #65535,r15            ; [] |353| 
+        JEQ       $C$L39                ; [] |353| 
+                                          ; [] |353| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 352,column 9,is_stmt,isa 0
-        MOV.W     r13,r15               ; [] |352| 
-        ADD.W     r11,r15               ; [] |352| 
-        MOV.B     r12,0(r15)            ; [] |352| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 355,column 9,is_stmt,isa 0
-        MOV.W     r11,r15               ; [] |355| 
-        SUB.W     r14,r15               ; [] |355| 
-        CMP.W     #65535,r15            ; [] |355| 
-        JEQ       $C$L39                ; [] |355| 
-                                          ; [] |355| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 358,column 10,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |358| 
-        JMP       $C$L40                ; [] |358| 
-                                          ; [] |358| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 356,column 10,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |356| 
+        JMP       $C$L40                ; [] |356| 
+                                          ; [] |356| 
 ;* --------------------------------------------------------------------------*
 $C$L39:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 356,column 13,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |356| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 354,column 13,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |354| 
 ;* --------------------------------------------------------------------------*
 $C$L40:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 359,column 9,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |359| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 357,column 9,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |357| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L41
+;*
+;*   Loop source line                : 362
+;*   Loop closing brace source line  : 362
+;*   Known Minimum Trip Count        : 1
+;*   Known Maximum Trip Count        : 4294967295
+;*   Known Max Trip Count Factor     : 1
+;* --------------------------------------------------------------------------*
+$C$L41:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 362,column 15,is_stmt,isa 0
+        BIT.B     #2,&P2IN+0            ; [] |362| 
+        JEQ       $C$L41                ; [] |362| 
+                                          ; [] |362| 
+;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 364,column 9,is_stmt,isa 0
+        BIC.W     #1,&TA1CCTL0+0        ; [] |364| 
+;* --------------------------------------------------------------------------*
+;*   BEGIN LOOP $C$L42
 ;*
 ;*   Loop source line                : 364
 ;*   Loop closing brace source line  : 364
@@ -941,89 +958,72 @@ $C$L40:
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
-$C$L41:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 364,column 15,is_stmt,isa 0
-        BIT.B     #2,&P2IN+0            ; [] |364| 
-        JEQ       $C$L41                ; [] |364| 
+$C$L42:    
+        BIT.W     #1,&TA1CCTL0+0        ; [] |364| 
+        JEQ       $C$L42                ; [] |364| 
                                           ; [] |364| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 366,column 9,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |366| 
-;* --------------------------------------------------------------------------*
-;*   BEGIN LOOP $C$L42
-;*
-;*   Loop source line                : 366
-;*   Loop closing brace source line  : 366
-;*   Known Minimum Trip Count        : 1
-;*   Known Maximum Trip Count        : 4294967295
-;*   Known Max Trip Count Factor     : 1
-;* --------------------------------------------------------------------------*
-$C$L42:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |366| 
-        JEQ       $C$L42                ; [] |366| 
-                                          ; [] |366| 
-;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 314,column 14,is_stmt,isa 0
-        ADD.W     #1,r11                ; [] |314| 
-        CMP.W     r14,r11               ; [] |314| 
-        JLO       $C$L33                ; [] |314| 
-                                          ; [] |314| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 312,column 14,is_stmt,isa 0
+        ADD.W     #1,r11                ; [] |312| 
+        CMP.W     r14,r11               ; [] |312| 
+        JLO       $C$L33                ; [] |312| 
+                                          ; [] |312| 
 ;* --------------------------------------------------------------------------*
 $C$L43:    
+	.dwpsn	file "../g2553_swi2c_master.c",line 370,column 5,is_stmt,isa 0
+        OR.B      #2,&P2DIR+0           ; [] |370| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 371,column 5,is_stmt,isa 0
+        OR.B      #4,&P2DIR+0           ; [] |371| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 372,column 5,is_stmt,isa 0
-        OR.B      #2,&P2DIR+0           ; [] |372| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 373,column 5,is_stmt,isa 0
-        OR.B      #4,&P2DIR+0           ; [] |373| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 374,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |374| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |372| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L44
 ;*
-;*   Loop source line                : 374
-;*   Loop closing brace source line  : 374
+;*   Loop source line                : 372
+;*   Loop closing brace source line  : 372
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L44:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |374| 
-        JEQ       $C$L44                ; [] |374| 
-                                          ; [] |374| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |372| 
+        JEQ       $C$L44                ; [] |372| 
+                                          ; [] |372| 
 ;* --------------------------------------------------------------------------*
+	.dwpsn	file "../g2553_swi2c_master.c",line 373,column 5,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |373| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 374,column 5,is_stmt,isa 0
+        NOP       ; [] |374| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 375,column 5,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |375| 
+        BIC.B     #4,&P2DIR+0           ; [] |375| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 376,column 5,is_stmt,isa 0
-        NOP       ; [] |376| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 377,column 5,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |377| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 378,column 5,is_stmt,isa 0
-        BIC.W     #1,&TA1CCTL0+0        ; [] |378| 
+        BIC.W     #1,&TA1CCTL0+0        ; [] |376| 
 ;* --------------------------------------------------------------------------*
 ;*   BEGIN LOOP $C$L45
 ;*
-;*   Loop source line                : 378
-;*   Loop closing brace source line  : 378
+;*   Loop source line                : 376
+;*   Loop closing brace source line  : 376
 ;*   Known Minimum Trip Count        : 1
 ;*   Known Maximum Trip Count        : 4294967295
 ;*   Known Max Trip Count Factor     : 1
 ;* --------------------------------------------------------------------------*
 $C$L45:    
-        BIT.W     #1,&TA1CCTL0+0        ; [] |378| 
-        JEQ       $C$L45                ; [] |378| 
-                                          ; [] |378| 
+        BIT.W     #1,&TA1CCTL0+0        ; [] |376| 
+        JEQ       $C$L45                ; [] |376| 
+                                          ; [] |376| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 381,column 5,is_stmt,isa 0
-        MOV.W     #0,&TA1CTL+0          ; [] |381| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 385,column 9,is_stmt,isa 0
-        MOV.B     #0,r12                ; [] |385| 
-        CMP.W     r14,r11               ; [] |385| 
-        JNE       $C$L46                ; [] |385| 
-                                          ; [] |385| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 379,column 5,is_stmt,isa 0
+        MOV.W     #0,&TA1CTL+0          ; [] |379| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 383,column 9,is_stmt,isa 0
+        MOV.B     #0,r12                ; [] |383| 
+        CMP.W     r14,r11               ; [] |383| 
+        JNE       $C$L46                ; [] |383| 
+                                          ; [] |383| 
 ;* --------------------------------------------------------------------------*
-        MOV.B     #1,r12                ; [] |385| 
+        MOV.B     #1,r12                ; [] |383| 
 ;* --------------------------------------------------------------------------*
 $C$L46:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 388,column 1,is_stmt,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 386,column 1,is_stmt,isa 0
 $C$DW$30	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$30, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$30, DW_AT_TI_return
@@ -1031,7 +1031,7 @@ $C$DW$30	.dwtag  DW_TAG_TI_branch
         RET       ; [] 
         ; [] 
 	.dwattr $C$DW$20, DW_AT_TI_end_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$20, DW_AT_TI_end_line(0x184)
+	.dwattr $C$DW$20, DW_AT_TI_end_line(0x182)
 	.dwattr $C$DW$20, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$20
@@ -1048,13 +1048,13 @@ $C$DW$31	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$31, DW_AT_external
 	.dwattr $C$DW$31, DW_AT_type(*$C$DW$T$28)
 	.dwattr $C$DW$31, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$31, DW_AT_TI_begin_line(0x49)
+	.dwattr $C$DW$31, DW_AT_TI_begin_line(0x47)
 	.dwattr $C$DW$31, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$31, DW_AT_decl_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$31, DW_AT_decl_line(0x49)
+	.dwattr $C$DW$31, DW_AT_decl_line(0x47)
 	.dwattr $C$DW$31, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$31, DW_AT_TI_max_frame_size(0x04)
-	.dwpsn	file "../g2553_swi2c_master.c",line 74,column 1,is_stmt,address SWI2C_performI2CTransaction,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 72,column 1,is_stmt,address SWI2C_performI2CTransaction,isa 0
 
 	.dwfde $C$DW$CIE, SWI2C_performI2CTransaction
 $C$DW$32	.dwtag  DW_TAG_formal_parameter
@@ -1085,98 +1085,98 @@ $C$DW$33	.dwtag  DW_TAG_variable
 	.dwattr $C$DW$33, DW_AT_type(*$C$DW$T$32)
 	.dwattr $C$DW$33, DW_AT_location[DW_OP_reg10]
 
-        MOV.W     r12,r10               ; [] |74| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 75,column 5,is_stmt,isa 0
-        TST.W     2(r10)                ; [] |75| 
-        JEQ       $C$L49                ; [] |75| 
-                                          ; [] |75| 
+        MOV.W     r12,r10               ; [] |72| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 73,column 5,is_stmt,isa 0
+        TST.W     2(r10)                ; [] |73| 
+        JEQ       $C$L49                ; [] |73| 
+                                          ; [] |73| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 78,column 9,is_stmt,isa 0
-        TST.B     10(r10)               ; [] |78| 
-        JEQ       $C$L47                ; [] |78| 
-                                          ; [] |78| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 76,column 9,is_stmt,isa 0
+        TST.B     10(r10)               ; [] |76| 
+        JEQ       $C$L47                ; [] |76| 
+                                          ; [] |76| 
 ;* --------------------------------------------------------------------------*
-        TST.W     6(r10)                ; [] |78| 
-        JNE       $C$L48                ; [] |78| 
-                                          ; [] |78| 
+        TST.W     6(r10)                ; [] |76| 
+        JNE       $C$L48                ; [] |76| 
+                                          ; [] |76| 
 ;* --------------------------------------------------------------------------*
 $C$L47:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 89,column 13,is_stmt,isa 0
-        MOV.B     @r10,r12              ; [] |89| 
-        MOV.W     4(r10),r13            ; [] |89| 
-        MOV.W     2(r10),r14            ; [] |89| 
-        MOV.B     #1,r15                ; [] |89| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 87,column 13,is_stmt,isa 0
+        MOV.B     @r10,r12              ; [] |87| 
+        MOV.W     4(r10),r13            ; [] |87| 
+        MOV.W     2(r10),r14            ; [] |87| 
+        MOV.B     #1,r15                ; [] |87| 
 $C$DW$34	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$34, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$34, DW_AT_name("SWI2C_writeData")
 	.dwattr $C$DW$34, DW_AT_TI_call
 
-        CALL      #SWI2C_writeData      ; [] |89| 
-                                          ; [] |89| 
-        TST.B     r12                   ; [] |89| 
-        JNE       $C$L49                ; [] |89| 
-                                          ; [] |89| 
+        CALL      #SWI2C_writeData      ; [] |87| 
+                                          ; [] |87| 
+        TST.B     r12                   ; [] |87| 
+        JNE       $C$L49                ; [] |87| 
+                                          ; [] |87| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 93,column 17,is_stmt,isa 0
-        MOV.B     #0,r12                ; [] |93| 
-        JMP       $C$L52                ; [] |93| 
-                                          ; [] |93| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 91,column 17,is_stmt,isa 0
+        MOV.B     #0,r12                ; [] |91| 
+        JMP       $C$L52                ; [] |91| 
+                                          ; [] |91| 
 ;* --------------------------------------------------------------------------*
 $C$L48:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 80,column 13,is_stmt,isa 0
-        MOV.B     @r10,r12              ; [] |80| 
-        MOV.W     4(r10),r13            ; [] |80| 
-        MOV.W     2(r10),r14            ; [] |80| 
-        MOV.B     #0,r15                ; [] |80| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 78,column 13,is_stmt,isa 0
+        MOV.B     @r10,r12              ; [] |78| 
+        MOV.W     4(r10),r13            ; [] |78| 
+        MOV.W     2(r10),r14            ; [] |78| 
+        MOV.B     #0,r15                ; [] |78| 
 $C$DW$35	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$35, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$35, DW_AT_name("SWI2C_writeData")
 	.dwattr $C$DW$35, DW_AT_TI_call
 
-        CALL      #SWI2C_writeData      ; [] |80| 
-                                          ; [] |80| 
-        TST.B     r12                   ; [] |80| 
-        JNE       $C$L49                ; [] |80| 
-                                          ; [] |80| 
+        CALL      #SWI2C_writeData      ; [] |78| 
+                                          ; [] |78| 
+        TST.B     r12                   ; [] |78| 
+        JNE       $C$L49                ; [] |78| 
+                                          ; [] |78| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 84,column 17,is_stmt,isa 0
-        MOV.B     #0,r12                ; [] |84| 
-        JMP       $C$L52                ; [] |84| 
-                                          ; [] |84| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 82,column 17,is_stmt,isa 0
+        MOV.B     #0,r12                ; [] |82| 
+        JMP       $C$L52                ; [] |82| 
+                                          ; [] |82| 
 ;* --------------------------------------------------------------------------*
 $C$L49:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 99,column 5,is_stmt,isa 0
-        TST.W     6(r10)                ; [] |99| 
-        JEQ       $C$L50                ; [] |99| 
-                                          ; [] |99| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 97,column 5,is_stmt,isa 0
+        TST.W     6(r10)                ; [] |97| 
+        JEQ       $C$L50                ; [] |97| 
+                                          ; [] |97| 
 ;* --------------------------------------------------------------------------*
-	.dwpsn	file "../g2553_swi2c_master.c",line 101,column 9,is_stmt,isa 0
-        MOV.B     @r10,r12              ; [] |101| 
-        MOV.W     8(r10),r13            ; [] |101| 
-        MOV.W     6(r10),r14            ; [] |101| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 99,column 9,is_stmt,isa 0
+        MOV.B     @r10,r12              ; [] |99| 
+        MOV.W     8(r10),r13            ; [] |99| 
+        MOV.W     6(r10),r14            ; [] |99| 
 $C$DW$36	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$36, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$36, DW_AT_name("SWI2C_readData")
 	.dwattr $C$DW$36, DW_AT_TI_call
 
-        CALL      #SWI2C_readData       ; [] |101| 
-                                          ; [] |101| 
-        TST.B     r12                   ; [] |101| 
-        JEQ       $C$L51                ; [] |101| 
-                                          ; [] |101| 
+        CALL      #SWI2C_readData       ; [] |99| 
+                                          ; [] |99| 
+        TST.B     r12                   ; [] |99| 
+        JEQ       $C$L51                ; [] |99| 
+                                          ; [] |99| 
 ;* --------------------------------------------------------------------------*
 $C$L50:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 108,column 5,is_stmt,isa 0
-        MOV.B     #1,r12                ; [] |108| 
-        JMP       $C$L52                ; [] |108| 
-                                          ; [] |108| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 106,column 5,is_stmt,isa 0
+        MOV.B     #1,r12                ; [] |106| 
+        JMP       $C$L52                ; [] |106| 
+                                          ; [] |106| 
 ;* --------------------------------------------------------------------------*
 $C$L51:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 104,column 13,is_stmt,isa 0
-        MOV.B     #0,r12                ; [] |104| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 102,column 13,is_stmt,isa 0
+        MOV.B     #0,r12                ; [] |102| 
 ;* --------------------------------------------------------------------------*
 $C$L52:    
-	.dwpsn	file "../g2553_swi2c_master.c",line 109,column 1,is_stmt,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 107,column 1,is_stmt,isa 0
         POP       r10                   ; [] 
 	.dwcfi	restore_reg, 10
 	.dwcfi	cfa_offset, 2
@@ -1187,7 +1187,7 @@ $C$DW$37	.dwtag  DW_TAG_TI_branch
         RET       ; [] 
         ; [] 
 	.dwattr $C$DW$31, DW_AT_TI_end_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$31, DW_AT_TI_end_line(0x6d)
+	.dwattr $C$DW$31, DW_AT_TI_end_line(0x6b)
 	.dwattr $C$DW$31, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$31
@@ -1203,13 +1203,13 @@ $C$DW$38	.dwtag  DW_TAG_subprogram
 	.dwattr $C$DW$38, DW_AT_TI_symbol_name("SWI2C_initI2C")
 	.dwattr $C$DW$38, DW_AT_external
 	.dwattr $C$DW$38, DW_AT_TI_begin_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$38, DW_AT_TI_begin_line(0x3c)
+	.dwattr $C$DW$38, DW_AT_TI_begin_line(0x3a)
 	.dwattr $C$DW$38, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$38, DW_AT_decl_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$38, DW_AT_decl_line(0x3c)
+	.dwattr $C$DW$38, DW_AT_decl_line(0x3a)
 	.dwattr $C$DW$38, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$38, DW_AT_TI_max_frame_size(0x02)
-	.dwpsn	file "../g2553_swi2c_master.c",line 61,column 1,is_stmt,address SWI2C_initI2C,isa 0
+	.dwpsn	file "../g2553_swi2c_master.c",line 59,column 1,is_stmt,address SWI2C_initI2C,isa 0
 
 	.dwfde $C$DW$CIE, SWI2C_initI2C
 
@@ -1224,15 +1224,15 @@ SWI2C_initI2C:
 ;* --------------------------------------------------------------------------*
 	.dwcfi	cfa_offset, 2
 	.dwcfi	save_reg_to_mem, 16, -2
+	.dwpsn	file "../g2553_swi2c_master.c",line 63,column 5,is_stmt,isa 0
+        AND.B     #249,&P2OUT+0         ; [] |63| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 64,column 5,is_stmt,isa 0
+        BIC.B     #2,&P2DIR+0           ; [] |64| 
 	.dwpsn	file "../g2553_swi2c_master.c",line 65,column 5,is_stmt,isa 0
-        AND.B     #249,&P2OUT+0         ; [] |65| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 66,column 5,is_stmt,isa 0
-        BIC.B     #2,&P2DIR+0           ; [] |66| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 67,column 5,is_stmt,isa 0
-        BIC.B     #4,&P2DIR+0           ; [] |67| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 70,column 5,is_stmt,isa 0
-        MOV.W     #20,&TA1CCR0+0        ; [] |70| 
-	.dwpsn	file "../g2553_swi2c_master.c",line 71,column 1,is_stmt,isa 0
+        BIC.B     #4,&P2DIR+0           ; [] |65| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 68,column 5,is_stmt,isa 0
+        MOV.W     #20,&TA1CCR0+0        ; [] |68| 
+	.dwpsn	file "../g2553_swi2c_master.c",line 69,column 1,is_stmt,isa 0
 $C$DW$39	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$39, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$39, DW_AT_TI_return
@@ -1240,7 +1240,7 @@ $C$DW$39	.dwtag  DW_TAG_TI_branch
         RET       ; [] 
         ; [] 
 	.dwattr $C$DW$38, DW_AT_TI_end_file("../g2553_swi2c_master.c")
-	.dwattr $C$DW$38, DW_AT_TI_end_line(0x47)
+	.dwattr $C$DW$38, DW_AT_TI_end_line(0x45)
 	.dwattr $C$DW$38, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$38
@@ -1316,7 +1316,7 @@ $C$DW$42	.dwtag  DW_TAG_member
 	.dwattr $C$DW$42, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
 	.dwattr $C$DW$42, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$42, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$42, DW_AT_decl_line(0x4c)
+	.dwattr $C$DW$42, DW_AT_decl_line(0x4a)
 	.dwattr $C$DW$42, DW_AT_decl_column(0x19)
 
 $C$DW$43	.dwtag  DW_TAG_member
@@ -1326,7 +1326,7 @@ $C$DW$43	.dwtag  DW_TAG_member
 	.dwattr $C$DW$43, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
 	.dwattr $C$DW$43, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$43, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$43, DW_AT_decl_line(0x4d)
+	.dwattr $C$DW$43, DW_AT_decl_line(0x4b)
 	.dwattr $C$DW$43, DW_AT_decl_column(0x19)
 
 $C$DW$44	.dwtag  DW_TAG_member
@@ -1336,7 +1336,7 @@ $C$DW$44	.dwtag  DW_TAG_member
 	.dwattr $C$DW$44, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
 	.dwattr $C$DW$44, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$44, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$44, DW_AT_decl_line(0x4e)
+	.dwattr $C$DW$44, DW_AT_decl_line(0x4c)
 	.dwattr $C$DW$44, DW_AT_decl_column(0x19)
 
 $C$DW$45	.dwtag  DW_TAG_member
@@ -1346,7 +1346,7 @@ $C$DW$45	.dwtag  DW_TAG_member
 	.dwattr $C$DW$45, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
 	.dwattr $C$DW$45, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$45, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$45, DW_AT_decl_line(0x4f)
+	.dwattr $C$DW$45, DW_AT_decl_line(0x4d)
 	.dwattr $C$DW$45, DW_AT_decl_column(0x19)
 
 $C$DW$46	.dwtag  DW_TAG_member
@@ -1356,7 +1356,7 @@ $C$DW$46	.dwtag  DW_TAG_member
 	.dwattr $C$DW$46, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
 	.dwattr $C$DW$46, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$46, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$46, DW_AT_decl_line(0x50)
+	.dwattr $C$DW$46, DW_AT_decl_line(0x4e)
 	.dwattr $C$DW$46, DW_AT_decl_column(0x19)
 
 $C$DW$47	.dwtag  DW_TAG_member
@@ -1366,11 +1366,11 @@ $C$DW$47	.dwtag  DW_TAG_member
 	.dwattr $C$DW$47, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
 	.dwattr $C$DW$47, DW_AT_accessibility(DW_ACCESS_public)
 	.dwattr $C$DW$47, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$47, DW_AT_decl_line(0x51)
+	.dwattr $C$DW$47, DW_AT_decl_line(0x4f)
 	.dwattr $C$DW$47, DW_AT_decl_column(0x19)
 
 	.dwattr $C$DW$T$29, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$T$29, DW_AT_decl_line(0x4a)
+	.dwattr $C$DW$T$29, DW_AT_decl_line(0x48)
 	.dwattr $C$DW$T$29, DW_AT_decl_column(0x10)
 	.dwendtag $C$DW$T$29
 
@@ -1379,7 +1379,7 @@ $C$DW$T$31	.dwtag  DW_TAG_typedef
 	.dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$29)
 	.dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
 	.dwattr $C$DW$T$31, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MSP430G2553SensorsApp/g2553_swi2c_master.h")
-	.dwattr $C$DW$T$31, DW_AT_decl_line(0x52)
+	.dwattr $C$DW$T$31, DW_AT_decl_line(0x50)
 	.dwattr $C$DW$T$31, DW_AT_decl_column(0x03)
 
 $C$DW$T$32	.dwtag  DW_TAG_pointer_type

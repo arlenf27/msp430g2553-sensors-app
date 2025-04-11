@@ -47,8 +47,6 @@
  */
 //*****************************************************************************
 
-// TODO: Rename file and note modifications!
-
 #include <g2553_swi2c_master.h>
 
 /* Static Functions */

@@ -47,8 +47,6 @@
  */
 //*****************************************************************************
 
-// TODO: Rename file and note modifications!
-
 #include <msp430.h>
 #include <stdbool.h>
 #include <stdint.h>

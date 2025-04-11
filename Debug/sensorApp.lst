@@ -1,11 +1,11 @@
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 G3 C/C++ Codegen                                          Unix v21.6.1.LTS *
-       3            ;* Date/Time created: Sat Aug  3 14:35:58 2024                                *
+       3            ;* Date/Time created: Thu Aug 22 10:43:10 2024                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
        6            
@@ -15,859 +15,2261 @@ sensorApp.asm                                                        PAGE    1
       10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
       11                    .dwattr $C$DW$CU, DW_AT_comp_dir("/Users/afother1/Documents/New Files/TICCS120701Workspace0/MS
       12            ;       Interrupt vector table mappings
-      13 000000               .intvec ".int09",       Timer_A
+      13 000000               .intvec ".int09",       Timer_A0_CCR0
          000000       
       14 000000               .intvec ".int06",       USCI_A0_Tx_ISR
          000000       
-      15            $C$DW$1 .dwtag  DW_TAG_variable
-      16                    .dwattr $C$DW$1, DW_AT_name("IE2")
-      17                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("IE2")
-      18                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$20)
-      19                    .dwattr $C$DW$1, DW_AT_declaration
-      20                    .dwattr $C$DW$1, DW_AT_external
-      21                    .dwattr $C$DW$1, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      22                    .dwattr $C$DW$1, DW_AT_decl_line(0x9d)
-      23                    .dwattr $C$DW$1, DW_AT_decl_column(0x01)
-      24            
-      25            $C$DW$2 .dwtag  DW_TAG_variable
-      26                    .dwattr $C$DW$2, DW_AT_name("DCOCTL")
-      27                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("DCOCTL")
-      28                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$20)
-      29                    .dwattr $C$DW$2, DW_AT_declaration
-      30                    .dwattr $C$DW$2, DW_AT_external
-      31                    .dwattr $C$DW$2, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      32                    .dwattr $C$DW$2, DW_AT_decl_line(0x11f)
-      33                    .dwattr $C$DW$2, DW_AT_decl_column(0x01)
-      34            
-      35            $C$DW$3 .dwtag  DW_TAG_variable
-      36                    .dwattr $C$DW$3, DW_AT_name("BCSCTL1")
-      37                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("BCSCTL1")
-      38                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$20)
-      39                    .dwattr $C$DW$3, DW_AT_declaration
-      40                    .dwattr $C$DW$3, DW_AT_external
-      41                    .dwattr $C$DW$3, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      42                    .dwattr $C$DW$3, DW_AT_decl_line(0x120)
-      43                    .dwattr $C$DW$3, DW_AT_decl_column(0x01)
-      44            
-      45            $C$DW$4 .dwtag  DW_TAG_variable
-      46                    .dwattr $C$DW$4, DW_AT_name("P1OUT")
-      47                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("P1OUT")
-      48                    .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$20)
-      49                    .dwattr $C$DW$4, DW_AT_declaration
-      50                    .dwattr $C$DW$4, DW_AT_external
-      51                    .dwattr $C$DW$4, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      52                    .dwattr $C$DW$4, DW_AT_decl_line(0x1cf)
-      53                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+      15 000000               .intvec ".int08",       Timer_A0_CCR1
+         000000       
+      16            $C$DW$1 .dwtag  DW_TAG_variable
+      17                    .dwattr $C$DW$1, DW_AT_name("IE2")
+      18                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("IE2")
+      19                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$40)
+      20                    .dwattr $C$DW$1, DW_AT_declaration
+      21                    .dwattr $C$DW$1, DW_AT_external
+      22                    .dwattr $C$DW$1, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      23                    .dwattr $C$DW$1, DW_AT_decl_line(0x9d)
+      24                    .dwattr $C$DW$1, DW_AT_decl_column(0x01)
+      25            
+      26            $C$DW$2 .dwtag  DW_TAG_variable
+      27                    .dwattr $C$DW$2, DW_AT_name("DCOCTL")
+      28                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("DCOCTL")
+      29                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$40)
+      30                    .dwattr $C$DW$2, DW_AT_declaration
+      31                    .dwattr $C$DW$2, DW_AT_external
+      32                    .dwattr $C$DW$2, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      33                    .dwattr $C$DW$2, DW_AT_decl_line(0x11f)
+      34                    .dwattr $C$DW$2, DW_AT_decl_column(0x01)
+      35            
+      36            $C$DW$3 .dwtag  DW_TAG_variable
+      37                    .dwattr $C$DW$3, DW_AT_name("BCSCTL1")
+      38                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("BCSCTL1")
+      39                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$40)
+      40                    .dwattr $C$DW$3, DW_AT_declaration
+      41                    .dwattr $C$DW$3, DW_AT_external
+      42                    .dwattr $C$DW$3, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      43                    .dwattr $C$DW$3, DW_AT_decl_line(0x120)
+      44                    .dwattr $C$DW$3, DW_AT_decl_column(0x01)
+      45            
+      46            $C$DW$4 .dwtag  DW_TAG_variable
+      47                    .dwattr $C$DW$4, DW_AT_name("P1OUT")
+      48                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("P1OUT")
+      49                    .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$40)
+      50                    .dwattr $C$DW$4, DW_AT_declaration
+      51                    .dwattr $C$DW$4, DW_AT_external
+      52                    .dwattr $C$DW$4, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    2
 
-      54            
-      55            $C$DW$5 .dwtag  DW_TAG_variable
-      56                    .dwattr $C$DW$5, DW_AT_name("P1DIR")
-      57                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("P1DIR")
-      58                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$20)
-      59                    .dwattr $C$DW$5, DW_AT_declaration
-      60                    .dwattr $C$DW$5, DW_AT_external
-      61                    .dwattr $C$DW$5, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      62                    .dwattr $C$DW$5, DW_AT_decl_line(0x1d0)
-      63                    .dwattr $C$DW$5, DW_AT_decl_column(0x01)
-      64            
-      65            $C$DW$6 .dwtag  DW_TAG_variable
-      66                    .dwattr $C$DW$6, DW_AT_name("P1SEL")
-      67                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("P1SEL")
-      68                    .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$20)
-      69                    .dwattr $C$DW$6, DW_AT_declaration
-      70                    .dwattr $C$DW$6, DW_AT_external
-      71                    .dwattr $C$DW$6, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      72                    .dwattr $C$DW$6, DW_AT_decl_line(0x1d4)
-      73                    .dwattr $C$DW$6, DW_AT_decl_column(0x01)
-      74            
-      75            $C$DW$7 .dwtag  DW_TAG_variable
-      76                    .dwattr $C$DW$7, DW_AT_name("P1SEL2")
-      77                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("P1SEL2")
-      78                    .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$20)
-      79                    .dwattr $C$DW$7, DW_AT_declaration
-      80                    .dwattr $C$DW$7, DW_AT_external
-      81                    .dwattr $C$DW$7, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      82                    .dwattr $C$DW$7, DW_AT_decl_line(0x1d5)
-      83                    .dwattr $C$DW$7, DW_AT_decl_column(0x01)
-      84            
-      85            $C$DW$8 .dwtag  DW_TAG_variable
-      86                    .dwattr $C$DW$8, DW_AT_name("TA0CTL")
-      87                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("TA0CTL")
-      88                    .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$21)
-      89                    .dwattr $C$DW$8, DW_AT_declaration
-      90                    .dwattr $C$DW$8, DW_AT_external
-      91                    .dwattr $C$DW$8, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-      92                    .dwattr $C$DW$8, DW_AT_decl_line(0x1f7)
-      93                    .dwattr $C$DW$8, DW_AT_decl_column(0x01)
-      94            
-      95            $C$DW$9 .dwtag  DW_TAG_variable
-      96                    .dwattr $C$DW$9, DW_AT_name("TA0CCTL0")
-      97                    .dwattr $C$DW$9, DW_AT_TI_symbol_name("TA0CCTL0")
-      98                    .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$21)
-      99                    .dwattr $C$DW$9, DW_AT_declaration
-     100                    .dwattr $C$DW$9, DW_AT_external
-     101                    .dwattr $C$DW$9, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
-     102                    .dwattr $C$DW$9, DW_AT_decl_line(0x1f8)
-     103                    .dwattr $C$DW$9, DW_AT_decl_column(0x01)
-     104            
-     105            $C$DW$10        .dwtag  DW_TAG_variable
-     106                    .dwattr $C$DW$10, DW_AT_name("TA0CCR0")
-     107                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("TA0CCR0")
-     108                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$21)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+      53                    .dwattr $C$DW$4, DW_AT_decl_line(0x1cf)
+      54                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
+      55            
+      56            $C$DW$5 .dwtag  DW_TAG_variable
+      57                    .dwattr $C$DW$5, DW_AT_name("P1DIR")
+      58                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("P1DIR")
+      59                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$40)
+      60                    .dwattr $C$DW$5, DW_AT_declaration
+      61                    .dwattr $C$DW$5, DW_AT_external
+      62                    .dwattr $C$DW$5, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      63                    .dwattr $C$DW$5, DW_AT_decl_line(0x1d0)
+      64                    .dwattr $C$DW$5, DW_AT_decl_column(0x01)
+      65            
+      66            $C$DW$6 .dwtag  DW_TAG_variable
+      67                    .dwattr $C$DW$6, DW_AT_name("P1SEL")
+      68                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("P1SEL")
+      69                    .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$40)
+      70                    .dwattr $C$DW$6, DW_AT_declaration
+      71                    .dwattr $C$DW$6, DW_AT_external
+      72                    .dwattr $C$DW$6, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      73                    .dwattr $C$DW$6, DW_AT_decl_line(0x1d4)
+      74                    .dwattr $C$DW$6, DW_AT_decl_column(0x01)
+      75            
+      76            $C$DW$7 .dwtag  DW_TAG_variable
+      77                    .dwattr $C$DW$7, DW_AT_name("P1SEL2")
+      78                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("P1SEL2")
+      79                    .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$40)
+      80                    .dwattr $C$DW$7, DW_AT_declaration
+      81                    .dwattr $C$DW$7, DW_AT_external
+      82                    .dwattr $C$DW$7, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      83                    .dwattr $C$DW$7, DW_AT_decl_line(0x1d5)
+      84                    .dwattr $C$DW$7, DW_AT_decl_column(0x01)
+      85            
+      86            $C$DW$8 .dwtag  DW_TAG_variable
+      87                    .dwattr $C$DW$8, DW_AT_name("P2OUT")
+      88                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("P2OUT")
+      89                    .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$40)
+      90                    .dwattr $C$DW$8, DW_AT_declaration
+      91                    .dwattr $C$DW$8, DW_AT_external
+      92                    .dwattr $C$DW$8, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+      93                    .dwattr $C$DW$8, DW_AT_decl_line(0x1d9)
+      94                    .dwattr $C$DW$8, DW_AT_decl_column(0x01)
+      95            
+      96            $C$DW$9 .dwtag  DW_TAG_variable
+      97                    .dwattr $C$DW$9, DW_AT_name("P2DIR")
+      98                    .dwattr $C$DW$9, DW_AT_TI_symbol_name("P2DIR")
+      99                    .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$40)
+     100                    .dwattr $C$DW$9, DW_AT_declaration
+     101                    .dwattr $C$DW$9, DW_AT_external
+     102                    .dwattr $C$DW$9, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp43
+     103                    .dwattr $C$DW$9, DW_AT_decl_line(0x1da)
+     104                    .dwattr $C$DW$9, DW_AT_decl_column(0x01)
+     105            
+     106            $C$DW$10        .dwtag  DW_TAG_variable
+     107                    .dwattr $C$DW$10, DW_AT_name("TA0CTL")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    3
 
-     109                    .dwattr $C$DW$10, DW_AT_declaration
-     110                    .dwattr $C$DW$10, DW_AT_external
-     111                    .dwattr $C$DW$10, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     112                    .dwattr $C$DW$10, DW_AT_decl_line(0x1fc)
-     113                    .dwattr $C$DW$10, DW_AT_decl_column(0x01)
-     114            
-     115            $C$DW$11        .dwtag  DW_TAG_variable
-     116                    .dwattr $C$DW$11, DW_AT_name("UCA0CTL1")
-     117                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("UCA0CTL1")
-     118                    .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$20)
-     119                    .dwattr $C$DW$11, DW_AT_declaration
-     120                    .dwattr $C$DW$11, DW_AT_external
-     121                    .dwattr $C$DW$11, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     122                    .dwattr $C$DW$11, DW_AT_decl_line(0x281)
-     123                    .dwattr $C$DW$11, DW_AT_decl_column(0x01)
-     124            
-     125            $C$DW$12        .dwtag  DW_TAG_variable
-     126                    .dwattr $C$DW$12, DW_AT_name("UCA0BR0")
-     127                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("UCA0BR0")
-     128                    .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$20)
-     129                    .dwattr $C$DW$12, DW_AT_declaration
-     130                    .dwattr $C$DW$12, DW_AT_external
-     131                    .dwattr $C$DW$12, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     132                    .dwattr $C$DW$12, DW_AT_decl_line(0x282)
-     133                    .dwattr $C$DW$12, DW_AT_decl_column(0x01)
-     134            
-     135            $C$DW$13        .dwtag  DW_TAG_variable
-     136                    .dwattr $C$DW$13, DW_AT_name("UCA0BR1")
-     137                    .dwattr $C$DW$13, DW_AT_TI_symbol_name("UCA0BR1")
-     138                    .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$20)
-     139                    .dwattr $C$DW$13, DW_AT_declaration
-     140                    .dwattr $C$DW$13, DW_AT_external
-     141                    .dwattr $C$DW$13, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     142                    .dwattr $C$DW$13, DW_AT_decl_line(0x283)
-     143                    .dwattr $C$DW$13, DW_AT_decl_column(0x01)
-     144            
-     145            $C$DW$14        .dwtag  DW_TAG_variable
-     146                    .dwattr $C$DW$14, DW_AT_name("UCA0MCTL")
-     147                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("UCA0MCTL")
-     148                    .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$20)
-     149                    .dwattr $C$DW$14, DW_AT_declaration
-     150                    .dwattr $C$DW$14, DW_AT_external
-     151                    .dwattr $C$DW$14, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     152                    .dwattr $C$DW$14, DW_AT_decl_line(0x284)
-     153                    .dwattr $C$DW$14, DW_AT_decl_column(0x01)
-     154            
-     155            $C$DW$15        .dwtag  DW_TAG_variable
-     156                    .dwattr $C$DW$15, DW_AT_name("UCA0TXBUF")
-     157                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("UCA0TXBUF")
-     158                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$20)
-     159                    .dwattr $C$DW$15, DW_AT_declaration
-     160                    .dwattr $C$DW$15, DW_AT_external
-     161                    .dwattr $C$DW$15, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     162                    .dwattr $C$DW$15, DW_AT_decl_line(0x287)
-     163                    .dwattr $C$DW$15, DW_AT_decl_column(0x01)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     108                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("TA0CTL")
+     109                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$71)
+     110                    .dwattr $C$DW$10, DW_AT_declaration
+     111                    .dwattr $C$DW$10, DW_AT_external
+     112                    .dwattr $C$DW$10, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     113                    .dwattr $C$DW$10, DW_AT_decl_line(0x1f7)
+     114                    .dwattr $C$DW$10, DW_AT_decl_column(0x01)
+     115            
+     116            $C$DW$11        .dwtag  DW_TAG_variable
+     117                    .dwattr $C$DW$11, DW_AT_name("TA0CCTL0")
+     118                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("TA0CCTL0")
+     119                    .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$71)
+     120                    .dwattr $C$DW$11, DW_AT_declaration
+     121                    .dwattr $C$DW$11, DW_AT_external
+     122                    .dwattr $C$DW$11, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     123                    .dwattr $C$DW$11, DW_AT_decl_line(0x1f8)
+     124                    .dwattr $C$DW$11, DW_AT_decl_column(0x01)
+     125            
+     126            $C$DW$12        .dwtag  DW_TAG_variable
+     127                    .dwattr $C$DW$12, DW_AT_name("TA0CCTL1")
+     128                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("TA0CCTL1")
+     129                    .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$71)
+     130                    .dwattr $C$DW$12, DW_AT_declaration
+     131                    .dwattr $C$DW$12, DW_AT_external
+     132                    .dwattr $C$DW$12, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     133                    .dwattr $C$DW$12, DW_AT_decl_line(0x1f9)
+     134                    .dwattr $C$DW$12, DW_AT_decl_column(0x01)
+     135            
+     136            $C$DW$13        .dwtag  DW_TAG_variable
+     137                    .dwattr $C$DW$13, DW_AT_name("TA0CCR0")
+     138                    .dwattr $C$DW$13, DW_AT_TI_symbol_name("TA0CCR0")
+     139                    .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$71)
+     140                    .dwattr $C$DW$13, DW_AT_declaration
+     141                    .dwattr $C$DW$13, DW_AT_external
+     142                    .dwattr $C$DW$13, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     143                    .dwattr $C$DW$13, DW_AT_decl_line(0x1fc)
+     144                    .dwattr $C$DW$13, DW_AT_decl_column(0x01)
+     145            
+     146            $C$DW$14        .dwtag  DW_TAG_variable
+     147                    .dwattr $C$DW$14, DW_AT_name("TA0CCR1")
+     148                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("TA0CCR1")
+     149                    .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$71)
+     150                    .dwattr $C$DW$14, DW_AT_declaration
+     151                    .dwattr $C$DW$14, DW_AT_external
+     152                    .dwattr $C$DW$14, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     153                    .dwattr $C$DW$14, DW_AT_decl_line(0x1fd)
+     154                    .dwattr $C$DW$14, DW_AT_decl_column(0x01)
+     155            
+     156            $C$DW$15        .dwtag  DW_TAG_variable
+     157                    .dwattr $C$DW$15, DW_AT_name("UCA0CTL1")
+     158                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("UCA0CTL1")
+     159                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$40)
+     160                    .dwattr $C$DW$15, DW_AT_declaration
+     161                    .dwattr $C$DW$15, DW_AT_external
+     162                    .dwattr $C$DW$15, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    4
 
-     164            
-     165            $C$DW$16        .dwtag  DW_TAG_variable
-     166                    .dwattr $C$DW$16, DW_AT_name("WDTCTL")
-     167                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("WDTCTL")
-     168                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$21)
-     169                    .dwattr $C$DW$16, DW_AT_declaration
-     170                    .dwattr $C$DW$16, DW_AT_external
-     171                    .dwattr $C$DW$16, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     172                    .dwattr $C$DW$16, DW_AT_decl_line(0x343)
-     173                    .dwattr $C$DW$16, DW_AT_decl_column(0x01)
-     174            
-     175            $C$DW$17        .dwtag  DW_TAG_variable
-     176                    .dwattr $C$DW$17, DW_AT_name("CALDCO_8MHZ")
-     177                    .dwattr $C$DW$17, DW_AT_TI_symbol_name("CALDCO_8MHZ")
-     178                    .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$20)
-     179                    .dwattr $C$DW$17, DW_AT_declaration
-     180                    .dwattr $C$DW$17, DW_AT_external
-     181                    .dwattr $C$DW$17, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     182                    .dwattr $C$DW$17, DW_AT_decl_line(0x376)
-     183                    .dwattr $C$DW$17, DW_AT_decl_column(0x01)
-     184            
-     185            $C$DW$18        .dwtag  DW_TAG_variable
-     186                    .dwattr $C$DW$18, DW_AT_name("CALBC1_8MHZ")
-     187                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("CALBC1_8MHZ")
-     188                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$20)
-     189                    .dwattr $C$DW$18, DW_AT_declaration
-     190                    .dwattr $C$DW$18, DW_AT_external
-     191                    .dwattr $C$DW$18, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
-     192                    .dwattr $C$DW$18, DW_AT_decl_line(0x377)
-     193                    .dwattr $C$DW$18, DW_AT_decl_column(0x01)
-     194            
-     195                    .global uartTxData
-     196 000000               .data
-     197                    .align  2
-     198                    .elfsym uartTxData,SYM_SIZE(4)
-     199 000000       uartTxData:
-     200 000000 0000          .bits           0,32
-         000002 0000 
-     201                                    ; uartTxData @ 0
-     202            
-     203            $C$DW$19        .dwtag  DW_TAG_variable
-     204                    .dwattr $C$DW$19, DW_AT_name("uartTxData")
-     205                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("uartTxData")
-     206                    .dwattr $C$DW$19, DW_AT_location[DW_OP_addr uartTxData]
-     207                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$13)
-     208                    .dwattr $C$DW$19, DW_AT_external
-     209                    .dwattr $C$DW$19, DW_AT_decl_file("../sensorApp.c")
-     210                    .dwattr $C$DW$19, DW_AT_decl_line(0x0d)
-     211                    .dwattr $C$DW$19, DW_AT_decl_column(0x0f)
-     212            
-     213                    .global uartBitsTransmitted
-     214 000004               .data
-     215                    .align  1
-     216                    .elfsym uartBitsTransmitted,SYM_SIZE(1)
-     217 000004       uartBitsTransmitted:
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     163                    .dwattr $C$DW$15, DW_AT_decl_line(0x281)
+     164                    .dwattr $C$DW$15, DW_AT_decl_column(0x01)
+     165            
+     166            $C$DW$16        .dwtag  DW_TAG_variable
+     167                    .dwattr $C$DW$16, DW_AT_name("UCA0BR0")
+     168                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("UCA0BR0")
+     169                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$40)
+     170                    .dwattr $C$DW$16, DW_AT_declaration
+     171                    .dwattr $C$DW$16, DW_AT_external
+     172                    .dwattr $C$DW$16, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     173                    .dwattr $C$DW$16, DW_AT_decl_line(0x282)
+     174                    .dwattr $C$DW$16, DW_AT_decl_column(0x01)
+     175            
+     176            $C$DW$17        .dwtag  DW_TAG_variable
+     177                    .dwattr $C$DW$17, DW_AT_name("UCA0BR1")
+     178                    .dwattr $C$DW$17, DW_AT_TI_symbol_name("UCA0BR1")
+     179                    .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$40)
+     180                    .dwattr $C$DW$17, DW_AT_declaration
+     181                    .dwattr $C$DW$17, DW_AT_external
+     182                    .dwattr $C$DW$17, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     183                    .dwattr $C$DW$17, DW_AT_decl_line(0x283)
+     184                    .dwattr $C$DW$17, DW_AT_decl_column(0x01)
+     185            
+     186            $C$DW$18        .dwtag  DW_TAG_variable
+     187                    .dwattr $C$DW$18, DW_AT_name("UCA0MCTL")
+     188                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("UCA0MCTL")
+     189                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$40)
+     190                    .dwattr $C$DW$18, DW_AT_declaration
+     191                    .dwattr $C$DW$18, DW_AT_external
+     192                    .dwattr $C$DW$18, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     193                    .dwattr $C$DW$18, DW_AT_decl_line(0x284)
+     194                    .dwattr $C$DW$18, DW_AT_decl_column(0x01)
+     195            
+     196            $C$DW$19        .dwtag  DW_TAG_variable
+     197                    .dwattr $C$DW$19, DW_AT_name("UCA0TXBUF")
+     198                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("UCA0TXBUF")
+     199                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$40)
+     200                    .dwattr $C$DW$19, DW_AT_declaration
+     201                    .dwattr $C$DW$19, DW_AT_external
+     202                    .dwattr $C$DW$19, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     203                    .dwattr $C$DW$19, DW_AT_decl_line(0x287)
+     204                    .dwattr $C$DW$19, DW_AT_decl_column(0x01)
+     205            
+     206            $C$DW$20        .dwtag  DW_TAG_variable
+     207                    .dwattr $C$DW$20, DW_AT_name("WDTCTL")
+     208                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("WDTCTL")
+     209                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$71)
+     210                    .dwattr $C$DW$20, DW_AT_declaration
+     211                    .dwattr $C$DW$20, DW_AT_external
+     212                    .dwattr $C$DW$20, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     213                    .dwattr $C$DW$20, DW_AT_decl_line(0x343)
+     214                    .dwattr $C$DW$20, DW_AT_decl_column(0x01)
+     215            
+     216            $C$DW$21        .dwtag  DW_TAG_variable
+     217                    .dwattr $C$DW$21, DW_AT_name("CALDCO_8MHZ")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    5
 
-     218 000004 0000          .bits           0,8
-     219                                    ; uartBitsTransmitted @ 0
-     220            
-     221            $C$DW$20        .dwtag  DW_TAG_variable
-     222                    .dwattr $C$DW$20, DW_AT_name("uartBitsTransmitted")
-     223                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("uartBitsTransmitted")
-     224                    .dwattr $C$DW$20, DW_AT_location[DW_OP_addr uartBitsTransmitted]
-     225                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$6)
-     226                    .dwattr $C$DW$20, DW_AT_external
-     227                    .dwattr $C$DW$20, DW_AT_decl_file("../sensorApp.c")
-     228                    .dwattr $C$DW$20, DW_AT_decl_line(0x10)
-     229                    .dwattr $C$DW$20, DW_AT_decl_column(0x0f)
-     230            
-     231                    .global counter
-     232 000005               .data
-     233                    .align  1
-     234                    .elfsym counter,SYM_SIZE(1)
-     235 000005       counter:
-     236 000004 0000          .bits           0,8
-     237                                    ; counter @ 0
-     238            
-     239            $C$DW$21        .dwtag  DW_TAG_variable
-     240                    .dwattr $C$DW$21, DW_AT_name("counter")
-     241                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("counter")
-     242                    .dwattr $C$DW$21, DW_AT_location[DW_OP_addr counter]
-     243                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$6)
-     244                    .dwattr $C$DW$21, DW_AT_external
-     245                    .dwattr $C$DW$21, DW_AT_decl_file("../sensorApp.c")
-     246                    .dwattr $C$DW$21, DW_AT_decl_line(0x13)
-     247                    .dwattr $C$DW$21, DW_AT_decl_column(0x0f)
-     248            
-     249            
-     250            $C$DW$22        .dwtag  DW_TAG_subprogram
-     251                    .dwattr $C$DW$22, DW_AT_name("__bis_SR_register")
-     252                    .dwattr $C$DW$22, DW_AT_TI_symbol_name("__bis_SR_register")
-     253                    .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$11)
-     254                    .dwattr $C$DW$22, DW_AT_declaration
-     255                    .dwattr $C$DW$22, DW_AT_external
-     256            $C$DW$23        .dwtag  DW_TAG_formal_parameter
-     257                    .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$9)
-     258            
-     259                    .dwendtag $C$DW$22
-     260            
-     261            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TI2
-     262 000000               .sect   ".text:main"
-     263                    .clink
-     264                    .global main
-     265            
-     266            $C$DW$24        .dwtag  DW_TAG_subprogram
-     267                    .dwattr $C$DW$24, DW_AT_name("main")
-     268                    .dwattr $C$DW$24, DW_AT_low_pc(main)
-     269                    .dwattr $C$DW$24, DW_AT_high_pc(0x00)
-     270                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("main")
-     271                    .dwattr $C$DW$24, DW_AT_external
-     272                    .dwattr $C$DW$24, DW_AT_TI_begin_file("../sensorApp.c")
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     218                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("CALDCO_8MHZ")
+     219                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$40)
+     220                    .dwattr $C$DW$21, DW_AT_declaration
+     221                    .dwattr $C$DW$21, DW_AT_external
+     222                    .dwattr $C$DW$21, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     223                    .dwattr $C$DW$21, DW_AT_decl_line(0x376)
+     224                    .dwattr $C$DW$21, DW_AT_decl_column(0x01)
+     225            
+     226            $C$DW$22        .dwtag  DW_TAG_variable
+     227                    .dwattr $C$DW$22, DW_AT_name("CALBC1_8MHZ")
+     228                    .dwattr $C$DW$22, DW_AT_TI_symbol_name("CALBC1_8MHZ")
+     229                    .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$40)
+     230                    .dwattr $C$DW$22, DW_AT_declaration
+     231                    .dwattr $C$DW$22, DW_AT_external
+     232                    .dwattr $C$DW$22, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/ccs_base/msp430/include/msp4
+     233                    .dwattr $C$DW$22, DW_AT_decl_line(0x377)
+     234                    .dwattr $C$DW$22, DW_AT_decl_column(0x01)
+     235            
+     236                    .global uartBytesTransmitted
+     237 000000               .data
+     238                    .align  1
+     239                    .elfsym uartBytesTransmitted,SYM_SIZE(1)
+     240 000000       uartBytesTransmitted:
+     241 000000 0000          .bits           0,8
+     242                                    ; uartBytesTransmitted @ 0
+     243            
+     244            $C$DW$23        .dwtag  DW_TAG_variable
+     245                    .dwattr $C$DW$23, DW_AT_name("uartBytesTransmitted")
+     246                    .dwattr $C$DW$23, DW_AT_TI_symbol_name("uartBytesTransmitted")
+     247                    .dwattr $C$DW$23, DW_AT_location[DW_OP_addr uartBytesTransmitted]
+     248                    .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$6)
+     249                    .dwattr $C$DW$23, DW_AT_external
+     250                    .dwattr $C$DW$23, DW_AT_decl_file("../sensorApp.c")
+     251                    .dwattr $C$DW$23, DW_AT_decl_line(0x1b)
+     252                    .dwattr $C$DW$23, DW_AT_decl_column(0x0f)
+     253            
+     254                    .global counter
+     255 000001               .data
+     256                    .align  1
+     257                    .elfsym counter,SYM_SIZE(1)
+     258 000001       counter:
+     259 000000 0000          .bits           0,8
+     260                                    ; counter @ 0
+     261            
+     262            $C$DW$24        .dwtag  DW_TAG_variable
+     263                    .dwattr $C$DW$24, DW_AT_name("counter")
+     264                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("counter")
+     265                    .dwattr $C$DW$24, DW_AT_location[DW_OP_addr counter]
+     266                    .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$6)
+     267                    .dwattr $C$DW$24, DW_AT_external
+     268                    .dwattr $C$DW$24, DW_AT_decl_file("../sensorApp.c")
+     269                    .dwattr $C$DW$24, DW_AT_decl_line(0x1e)
+     270                    .dwattr $C$DW$24, DW_AT_decl_column(0x0f)
+     271            
+     272                    .global transaction
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    6
 
-     273                    .dwattr $C$DW$24, DW_AT_TI_begin_line(0x18)
-     274                    .dwattr $C$DW$24, DW_AT_TI_begin_column(0x06)
-     275                    .dwattr $C$DW$24, DW_AT_decl_file("../sensorApp.c")
-     276                    .dwattr $C$DW$24, DW_AT_decl_line(0x18)
-     277                    .dwattr $C$DW$24, DW_AT_decl_column(0x06)
-     278                    .dwattr $C$DW$24, DW_AT_TI_max_frame_size(0x02)
-     279                    .dwpsn  file "../sensorApp.c",line 25,column 1,is_stmt,address main,isa 0
-     280            
-     281                    .dwfde $C$DW$CIE, main
-     282            
-     283            ;*****************************************************************************
-     284            ;* FUNCTION NAME: main                                                       *
-     285            ;*                                                                           *
-     286            ;*   Regs Modified     : SP,SR                                               *
-     287            ;*   Regs Used         : SP,SR                                               *
-     288            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
-     289            ;*****************************************************************************
-     290 000000       main:
-     291            ;* --------------------------------------------------------------------------*
-     292                    .dwcfi  cfa_offset, 2
-     293                    .dwcfi  save_reg_to_mem, 16, -2
-     294                    .dwpsn  file "../sensorApp.c",line 26,column 2,is_stmt,isa 0
-     295 000000 40B2          MOV.W     #23168,&WDTCTL+0      ; [] |26| 
-         000002 5A80 
-         000004 0000!
-     296                    .dwpsn  file "../sensorApp.c",line 28,column 2,is_stmt,isa 0
-     297 000006 93F2          CMP.B     #255,&CALBC1_8MHZ+0   ; [] |28| 
-         000008 0000!
-     298 00000a 242C          JEQ       $C$L1                 ; [] |28| 
-     299                                                      ; [] |28| 
-     300            ;* --------------------------------------------------------------------------*
-     301 00000c 93F2          CMP.B     #255,&CALDCO_8MHZ+0   ; [] |28| 
-         00000e 0000!
-     302 000010 2429          JEQ       $C$L1                 ; [] |28| 
-     303                                                      ; [] |28| 
-     304            ;* --------------------------------------------------------------------------*
-     305                    .dwpsn  file "../sensorApp.c",line 32,column 2,is_stmt,isa 0
-     306 000012 43C2          MOV.B     #0,&DCOCTL+0          ; [] |32| 
-         000014 0000!
-     307                    .dwpsn  file "../sensorApp.c",line 33,column 2,is_stmt,isa 0
-     308 000016 42D2          MOV.B     &CALBC1_8MHZ+0,&BCSCTL1+0 ; [] |33| 
-         000018 0000!
-         00001a 0000!
-     309                    .dwpsn  file "../sensorApp.c",line 34,column 2,is_stmt,isa 0
-     310 00001c 42D2          MOV.B     &CALDCO_8MHZ+0,&DCOCTL+0 ; [] |34| 
-         00001e 0000!
-         000020 0000!
-     311                    .dwpsn  file "../sensorApp.c",line 36,column 2,is_stmt,isa 0
-     312 000022 D3D2          OR.B      #1,&P1DIR+0           ; [] |36| 
-         000024 0000!
-     313                    .dwpsn  file "../sensorApp.c",line 38,column 2,is_stmt,isa 0
-     314 000026 40B2          MOV.W     #16,&TA0CCTL0+0       ; [] |38| 
-         000028 0010 
-         00002a 0000!
-     315                    .dwpsn  file "../sensorApp.c",line 39,column 2,is_stmt,isa 0
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     273                    .common transaction,12,2
+     274            $C$DW$25        .dwtag  DW_TAG_variable
+     275                    .dwattr $C$DW$25, DW_AT_name("transaction")
+     276                    .dwattr $C$DW$25, DW_AT_TI_symbol_name("transaction")
+     277                    .dwattr $C$DW$25, DW_AT_location[DW_OP_addr transaction]
+     278                    .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$31)
+     279                    .dwattr $C$DW$25, DW_AT_external
+     280                    .dwattr $C$DW$25, DW_AT_decl_file("../sensorApp.c")
+     281                    .dwattr $C$DW$25, DW_AT_decl_line(0x21)
+     282                    .dwattr $C$DW$25, DW_AT_decl_column(0x16)
+     283            
+     284                    .global WBuffer
+     285 000002               .data
+     286                    .align  1
+     287                    .elfsym WBuffer,SYM_SIZE(1)
+     288 000002       WBuffer:
+     289 000002 0000          .bits           0,8
+     290                                    ; WBuffer @ 0
+     291            
+     292            $C$DW$26        .dwtag  DW_TAG_variable
+     293                    .dwattr $C$DW$26, DW_AT_name("WBuffer")
+     294                    .dwattr $C$DW$26, DW_AT_TI_symbol_name("WBuffer")
+     295                    .dwattr $C$DW$26, DW_AT_location[DW_OP_addr WBuffer]
+     296                    .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$6)
+     297                    .dwattr $C$DW$26, DW_AT_external
+     298                    .dwattr $C$DW$26, DW_AT_decl_file("../sensorApp.c")
+     299                    .dwattr $C$DW$26, DW_AT_decl_line(0x24)
+     300                    .dwattr $C$DW$26, DW_AT_decl_column(0x0f)
+     301            
+     302                    .global OPT3001RBuffer
+     303                    .common OPT3001RBuffer,2,2
+     304            $C$DW$27        .dwtag  DW_TAG_variable
+     305                    .dwattr $C$DW$27, DW_AT_name("OPT3001RBuffer")
+     306                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("OPT3001RBuffer")
+     307                    .dwattr $C$DW$27, DW_AT_location[DW_OP_addr OPT3001RBuffer]
+     308                    .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$41)
+     309                    .dwattr $C$DW$27, DW_AT_external
+     310                    .dwattr $C$DW$27, DW_AT_decl_file("../sensorApp.c")
+     311                    .dwattr $C$DW$27, DW_AT_decl_line(0x27)
+     312                    .dwattr $C$DW$27, DW_AT_decl_column(0x0f)
+     313            
+     314                    .global startSWI2CFlag
+     315 000003               .data
+     316                    .align  1
+     317                    .elfsym startSWI2CFlag,SYM_SIZE(1)
+     318 000003       startSWI2CFlag:
+     319 000002 0000          .bits           0,8
+     320                                    ; startSWI2CFlag @ 0
+     321            
+     322            $C$DW$28        .dwtag  DW_TAG_variable
+     323                    .dwattr $C$DW$28, DW_AT_name("startSWI2CFlag")
+     324                    .dwattr $C$DW$28, DW_AT_TI_symbol_name("startSWI2CFlag")
+     325                    .dwattr $C$DW$28, DW_AT_location[DW_OP_addr startSWI2CFlag]
+     326                    .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$6)
+     327                    .dwattr $C$DW$28, DW_AT_external
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    7
 
-     316 00002c 40B2          MOV.W     #50000,&TA0CCR0+0     ; [] |39| 
-         00002e C350 
-         000030 0000!
-     317                    .dwpsn  file "../sensorApp.c",line 48,column 2,is_stmt,isa 0
-     318 000032 40B2          MOV.W     #736,&TA0CTL+0        ; [] |48| 
-         000034 02E0 
-         000036 0000!
-     319                    .dwpsn  file "../sensorApp.c",line 50,column 2,is_stmt,isa 0
-     320 000038 40F2          MOV.B     #6,&P1SEL+0           ; [] |50| 
-         00003a 0006 
-         00003c 0000!
-     321                    .dwpsn  file "../sensorApp.c",line 51,column 2,is_stmt,isa 0
-     322 00003e 40F2          MOV.B     #6,&P1SEL2+0          ; [] |51| 
-         000040 0006 
-         000042 0000!
-     323                    .dwpsn  file "../sensorApp.c",line 52,column 2,is_stmt,isa 0
-     324 000044 D0F2          OR.B      #128,&UCA0CTL1+0      ; [] |52| 
-         000046 0080 
-         000048 0000!
-     325                    .dwpsn  file "../sensorApp.c",line 53,column 2,is_stmt,isa 0
-     326 00004a 40F2          MOV.B     #65,&UCA0BR0+0        ; [] |53| 
-         00004c 0041 
-         00004e 0000!
-     327                    .dwpsn  file "../sensorApp.c",line 54,column 2,is_stmt,isa 0
-     328 000050 40F2          MOV.B     #3,&UCA0BR1+0         ; [] |54| 
-         000052 0003 
-         000054 0000!
-     329                    .dwpsn  file "../sensorApp.c",line 55,column 2,is_stmt,isa 0
-     330 000056 43E2          MOV.B     #2,&UCA0MCTL+0        ; [] |55| 
-         000058 0000!
-     331                    .dwpsn  file "../sensorApp.c",line 56,column 2,is_stmt,isa 0
-     332 00005a C3D2          BIC.B     #1,&UCA0CTL1+0        ; [] |56| 
-         00005c 0000!
-     333                    .dwpsn  file "../sensorApp.c",line 58,column 2,is_stmt,isa 0
-     334 00005e D032          BIS.W     #24,SR                ; [] |58| 
-         000060 0018 
-     335 000062 3C01          JMP       $C$L2                 ; [] 
-     336                                                      ; [] 
-     337            ;* --------------------------------------------------------------------------*
-     338            ;*   BEGIN LOOP $C$L1
-     339            ;*
-     340            ;*   Loop source line                : 30
-     341            ;*   Loop closing brace source line  : 30
-     342            ;*   Known Minimum Trip Count        : 1
-     343            ;*   Known Maximum Trip Count        : 4294967295
-     344            ;*   Known Max Trip Count Factor     : 1
-     345            ;* --------------------------------------------------------------------------*
-     346 000064       $C$L1:    
-     347                    .dwpsn  file "../sensorApp.c",line 30,column 12,is_stmt,isa 0
-     348 000064 3FFF          JMP       $C$L1                 ; [] |30| 
-     349                                                      ; [] |30| 
-     350            ;* --------------------------------------------------------------------------*
-     351 000066       $C$L2:    
-     352                    .dwpsn  file "../sensorApp.c",line 59,column 1,is_stmt,isa 0
-     353            $C$DW$25        .dwtag  DW_TAG_TI_branch
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     328                    .dwattr $C$DW$28, DW_AT_decl_file("../sensorApp.c")
+     329                    .dwattr $C$DW$28, DW_AT_decl_line(0x2a)
+     330                    .dwattr $C$DW$28, DW_AT_decl_column(0x0f)
+     331            
+     332            
+     333            $C$DW$29        .dwtag  DW_TAG_subprogram
+     334                    .dwattr $C$DW$29, DW_AT_name("SWI2C_initI2C")
+     335                    .dwattr $C$DW$29, DW_AT_TI_symbol_name("SWI2C_initI2C")
+     336                    .dwattr $C$DW$29, DW_AT_declaration
+     337                    .dwattr $C$DW$29, DW_AT_external
+     338                    .dwattr $C$DW$29, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     339                    .dwattr $C$DW$29, DW_AT_decl_line(0x70)
+     340                    .dwattr $C$DW$29, DW_AT_decl_column(0x0d)
+     341                    .dwendtag $C$DW$29
+     342            
+     343            
+     344            $C$DW$30        .dwtag  DW_TAG_subprogram
+     345                    .dwattr $C$DW$30, DW_AT_name("SWI2C_performI2CTransaction")
+     346                    .dwattr $C$DW$30, DW_AT_TI_symbol_name("SWI2C_performI2CTransaction")
+     347                    .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$28)
+     348                    .dwattr $C$DW$30, DW_AT_declaration
+     349                    .dwattr $C$DW$30, DW_AT_external
+     350                    .dwattr $C$DW$30, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     351                    .dwattr $C$DW$30, DW_AT_decl_line(0x98)
+     352                    .dwattr $C$DW$30, DW_AT_decl_column(0x0d)
+     353            $C$DW$31        .dwtag  DW_TAG_formal_parameter
+     354                    .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$32)
+     355            
+     356                    .dwendtag $C$DW$30
+     357            
+     358            
+     359            $C$DW$32        .dwtag  DW_TAG_subprogram
+     360                    .dwattr $C$DW$32, DW_AT_name("__bis_SR_register")
+     361                    .dwattr $C$DW$32, DW_AT_TI_symbol_name("__bis_SR_register")
+     362                    .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$11)
+     363                    .dwattr $C$DW$32, DW_AT_declaration
+     364                    .dwattr $C$DW$32, DW_AT_external
+     365            $C$DW$33        .dwtag  DW_TAG_formal_parameter
+     366                    .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$9)
+     367            
+     368                    .dwendtag $C$DW$32
+     369            
+     370            ;       /Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/opt430 /var/tmp/TIa
+     371 000000               .sect   ".text:main"
+     372                    .clink
+     373                    .global main
+     374            
+     375            $C$DW$34        .dwtag  DW_TAG_subprogram
+     376                    .dwattr $C$DW$34, DW_AT_name("main")
+     377                    .dwattr $C$DW$34, DW_AT_low_pc(main)
+     378                    .dwattr $C$DW$34, DW_AT_high_pc(0x00)
+     379                    .dwattr $C$DW$34, DW_AT_TI_symbol_name("main")
+     380                    .dwattr $C$DW$34, DW_AT_external
+     381                    .dwattr $C$DW$34, DW_AT_TI_begin_file("../sensorApp.c")
+     382                    .dwattr $C$DW$34, DW_AT_TI_begin_line(0x2f)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    8
 
-     354                    .dwattr $C$DW$25, DW_AT_low_pc(0x00)
-     355                    .dwattr $C$DW$25, DW_AT_TI_return
-     356            
-     357 000066 4130          RET       ; [] 
-     358                    ; [] 
-     359                    .dwattr $C$DW$24, DW_AT_TI_end_file("../sensorApp.c")
-     360                    .dwattr $C$DW$24, DW_AT_TI_end_line(0x3b)
-     361                    .dwattr $C$DW$24, DW_AT_TI_end_column(0x01)
-     362                    .dwendentry
-     363                    .dwendtag $C$DW$24
-     364            
-     365 000000               .sect   ".text:USCI_A0_Tx_ISR"
-     366                    .clink
-     367                    .global USCI_A0_Tx_ISR
-     368            
-     369            $C$DW$26        .dwtag  DW_TAG_subprogram
-     370                    .dwattr $C$DW$26, DW_AT_name("USCI_A0_Tx_ISR")
-     371                    .dwattr $C$DW$26, DW_AT_low_pc(USCI_A0_Tx_ISR)
-     372                    .dwattr $C$DW$26, DW_AT_high_pc(0x00)
-     373                    .dwattr $C$DW$26, DW_AT_TI_symbol_name("USCI_A0_Tx_ISR")
-     374                    .dwattr $C$DW$26, DW_AT_external
-     375                    .dwattr $C$DW$26, DW_AT_TI_begin_file("../sensorApp.c")
-     376                    .dwattr $C$DW$26, DW_AT_TI_begin_line(0x56)
-     377                    .dwattr $C$DW$26, DW_AT_TI_begin_column(0x12)
-     378                    .dwattr $C$DW$26, DW_AT_decl_file("../sensorApp.c")
-     379                    .dwattr $C$DW$26, DW_AT_decl_line(0x56)
-     380                    .dwattr $C$DW$26, DW_AT_decl_column(0x12)
-     381                    .dwattr $C$DW$26, DW_AT_TI_interrupt
-     382                    .dwattr $C$DW$26, DW_AT_TI_max_frame_size(0x0c)
-     383                    .dwpsn  file "../sensorApp.c",line 87,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
-     384            
-     385                    .dwfde $C$DW$CIE, USCI_A0_Tx_ISR
-     386            
-     387            ;*****************************************************************************
-     388            ;* FUNCTION NAME: USCI_A0_Tx_ISR                                             *
-     389            ;*                                                                           *
-     390            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
-     391            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
-     392            ;*   Local Frame Size  : 0 Args + 0 Auto + 10 Save = 10 byte                 *
-     393            ;*****************************************************************************
-     394 000000       USCI_A0_Tx_ISR:
-     395            ;* --------------------------------------------------------------------------*
-     396                    .dwcfi  cfa_offset, 2
-     397                    .dwcfi  save_reg_to_mem, 16, -2
-     398 000000 120F          PUSH.W    r15                   ; [] 
-     399                    .dwcfi  cfa_offset, 4
-     400                    .dwcfi  save_reg_to_mem, 15, -4
-     401 000002 120E          PUSH.W    r14                   ; [] 
-     402                    .dwcfi  cfa_offset, 6
-     403                    .dwcfi  save_reg_to_mem, 14, -6
-     404 000004 120D          PUSH.W    r13                   ; [] 
-     405                    .dwcfi  cfa_offset, 8
-     406                    .dwcfi  save_reg_to_mem, 13, -8
-     407 000006 120C          PUSH.W    r12                   ; [] 
-     408                    .dwcfi  cfa_offset, 10
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     383                    .dwattr $C$DW$34, DW_AT_TI_begin_column(0x06)
+     384                    .dwattr $C$DW$34, DW_AT_decl_file("../sensorApp.c")
+     385                    .dwattr $C$DW$34, DW_AT_decl_line(0x2f)
+     386                    .dwattr $C$DW$34, DW_AT_decl_column(0x06)
+     387                    .dwattr $C$DW$34, DW_AT_TI_max_frame_size(0x02)
+     388                    .dwpsn  file "../sensorApp.c",line 48,column 1,is_stmt,address main,isa 0
+     389            
+     390                    .dwfde $C$DW$CIE, main
+     391            
+     392            ;*****************************************************************************
+     393            ;* FUNCTION NAME: main                                                       *
+     394            ;*                                                                           *
+     395            ;*   Regs Modified     : SR,r11,r12,r13,r14,r15                              *
+     396            ;*   Regs Used         : SR,r11,r12,r13,r14,r15                              *
+     397            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     398            ;*****************************************************************************
+     399 000000       main:
+     400            ;* --------------------------------------------------------------------------*
+     401                    .dwcfi  cfa_offset, 2
+     402                    .dwcfi  save_reg_to_mem, 16, -2
+     403                    .dwpsn  file "../sensorApp.c",line 49,column 2,is_stmt,isa 0
+     404 000000 40B2          MOV.W     #23168,&WDTCTL+0      ; [] |49| 
+         000002 5A80 
+         000004 0000!
+     405                    .dwpsn  file "../sensorApp.c",line 51,column 2,is_stmt,isa 0
+     406 000006 93F2          CMP.B     #255,&CALBC1_8MHZ+0   ; [] |51| 
+         000008 0000!
+     407 00000a 2459          JEQ       $C$L4                 ; [] |51| 
+     408                                                      ; [] |51| 
+     409            ;* --------------------------------------------------------------------------*
+     410 00000c 93F2          CMP.B     #255,&CALDCO_8MHZ+0   ; [] |51| 
+         00000e 0000!
+     411 000010 2456          JEQ       $C$L4                 ; [] |51| 
+     412                                                      ; [] |51| 
+     413            ;* --------------------------------------------------------------------------*
+     414                    .dwpsn  file "../sensorApp.c",line 55,column 2,is_stmt,isa 0
+     415 000012 43C2          MOV.B     #0,&DCOCTL+0          ; [] |55| 
+         000014 0000!
+     416                    .dwpsn  file "../sensorApp.c",line 56,column 2,is_stmt,isa 0
+     417 000016 42D2          MOV.B     &CALBC1_8MHZ+0,&BCSCTL1+0 ; [] |56| 
+         000018 0000!
+         00001a 0000!
+     418                    .dwpsn  file "../sensorApp.c",line 57,column 2,is_stmt,isa 0
+     419 00001c 42D2          MOV.B     &CALDCO_8MHZ+0,&DCOCTL+0 ; [] |57| 
+         00001e 0000!
+         000020 0000!
+     420                    .dwpsn  file "../sensorApp.c",line 59,column 2,is_stmt,isa 0
+     421 000022 D0F2          OR.B      #64,&P1DIR+0          ; [] |59| 
+         000024 0040 
+         000026 0000!
+     422                    .dwpsn  file "../sensorApp.c",line 60,column 2,is_stmt,isa 0
+     423 000028 D2F2          OR.B      #8,&P2DIR+0           ; [] |60| 
+         00002a 0000!
+     424                    .dwpsn  file "../sensorApp.c",line 62,column 2,is_stmt,isa 0
+     425 00002c 40B2          MOV.W     #16,&TA0CCTL0+0       ; [] |62| 
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE    9
 
-     409                    .dwcfi  save_reg_to_mem, 12, -10
-     410 000008 120B          PUSH.W    r11                   ; [] 
-     411                    .dwcfi  cfa_offset, 12
-     412                    .dwcfi  save_reg_to_mem, 11, -12
-     413                    .dwpsn  file "../sensorApp.c",line 88,column 5,is_stmt,isa 0
-     414 00000a 90F2          CMP.B     #32,&uartBitsTransmitted+0 ; [] |88| 
-         00000c 0020 
-         00000e 0000!
-     415 000010 2805          JLO       $C$L3                 ; [] |88| 
-     416                                                      ; [] |88| 
-     417            ;* --------------------------------------------------------------------------*
-     418                    .dwpsn  file "../sensorApp.c",line 95,column 9,is_stmt,isa 0
-     419 000012 43C2          MOV.B     #0,&uartBitsTransmitted+0 ; [] |95| 
-         000014 0000!
-     420                    .dwpsn  file "../sensorApp.c",line 96,column 9,is_stmt,isa 0
-     421 000016 C3E2          BIC.B     #2,&IE2+0             ; [] |96| 
-         000018 0000!
-     422 00001a 3C0C          JMP       $C$L4                 ; [] |96| 
-     423                                                      ; [] |96| 
-     424            ;* --------------------------------------------------------------------------*
-     425 00001c       $C$L3:    
-     426                    .dwpsn  file "../sensorApp.c",line 90,column 9,is_stmt,isa 0
-     427 00001c 425E          MOV.B     &uartBitsTransmitted+0,r14 ; [] |90| 
-         00001e 0000!
-     428 000020 421C          MOV.W     &uartTxData+0,r12     ; [] |90| 
-         000022 0000!
-     429 000024 421D          MOV.W     &uartTxData+2,r13     ; [] |90| 
-         000026 0002!
-     430            $C$DW$27        .dwtag  DW_TAG_TI_branch
-     431                    .dwattr $C$DW$27, DW_AT_low_pc(0x00)
-     432                    .dwattr $C$DW$27, DW_AT_name("__mspabi_srll")
-     433                    .dwattr $C$DW$27, DW_AT_TI_call
-     434            
-     435 000028 12B0          CALL      #__mspabi_srll        ; [] |90| 
-         00002a 0000!
-     436                                                      ; [] |90| 
-     437 00002c 4CC2          MOV.B     r12,&UCA0TXBUF+0      ; [] |90| 
-         00002e 0000!
-     438                    .dwpsn  file "../sensorApp.c",line 91,column 9,is_stmt,isa 0
-     439 000030 52F2          ADD.B     #8,&uartBitsTransmitted+0 ; [] |91| 
-         000032 0000!
-     440            ;* --------------------------------------------------------------------------*
-     441 000034       $C$L4:    
-     442                    .dwpsn  file "../sensorApp.c",line 99,column 1,is_stmt,isa 0
-     443 000034 413B          POP       r11                   ; [] 
-     444                    .dwcfi  restore_reg, 11
-     445                    .dwcfi  cfa_offset, 10
-     446 000036 413C          POP       r12                   ; [] 
-     447                    .dwcfi  restore_reg, 12
-     448                    .dwcfi  cfa_offset, 8
-     449 000038 413D          POP       r13                   ; [] 
-     450                    .dwcfi  restore_reg, 13
-     451                    .dwcfi  cfa_offset, 6
-     452 00003a 413E          POP       r14                   ; [] 
-     453                    .dwcfi  restore_reg, 14
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+         00002e 0010 
+         000030 0000!
+     426                    .dwpsn  file "../sensorApp.c",line 63,column 2,is_stmt,isa 0
+     427 000032 40B2          MOV.W     #50000,&TA0CCR0+0     ; [] |63| 
+         000034 C350 
+         000036 0000!
+     428                    .dwpsn  file "../sensorApp.c",line 72,column 2,is_stmt,isa 0
+     429 000038 40B2          MOV.W     #736,&TA0CTL+0        ; [] |72| 
+         00003a 02E0 
+         00003c 0000!
+     430                    .dwpsn  file "../sensorApp.c",line 74,column 2,is_stmt,isa 0
+     431 00003e 40F2          MOV.B     #6,&P1SEL+0           ; [] |74| 
+         000040 0006 
+         000042 0000!
+     432                    .dwpsn  file "../sensorApp.c",line 75,column 2,is_stmt,isa 0
+     433 000044 40F2          MOV.B     #6,&P1SEL2+0          ; [] |75| 
+         000046 0006 
+         000048 0000!
+     434                    .dwpsn  file "../sensorApp.c",line 76,column 2,is_stmt,isa 0
+     435 00004a D0F2          OR.B      #128,&UCA0CTL1+0      ; [] |76| 
+         00004c 0080 
+         00004e 0000!
+     436                    .dwpsn  file "../sensorApp.c",line 77,column 2,is_stmt,isa 0
+     437 000050 40F2          MOV.B     #65,&UCA0BR0+0        ; [] |77| 
+         000052 0041 
+         000054 0000!
+     438                    .dwpsn  file "../sensorApp.c",line 78,column 2,is_stmt,isa 0
+     439 000056 40F2          MOV.B     #3,&UCA0BR1+0         ; [] |78| 
+         000058 0003 
+         00005a 0000!
+     440                    .dwpsn  file "../sensorApp.c",line 79,column 2,is_stmt,isa 0
+     441 00005c 43E2          MOV.B     #2,&UCA0MCTL+0        ; [] |79| 
+         00005e 0000!
+     442                    .dwpsn  file "../sensorApp.c",line 80,column 2,is_stmt,isa 0
+     443 000060 C3D2          BIC.B     #1,&UCA0CTL1+0        ; [] |80| 
+         000062 0000!
+     444                    .dwpsn  file "../sensorApp.c",line 82,column 2,is_stmt,isa 0
+     445            $C$DW$35        .dwtag  DW_TAG_TI_branch
+     446                    .dwattr $C$DW$35, DW_AT_low_pc(0x00)
+     447                    .dwattr $C$DW$35, DW_AT_name("SWI2C_initI2C")
+     448                    .dwattr $C$DW$35, DW_AT_TI_call
+     449            
+     450 000064 12B0          CALL      #SWI2C_initI2C        ; [] |82| 
+         000066 0000!
+     451                                                      ; [] |82| 
+     452                    .dwpsn  file "../sensorApp.c",line 88,column 2,is_stmt,isa 0
+     453 000068 40B2          MOV.W     #WBuffer+0,&transaction+4 ; [] |88| 
+         00006a 0000!
+         00006c 0004!
+     454                    .dwpsn  file "../sensorApp.c",line 89,column 2,is_stmt,isa 0
+     455 00006e 4392          MOV.W     #1,&transaction+2     ; [] |89| 
+         000070 0002!
+     456                    .dwpsn  file "../sensorApp.c",line 90,column 2,is_stmt,isa 0
+     457 000072 43D2          MOV.B     #1,&transaction+10    ; [] |90| 
+         000074 000A!
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   10
 
-     454                    .dwcfi  cfa_offset, 4
-     455 00003c 413F          POP       r15                   ; [] 
-     456                    .dwcfi  restore_reg, 15
-     457                    .dwcfi  cfa_offset, 2
-     458            $C$DW$28        .dwtag  DW_TAG_TI_branch
-     459                    .dwattr $C$DW$28, DW_AT_low_pc(0x00)
-     460                    .dwattr $C$DW$28, DW_AT_TI_return
-     461            
-     462 00003e 1300          RETI      ; [] 
-     463                    ; [] 
-     464                    .dwattr $C$DW$26, DW_AT_TI_end_file("../sensorApp.c")
-     465                    .dwattr $C$DW$26, DW_AT_TI_end_line(0x63)
-     466                    .dwattr $C$DW$26, DW_AT_TI_end_column(0x01)
-     467                    .dwendentry
-     468                    .dwendtag $C$DW$26
-     469            
-     470 000000               .sect   ".text:Timer_A"
-     471                    .clink
-     472                    .global Timer_A
-     473            
-     474            $C$DW$29        .dwtag  DW_TAG_subprogram
-     475                    .dwattr $C$DW$29, DW_AT_name("Timer_A")
-     476                    .dwattr $C$DW$29, DW_AT_low_pc(Timer_A)
-     477                    .dwattr $C$DW$29, DW_AT_high_pc(0x00)
-     478                    .dwattr $C$DW$29, DW_AT_TI_symbol_name("Timer_A")
-     479                    .dwattr $C$DW$29, DW_AT_external
-     480                    .dwattr $C$DW$29, DW_AT_TI_begin_file("../sensorApp.c")
-     481                    .dwattr $C$DW$29, DW_AT_TI_begin_line(0x46)
-     482                    .dwattr $C$DW$29, DW_AT_TI_begin_column(0x12)
-     483                    .dwattr $C$DW$29, DW_AT_decl_file("../sensorApp.c")
-     484                    .dwattr $C$DW$29, DW_AT_decl_line(0x46)
-     485                    .dwattr $C$DW$29, DW_AT_decl_column(0x12)
-     486                    .dwattr $C$DW$29, DW_AT_TI_interrupt
-     487                    .dwattr $C$DW$29, DW_AT_TI_max_frame_size(0x02)
-     488                    .dwpsn  file "../sensorApp.c",line 71,column 1,is_stmt,address Timer_A,isa 0
-     489            
-     490                    .dwfde $C$DW$CIE, Timer_A
-     491            
-     492            ;*****************************************************************************
-     493            ;* FUNCTION NAME: Timer_A                                                    *
-     494            ;*                                                                           *
-     495            ;*   Regs Modified     : SP,SR                                               *
-     496            ;*   Regs Used         : SP,SR                                               *
-     497            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
-     498            ;*****************************************************************************
-     499 000000       Timer_A:
-     500            ;* --------------------------------------------------------------------------*
-     501                    .dwcfi  cfa_offset, 2
-     502                    .dwcfi  save_reg_to_mem, 16, -2
-     503                    .dwpsn  file "../sensorApp.c",line 72,column 5,is_stmt,isa 0
-     504 000000 E3D2          XOR.B     #1,&P1OUT+0           ; [] |72| 
-         000002 0000!
-     505                    .dwpsn  file "../sensorApp.c",line 73,column 5,is_stmt,isa 0
-     506 000004 80B2          SUB.W     #15536,&TA0CCR0+0     ; [] |73| 
-         000006 3CB0 
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     458                    .dwpsn  file "../sensorApp.c",line 92,column 2,is_stmt,isa 0
+     459 000076 40B2          MOV.W     #16,&TA0CCTL1+0       ; [] |92| 
+         000078 0010 
+         00007a 0000!
+     460                    .dwpsn  file "../sensorApp.c",line 93,column 2,is_stmt,isa 0
+     461 00007c 40B2          MOV.W     #10000,&TA0CCR1+0     ; [] |93| 
+         00007e 2710 
+         000080 0000!
+     462                    .dwpsn  file "../sensorApp.c",line 95,column 2,is_stmt,isa 0
+     463 000082 D232          BIS.W     #8,SR                 ; [] |95| 
+     464            ;* --------------------------------------------------------------------------*
+     465            ;*   BEGIN LOOP $C$L1
+     466            ;*
+     467            ;*   Loop source line                : 97
+     468            ;*   Loop closing brace source line  : 115
+     469            ;*   Known Minimum Trip Count        : 1
+     470            ;*   Known Maximum Trip Count        : 4294967295
+     471            ;*   Known Max Trip Count Factor     : 1
+     472            ;* --------------------------------------------------------------------------*
+     473 000084       $C$L1:    
+     474                    .dwpsn  file "../sensorApp.c",line 99,column 6,is_stmt,isa 0
+     475 000084 93D2          CMP.B     #1,&startSWI2CFlag+0  ; [] |99| 
+         000086 0000!
+     476 000088 23FD          JNE       $C$L1                 ; [] |99| 
+     477                                                      ; [] |99| 
+     478            ;* --------------------------------------------------------------------------*
+     479                    .dwpsn  file "../sensorApp.c",line 101,column 10,is_stmt,isa 0
+     480 00008a 40F2          MOV.B     #136,&transaction+0   ; [] |101| 
+         00008c 0088 
+         00008e 0000!
+     481                    .dwpsn  file "../sensorApp.c",line 102,column 10,is_stmt,isa 0
+     482 000090 43C2          MOV.B     #0,&WBuffer+0         ; [] |102| 
+         000092 0000!
+     483                    .dwpsn  file "../sensorApp.c",line 103,column 10,is_stmt,isa 0
+     484 000094 43A2          MOV.W     #2,&transaction+6     ; [] |103| 
+         000096 0006!
+     485                    .dwpsn  file "../sensorApp.c",line 104,column 10,is_stmt,isa 0
+     486 000098 40B2          MOV.W     #OPT3001RBuffer+0,&transaction+8 ; [] |104| 
+         00009a 0000!
+         00009c 0008!
+     487                    .dwpsn  file "../sensorApp.c",line 105,column 10,is_stmt,isa 0
+     488 00009e 403C          MOV.W     #transaction+0,r12    ; [] |105| 
+         0000a0 0000!
+     489            $C$DW$36        .dwtag  DW_TAG_TI_branch
+     490                    .dwattr $C$DW$36, DW_AT_low_pc(0x00)
+     491                    .dwattr $C$DW$36, DW_AT_name("SWI2C_performI2CTransaction")
+     492                    .dwattr $C$DW$36, DW_AT_TI_call
+     493            
+     494 0000a2 12B0          CALL      #SWI2C_performI2CTransaction ; [] |105| 
+         0000a4 0000!
+     495                                                      ; [] |105| 
+     496 0000a6 934C          TST.B     r12                   ; [] |105| 
+     497 0000a8 2004          JNE       $C$L2                 ; [] |105| 
+     498                                                      ; [] |105| 
+     499            ;* --------------------------------------------------------------------------*
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   11
 
-         000008 0000!
-     507                    .dwpsn  file "../sensorApp.c",line 75,column 5,is_stmt,isa 0
-     508 00000a 50B2          ADD.W     #16,&uartTxData+0     ; [] |75| 
-         00000c 0010 
-         00000e 0000!
-     509 000010 6382          ADDC.W    #0,&uartTxData+2      ; [] |75| 
-         000012 0002!
-     510                    .dwpsn  file "../sensorApp.c",line 76,column 5,is_stmt,isa 0
-     511 000014 D3E2          OR.B      #2,&IE2+0             ; [] |76| 
-         000016 0000!
-     512                    .dwpsn  file "../sensorApp.c",line 77,column 5,is_stmt,isa 0
-     513 000018 42D2          MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |77| 
-         00001a 0000!
-         00001c 0000!
-     514                    .dwpsn  file "../sensorApp.c",line 78,column 5,is_stmt,isa 0
-     515 00001e 53D2          ADD.B     #1,&counter+0         ; [] |78| 
-         000020 0000!
-     516                    .dwpsn  file "../sensorApp.c",line 79,column 1,is_stmt,isa 0
-     517            $C$DW$30        .dwtag  DW_TAG_TI_branch
-     518                    .dwattr $C$DW$30, DW_AT_low_pc(0x00)
-     519                    .dwattr $C$DW$30, DW_AT_TI_return
-     520            
-     521 000022 1300          RETI      ; [] 
-     522                    ; [] 
-     523                    .dwattr $C$DW$29, DW_AT_TI_end_file("../sensorApp.c")
-     524                    .dwattr $C$DW$29, DW_AT_TI_end_line(0x4f)
-     525                    .dwattr $C$DW$29, DW_AT_TI_end_column(0x01)
-     526                    .dwendentry
-     527                    .dwendtag $C$DW$29
-     528            
-     529            ;*****************************************************************************
-     530            ;* UNDEFINED EXTERNAL REFERENCES                                             *
-     531            ;*****************************************************************************
-     532                    .global IE2
-     533                    .global DCOCTL
-     534                    .global BCSCTL1
-     535                    .global P1OUT
-     536                    .global P1DIR
-     537                    .global P1SEL
-     538                    .global P1SEL2
-     539                    .global TA0CTL
-     540                    .global TA0CCTL0
-     541                    .global TA0CCR0
-     542                    .global UCA0CTL1
-     543                    .global UCA0BR0
-     544                    .global UCA0BR1
-     545                    .global UCA0MCTL
-     546                    .global UCA0TXBUF
-     547                    .global WDTCTL
-     548                    .global CALDCO_8MHZ
-     549                    .global CALBC1_8MHZ
-     550                    .global __mspabi_srll
-     551            
-     552            ;******************************************************************************
-     553            ;* BUILD ATTRIBUTES                                                           *
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     500                    .dwpsn  file "../sensorApp.c",line 107,column 14,is_stmt,isa 0
+     501 0000aa D0F2          OR.B      #64,&P1OUT+0          ; [] |107| 
+         0000ac 0040 
+         0000ae 0000!
+     502 0000b0 3C03          JMP       $C$L3                 ; [] 
+     503                                                      ; [] 
+     504            ;* --------------------------------------------------------------------------*
+     505 0000b2       $C$L2:    
+     506                    .dwpsn  file "../sensorApp.c",line 111,column 14,is_stmt,isa 0
+     507 0000b2 F0F2          AND.B     #191,&P1OUT+0         ; [] |111| 
+         0000b4 00BF 
+         0000b6 0000!
+     508            ;* --------------------------------------------------------------------------*
+     509 0000b8       $C$L3:    
+     510                    .dwpsn  file "../sensorApp.c",line 113,column 10,is_stmt,isa 0
+     511 0000b8 43C2          MOV.B     #0,&startSWI2CFlag+0  ; [] |113| 
+         0000ba 0000!
+     512 0000bc 3FE3          JMP       $C$L1                 ; [] |113| 
+     513                                                      ; [] |113| 
+     514            ;* --------------------------------------------------------------------------*
+     515            ;*   BEGIN LOOP $C$L4
+     516            ;*
+     517            ;*   Loop source line                : 53
+     518            ;*   Loop closing brace source line  : 53
+     519            ;*   Known Minimum Trip Count        : 1
+     520            ;*   Known Maximum Trip Count        : 4294967295
+     521            ;*   Known Max Trip Count Factor     : 1
+     522            ;* --------------------------------------------------------------------------*
+     523 0000be       $C$L4:    
+     524                    .dwpsn  file "../sensorApp.c",line 53,column 12,is_stmt,isa 0
+     525 0000be 3FFF          JMP       $C$L4                 ; [] |53| 
+     526                                                      ; [] |53| 
+     527            ;* --------------------------------------------------------------------------*
+     528                    .dwattr $C$DW$34, DW_AT_TI_end_file("../sensorApp.c")
+     529                    .dwattr $C$DW$34, DW_AT_TI_end_line(0x74)
+     530                    .dwattr $C$DW$34, DW_AT_TI_end_column(0x01)
+     531                    .dwendentry
+     532                    .dwendtag $C$DW$34
+     533            
+     534 000000               .sect   ".text:USCI_A0_Tx_ISR"
+     535                    .clink
+     536                    .global USCI_A0_Tx_ISR
+     537            
+     538            $C$DW$37        .dwtag  DW_TAG_subprogram
+     539                    .dwattr $C$DW$37, DW_AT_name("USCI_A0_Tx_ISR")
+     540                    .dwattr $C$DW$37, DW_AT_low_pc(USCI_A0_Tx_ISR)
+     541                    .dwattr $C$DW$37, DW_AT_high_pc(0x00)
+     542                    .dwattr $C$DW$37, DW_AT_TI_symbol_name("USCI_A0_Tx_ISR")
+     543                    .dwattr $C$DW$37, DW_AT_external
+     544                    .dwattr $C$DW$37, DW_AT_TI_begin_file("../sensorApp.c")
+     545                    .dwattr $C$DW$37, DW_AT_TI_begin_line(0x8e)
+     546                    .dwattr $C$DW$37, DW_AT_TI_begin_column(0x12)
+     547                    .dwattr $C$DW$37, DW_AT_decl_file("../sensorApp.c")
+     548                    .dwattr $C$DW$37, DW_AT_decl_line(0x8e)
+     549                    .dwattr $C$DW$37, DW_AT_decl_column(0x12)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   12
 
-     554            ;******************************************************************************
-     555                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(2)
-     556                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000010
-     557                    .battr "TI", Tag_File, 1, Tag_LEA_INFO(1)
-     558                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
-     559                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
-     560                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
-     561                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
-     562            
-     563            ;******************************************************************************
-     564            ;* TYPE INFORMATION                                                           *
-     565            ;******************************************************************************
-     566            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
-     567                    .dwattr $C$DW$T$2, DW_AT_name("void")
-     568            
-     569            $C$DW$T$4       .dwtag  DW_TAG_base_type
-     570                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
-     571                    .dwattr $C$DW$T$4, DW_AT_name("bool")
-     572                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
-     573            
-     574            $C$DW$T$5       .dwtag  DW_TAG_base_type
-     575                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
-     576                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
-     577                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
-     578            
-     579            $C$DW$T$6       .dwtag  DW_TAG_base_type
-     580                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
-     581                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
-     582                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
-     583            
-     584            $C$DW$T$20      .dwtag  DW_TAG_volatile_type
-     585                    .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$6)
-     586            
-     587            $C$DW$T$7       .dwtag  DW_TAG_base_type
-     588                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
-     589                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
-     590                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
-     591            
-     592            $C$DW$T$8       .dwtag  DW_TAG_base_type
-     593                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
-     594                    .dwattr $C$DW$T$8, DW_AT_name("short")
-     595                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
-     596            
-     597            $C$DW$T$9       .dwtag  DW_TAG_base_type
-     598                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
-     599                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
-     600                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
-     601            
-     602            $C$DW$T$10      .dwtag  DW_TAG_base_type
-     603                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
-     604                    .dwattr $C$DW$T$10, DW_AT_name("int")
-     605                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
-     606            
-     607            $C$DW$T$11      .dwtag  DW_TAG_base_type
-     608                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     550                    .dwattr $C$DW$37, DW_AT_TI_interrupt
+     551                    .dwattr $C$DW$37, DW_AT_TI_max_frame_size(0x04)
+     552                    .dwpsn  file "../sensorApp.c",line 143,column 1,is_stmt,address USCI_A0_Tx_ISR,isa 0
+     553            
+     554                    .dwfde $C$DW$CIE, USCI_A0_Tx_ISR
+     555            
+     556            ;*****************************************************************************
+     557            ;* FUNCTION NAME: USCI_A0_Tx_ISR                                             *
+     558            ;*                                                                           *
+     559            ;*   Regs Modified     : SP,SR,r15                                           *
+     560            ;*   Regs Used         : SP,SR,r15                                           *
+     561            ;*   Local Frame Size  : 0 Args + 0 Auto + 2 Save = 2 byte                   *
+     562            ;*****************************************************************************
+     563 000000       USCI_A0_Tx_ISR:
+     564            ;* --------------------------------------------------------------------------*
+     565                    .dwcfi  cfa_offset, 2
+     566                    .dwcfi  save_reg_to_mem, 16, -2
+     567 000000 120F          PUSH.W    r15                   ; [] 
+     568                    .dwcfi  cfa_offset, 4
+     569                    .dwcfi  save_reg_to_mem, 15, -4
+     570                    .dwpsn  file "../sensorApp.c",line 144,column 5,is_stmt,isa 0
+     571 000002 93E2          CMP.B     #2,&uartBytesTransmitted+0 ; [] |144| 
+         000004 0000!
+     572 000006 2805          JLO       $C$L5                 ; [] |144| 
+     573                                                      ; [] |144| 
+     574            ;* --------------------------------------------------------------------------*
+     575                    .dwpsn  file "../sensorApp.c",line 151,column 9,is_stmt,isa 0
+     576 000008 43C2          MOV.B     #0,&uartBytesTransmitted+0 ; [] |151| 
+         00000a 0000!
+     577                    .dwpsn  file "../sensorApp.c",line 152,column 9,is_stmt,isa 0
+     578 00000c C3E2          BIC.B     #2,&IE2+0             ; [] |152| 
+         00000e 0000!
+     579 000010 3C07          JMP       $C$L6                 ; [] |152| 
+     580                                                      ; [] |152| 
+     581            ;* --------------------------------------------------------------------------*
+     582 000012       $C$L5:    
+     583                    .dwpsn  file "../sensorApp.c",line 146,column 9,is_stmt,isa 0
+     584 000012 425F          MOV.B     &uartBytesTransmitted+0,r15 ; [] |146| 
+         000014 0000!
+     585 000016 4FD2          MOV.B     OPT3001RBuffer+0(r15),&UCA0TXBUF+0 ; [] |146| 
+         000018 0000!
+         00001a 0000!
+     586                    .dwpsn  file "../sensorApp.c",line 147,column 9,is_stmt,isa 0
+     587 00001c 53D2          ADD.B     #1,&uartBytesTransmitted+0 ; [] |147| 
+         00001e 0000!
+     588            ;* --------------------------------------------------------------------------*
+     589 000020       $C$L6:    
+     590                    .dwpsn  file "../sensorApp.c",line 155,column 1,is_stmt,isa 0
+     591 000020 413F          POP       r15                   ; [] 
+     592                    .dwcfi  restore_reg, 15
+     593                    .dwcfi  cfa_offset, 2
+     594            $C$DW$38        .dwtag  DW_TAG_TI_branch
+     595                    .dwattr $C$DW$38, DW_AT_low_pc(0x00)
+     596                    .dwattr $C$DW$38, DW_AT_TI_return
+     597            
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   13
 
-     609                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
-     610                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
-     611            
-     612            $C$DW$T$21      .dwtag  DW_TAG_volatile_type
-     613                    .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$11)
-     614            
-     615            $C$DW$T$12      .dwtag  DW_TAG_base_type
-     616                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
-     617                    .dwattr $C$DW$T$12, DW_AT_name("long")
-     618                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
-     619            
-     620            $C$DW$T$13      .dwtag  DW_TAG_base_type
-     621                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
-     622                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
-     623                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
-     624            
-     625            $C$DW$T$14      .dwtag  DW_TAG_base_type
-     626                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
-     627                    .dwattr $C$DW$T$14, DW_AT_name("long long")
-     628                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
-     629            
-     630            $C$DW$T$15      .dwtag  DW_TAG_base_type
-     631                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
-     632                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
-     633                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
-     634            
-     635            $C$DW$T$16      .dwtag  DW_TAG_base_type
-     636                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
-     637                    .dwattr $C$DW$T$16, DW_AT_name("float")
-     638                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
-     639            
-     640            $C$DW$T$17      .dwtag  DW_TAG_base_type
-     641                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
-     642                    .dwattr $C$DW$T$17, DW_AT_name("double")
-     643                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
-     644            
-     645            $C$DW$T$18      .dwtag  DW_TAG_base_type
-     646                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
-     647                    .dwattr $C$DW$T$18, DW_AT_name("long double")
-     648                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
-     649            
-     650                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
-     651            
-     652            ;***************************************************************
-     653            ;* DWARF CIE ENTRIES                                           *
-     654            ;***************************************************************
-     655            
-     656            $C$DW$CIE       .dwcie 16
-     657                    .dwcfi  cfa_register, 1
-     658                    .dwcfi  cfa_offset, 0
-     659                    .dwcfi  same_value, 0
-     660                    .dwcfi  same_value, 1
-     661                    .dwcfi  same_value, 3
-     662                    .dwcfi  same_value, 4
-     663                    .dwcfi  same_value, 5
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     598 000022 1300          RETI      ; [] 
+     599                    ; [] 
+     600                    .dwattr $C$DW$37, DW_AT_TI_end_file("../sensorApp.c")
+     601                    .dwattr $C$DW$37, DW_AT_TI_end_line(0x9b)
+     602                    .dwattr $C$DW$37, DW_AT_TI_end_column(0x01)
+     603                    .dwendentry
+     604                    .dwendtag $C$DW$37
+     605            
+     606 000000               .sect   ".text:Timer_A0_CCR1"
+     607                    .clink
+     608                    .global Timer_A0_CCR1
+     609            
+     610            $C$DW$39        .dwtag  DW_TAG_subprogram
+     611                    .dwattr $C$DW$39, DW_AT_name("Timer_A0_CCR1")
+     612                    .dwattr $C$DW$39, DW_AT_low_pc(Timer_A0_CCR1)
+     613                    .dwattr $C$DW$39, DW_AT_high_pc(0x00)
+     614                    .dwattr $C$DW$39, DW_AT_TI_symbol_name("Timer_A0_CCR1")
+     615                    .dwattr $C$DW$39, DW_AT_external
+     616                    .dwattr $C$DW$39, DW_AT_TI_begin_file("../sensorApp.c")
+     617                    .dwattr $C$DW$39, DW_AT_TI_begin_line(0xa2)
+     618                    .dwattr $C$DW$39, DW_AT_TI_begin_column(0x12)
+     619                    .dwattr $C$DW$39, DW_AT_decl_file("../sensorApp.c")
+     620                    .dwattr $C$DW$39, DW_AT_decl_line(0xa2)
+     621                    .dwattr $C$DW$39, DW_AT_decl_column(0x12)
+     622                    .dwattr $C$DW$39, DW_AT_TI_interrupt
+     623                    .dwattr $C$DW$39, DW_AT_TI_max_frame_size(0x02)
+     624                    .dwpsn  file "../sensorApp.c",line 163,column 1,is_stmt,address Timer_A0_CCR1,isa 0
+     625            
+     626                    .dwfde $C$DW$CIE, Timer_A0_CCR1
+     627            
+     628            ;*****************************************************************************
+     629            ;* FUNCTION NAME: Timer_A0_CCR1                                              *
+     630            ;*                                                                           *
+     631            ;*   Regs Modified     : SP,SR                                               *
+     632            ;*   Regs Used         : SP,SR                                               *
+     633            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     634            ;*****************************************************************************
+     635 000000       Timer_A0_CCR1:
+     636            ;* --------------------------------------------------------------------------*
+     637                    .dwcfi  cfa_offset, 2
+     638                    .dwcfi  save_reg_to_mem, 16, -2
+     639                    .dwpsn  file "../sensorApp.c",line 164,column 5,is_stmt,isa 0
+     640 000000 50B2          ADD.W     #10000,&TA0CCR1+0     ; [] |164| 
+         000002 2710 
+         000004 0000!
+     641                    .dwpsn  file "../sensorApp.c",line 165,column 5,is_stmt,isa 0
+     642 000006 43D2          MOV.B     #1,&startSWI2CFlag+0  ; [] |165| 
+         000008 0000!
+     643                    .dwpsn  file "../sensorApp.c",line 166,column 1,is_stmt,isa 0
+     644            $C$DW$40        .dwtag  DW_TAG_TI_branch
+     645                    .dwattr $C$DW$40, DW_AT_low_pc(0x00)
+     646                    .dwattr $C$DW$40, DW_AT_TI_return
+     647            
+     648 00000a 1300          RETI      ; [] 
+     649                    ; [] 
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   14
 
-     664                    .dwcfi  same_value, 6
-     665                    .dwcfi  same_value, 7
-     666                    .dwcfi  same_value, 8
-     667                    .dwcfi  same_value, 9
-     668                    .dwcfi  same_value, 10
-     669                    .dwendentry
-     670            
-     671            ;***************************************************************
-     672            ;* DWARF REGISTER MAP                                          *
-     673            ;***************************************************************
-     674            
-     675            $C$DW$31        .dwtag  DW_TAG_TI_assign_register
-     676                    .dwattr $C$DW$31, DW_AT_name("PC")
-     677                    .dwattr $C$DW$31, DW_AT_location[DW_OP_reg0]
-     678            
-     679            $C$DW$32        .dwtag  DW_TAG_TI_assign_register
-     680                    .dwattr $C$DW$32, DW_AT_name("SP")
-     681                    .dwattr $C$DW$32, DW_AT_location[DW_OP_reg1]
-     682            
-     683            $C$DW$33        .dwtag  DW_TAG_TI_assign_register
-     684                    .dwattr $C$DW$33, DW_AT_name("SR")
-     685                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg2]
-     686            
-     687            $C$DW$34        .dwtag  DW_TAG_TI_assign_register
-     688                    .dwattr $C$DW$34, DW_AT_name("CG")
-     689                    .dwattr $C$DW$34, DW_AT_location[DW_OP_reg3]
-     690            
-     691            $C$DW$35        .dwtag  DW_TAG_TI_assign_register
-     692                    .dwattr $C$DW$35, DW_AT_name("r4")
-     693                    .dwattr $C$DW$35, DW_AT_location[DW_OP_reg4]
-     694            
-     695            $C$DW$36        .dwtag  DW_TAG_TI_assign_register
-     696                    .dwattr $C$DW$36, DW_AT_name("r5")
-     697                    .dwattr $C$DW$36, DW_AT_location[DW_OP_reg5]
-     698            
-     699            $C$DW$37        .dwtag  DW_TAG_TI_assign_register
-     700                    .dwattr $C$DW$37, DW_AT_name("r6")
-     701                    .dwattr $C$DW$37, DW_AT_location[DW_OP_reg6]
-     702            
-     703            $C$DW$38        .dwtag  DW_TAG_TI_assign_register
-     704                    .dwattr $C$DW$38, DW_AT_name("r7")
-     705                    .dwattr $C$DW$38, DW_AT_location[DW_OP_reg7]
-     706            
-     707            $C$DW$39        .dwtag  DW_TAG_TI_assign_register
-     708                    .dwattr $C$DW$39, DW_AT_name("r8")
-     709                    .dwattr $C$DW$39, DW_AT_location[DW_OP_reg8]
-     710            
-     711            $C$DW$40        .dwtag  DW_TAG_TI_assign_register
-     712                    .dwattr $C$DW$40, DW_AT_name("r9")
-     713                    .dwattr $C$DW$40, DW_AT_location[DW_OP_reg9]
-     714            
-     715            $C$DW$41        .dwtag  DW_TAG_TI_assign_register
-     716                    .dwattr $C$DW$41, DW_AT_name("r10")
-     717                    .dwattr $C$DW$41, DW_AT_location[DW_OP_reg10]
-     718            
-MSP430 Assembler Unix v21.6.1 Sat Aug  3 14:35:58 2024
+     650                    .dwattr $C$DW$39, DW_AT_TI_end_file("../sensorApp.c")
+     651                    .dwattr $C$DW$39, DW_AT_TI_end_line(0xa6)
+     652                    .dwattr $C$DW$39, DW_AT_TI_end_column(0x01)
+     653                    .dwendentry
+     654                    .dwendtag $C$DW$39
+     655            
+     656 000000               .sect   ".text:Timer_A0_CCR0"
+     657                    .clink
+     658                    .global Timer_A0_CCR0
+     659            
+     660            $C$DW$41        .dwtag  DW_TAG_subprogram
+     661                    .dwattr $C$DW$41, DW_AT_name("Timer_A0_CCR0")
+     662                    .dwattr $C$DW$41, DW_AT_low_pc(Timer_A0_CCR0)
+     663                    .dwattr $C$DW$41, DW_AT_high_pc(0x00)
+     664                    .dwattr $C$DW$41, DW_AT_TI_symbol_name("Timer_A0_CCR0")
+     665                    .dwattr $C$DW$41, DW_AT_external
+     666                    .dwattr $C$DW$41, DW_AT_TI_begin_file("../sensorApp.c")
+     667                    .dwattr $C$DW$41, DW_AT_TI_begin_line(0x7f)
+     668                    .dwattr $C$DW$41, DW_AT_TI_begin_column(0x12)
+     669                    .dwattr $C$DW$41, DW_AT_decl_file("../sensorApp.c")
+     670                    .dwattr $C$DW$41, DW_AT_decl_line(0x7f)
+     671                    .dwattr $C$DW$41, DW_AT_decl_column(0x12)
+     672                    .dwattr $C$DW$41, DW_AT_TI_interrupt
+     673                    .dwattr $C$DW$41, DW_AT_TI_max_frame_size(0x02)
+     674                    .dwpsn  file "../sensorApp.c",line 128,column 1,is_stmt,address Timer_A0_CCR0,isa 0
+     675            
+     676                    .dwfde $C$DW$CIE, Timer_A0_CCR0
+     677            
+     678            ;*****************************************************************************
+     679            ;* FUNCTION NAME: Timer_A0_CCR0                                              *
+     680            ;*                                                                           *
+     681            ;*   Regs Modified     : SP,SR                                               *
+     682            ;*   Regs Used         : SP,SR                                               *
+     683            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     684            ;*****************************************************************************
+     685 000000       Timer_A0_CCR0:
+     686            ;* --------------------------------------------------------------------------*
+     687                    .dwcfi  cfa_offset, 2
+     688                    .dwcfi  save_reg_to_mem, 16, -2
+     689                    .dwpsn  file "../sensorApp.c",line 129,column 5,is_stmt,isa 0
+     690 000000 E2F2          XOR.B     #8,&P2OUT+0           ; [] |129| 
+         000002 0000!
+     691                    .dwpsn  file "../sensorApp.c",line 130,column 5,is_stmt,isa 0
+     692 000004 80B2          SUB.W     #15536,&TA0CCR0+0     ; [] |130| 
+         000006 3CB0 
+         000008 0000!
+     693                    .dwpsn  file "../sensorApp.c",line 132,column 5,is_stmt,isa 0
+     694 00000a D3E2          OR.B      #2,&IE2+0             ; [] |132| 
+         00000c 0000!
+     695                    .dwpsn  file "../sensorApp.c",line 133,column 5,is_stmt,isa 0
+     696 00000e 42D2          MOV.B     &counter+0,&UCA0TXBUF+0 ; [] |133| 
+         000010 0000!
+         000012 0000!
+     697                    .dwpsn  file "../sensorApp.c",line 134,column 5,is_stmt,isa 0
+     698 000014 53D2          ADD.B     #1,&counter+0         ; [] |134| 
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
 
 Copyright (c) 2003-2018 Texas Instruments Incorporated
 sensorApp.asm                                                        PAGE   15
 
-     719            $C$DW$42        .dwtag  DW_TAG_TI_assign_register
-     720                    .dwattr $C$DW$42, DW_AT_name("r11")
-     721                    .dwattr $C$DW$42, DW_AT_location[DW_OP_reg11]
-     722            
-     723            $C$DW$43        .dwtag  DW_TAG_TI_assign_register
-     724                    .dwattr $C$DW$43, DW_AT_name("r12")
-     725                    .dwattr $C$DW$43, DW_AT_location[DW_OP_reg12]
-     726            
-     727            $C$DW$44        .dwtag  DW_TAG_TI_assign_register
-     728                    .dwattr $C$DW$44, DW_AT_name("r13")
-     729                    .dwattr $C$DW$44, DW_AT_location[DW_OP_reg13]
-     730            
-     731            $C$DW$45        .dwtag  DW_TAG_TI_assign_register
-     732                    .dwattr $C$DW$45, DW_AT_name("r14")
-     733                    .dwattr $C$DW$45, DW_AT_location[DW_OP_reg14]
-     734            
-     735            $C$DW$46        .dwtag  DW_TAG_TI_assign_register
-     736                    .dwattr $C$DW$46, DW_AT_name("r15")
-     737                    .dwattr $C$DW$46, DW_AT_location[DW_OP_reg15]
-     738            
-     739            $C$DW$47        .dwtag  DW_TAG_TI_assign_register
-     740                    .dwattr $C$DW$47, DW_AT_name("CIE_RETA")
-     741                    .dwattr $C$DW$47, DW_AT_location[DW_OP_reg16]
-     742            
-     743                    .dwendtag $C$DW$CU
-     744            
+         000016 0000!
+     699                    .dwpsn  file "../sensorApp.c",line 135,column 1,is_stmt,isa 0
+     700            $C$DW$42        .dwtag  DW_TAG_TI_branch
+     701                    .dwattr $C$DW$42, DW_AT_low_pc(0x00)
+     702                    .dwattr $C$DW$42, DW_AT_TI_return
+     703            
+     704 000018 1300          RETI      ; [] 
+     705                    ; [] 
+     706                    .dwattr $C$DW$41, DW_AT_TI_end_file("../sensorApp.c")
+     707                    .dwattr $C$DW$41, DW_AT_TI_end_line(0x87)
+     708                    .dwattr $C$DW$41, DW_AT_TI_end_column(0x01)
+     709                    .dwendentry
+     710                    .dwendtag $C$DW$41
+     711            
+     712            ;*****************************************************************************
+     713            ;* UNDEFINED EXTERNAL REFERENCES                                             *
+     714            ;*****************************************************************************
+     715                    .global IE2
+     716                    .global DCOCTL
+     717                    .global BCSCTL1
+     718                    .global P1OUT
+     719                    .global P1DIR
+     720                    .global P1SEL
+     721                    .global P1SEL2
+     722                    .global P2OUT
+     723                    .global P2DIR
+     724                    .global TA0CTL
+     725                    .global TA0CCTL0
+     726                    .global TA0CCTL1
+     727                    .global TA0CCR0
+     728                    .global TA0CCR1
+     729                    .global UCA0CTL1
+     730                    .global UCA0BR0
+     731                    .global UCA0BR1
+     732                    .global UCA0MCTL
+     733                    .global UCA0TXBUF
+     734                    .global WDTCTL
+     735                    .global CALDCO_8MHZ
+     736                    .global CALBC1_8MHZ
+     737                    .global SWI2C_initI2C
+     738                    .global SWI2C_performI2CTransaction
+     739            
+     740            ;******************************************************************************
+     741            ;* BUILD ATTRIBUTES                                                           *
+     742            ;******************************************************************************
+     743                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(2)
+     744                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000011
+     745                    .battr "TI", Tag_File, 1, Tag_LEA_INFO(1)
+     746                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
+     747                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+     748                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+     749                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+     750            
+     751            ;******************************************************************************
+     752            ;* TYPE INFORMATION                                                           *
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   16
+
+     753            ;******************************************************************************
+     754            
+     755            $C$DW$T$21      .dwtag  DW_TAG_structure_type
+     756                    .dwattr $C$DW$T$21, DW_AT_byte_size(0x10)
+     757            $C$DW$43        .dwtag  DW_TAG_member
+     758                    .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$14)
+     759                    .dwattr $C$DW$43, DW_AT_name("__max_align1")
+     760                    .dwattr $C$DW$43, DW_AT_TI_symbol_name("__max_align1")
+     761                    .dwattr $C$DW$43, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+     762                    .dwattr $C$DW$43, DW_AT_accessibility(DW_ACCESS_public)
+     763                    .dwattr $C$DW$43, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430
+     764                    .dwattr $C$DW$43, DW_AT_decl_line(0x7b)
+     765                    .dwattr $C$DW$43, DW_AT_decl_column(0x0c)
+     766            
+     767            $C$DW$44        .dwtag  DW_TAG_member
+     768                    .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$18)
+     769                    .dwattr $C$DW$44, DW_AT_name("__max_align2")
+     770                    .dwattr $C$DW$44, DW_AT_TI_symbol_name("__max_align2")
+     771                    .dwattr $C$DW$44, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+     772                    .dwattr $C$DW$44, DW_AT_accessibility(DW_ACCESS_public)
+     773                    .dwattr $C$DW$44, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp430
+     774                    .dwattr $C$DW$44, DW_AT_decl_line(0x7c)
+     775                    .dwattr $C$DW$44, DW_AT_decl_column(0x0e)
+     776            
+     777                    .dwattr $C$DW$T$21, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     778                    .dwattr $C$DW$T$21, DW_AT_decl_line(0x7a)
+     779                    .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
+     780                    .dwendtag $C$DW$T$21
+     781            
+     782            $C$DW$T$30      .dwtag  DW_TAG_typedef
+     783                    .dwattr $C$DW$T$30, DW_AT_name("__max_align_t")
+     784                    .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$21)
+     785                    .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+     786                    .dwattr $C$DW$T$30, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     787                    .dwattr $C$DW$T$30, DW_AT_decl_line(0x7d)
+     788                    .dwattr $C$DW$T$30, DW_AT_decl_column(0x03)
+     789            
+     790            
+     791            $C$DW$T$29      .dwtag  DW_TAG_structure_type
+     792                    .dwattr $C$DW$T$29, DW_AT_name("_SWI2C_I2CTransaction")
+     793                    .dwattr $C$DW$T$29, DW_AT_byte_size(0x0c)
+     794            $C$DW$45        .dwtag  DW_TAG_member
+     795                    .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$23)
+     796                    .dwattr $C$DW$45, DW_AT_name("address")
+     797                    .dwattr $C$DW$45, DW_AT_TI_symbol_name("address")
+     798                    .dwattr $C$DW$45, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+     799                    .dwattr $C$DW$45, DW_AT_accessibility(DW_ACCESS_public)
+     800                    .dwattr $C$DW$45, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     801                    .dwattr $C$DW$45, DW_AT_decl_line(0x4a)
+     802                    .dwattr $C$DW$45, DW_AT_decl_column(0x19)
+     803            
+     804            $C$DW$46        .dwtag  DW_TAG_member
+     805                    .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$26)
+     806                    .dwattr $C$DW$46, DW_AT_name("numWriteBytes")
+     807                    .dwattr $C$DW$46, DW_AT_TI_symbol_name("numWriteBytes")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   17
+
+     808                    .dwattr $C$DW$46, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+     809                    .dwattr $C$DW$46, DW_AT_accessibility(DW_ACCESS_public)
+     810                    .dwattr $C$DW$46, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     811                    .dwattr $C$DW$46, DW_AT_decl_line(0x4b)
+     812                    .dwattr $C$DW$46, DW_AT_decl_column(0x19)
+     813            
+     814            $C$DW$47        .dwtag  DW_TAG_member
+     815                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$27)
+     816                    .dwattr $C$DW$47, DW_AT_name("writeBuffer")
+     817                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("writeBuffer")
+     818                    .dwattr $C$DW$47, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+     819                    .dwattr $C$DW$47, DW_AT_accessibility(DW_ACCESS_public)
+     820                    .dwattr $C$DW$47, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     821                    .dwattr $C$DW$47, DW_AT_decl_line(0x4c)
+     822                    .dwattr $C$DW$47, DW_AT_decl_column(0x19)
+     823            
+     824            $C$DW$48        .dwtag  DW_TAG_member
+     825                    .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$26)
+     826                    .dwattr $C$DW$48, DW_AT_name("numReadBytes")
+     827                    .dwattr $C$DW$48, DW_AT_TI_symbol_name("numReadBytes")
+     828                    .dwattr $C$DW$48, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+     829                    .dwattr $C$DW$48, DW_AT_accessibility(DW_ACCESS_public)
+     830                    .dwattr $C$DW$48, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     831                    .dwattr $C$DW$48, DW_AT_decl_line(0x4d)
+     832                    .dwattr $C$DW$48, DW_AT_decl_column(0x19)
+     833            
+     834            $C$DW$49        .dwtag  DW_TAG_member
+     835                    .dwattr $C$DW$49, DW_AT_type(*$C$DW$T$27)
+     836                    .dwattr $C$DW$49, DW_AT_name("readBuffer")
+     837                    .dwattr $C$DW$49, DW_AT_TI_symbol_name("readBuffer")
+     838                    .dwattr $C$DW$49, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+     839                    .dwattr $C$DW$49, DW_AT_accessibility(DW_ACCESS_public)
+     840                    .dwattr $C$DW$49, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     841                    .dwattr $C$DW$49, DW_AT_decl_line(0x4e)
+     842                    .dwattr $C$DW$49, DW_AT_decl_column(0x19)
+     843            
+     844            $C$DW$50        .dwtag  DW_TAG_member
+     845                    .dwattr $C$DW$50, DW_AT_type(*$C$DW$T$28)
+     846                    .dwattr $C$DW$50, DW_AT_name("repeatedStart")
+     847                    .dwattr $C$DW$50, DW_AT_TI_symbol_name("repeatedStart")
+     848                    .dwattr $C$DW$50, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+     849                    .dwattr $C$DW$50, DW_AT_accessibility(DW_ACCESS_public)
+     850                    .dwattr $C$DW$50, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0/M
+     851                    .dwattr $C$DW$50, DW_AT_decl_line(0x4f)
+     852                    .dwattr $C$DW$50, DW_AT_decl_column(0x19)
+     853            
+     854                    .dwattr $C$DW$T$29, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0
+     855                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x48)
+     856                    .dwattr $C$DW$T$29, DW_AT_decl_column(0x10)
+     857                    .dwendtag $C$DW$T$29
+     858            
+     859            $C$DW$T$31      .dwtag  DW_TAG_typedef
+     860                    .dwattr $C$DW$T$31, DW_AT_name("SWI2C_I2CTransaction")
+     861                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$29)
+     862                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   18
+
+     863                    .dwattr $C$DW$T$31, DW_AT_decl_file("/Users/afother1/Documents/New Files/TICCS120701Workspace0
+     864                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x50)
+     865                    .dwattr $C$DW$T$31, DW_AT_decl_column(0x03)
+     866            
+     867            $C$DW$T$32      .dwtag  DW_TAG_pointer_type
+     868                    .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+     869                    .dwattr $C$DW$T$32, DW_AT_address_class(0x10)
+     870            
+     871            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     872                    .dwattr $C$DW$T$2, DW_AT_name("void")
+     873            
+     874            $C$DW$T$4       .dwtag  DW_TAG_base_type
+     875                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     876                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+     877                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     878            
+     879            $C$DW$T$5       .dwtag  DW_TAG_base_type
+     880                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     881                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     882                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     883            
+     884            $C$DW$T$36      .dwtag  DW_TAG_typedef
+     885                    .dwattr $C$DW$T$36, DW_AT_name("__int8_t")
+     886                    .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$5)
+     887                    .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+     888                    .dwattr $C$DW$T$36, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     889                    .dwattr $C$DW$T$36, DW_AT_decl_line(0x36)
+     890                    .dwattr $C$DW$T$36, DW_AT_decl_column(0x16)
+     891            
+     892            $C$DW$T$37      .dwtag  DW_TAG_typedef
+     893                    .dwattr $C$DW$T$37, DW_AT_name("__int_least8_t")
+     894                    .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$36)
+     895                    .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+     896                    .dwattr $C$DW$T$37, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     897                    .dwattr $C$DW$T$37, DW_AT_decl_line(0x5a)
+     898                    .dwattr $C$DW$T$37, DW_AT_decl_column(0x12)
+     899            
+     900            $C$DW$T$38      .dwtag  DW_TAG_typedef
+     901                    .dwattr $C$DW$T$38, DW_AT_name("int_least8_t")
+     902                    .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$37)
+     903                    .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+     904                    .dwattr $C$DW$T$38, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     905                    .dwattr $C$DW$T$38, DW_AT_decl_line(0x2a)
+     906                    .dwattr $C$DW$T$38, DW_AT_decl_column(0x19)
+     907            
+     908            $C$DW$T$39      .dwtag  DW_TAG_typedef
+     909                    .dwattr $C$DW$T$39, DW_AT_name("int8_t")
+     910                    .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$36)
+     911                    .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+     912                    .dwattr $C$DW$T$39, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     913                    .dwattr $C$DW$T$39, DW_AT_decl_line(0x25)
+     914                    .dwattr $C$DW$T$39, DW_AT_decl_column(0x13)
+     915            
+     916            $C$DW$T$6       .dwtag  DW_TAG_base_type
+     917                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   19
+
+     918                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     919                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     920            
+     921            $C$DW$T$40      .dwtag  DW_TAG_volatile_type
+     922                    .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$6)
+     923            
+     924            
+     925            $C$DW$T$41      .dwtag  DW_TAG_array_type
+     926                    .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$6)
+     927                    .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+     928                    .dwattr $C$DW$T$41, DW_AT_byte_size(0x02)
+     929            $C$DW$51        .dwtag  DW_TAG_subrange_type
+     930                    .dwattr $C$DW$51, DW_AT_upper_bound(0x01)
+     931            
+     932                    .dwendtag $C$DW$T$41
+     933            
+     934            $C$DW$T$22      .dwtag  DW_TAG_typedef
+     935                    .dwattr $C$DW$T$22, DW_AT_name("__uint8_t")
+     936                    .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$6)
+     937                    .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+     938                    .dwattr $C$DW$T$22, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     939                    .dwattr $C$DW$T$22, DW_AT_decl_line(0x37)
+     940                    .dwattr $C$DW$T$22, DW_AT_decl_column(0x18)
+     941            
+     942            $C$DW$T$45      .dwtag  DW_TAG_typedef
+     943                    .dwattr $C$DW$T$45, DW_AT_name("__sa_family_t")
+     944                    .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$22)
+     945                    .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
+     946                    .dwattr $C$DW$T$45, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     947                    .dwattr $C$DW$T$45, DW_AT_decl_line(0x47)
+     948                    .dwattr $C$DW$T$45, DW_AT_decl_column(0x13)
+     949            
+     950            $C$DW$T$46      .dwtag  DW_TAG_typedef
+     951                    .dwattr $C$DW$T$46, DW_AT_name("__uint_least8_t")
+     952                    .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$22)
+     953                    .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+     954                    .dwattr $C$DW$T$46, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     955                    .dwattr $C$DW$T$46, DW_AT_decl_line(0x74)
+     956                    .dwattr $C$DW$T$46, DW_AT_decl_column(0x13)
+     957            
+     958            $C$DW$T$47      .dwtag  DW_TAG_typedef
+     959                    .dwattr $C$DW$T$47, DW_AT_name("uint_least8_t")
+     960                    .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$46)
+     961                    .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+     962                    .dwattr $C$DW$T$47, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     963                    .dwattr $C$DW$T$47, DW_AT_decl_line(0x2f)
+     964                    .dwattr $C$DW$T$47, DW_AT_decl_column(0x1a)
+     965            
+     966            $C$DW$T$23      .dwtag  DW_TAG_typedef
+     967                    .dwattr $C$DW$T$23, DW_AT_name("uint8_t")
+     968                    .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
+     969                    .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+     970                    .dwattr $C$DW$T$23, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+     971                    .dwattr $C$DW$T$23, DW_AT_decl_line(0x3b)
+     972                    .dwattr $C$DW$T$23, DW_AT_decl_column(0x14)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   20
+
+     973            
+     974            $C$DW$T$27      .dwtag  DW_TAG_pointer_type
+     975                    .dwattr $C$DW$T$27, DW_AT_type(*$C$DW$T$23)
+     976                    .dwattr $C$DW$T$27, DW_AT_address_class(0x10)
+     977            
+     978            $C$DW$T$7       .dwtag  DW_TAG_base_type
+     979                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     980                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     981                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     982            
+     983            $C$DW$T$8       .dwtag  DW_TAG_base_type
+     984                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     985                    .dwattr $C$DW$T$8, DW_AT_name("short")
+     986                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     987            
+     988            $C$DW$T$9       .dwtag  DW_TAG_base_type
+     989                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     990                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     991                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     992            
+     993            $C$DW$T$10      .dwtag  DW_TAG_base_type
+     994                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     995                    .dwattr $C$DW$T$10, DW_AT_name("int")
+     996                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+     997            
+     998            $C$DW$T$48      .dwtag  DW_TAG_typedef
+     999                    .dwattr $C$DW$T$48, DW_AT_name("_Mbstatet")
+    1000                    .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$10)
+    1001                    .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+    1002                    .dwattr $C$DW$T$48, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1003                    .dwattr $C$DW$T$48, DW_AT_decl_line(0x8f)
+    1004                    .dwattr $C$DW$T$48, DW_AT_decl_column(0x0d)
+    1005            
+    1006            $C$DW$T$49      .dwtag  DW_TAG_typedef
+    1007                    .dwattr $C$DW$T$49, DW_AT_name("__mbstate_t")
+    1008                    .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$48)
+    1009                    .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    1010                    .dwattr $C$DW$T$49, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1011                    .dwattr $C$DW$T$49, DW_AT_decl_line(0x92)
+    1012                    .dwattr $C$DW$T$49, DW_AT_decl_column(0x13)
+    1013            
+    1014            $C$DW$T$50      .dwtag  DW_TAG_typedef
+    1015                    .dwattr $C$DW$T$50, DW_AT_name("__accmode_t")
+    1016                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$10)
+    1017                    .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    1018                    .dwattr $C$DW$T$50, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1019                    .dwattr $C$DW$T$50, DW_AT_decl_line(0x3b)
+    1020                    .dwattr $C$DW$T$50, DW_AT_decl_column(0x0e)
+    1021            
+    1022            $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1023                    .dwattr $C$DW$T$51, DW_AT_name("__cpulevel_t")
+    1024                    .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$10)
+    1025                    .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1026                    .dwattr $C$DW$T$51, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1027                    .dwattr $C$DW$T$51, DW_AT_decl_line(0x50)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   21
+
+    1028                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x0e)
+    1029            
+    1030            $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1031                    .dwattr $C$DW$T$52, DW_AT_name("__cpusetid_t")
+    1032                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$10)
+    1033                    .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1034                    .dwattr $C$DW$T$52, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1035                    .dwattr $C$DW$T$52, DW_AT_decl_line(0x51)
+    1036                    .dwattr $C$DW$T$52, DW_AT_decl_column(0x0e)
+    1037            
+    1038            $C$DW$T$53      .dwtag  DW_TAG_typedef
+    1039                    .dwattr $C$DW$T$53, DW_AT_name("__cpuwhich_t")
+    1040                    .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$10)
+    1041                    .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1042                    .dwattr $C$DW$T$53, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1043                    .dwattr $C$DW$T$53, DW_AT_decl_line(0x4f)
+    1044                    .dwattr $C$DW$T$53, DW_AT_decl_column(0x0e)
+    1045            
+    1046            $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1047                    .dwattr $C$DW$T$54, DW_AT_name("__ct_rune_t")
+    1048                    .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$10)
+    1049                    .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1050                    .dwattr $C$DW$T$54, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1051                    .dwattr $C$DW$T$54, DW_AT_decl_line(0x69)
+    1052                    .dwattr $C$DW$T$54, DW_AT_decl_column(0x0e)
+    1053            
+    1054            $C$DW$T$55      .dwtag  DW_TAG_typedef
+    1055                    .dwattr $C$DW$T$55, DW_AT_name("__rune_t")
+    1056                    .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$54)
+    1057                    .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    1058                    .dwattr $C$DW$T$55, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1059                    .dwattr $C$DW$T$55, DW_AT_decl_line(0x6c)
+    1060                    .dwattr $C$DW$T$55, DW_AT_decl_column(0x15)
+    1061            
+    1062            $C$DW$T$56      .dwtag  DW_TAG_typedef
+    1063                    .dwattr $C$DW$T$56, DW_AT_name("__wint_t")
+    1064                    .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$54)
+    1065                    .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    1066                    .dwattr $C$DW$T$56, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1067                    .dwattr $C$DW$T$56, DW_AT_decl_line(0x6d)
+    1068                    .dwattr $C$DW$T$56, DW_AT_decl_column(0x15)
+    1069            
+    1070            $C$DW$T$57      .dwtag  DW_TAG_typedef
+    1071                    .dwattr $C$DW$T$57, DW_AT_name("__int16_t")
+    1072                    .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$10)
+    1073                    .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    1074                    .dwattr $C$DW$T$57, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1075                    .dwattr $C$DW$T$57, DW_AT_decl_line(0x38)
+    1076                    .dwattr $C$DW$T$57, DW_AT_decl_column(0x0f)
+    1077            
+    1078            $C$DW$T$58      .dwtag  DW_TAG_typedef
+    1079                    .dwattr $C$DW$T$58, DW_AT_name("__int_fast16_t")
+    1080                    .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$57)
+    1081                    .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1082                    .dwattr $C$DW$T$58, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   22
+
+    1083                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x57)
+    1084                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x13)
+    1085            
+    1086            $C$DW$T$59      .dwtag  DW_TAG_typedef
+    1087                    .dwattr $C$DW$T$59, DW_AT_name("int_fast16_t")
+    1088                    .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$58)
+    1089                    .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    1090                    .dwattr $C$DW$T$59, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1091                    .dwattr $C$DW$T$59, DW_AT_decl_line(0x35)
+    1092                    .dwattr $C$DW$T$59, DW_AT_decl_column(0x19)
+    1093            
+    1094            $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1095                    .dwattr $C$DW$T$60, DW_AT_name("__int_fast8_t")
+    1096                    .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$57)
+    1097                    .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1098                    .dwattr $C$DW$T$60, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1099                    .dwattr $C$DW$T$60, DW_AT_decl_line(0x56)
+    1100                    .dwattr $C$DW$T$60, DW_AT_decl_column(0x13)
+    1101            
+    1102            $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1103                    .dwattr $C$DW$T$61, DW_AT_name("int_fast8_t")
+    1104                    .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$60)
+    1105                    .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1106                    .dwattr $C$DW$T$61, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1107                    .dwattr $C$DW$T$61, DW_AT_decl_line(0x34)
+    1108                    .dwattr $C$DW$T$61, DW_AT_decl_column(0x18)
+    1109            
+    1110            $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1111                    .dwattr $C$DW$T$62, DW_AT_name("__int_least16_t")
+    1112                    .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$57)
+    1113                    .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1114                    .dwattr $C$DW$T$62, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1115                    .dwattr $C$DW$T$62, DW_AT_decl_line(0x5b)
+    1116                    .dwattr $C$DW$T$62, DW_AT_decl_column(0x13)
+    1117            
+    1118            $C$DW$T$63      .dwtag  DW_TAG_typedef
+    1119                    .dwattr $C$DW$T$63, DW_AT_name("int_least16_t")
+    1120                    .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$62)
+    1121                    .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    1122                    .dwattr $C$DW$T$63, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1123                    .dwattr $C$DW$T$63, DW_AT_decl_line(0x2b)
+    1124                    .dwattr $C$DW$T$63, DW_AT_decl_column(0x1a)
+    1125            
+    1126            $C$DW$T$64      .dwtag  DW_TAG_typedef
+    1127                    .dwattr $C$DW$T$64, DW_AT_name("__intptr_t")
+    1128                    .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$57)
+    1129                    .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1130                    .dwattr $C$DW$T$64, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1131                    .dwattr $C$DW$T$64, DW_AT_decl_line(0x53)
+    1132                    .dwattr $C$DW$T$64, DW_AT_decl_column(0x19)
+    1133            
+    1134            $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1135                    .dwattr $C$DW$T$65, DW_AT_name("intptr_t")
+    1136                    .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$64)
+    1137                    .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   23
+
+    1138                    .dwattr $C$DW$T$65, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1139                    .dwattr $C$DW$T$65, DW_AT_decl_line(0x50)
+    1140                    .dwattr $C$DW$T$65, DW_AT_decl_column(0x15)
+    1141            
+    1142            $C$DW$T$66      .dwtag  DW_TAG_typedef
+    1143                    .dwattr $C$DW$T$66, DW_AT_name("__register_t")
+    1144                    .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$57)
+    1145                    .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1146                    .dwattr $C$DW$T$66, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1147                    .dwattr $C$DW$T$66, DW_AT_decl_line(0x5f)
+    1148                    .dwattr $C$DW$T$66, DW_AT_decl_column(0x13)
+    1149            
+    1150            $C$DW$T$67      .dwtag  DW_TAG_typedef
+    1151                    .dwattr $C$DW$T$67, DW_AT_name("int16_t")
+    1152                    .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$57)
+    1153                    .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    1154                    .dwattr $C$DW$T$67, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1155                    .dwattr $C$DW$T$67, DW_AT_decl_line(0x2b)
+    1156                    .dwattr $C$DW$T$67, DW_AT_decl_column(0x14)
+    1157            
+    1158            $C$DW$T$68      .dwtag  DW_TAG_typedef
+    1159                    .dwattr $C$DW$T$68, DW_AT_name("__nl_item")
+    1160                    .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$10)
+    1161                    .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    1162                    .dwattr $C$DW$T$68, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1163                    .dwattr $C$DW$T$68, DW_AT_decl_line(0x3c)
+    1164                    .dwattr $C$DW$T$68, DW_AT_decl_column(0x0e)
+    1165            
+    1166            $C$DW$T$69      .dwtag  DW_TAG_typedef
+    1167                    .dwattr $C$DW$T$69, DW_AT_name("__ptrdiff_t")
+    1168                    .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$10)
+    1169                    .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    1170                    .dwattr $C$DW$T$69, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1171                    .dwattr $C$DW$T$69, DW_AT_decl_line(0x5e)
+    1172                    .dwattr $C$DW$T$69, DW_AT_decl_column(0x1c)
+    1173            
+    1174            $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1175                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1176                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1177                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+    1178            
+    1179            $C$DW$T$70      .dwtag  DW_TAG_typedef
+    1180                    .dwattr $C$DW$T$70, DW_AT_name("___wchar_t")
+    1181                    .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$11)
+    1182                    .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+    1183                    .dwattr $C$DW$T$70, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1184                    .dwattr $C$DW$T$70, DW_AT_decl_line(0x7d)
+    1185                    .dwattr $C$DW$T$70, DW_AT_decl_column(0x1a)
+    1186            
+    1187            $C$DW$T$71      .dwtag  DW_TAG_volatile_type
+    1188                    .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$11)
+    1189            
+    1190            $C$DW$T$73      .dwtag  DW_TAG_typedef
+    1191                    .dwattr $C$DW$T$73, DW_AT_name("__size_t")
+    1192                    .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$11)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   24
+
+    1193                    .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+    1194                    .dwattr $C$DW$T$73, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1195                    .dwattr $C$DW$T$73, DW_AT_decl_line(0x61)
+    1196                    .dwattr $C$DW$T$73, DW_AT_decl_column(0x19)
+    1197            
+    1198            $C$DW$T$24      .dwtag  DW_TAG_typedef
+    1199                    .dwattr $C$DW$T$24, DW_AT_name("__uint16_t")
+    1200                    .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$11)
+    1201                    .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    1202                    .dwattr $C$DW$T$24, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1203                    .dwattr $C$DW$T$24, DW_AT_decl_line(0x39)
+    1204                    .dwattr $C$DW$T$24, DW_AT_decl_column(0x17)
+    1205            
+    1206            $C$DW$T$74      .dwtag  DW_TAG_typedef
+    1207                    .dwattr $C$DW$T$74, DW_AT_name("__mode_t")
+    1208                    .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$24)
+    1209                    .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
+    1210                    .dwattr $C$DW$T$74, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1211                    .dwattr $C$DW$T$74, DW_AT_decl_line(0x3a)
+    1212                    .dwattr $C$DW$T$74, DW_AT_decl_column(0x14)
+    1213            
+    1214            $C$DW$T$75      .dwtag  DW_TAG_typedef
+    1215                    .dwattr $C$DW$T$75, DW_AT_name("__u_register_t")
+    1216                    .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$24)
+    1217                    .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+    1218                    .dwattr $C$DW$T$75, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1219                    .dwattr $C$DW$T$75, DW_AT_decl_line(0x78)
+    1220                    .dwattr $C$DW$T$75, DW_AT_decl_column(0x14)
+    1221            
+    1222            $C$DW$T$25      .dwtag  DW_TAG_typedef
+    1223                    .dwattr $C$DW$T$25, DW_AT_name("__uint_fast16_t")
+    1224                    .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$24)
+    1225                    .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+    1226                    .dwattr $C$DW$T$25, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1227                    .dwattr $C$DW$T$25, DW_AT_decl_line(0x71)
+    1228                    .dwattr $C$DW$T$25, DW_AT_decl_column(0x14)
+    1229            
+    1230            $C$DW$T$26      .dwtag  DW_TAG_typedef
+    1231                    .dwattr $C$DW$T$26, DW_AT_name("uint_fast16_t")
+    1232                    .dwattr $C$DW$T$26, DW_AT_type(*$C$DW$T$25)
+    1233                    .dwattr $C$DW$T$26, DW_AT_language(DW_LANG_C)
+    1234                    .dwattr $C$DW$T$26, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1235                    .dwattr $C$DW$T$26, DW_AT_decl_line(0x3a)
+    1236                    .dwattr $C$DW$T$26, DW_AT_decl_column(0x1a)
+    1237            
+    1238            $C$DW$T$76      .dwtag  DW_TAG_typedef
+    1239                    .dwattr $C$DW$T$76, DW_AT_name("__uint_fast8_t")
+    1240                    .dwattr $C$DW$T$76, DW_AT_type(*$C$DW$T$24)
+    1241                    .dwattr $C$DW$T$76, DW_AT_language(DW_LANG_C)
+    1242                    .dwattr $C$DW$T$76, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1243                    .dwattr $C$DW$T$76, DW_AT_decl_line(0x70)
+    1244                    .dwattr $C$DW$T$76, DW_AT_decl_column(0x14)
+    1245            
+    1246            $C$DW$T$77      .dwtag  DW_TAG_typedef
+    1247                    .dwattr $C$DW$T$77, DW_AT_name("uint_fast8_t")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   25
+
+    1248                    .dwattr $C$DW$T$77, DW_AT_type(*$C$DW$T$76)
+    1249                    .dwattr $C$DW$T$77, DW_AT_language(DW_LANG_C)
+    1250                    .dwattr $C$DW$T$77, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1251                    .dwattr $C$DW$T$77, DW_AT_decl_line(0x39)
+    1252                    .dwattr $C$DW$T$77, DW_AT_decl_column(0x19)
+    1253            
+    1254            $C$DW$T$78      .dwtag  DW_TAG_typedef
+    1255                    .dwattr $C$DW$T$78, DW_AT_name("__uint_least16_t")
+    1256                    .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$24)
+    1257                    .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
+    1258                    .dwattr $C$DW$T$78, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1259                    .dwattr $C$DW$T$78, DW_AT_decl_line(0x75)
+    1260                    .dwattr $C$DW$T$78, DW_AT_decl_column(0x14)
+    1261            
+    1262            $C$DW$T$79      .dwtag  DW_TAG_typedef
+    1263                    .dwattr $C$DW$T$79, DW_AT_name("__char16_t")
+    1264                    .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$78)
+    1265                    .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
+    1266                    .dwattr $C$DW$T$79, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1267                    .dwattr $C$DW$T$79, DW_AT_decl_line(0x71)
+    1268                    .dwattr $C$DW$T$79, DW_AT_decl_column(0x1a)
+    1269            
+    1270            $C$DW$T$80      .dwtag  DW_TAG_typedef
+    1271                    .dwattr $C$DW$T$80, DW_AT_name("uint_least16_t")
+    1272                    .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$78)
+    1273                    .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
+    1274                    .dwattr $C$DW$T$80, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1275                    .dwattr $C$DW$T$80, DW_AT_decl_line(0x30)
+    1276                    .dwattr $C$DW$T$80, DW_AT_decl_column(0x1a)
+    1277            
+    1278            $C$DW$T$81      .dwtag  DW_TAG_typedef
+    1279                    .dwattr $C$DW$T$81, DW_AT_name("__uintptr_t")
+    1280                    .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$24)
+    1281                    .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
+    1282                    .dwattr $C$DW$T$81, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1283                    .dwattr $C$DW$T$81, DW_AT_decl_line(0x6d)
+    1284                    .dwattr $C$DW$T$81, DW_AT_decl_column(0x14)
+    1285            
+    1286            $C$DW$T$82      .dwtag  DW_TAG_typedef
+    1287                    .dwattr $C$DW$T$82, DW_AT_name("uintptr_t")
+    1288                    .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$81)
+    1289                    .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
+    1290                    .dwattr $C$DW$T$82, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1291                    .dwattr $C$DW$T$82, DW_AT_decl_line(0x54)
+    1292                    .dwattr $C$DW$T$82, DW_AT_decl_column(0x16)
+    1293            
+    1294            $C$DW$T$83      .dwtag  DW_TAG_typedef
+    1295                    .dwattr $C$DW$T$83, DW_AT_name("uint16_t")
+    1296                    .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$24)
+    1297                    .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+    1298                    .dwattr $C$DW$T$83, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1299                    .dwattr $C$DW$T$83, DW_AT_decl_line(0x41)
+    1300                    .dwattr $C$DW$T$83, DW_AT_decl_column(0x15)
+    1301            
+    1302            $C$DW$T$84      .dwtag  DW_TAG_typedef
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   26
+
+    1303                    .dwattr $C$DW$T$84, DW_AT_name("__useconds_t")
+    1304                    .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$11)
+    1305                    .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
+    1306                    .dwattr $C$DW$T$84, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1307                    .dwattr $C$DW$T$84, DW_AT_decl_line(0x4e)
+    1308                    .dwattr $C$DW$T$84, DW_AT_decl_column(0x16)
+    1309            
+    1310            $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1311                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1312                    .dwattr $C$DW$T$12, DW_AT_name("long")
+    1313                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1314            
+    1315            $C$DW$T$85      .dwtag  DW_TAG_typedef
+    1316                    .dwattr $C$DW$T$85, DW_AT_name("__int32_t")
+    1317                    .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$12)
+    1318                    .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
+    1319                    .dwattr $C$DW$T$85, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1320                    .dwattr $C$DW$T$85, DW_AT_decl_line(0x3a)
+    1321                    .dwattr $C$DW$T$85, DW_AT_decl_column(0x10)
+    1322            
+    1323            $C$DW$T$86      .dwtag  DW_TAG_typedef
+    1324                    .dwattr $C$DW$T$86, DW_AT_name("__blksize_t")
+    1325                    .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$85)
+    1326                    .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
+    1327                    .dwattr $C$DW$T$86, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1328                    .dwattr $C$DW$T$86, DW_AT_decl_line(0x2f)
+    1329                    .dwattr $C$DW$T$86, DW_AT_decl_column(0x13)
+    1330            
+    1331            $C$DW$T$87      .dwtag  DW_TAG_typedef
+    1332                    .dwattr $C$DW$T$87, DW_AT_name("__clockid_t")
+    1333                    .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$85)
+    1334                    .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
+    1335                    .dwattr $C$DW$T$87, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1336                    .dwattr $C$DW$T$87, DW_AT_decl_line(0x31)
+    1337                    .dwattr $C$DW$T$87, DW_AT_decl_column(0x13)
+    1338            
+    1339            $C$DW$T$88      .dwtag  DW_TAG_typedef
+    1340                    .dwattr $C$DW$T$88, DW_AT_name("__critical_t")
+    1341                    .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$85)
+    1342                    .dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
+    1343                    .dwattr $C$DW$T$88, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1344                    .dwattr $C$DW$T$88, DW_AT_decl_line(0x4b)
+    1345                    .dwattr $C$DW$T$88, DW_AT_decl_column(0x13)
+    1346            
+    1347            $C$DW$T$89      .dwtag  DW_TAG_typedef
+    1348                    .dwattr $C$DW$T$89, DW_AT_name("__int_fast32_t")
+    1349                    .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$85)
+    1350                    .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
+    1351                    .dwattr $C$DW$T$89, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1352                    .dwattr $C$DW$T$89, DW_AT_decl_line(0x58)
+    1353                    .dwattr $C$DW$T$89, DW_AT_decl_column(0x13)
+    1354            
+    1355            $C$DW$T$90      .dwtag  DW_TAG_typedef
+    1356                    .dwattr $C$DW$T$90, DW_AT_name("int_fast32_t")
+    1357                    .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$89)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   27
+
+    1358                    .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
+    1359                    .dwattr $C$DW$T$90, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1360                    .dwattr $C$DW$T$90, DW_AT_decl_line(0x36)
+    1361                    .dwattr $C$DW$T$90, DW_AT_decl_column(0x19)
+    1362            
+    1363            $C$DW$T$91      .dwtag  DW_TAG_typedef
+    1364                    .dwattr $C$DW$T$91, DW_AT_name("__int_least32_t")
+    1365                    .dwattr $C$DW$T$91, DW_AT_type(*$C$DW$T$85)
+    1366                    .dwattr $C$DW$T$91, DW_AT_language(DW_LANG_C)
+    1367                    .dwattr $C$DW$T$91, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1368                    .dwattr $C$DW$T$91, DW_AT_decl_line(0x5c)
+    1369                    .dwattr $C$DW$T$91, DW_AT_decl_column(0x13)
+    1370            
+    1371            $C$DW$T$92      .dwtag  DW_TAG_typedef
+    1372                    .dwattr $C$DW$T$92, DW_AT_name("int_least32_t")
+    1373                    .dwattr $C$DW$T$92, DW_AT_type(*$C$DW$T$91)
+    1374                    .dwattr $C$DW$T$92, DW_AT_language(DW_LANG_C)
+    1375                    .dwattr $C$DW$T$92, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1376                    .dwattr $C$DW$T$92, DW_AT_decl_line(0x2c)
+    1377                    .dwattr $C$DW$T$92, DW_AT_decl_column(0x1a)
+    1378            
+    1379            $C$DW$T$93      .dwtag  DW_TAG_typedef
+    1380                    .dwattr $C$DW$T$93, DW_AT_name("__intfptr_t")
+    1381                    .dwattr $C$DW$T$93, DW_AT_type(*$C$DW$T$85)
+    1382                    .dwattr $C$DW$T$93, DW_AT_language(DW_LANG_C)
+    1383                    .dwattr $C$DW$T$93, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1384                    .dwattr $C$DW$T$93, DW_AT_decl_line(0x4e)
+    1385                    .dwattr $C$DW$T$93, DW_AT_decl_column(0x13)
+    1386            
+    1387            $C$DW$T$94      .dwtag  DW_TAG_typedef
+    1388                    .dwattr $C$DW$T$94, DW_AT_name("__lwpid_t")
+    1389                    .dwattr $C$DW$T$94, DW_AT_type(*$C$DW$T$85)
+    1390                    .dwattr $C$DW$T$94, DW_AT_language(DW_LANG_C)
+    1391                    .dwattr $C$DW$T$94, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1392                    .dwattr $C$DW$T$94, DW_AT_decl_line(0x39)
+    1393                    .dwattr $C$DW$T$94, DW_AT_decl_column(0x13)
+    1394            
+    1395            $C$DW$T$95      .dwtag  DW_TAG_typedef
+    1396                    .dwattr $C$DW$T$95, DW_AT_name("__pid_t")
+    1397                    .dwattr $C$DW$T$95, DW_AT_type(*$C$DW$T$85)
+    1398                    .dwattr $C$DW$T$95, DW_AT_language(DW_LANG_C)
+    1399                    .dwattr $C$DW$T$95, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1400                    .dwattr $C$DW$T$95, DW_AT_decl_line(0x40)
+    1401                    .dwattr $C$DW$T$95, DW_AT_decl_column(0x13)
+    1402            
+    1403            $C$DW$T$96      .dwtag  DW_TAG_typedef
+    1404                    .dwattr $C$DW$T$96, DW_AT_name("__segsz_t")
+    1405                    .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$85)
+    1406                    .dwattr $C$DW$T$96, DW_AT_language(DW_LANG_C)
+    1407                    .dwattr $C$DW$T$96, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1408                    .dwattr $C$DW$T$96, DW_AT_decl_line(0x60)
+    1409                    .dwattr $C$DW$T$96, DW_AT_decl_column(0x13)
+    1410            
+    1411            $C$DW$T$97      .dwtag  DW_TAG_typedef
+    1412                    .dwattr $C$DW$T$97, DW_AT_name("__ssize_t")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   28
+
+    1413                    .dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$85)
+    1414                    .dwattr $C$DW$T$97, DW_AT_language(DW_LANG_C)
+    1415                    .dwattr $C$DW$T$97, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1416                    .dwattr $C$DW$T$97, DW_AT_decl_line(0x62)
+    1417                    .dwattr $C$DW$T$97, DW_AT_decl_column(0x13)
+    1418            
+    1419            $C$DW$T$98      .dwtag  DW_TAG_typedef
+    1420                    .dwattr $C$DW$T$98, DW_AT_name("int32_t")
+    1421                    .dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$85)
+    1422                    .dwattr $C$DW$T$98, DW_AT_language(DW_LANG_C)
+    1423                    .dwattr $C$DW$T$98, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1424                    .dwattr $C$DW$T$98, DW_AT_decl_line(0x30)
+    1425                    .dwattr $C$DW$T$98, DW_AT_decl_column(0x14)
+    1426            
+    1427            $C$DW$T$99      .dwtag  DW_TAG_typedef
+    1428                    .dwattr $C$DW$T$99, DW_AT_name("__key_t")
+    1429                    .dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$12)
+    1430                    .dwattr $C$DW$T$99, DW_AT_language(DW_LANG_C)
+    1431                    .dwattr $C$DW$T$99, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1432                    .dwattr $C$DW$T$99, DW_AT_decl_line(0x38)
+    1433                    .dwattr $C$DW$T$99, DW_AT_decl_column(0x0f)
+    1434            
+    1435            $C$DW$T$100     .dwtag  DW_TAG_typedef
+    1436                    .dwattr $C$DW$T$100, DW_AT_name("__suseconds_t")
+    1437                    .dwattr $C$DW$T$100, DW_AT_type(*$C$DW$T$12)
+    1438                    .dwattr $C$DW$T$100, DW_AT_language(DW_LANG_C)
+    1439                    .dwattr $C$DW$T$100, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1440                    .dwattr $C$DW$T$100, DW_AT_decl_line(0x4a)
+    1441                    .dwattr $C$DW$T$100, DW_AT_decl_column(0x0f)
+    1442            
+    1443            $C$DW$T$101     .dwtag  DW_TAG_typedef
+    1444                    .dwattr $C$DW$T$101, DW_AT_name("_off_t")
+    1445                    .dwattr $C$DW$T$101, DW_AT_type(*$C$DW$T$12)
+    1446                    .dwattr $C$DW$T$101, DW_AT_language(DW_LANG_C)
+    1447                    .dwattr $C$DW$T$101, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1448                    .dwattr $C$DW$T$101, DW_AT_decl_line(0x8d)
+    1449                    .dwattr $C$DW$T$101, DW_AT_decl_column(0x12)
+    1450            
+    1451            $C$DW$T$102     .dwtag  DW_TAG_typedef
+    1452                    .dwattr $C$DW$T$102, DW_AT_name("__off_t")
+    1453                    .dwattr $C$DW$T$102, DW_AT_type(*$C$DW$T$101)
+    1454                    .dwattr $C$DW$T$102, DW_AT_language(DW_LANG_C)
+    1455                    .dwattr $C$DW$T$102, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1456                    .dwattr $C$DW$T$102, DW_AT_decl_line(0x3e)
+    1457                    .dwattr $C$DW$T$102, DW_AT_decl_column(0x18)
+    1458            
+    1459            $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1460                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1461                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1462                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1463            
+    1464            $C$DW$T$103     .dwtag  DW_TAG_typedef
+    1465                    .dwattr $C$DW$T$103, DW_AT_name("__uint32_t")
+    1466                    .dwattr $C$DW$T$103, DW_AT_type(*$C$DW$T$13)
+    1467                    .dwattr $C$DW$T$103, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   29
+
+    1468                    .dwattr $C$DW$T$103, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1469                    .dwattr $C$DW$T$103, DW_AT_decl_line(0x3b)
+    1470                    .dwattr $C$DW$T$103, DW_AT_decl_column(0x18)
+    1471            
+    1472            $C$DW$T$104     .dwtag  DW_TAG_typedef
+    1473                    .dwattr $C$DW$T$104, DW_AT_name("__clock_t")
+    1474                    .dwattr $C$DW$T$104, DW_AT_type(*$C$DW$T$103)
+    1475                    .dwattr $C$DW$T$104, DW_AT_language(DW_LANG_C)
+    1476                    .dwattr $C$DW$T$104, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1477                    .dwattr $C$DW$T$104, DW_AT_decl_line(0x4a)
+    1478                    .dwattr $C$DW$T$104, DW_AT_decl_column(0x14)
+    1479            
+    1480            $C$DW$T$105     .dwtag  DW_TAG_typedef
+    1481                    .dwattr $C$DW$T$105, DW_AT_name("__fflags_t")
+    1482                    .dwattr $C$DW$T$105, DW_AT_type(*$C$DW$T$103)
+    1483                    .dwattr $C$DW$T$105, DW_AT_language(DW_LANG_C)
+    1484                    .dwattr $C$DW$T$105, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1485                    .dwattr $C$DW$T$105, DW_AT_decl_line(0x32)
+    1486                    .dwattr $C$DW$T$105, DW_AT_decl_column(0x14)
+    1487            
+    1488            $C$DW$T$106     .dwtag  DW_TAG_typedef
+    1489                    .dwattr $C$DW$T$106, DW_AT_name("__fixpt_t")
+    1490                    .dwattr $C$DW$T$106, DW_AT_type(*$C$DW$T$103)
+    1491                    .dwattr $C$DW$T$106, DW_AT_language(DW_LANG_C)
+    1492                    .dwattr $C$DW$T$106, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1493                    .dwattr $C$DW$T$106, DW_AT_decl_line(0x81)
+    1494                    .dwattr $C$DW$T$106, DW_AT_decl_column(0x14)
+    1495            
+    1496            $C$DW$T$107     .dwtag  DW_TAG_typedef
+    1497                    .dwattr $C$DW$T$107, DW_AT_name("__gid_t")
+    1498                    .dwattr $C$DW$T$107, DW_AT_type(*$C$DW$T$103)
+    1499                    .dwattr $C$DW$T$107, DW_AT_language(DW_LANG_C)
+    1500                    .dwattr $C$DW$T$107, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1501                    .dwattr $C$DW$T$107, DW_AT_decl_line(0x35)
+    1502                    .dwattr $C$DW$T$107, DW_AT_decl_column(0x14)
+    1503            
+    1504            $C$DW$T$108     .dwtag  DW_TAG_typedef
+    1505                    .dwattr $C$DW$T$108, DW_AT_name("__socklen_t")
+    1506                    .dwattr $C$DW$T$108, DW_AT_type(*$C$DW$T$103)
+    1507                    .dwattr $C$DW$T$108, DW_AT_language(DW_LANG_C)
+    1508                    .dwattr $C$DW$T$108, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1509                    .dwattr $C$DW$T$108, DW_AT_decl_line(0x49)
+    1510                    .dwattr $C$DW$T$108, DW_AT_decl_column(0x14)
+    1511            
+    1512            $C$DW$T$109     .dwtag  DW_TAG_typedef
+    1513                    .dwattr $C$DW$T$109, DW_AT_name("__time_t")
+    1514                    .dwattr $C$DW$T$109, DW_AT_type(*$C$DW$T$103)
+    1515                    .dwattr $C$DW$T$109, DW_AT_language(DW_LANG_C)
+    1516                    .dwattr $C$DW$T$109, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1517                    .dwattr $C$DW$T$109, DW_AT_decl_line(0x66)
+    1518                    .dwattr $C$DW$T$109, DW_AT_decl_column(0x19)
+    1519            
+    1520            $C$DW$T$110     .dwtag  DW_TAG_typedef
+    1521                    .dwattr $C$DW$T$110, DW_AT_name("__uid_t")
+    1522                    .dwattr $C$DW$T$110, DW_AT_type(*$C$DW$T$103)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   30
+
+    1523                    .dwattr $C$DW$T$110, DW_AT_language(DW_LANG_C)
+    1524                    .dwattr $C$DW$T$110, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1525                    .dwattr $C$DW$T$110, DW_AT_decl_line(0x4d)
+    1526                    .dwattr $C$DW$T$110, DW_AT_decl_column(0x14)
+    1527            
+    1528            $C$DW$T$111     .dwtag  DW_TAG_typedef
+    1529                    .dwattr $C$DW$T$111, DW_AT_name("__uint_fast32_t")
+    1530                    .dwattr $C$DW$T$111, DW_AT_type(*$C$DW$T$103)
+    1531                    .dwattr $C$DW$T$111, DW_AT_language(DW_LANG_C)
+    1532                    .dwattr $C$DW$T$111, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1533                    .dwattr $C$DW$T$111, DW_AT_decl_line(0x72)
+    1534                    .dwattr $C$DW$T$111, DW_AT_decl_column(0x14)
+    1535            
+    1536            $C$DW$T$112     .dwtag  DW_TAG_typedef
+    1537                    .dwattr $C$DW$T$112, DW_AT_name("uint_fast32_t")
+    1538                    .dwattr $C$DW$T$112, DW_AT_type(*$C$DW$T$111)
+    1539                    .dwattr $C$DW$T$112, DW_AT_language(DW_LANG_C)
+    1540                    .dwattr $C$DW$T$112, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1541                    .dwattr $C$DW$T$112, DW_AT_decl_line(0x3b)
+    1542                    .dwattr $C$DW$T$112, DW_AT_decl_column(0x1a)
+    1543            
+    1544            $C$DW$T$113     .dwtag  DW_TAG_typedef
+    1545                    .dwattr $C$DW$T$113, DW_AT_name("__uint_least32_t")
+    1546                    .dwattr $C$DW$T$113, DW_AT_type(*$C$DW$T$103)
+    1547                    .dwattr $C$DW$T$113, DW_AT_language(DW_LANG_C)
+    1548                    .dwattr $C$DW$T$113, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1549                    .dwattr $C$DW$T$113, DW_AT_decl_line(0x76)
+    1550                    .dwattr $C$DW$T$113, DW_AT_decl_column(0x14)
+    1551            
+    1552            $C$DW$T$114     .dwtag  DW_TAG_typedef
+    1553                    .dwattr $C$DW$T$114, DW_AT_name("__char32_t")
+    1554                    .dwattr $C$DW$T$114, DW_AT_type(*$C$DW$T$113)
+    1555                    .dwattr $C$DW$T$114, DW_AT_language(DW_LANG_C)
+    1556                    .dwattr $C$DW$T$114, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1557                    .dwattr $C$DW$T$114, DW_AT_decl_line(0x72)
+    1558                    .dwattr $C$DW$T$114, DW_AT_decl_column(0x1a)
+    1559            
+    1560            $C$DW$T$115     .dwtag  DW_TAG_typedef
+    1561                    .dwattr $C$DW$T$115, DW_AT_name("uint_least32_t")
+    1562                    .dwattr $C$DW$T$115, DW_AT_type(*$C$DW$T$113)
+    1563                    .dwattr $C$DW$T$115, DW_AT_language(DW_LANG_C)
+    1564                    .dwattr $C$DW$T$115, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1565                    .dwattr $C$DW$T$115, DW_AT_decl_line(0x31)
+    1566                    .dwattr $C$DW$T$115, DW_AT_decl_column(0x1a)
+    1567            
+    1568            $C$DW$T$116     .dwtag  DW_TAG_typedef
+    1569                    .dwattr $C$DW$T$116, DW_AT_name("__uintfptr_t")
+    1570                    .dwattr $C$DW$T$116, DW_AT_type(*$C$DW$T$103)
+    1571                    .dwattr $C$DW$T$116, DW_AT_language(DW_LANG_C)
+    1572                    .dwattr $C$DW$T$116, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1573                    .dwattr $C$DW$T$116, DW_AT_decl_line(0x68)
+    1574                    .dwattr $C$DW$T$116, DW_AT_decl_column(0x14)
+    1575            
+    1576            $C$DW$T$117     .dwtag  DW_TAG_typedef
+    1577                    .dwattr $C$DW$T$117, DW_AT_name("__vm_offset_t")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   31
+
+    1578                    .dwattr $C$DW$T$117, DW_AT_type(*$C$DW$T$103)
+    1579                    .dwattr $C$DW$T$117, DW_AT_language(DW_LANG_C)
+    1580                    .dwattr $C$DW$T$117, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1581                    .dwattr $C$DW$T$117, DW_AT_decl_line(0x79)
+    1582                    .dwattr $C$DW$T$117, DW_AT_decl_column(0x14)
+    1583            
+    1584            $C$DW$T$118     .dwtag  DW_TAG_typedef
+    1585                    .dwattr $C$DW$T$118, DW_AT_name("__vm_paddr_t")
+    1586                    .dwattr $C$DW$T$118, DW_AT_type(*$C$DW$T$103)
+    1587                    .dwattr $C$DW$T$118, DW_AT_language(DW_LANG_C)
+    1588                    .dwattr $C$DW$T$118, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1589                    .dwattr $C$DW$T$118, DW_AT_decl_line(0x7a)
+    1590                    .dwattr $C$DW$T$118, DW_AT_decl_column(0x14)
+    1591            
+    1592            $C$DW$T$119     .dwtag  DW_TAG_typedef
+    1593                    .dwattr $C$DW$T$119, DW_AT_name("__vm_size_t")
+    1594                    .dwattr $C$DW$T$119, DW_AT_type(*$C$DW$T$103)
+    1595                    .dwattr $C$DW$T$119, DW_AT_language(DW_LANG_C)
+    1596                    .dwattr $C$DW$T$119, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1597                    .dwattr $C$DW$T$119, DW_AT_decl_line(0x7b)
+    1598                    .dwattr $C$DW$T$119, DW_AT_decl_column(0x14)
+    1599            
+    1600            $C$DW$T$120     .dwtag  DW_TAG_typedef
+    1601                    .dwattr $C$DW$T$120, DW_AT_name("uint32_t")
+    1602                    .dwattr $C$DW$T$120, DW_AT_type(*$C$DW$T$103)
+    1603                    .dwattr $C$DW$T$120, DW_AT_language(DW_LANG_C)
+    1604                    .dwattr $C$DW$T$120, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1605                    .dwattr $C$DW$T$120, DW_AT_decl_line(0x46)
+    1606                    .dwattr $C$DW$T$120, DW_AT_decl_column(0x15)
+    1607            
+    1608            $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1609                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1610                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1611                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1612            
+    1613            $C$DW$T$121     .dwtag  DW_TAG_typedef
+    1614                    .dwattr $C$DW$T$121, DW_AT_name("__int64_t")
+    1615                    .dwattr $C$DW$T$121, DW_AT_type(*$C$DW$T$14)
+    1616                    .dwattr $C$DW$T$121, DW_AT_language(DW_LANG_C)
+    1617                    .dwattr $C$DW$T$121, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1618                    .dwattr $C$DW$T$121, DW_AT_decl_line(0x40)
+    1619                    .dwattr $C$DW$T$121, DW_AT_decl_column(0x14)
+    1620            
+    1621            $C$DW$T$122     .dwtag  DW_TAG_typedef
+    1622                    .dwattr $C$DW$T$122, DW_AT_name("__blkcnt_t")
+    1623                    .dwattr $C$DW$T$122, DW_AT_type(*$C$DW$T$121)
+    1624                    .dwattr $C$DW$T$122, DW_AT_language(DW_LANG_C)
+    1625                    .dwattr $C$DW$T$122, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1626                    .dwattr $C$DW$T$122, DW_AT_decl_line(0x30)
+    1627                    .dwattr $C$DW$T$122, DW_AT_decl_column(0x13)
+    1628            
+    1629            $C$DW$T$123     .dwtag  DW_TAG_typedef
+    1630                    .dwattr $C$DW$T$123, DW_AT_name("__id_t")
+    1631                    .dwattr $C$DW$T$123, DW_AT_type(*$C$DW$T$121)
+    1632                    .dwattr $C$DW$T$123, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   32
+
+    1633                    .dwattr $C$DW$T$123, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1634                    .dwattr $C$DW$T$123, DW_AT_decl_line(0x36)
+    1635                    .dwattr $C$DW$T$123, DW_AT_decl_column(0x13)
+    1636            
+    1637            $C$DW$T$124     .dwtag  DW_TAG_typedef
+    1638                    .dwattr $C$DW$T$124, DW_AT_name("__int_fast64_t")
+    1639                    .dwattr $C$DW$T$124, DW_AT_type(*$C$DW$T$121)
+    1640                    .dwattr $C$DW$T$124, DW_AT_language(DW_LANG_C)
+    1641                    .dwattr $C$DW$T$124, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1642                    .dwattr $C$DW$T$124, DW_AT_decl_line(0x59)
+    1643                    .dwattr $C$DW$T$124, DW_AT_decl_column(0x13)
+    1644            
+    1645            $C$DW$T$125     .dwtag  DW_TAG_typedef
+    1646                    .dwattr $C$DW$T$125, DW_AT_name("int_fast64_t")
+    1647                    .dwattr $C$DW$T$125, DW_AT_type(*$C$DW$T$124)
+    1648                    .dwattr $C$DW$T$125, DW_AT_language(DW_LANG_C)
+    1649                    .dwattr $C$DW$T$125, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1650                    .dwattr $C$DW$T$125, DW_AT_decl_line(0x37)
+    1651                    .dwattr $C$DW$T$125, DW_AT_decl_column(0x19)
+    1652            
+    1653            $C$DW$T$126     .dwtag  DW_TAG_typedef
+    1654                    .dwattr $C$DW$T$126, DW_AT_name("__int_least64_t")
+    1655                    .dwattr $C$DW$T$126, DW_AT_type(*$C$DW$T$121)
+    1656                    .dwattr $C$DW$T$126, DW_AT_language(DW_LANG_C)
+    1657                    .dwattr $C$DW$T$126, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1658                    .dwattr $C$DW$T$126, DW_AT_decl_line(0x5d)
+    1659                    .dwattr $C$DW$T$126, DW_AT_decl_column(0x13)
+    1660            
+    1661            $C$DW$T$127     .dwtag  DW_TAG_typedef
+    1662                    .dwattr $C$DW$T$127, DW_AT_name("int_least64_t")
+    1663                    .dwattr $C$DW$T$127, DW_AT_type(*$C$DW$T$126)
+    1664                    .dwattr $C$DW$T$127, DW_AT_language(DW_LANG_C)
+    1665                    .dwattr $C$DW$T$127, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1666                    .dwattr $C$DW$T$127, DW_AT_decl_line(0x2d)
+    1667                    .dwattr $C$DW$T$127, DW_AT_decl_column(0x1a)
+    1668            
+    1669            $C$DW$T$128     .dwtag  DW_TAG_typedef
+    1670                    .dwattr $C$DW$T$128, DW_AT_name("__intmax_t")
+    1671                    .dwattr $C$DW$T$128, DW_AT_type(*$C$DW$T$121)
+    1672                    .dwattr $C$DW$T$128, DW_AT_language(DW_LANG_C)
+    1673                    .dwattr $C$DW$T$128, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1674                    .dwattr $C$DW$T$128, DW_AT_decl_line(0x4f)
+    1675                    .dwattr $C$DW$T$128, DW_AT_decl_column(0x13)
+    1676            
+    1677            $C$DW$T$129     .dwtag  DW_TAG_typedef
+    1678                    .dwattr $C$DW$T$129, DW_AT_name("intmax_t")
+    1679                    .dwattr $C$DW$T$129, DW_AT_type(*$C$DW$T$128)
+    1680                    .dwattr $C$DW$T$129, DW_AT_language(DW_LANG_C)
+    1681                    .dwattr $C$DW$T$129, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1682                    .dwattr $C$DW$T$129, DW_AT_decl_line(0x58)
+    1683                    .dwattr $C$DW$T$129, DW_AT_decl_column(0x15)
+    1684            
+    1685            $C$DW$T$130     .dwtag  DW_TAG_typedef
+    1686                    .dwattr $C$DW$T$130, DW_AT_name("__off64_t")
+    1687                    .dwattr $C$DW$T$130, DW_AT_type(*$C$DW$T$121)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   33
+
+    1688                    .dwattr $C$DW$T$130, DW_AT_language(DW_LANG_C)
+    1689                    .dwattr $C$DW$T$130, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1690                    .dwattr $C$DW$T$130, DW_AT_decl_line(0x3f)
+    1691                    .dwattr $C$DW$T$130, DW_AT_decl_column(0x13)
+    1692            
+    1693            $C$DW$T$131     .dwtag  DW_TAG_typedef
+    1694                    .dwattr $C$DW$T$131, DW_AT_name("__rlim_t")
+    1695                    .dwattr $C$DW$T$131, DW_AT_type(*$C$DW$T$121)
+    1696                    .dwattr $C$DW$T$131, DW_AT_language(DW_LANG_C)
+    1697                    .dwattr $C$DW$T$131, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1698                    .dwattr $C$DW$T$131, DW_AT_decl_line(0x41)
+    1699                    .dwattr $C$DW$T$131, DW_AT_decl_column(0x13)
+    1700            
+    1701            $C$DW$T$132     .dwtag  DW_TAG_typedef
+    1702                    .dwattr $C$DW$T$132, DW_AT_name("int64_t")
+    1703                    .dwattr $C$DW$T$132, DW_AT_type(*$C$DW$T$121)
+    1704                    .dwattr $C$DW$T$132, DW_AT_language(DW_LANG_C)
+    1705                    .dwattr $C$DW$T$132, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1706                    .dwattr $C$DW$T$132, DW_AT_decl_line(0x35)
+    1707                    .dwattr $C$DW$T$132, DW_AT_decl_column(0x14)
+    1708            
+    1709            $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1710                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1711                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1712                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    1713            
+    1714            $C$DW$T$133     .dwtag  DW_TAG_typedef
+    1715                    .dwattr $C$DW$T$133, DW_AT_name("__uint64_t")
+    1716                    .dwattr $C$DW$T$133, DW_AT_type(*$C$DW$T$15)
+    1717                    .dwattr $C$DW$T$133, DW_AT_language(DW_LANG_C)
+    1718                    .dwattr $C$DW$T$133, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1719                    .dwattr $C$DW$T$133, DW_AT_decl_line(0x45)
+    1720                    .dwattr $C$DW$T$133, DW_AT_decl_column(0x1c)
+    1721            
+    1722            $C$DW$T$134     .dwtag  DW_TAG_typedef
+    1723                    .dwattr $C$DW$T$134, DW_AT_name("__dev_t")
+    1724                    .dwattr $C$DW$T$134, DW_AT_type(*$C$DW$T$133)
+    1725                    .dwattr $C$DW$T$134, DW_AT_language(DW_LANG_C)
+    1726                    .dwattr $C$DW$T$134, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1727                    .dwattr $C$DW$T$134, DW_AT_decl_line(0x7f)
+    1728                    .dwattr $C$DW$T$134, DW_AT_decl_column(0x14)
+    1729            
+    1730            $C$DW$T$135     .dwtag  DW_TAG_typedef
+    1731                    .dwattr $C$DW$T$135, DW_AT_name("__fsblkcnt_t")
+    1732                    .dwattr $C$DW$T$135, DW_AT_type(*$C$DW$T$133)
+    1733                    .dwattr $C$DW$T$135, DW_AT_language(DW_LANG_C)
+    1734                    .dwattr $C$DW$T$135, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1735                    .dwattr $C$DW$T$135, DW_AT_decl_line(0x33)
+    1736                    .dwattr $C$DW$T$135, DW_AT_decl_column(0x14)
+    1737            
+    1738            $C$DW$T$136     .dwtag  DW_TAG_typedef
+    1739                    .dwattr $C$DW$T$136, DW_AT_name("__fsfilcnt_t")
+    1740                    .dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$133)
+    1741                    .dwattr $C$DW$T$136, DW_AT_language(DW_LANG_C)
+    1742                    .dwattr $C$DW$T$136, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   34
+
+    1743                    .dwattr $C$DW$T$136, DW_AT_decl_line(0x34)
+    1744                    .dwattr $C$DW$T$136, DW_AT_decl_column(0x14)
+    1745            
+    1746            $C$DW$T$137     .dwtag  DW_TAG_typedef
+    1747                    .dwattr $C$DW$T$137, DW_AT_name("__ino_t")
+    1748                    .dwattr $C$DW$T$137, DW_AT_type(*$C$DW$T$133)
+    1749                    .dwattr $C$DW$T$137, DW_AT_language(DW_LANG_C)
+    1750                    .dwattr $C$DW$T$137, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1751                    .dwattr $C$DW$T$137, DW_AT_decl_line(0x37)
+    1752                    .dwattr $C$DW$T$137, DW_AT_decl_column(0x14)
+    1753            
+    1754            $C$DW$T$138     .dwtag  DW_TAG_typedef
+    1755                    .dwattr $C$DW$T$138, DW_AT_name("__nlink_t")
+    1756                    .dwattr $C$DW$T$138, DW_AT_type(*$C$DW$T$133)
+    1757                    .dwattr $C$DW$T$138, DW_AT_language(DW_LANG_C)
+    1758                    .dwattr $C$DW$T$138, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1759                    .dwattr $C$DW$T$138, DW_AT_decl_line(0x3d)
+    1760                    .dwattr $C$DW$T$138, DW_AT_decl_column(0x14)
+    1761            
+    1762            $C$DW$T$139     .dwtag  DW_TAG_typedef
+    1763                    .dwattr $C$DW$T$139, DW_AT_name("__uint_fast64_t")
+    1764                    .dwattr $C$DW$T$139, DW_AT_type(*$C$DW$T$133)
+    1765                    .dwattr $C$DW$T$139, DW_AT_language(DW_LANG_C)
+    1766                    .dwattr $C$DW$T$139, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1767                    .dwattr $C$DW$T$139, DW_AT_decl_line(0x73)
+    1768                    .dwattr $C$DW$T$139, DW_AT_decl_column(0x14)
+    1769            
+    1770            $C$DW$T$140     .dwtag  DW_TAG_typedef
+    1771                    .dwattr $C$DW$T$140, DW_AT_name("uint_fast64_t")
+    1772                    .dwattr $C$DW$T$140, DW_AT_type(*$C$DW$T$139)
+    1773                    .dwattr $C$DW$T$140, DW_AT_language(DW_LANG_C)
+    1774                    .dwattr $C$DW$T$140, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1775                    .dwattr $C$DW$T$140, DW_AT_decl_line(0x3c)
+    1776                    .dwattr $C$DW$T$140, DW_AT_decl_column(0x1a)
+    1777            
+    1778            $C$DW$T$141     .dwtag  DW_TAG_typedef
+    1779                    .dwattr $C$DW$T$141, DW_AT_name("__uint_least64_t")
+    1780                    .dwattr $C$DW$T$141, DW_AT_type(*$C$DW$T$133)
+    1781                    .dwattr $C$DW$T$141, DW_AT_language(DW_LANG_C)
+    1782                    .dwattr $C$DW$T$141, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1783                    .dwattr $C$DW$T$141, DW_AT_decl_line(0x77)
+    1784                    .dwattr $C$DW$T$141, DW_AT_decl_column(0x14)
+    1785            
+    1786            $C$DW$T$142     .dwtag  DW_TAG_typedef
+    1787                    .dwattr $C$DW$T$142, DW_AT_name("uint_least64_t")
+    1788                    .dwattr $C$DW$T$142, DW_AT_type(*$C$DW$T$141)
+    1789                    .dwattr $C$DW$T$142, DW_AT_language(DW_LANG_C)
+    1790                    .dwattr $C$DW$T$142, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1791                    .dwattr $C$DW$T$142, DW_AT_decl_line(0x32)
+    1792                    .dwattr $C$DW$T$142, DW_AT_decl_column(0x1a)
+    1793            
+    1794            $C$DW$T$143     .dwtag  DW_TAG_typedef
+    1795                    .dwattr $C$DW$T$143, DW_AT_name("__uintmax_t")
+    1796                    .dwattr $C$DW$T$143, DW_AT_type(*$C$DW$T$133)
+    1797                    .dwattr $C$DW$T$143, DW_AT_language(DW_LANG_C)
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   35
+
+    1798                    .dwattr $C$DW$T$143, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1799                    .dwattr $C$DW$T$143, DW_AT_decl_line(0x69)
+    1800                    .dwattr $C$DW$T$143, DW_AT_decl_column(0x14)
+    1801            
+    1802            $C$DW$T$144     .dwtag  DW_TAG_typedef
+    1803                    .dwattr $C$DW$T$144, DW_AT_name("__rman_res_t")
+    1804                    .dwattr $C$DW$T$144, DW_AT_type(*$C$DW$T$143)
+    1805                    .dwattr $C$DW$T$144, DW_AT_language(DW_LANG_C)
+    1806                    .dwattr $C$DW$T$144, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1807                    .dwattr $C$DW$T$144, DW_AT_decl_line(0x9a)
+    1808                    .dwattr $C$DW$T$144, DW_AT_decl_column(0x19)
+    1809            
+    1810            $C$DW$T$145     .dwtag  DW_TAG_typedef
+    1811                    .dwattr $C$DW$T$145, DW_AT_name("uintmax_t")
+    1812                    .dwattr $C$DW$T$145, DW_AT_type(*$C$DW$T$143)
+    1813                    .dwattr $C$DW$T$145, DW_AT_language(DW_LANG_C)
+    1814                    .dwattr $C$DW$T$145, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1815                    .dwattr $C$DW$T$145, DW_AT_decl_line(0x5c)
+    1816                    .dwattr $C$DW$T$145, DW_AT_decl_column(0x16)
+    1817            
+    1818            $C$DW$T$146     .dwtag  DW_TAG_typedef
+    1819                    .dwattr $C$DW$T$146, DW_AT_name("uint64_t")
+    1820                    .dwattr $C$DW$T$146, DW_AT_type(*$C$DW$T$133)
+    1821                    .dwattr $C$DW$T$146, DW_AT_language(DW_LANG_C)
+    1822                    .dwattr $C$DW$T$146, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1823                    .dwattr $C$DW$T$146, DW_AT_decl_line(0x4b)
+    1824                    .dwattr $C$DW$T$146, DW_AT_decl_column(0x15)
+    1825            
+    1826            $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1827                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1828                    .dwattr $C$DW$T$16, DW_AT_name("float")
+    1829                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    1830            
+    1831            $C$DW$T$147     .dwtag  DW_TAG_typedef
+    1832                    .dwattr $C$DW$T$147, DW_AT_name("__float_t")
+    1833                    .dwattr $C$DW$T$147, DW_AT_type(*$C$DW$T$16)
+    1834                    .dwattr $C$DW$T$147, DW_AT_language(DW_LANG_C)
+    1835                    .dwattr $C$DW$T$147, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1836                    .dwattr $C$DW$T$147, DW_AT_decl_line(0x4d)
+    1837                    .dwattr $C$DW$T$147, DW_AT_decl_column(0x10)
+    1838            
+    1839            $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1840                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1841                    .dwattr $C$DW$T$17, DW_AT_name("double")
+    1842                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    1843            
+    1844            $C$DW$T$148     .dwtag  DW_TAG_typedef
+    1845                    .dwattr $C$DW$T$148, DW_AT_name("__double_t")
+    1846                    .dwattr $C$DW$T$148, DW_AT_type(*$C$DW$T$17)
+    1847                    .dwattr $C$DW$T$148, DW_AT_language(DW_LANG_C)
+    1848                    .dwattr $C$DW$T$148, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1849                    .dwattr $C$DW$T$148, DW_AT_decl_line(0x4c)
+    1850                    .dwattr $C$DW$T$148, DW_AT_decl_column(0x11)
+    1851            
+    1852            $C$DW$T$18      .dwtag  DW_TAG_base_type
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   36
+
+    1853                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1854                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1855                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    1856            
+    1857            $C$DW$T$28      .dwtag  DW_TAG_base_type
+    1858                    .dwattr $C$DW$T$28, DW_AT_encoding(DW_ATE_unsigned_char)
+    1859                    .dwattr $C$DW$T$28, DW_AT_name("unsigned char")
+    1860                    .dwattr $C$DW$T$28, DW_AT_byte_size(0x01)
+    1861            
+    1862            $C$DW$T$151     .dwtag  DW_TAG_pointer_type
+    1863                    .dwattr $C$DW$T$151, DW_AT_type(*$C$DW$T$6)
+    1864                    .dwattr $C$DW$T$151, DW_AT_address_class(0x10)
+    1865            
+    1866            $C$DW$T$152     .dwtag  DW_TAG_typedef
+    1867                    .dwattr $C$DW$T$152, DW_AT_name("__va_list")
+    1868                    .dwattr $C$DW$T$152, DW_AT_type(*$C$DW$T$151)
+    1869                    .dwattr $C$DW$T$152, DW_AT_language(DW_LANG_C)
+    1870                    .dwattr $C$DW$T$152, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1871                    .dwattr $C$DW$T$152, DW_AT_decl_line(0x92)
+    1872                    .dwattr $C$DW$T$152, DW_AT_decl_column(0x0f)
+    1873            
+    1874            
+    1875            $C$DW$T$19      .dwtag  DW_TAG_structure_type
+    1876                    .dwattr $C$DW$T$19, DW_AT_name("__mq")
+    1877                    .dwattr $C$DW$T$19, DW_AT_declaration
+    1878                    .dwattr $C$DW$T$19, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1879                    .dwattr $C$DW$T$19, DW_AT_decl_line(0x4c)
+    1880                    .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+    1881                    .dwendtag $C$DW$T$19
+    1882            
+    1883            $C$DW$T$153     .dwtag  DW_TAG_pointer_type
+    1884                    .dwattr $C$DW$T$153, DW_AT_type(*$C$DW$T$19)
+    1885                    .dwattr $C$DW$T$153, DW_AT_address_class(0x10)
+    1886            
+    1887            $C$DW$T$154     .dwtag  DW_TAG_typedef
+    1888                    .dwattr $C$DW$T$154, DW_AT_name("__mqd_t")
+    1889                    .dwattr $C$DW$T$154, DW_AT_type(*$C$DW$T$153)
+    1890                    .dwattr $C$DW$T$154, DW_AT_language(DW_LANG_C)
+    1891                    .dwattr $C$DW$T$154, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1892                    .dwattr $C$DW$T$154, DW_AT_decl_line(0x4c)
+    1893                    .dwattr $C$DW$T$154, DW_AT_decl_column(0x16)
+    1894            
+    1895            
+    1896            $C$DW$T$20      .dwtag  DW_TAG_structure_type
+    1897                    .dwattr $C$DW$T$20, DW_AT_name("__timer")
+    1898                    .dwattr $C$DW$T$20, DW_AT_declaration
+    1899                    .dwattr $C$DW$T$20, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp4
+    1900                    .dwattr $C$DW$T$20, DW_AT_decl_line(0x4b)
+    1901                    .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
+    1902                    .dwendtag $C$DW$T$20
+    1903            
+    1904            $C$DW$T$155     .dwtag  DW_TAG_pointer_type
+    1905                    .dwattr $C$DW$T$155, DW_AT_type(*$C$DW$T$20)
+    1906                    .dwattr $C$DW$T$155, DW_AT_address_class(0x10)
+    1907            
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   37
+
+    1908            $C$DW$T$156     .dwtag  DW_TAG_typedef
+    1909                    .dwattr $C$DW$T$156, DW_AT_name("__timer_t")
+    1910                    .dwattr $C$DW$T$156, DW_AT_type(*$C$DW$T$155)
+    1911                    .dwattr $C$DW$T$156, DW_AT_language(DW_LANG_C)
+    1912                    .dwattr $C$DW$T$156, DW_AT_decl_file("/Users/afother1/ti/ccs1271/ccs/tools/compiler/ti-cgt-msp
+    1913                    .dwattr $C$DW$T$156, DW_AT_decl_line(0x4b)
+    1914                    .dwattr $C$DW$T$156, DW_AT_decl_column(0x19)
+    1915            
+    1916                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1917            
+    1918            ;***************************************************************
+    1919            ;* DWARF CIE ENTRIES                                           *
+    1920            ;***************************************************************
+    1921            
+    1922            $C$DW$CIE       .dwcie 16
+    1923                    .dwcfi  cfa_register, 1
+    1924                    .dwcfi  cfa_offset, 0
+    1925                    .dwcfi  same_value, 0
+    1926                    .dwcfi  same_value, 1
+    1927                    .dwcfi  same_value, 3
+    1928                    .dwcfi  same_value, 4
+    1929                    .dwcfi  same_value, 5
+    1930                    .dwcfi  same_value, 6
+    1931                    .dwcfi  same_value, 7
+    1932                    .dwcfi  same_value, 8
+    1933                    .dwcfi  same_value, 9
+    1934                    .dwcfi  same_value, 10
+    1935                    .dwendentry
+    1936            
+    1937            ;***************************************************************
+    1938            ;* DWARF REGISTER MAP                                          *
+    1939            ;***************************************************************
+    1940            
+    1941            $C$DW$52        .dwtag  DW_TAG_TI_assign_register
+    1942                    .dwattr $C$DW$52, DW_AT_name("PC")
+    1943                    .dwattr $C$DW$52, DW_AT_location[DW_OP_reg0]
+    1944            
+    1945            $C$DW$53        .dwtag  DW_TAG_TI_assign_register
+    1946                    .dwattr $C$DW$53, DW_AT_name("SP")
+    1947                    .dwattr $C$DW$53, DW_AT_location[DW_OP_reg1]
+    1948            
+    1949            $C$DW$54        .dwtag  DW_TAG_TI_assign_register
+    1950                    .dwattr $C$DW$54, DW_AT_name("SR")
+    1951                    .dwattr $C$DW$54, DW_AT_location[DW_OP_reg2]
+    1952            
+    1953            $C$DW$55        .dwtag  DW_TAG_TI_assign_register
+    1954                    .dwattr $C$DW$55, DW_AT_name("CG")
+    1955                    .dwattr $C$DW$55, DW_AT_location[DW_OP_reg3]
+    1956            
+    1957            $C$DW$56        .dwtag  DW_TAG_TI_assign_register
+    1958                    .dwattr $C$DW$56, DW_AT_name("r4")
+    1959                    .dwattr $C$DW$56, DW_AT_location[DW_OP_reg4]
+    1960            
+    1961            $C$DW$57        .dwtag  DW_TAG_TI_assign_register
+    1962                    .dwattr $C$DW$57, DW_AT_name("r5")
+MSP430 Assembler Unix v21.6.1 Thu Aug 22 10:43:10 2024
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+sensorApp.asm                                                        PAGE   38
+
+    1963                    .dwattr $C$DW$57, DW_AT_location[DW_OP_reg5]
+    1964            
+    1965            $C$DW$58        .dwtag  DW_TAG_TI_assign_register
+    1966                    .dwattr $C$DW$58, DW_AT_name("r6")
+    1967                    .dwattr $C$DW$58, DW_AT_location[DW_OP_reg6]
+    1968            
+    1969            $C$DW$59        .dwtag  DW_TAG_TI_assign_register
+    1970                    .dwattr $C$DW$59, DW_AT_name("r7")
+    1971                    .dwattr $C$DW$59, DW_AT_location[DW_OP_reg7]
+    1972            
+    1973            $C$DW$60        .dwtag  DW_TAG_TI_assign_register
+    1974                    .dwattr $C$DW$60, DW_AT_name("r8")
+    1975                    .dwattr $C$DW$60, DW_AT_location[DW_OP_reg8]
+    1976            
+    1977            $C$DW$61        .dwtag  DW_TAG_TI_assign_register
+    1978                    .dwattr $C$DW$61, DW_AT_name("r9")
+    1979                    .dwattr $C$DW$61, DW_AT_location[DW_OP_reg9]
+    1980            
+    1981            $C$DW$62        .dwtag  DW_TAG_TI_assign_register
+    1982                    .dwattr $C$DW$62, DW_AT_name("r10")
+    1983                    .dwattr $C$DW$62, DW_AT_location[DW_OP_reg10]
+    1984            
+    1985            $C$DW$63        .dwtag  DW_TAG_TI_assign_register
+    1986                    .dwattr $C$DW$63, DW_AT_name("r11")
+    1987                    .dwattr $C$DW$63, DW_AT_location[DW_OP_reg11]
+    1988            
+    1989            $C$DW$64        .dwtag  DW_TAG_TI_assign_register
+    1990                    .dwattr $C$DW$64, DW_AT_name("r12")
+    1991                    .dwattr $C$DW$64, DW_AT_location[DW_OP_reg12]
+    1992            
+    1993            $C$DW$65        .dwtag  DW_TAG_TI_assign_register
+    1994                    .dwattr $C$DW$65, DW_AT_name("r13")
+    1995                    .dwattr $C$DW$65, DW_AT_location[DW_OP_reg13]
+    1996            
+    1997            $C$DW$66        .dwtag  DW_TAG_TI_assign_register
+    1998                    .dwattr $C$DW$66, DW_AT_name("r14")
+    1999                    .dwattr $C$DW$66, DW_AT_location[DW_OP_reg14]
+    2000            
+    2001            $C$DW$67        .dwtag  DW_TAG_TI_assign_register
+    2002                    .dwattr $C$DW$67, DW_AT_name("r15")
+    2003                    .dwattr $C$DW$67, DW_AT_location[DW_OP_reg15]
+    2004            
+    2005            $C$DW$68        .dwtag  DW_TAG_TI_assign_register
+    2006                    .dwattr $C$DW$68, DW_AT_name("CIE_RETA")
+    2007                    .dwattr $C$DW$68, DW_AT_location[DW_OP_reg16]
+    2008            
+    2009                    .dwendtag $C$DW$CU
+    2010            
 
 No Assembly Errors, No Assembly Warnings
